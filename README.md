@@ -4,6 +4,11 @@
 ## 💬 [Обсуждения/Discussions](https://github.com/hydra2s-info/about/discussions) 💬
 ## 🐞 [Баг-Репорты/Bug-Tracker](https://github.com/hydra2s-info/about/issues) 🐞
 
+## Datapacks or mod info links
+
+- https://www.planetminecraft.com/data-pack/minecraft-crafting-overhaul/
+- https://www.curseforge.com/minecraft/customization/crafting-recipes-overhaul
+
 ## Minecraft mod or datapack for 2x2 crafts
 
 ### Overview
