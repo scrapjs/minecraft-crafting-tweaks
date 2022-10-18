@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [],
+  "key": {},
+  "result": {
+    "item": "minecraft:air",
+    "count": 0
+  }
+}

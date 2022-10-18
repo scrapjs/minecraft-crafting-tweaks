@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:recipe_shapeless",
+  "ingredients": [
+      {
+          "item": "minecraft:wheat"
+      },
+      {
+          "item": "minecraft:wheat"
+      },
+      {
+          "item": "minecraft:wheat"
+      }
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:bread"
+  }
+}
