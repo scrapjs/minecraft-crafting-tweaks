@@ -29,7 +29,7 @@
 
 ### Problems
 
-This is generic Fabric mod for Minecraft 1.17. Modify fuel duration. 
+This is generic Fabric mod for Minecraft 1.17. Modify fuel duration. <br/>
 Currently: changes coal block duration to 6400 ticks
 
 ### TODO:
@@ -40,6 +40,11 @@ Currently: changes coal block duration to 6400 ticks
 
 ### P.S.
 
-Some datapacks imported from Vanilla Tweaks.
+Some datapacks imported from Vanilla Tweaks.<br/>
 https://vanillatweaks.net/picker/crafting-tweaks/
 
+### Images
+
+<img src="images/CORE.png" alt="CORE" width="800"/><br/>
+<img src="images/ITEMS.png" alt="ITEMS" width="800"/><br/>
+<img src="images/COPPER.png" alt="COPPER" width="800"/><br/>
