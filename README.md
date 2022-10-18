@@ -27,3 +27,19 @@
 - Craft recipes 2x2 for items and tools (new!).
 - Overhaul download link.
 
+### Problems
+
+This is generic Fabric mod for Minecraft 1.17. Modify fuel duration. 
+Currently: changes coal block duration to 6400 ticks
+
+### TODO:
+
+- Add missed blocks
+- Add additional features
+- Add advancements (finally)
+
+### P.S.
+
+Some datapacks imported from Vanilla Tweaks.
+https://vanillatweaks.net/picker/crafting-tweaks/
+
