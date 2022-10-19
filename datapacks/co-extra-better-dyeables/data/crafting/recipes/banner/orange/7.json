@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_banner",
+        "count": 7
+    },
+    "group": "orange_banner"
+}

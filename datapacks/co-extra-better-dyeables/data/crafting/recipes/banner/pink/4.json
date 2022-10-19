@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_banner",
+        "count": 4
+    },
+    "group": "pink_banner"
+}

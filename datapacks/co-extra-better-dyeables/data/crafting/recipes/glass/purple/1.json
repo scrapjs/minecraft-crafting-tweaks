@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:stained_glass"
+            "tag": "crafting:glass"
         },
         {
             "item": "minecraft:purple_dye"

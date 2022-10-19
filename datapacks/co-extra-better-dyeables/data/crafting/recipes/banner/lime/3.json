@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_banner",
+        "count": 3
+    },
+    "group": "lime_banner"
+}

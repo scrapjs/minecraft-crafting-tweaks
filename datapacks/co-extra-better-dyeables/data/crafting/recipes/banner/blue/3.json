@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:banner"
+        },
+        {
+            "tag": "crafting:dyes/blue_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_banner",
+        "count": 3
+    },
+    "group": "blue_banner"
+}

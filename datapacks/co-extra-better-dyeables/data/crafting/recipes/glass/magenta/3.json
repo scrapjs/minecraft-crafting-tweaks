@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:stained_glass"
+            "tag": "crafting:glass"
         },
         {
-            "tag": "crafting:stained_glass"
+            "tag": "crafting:glass"
         },
         {
-            "tag": "crafting:stained_glass"
+            "tag": "crafting:glass"
         },
         {
             "item": "minecraft:magenta_dye"
