@@ -44,6 +44,7 @@
 
 ### TODO
 
+- Compatibility with other versions of MC.
 - Add missed blocks and items
 - Add additional features
 - Add advancements (finally)
