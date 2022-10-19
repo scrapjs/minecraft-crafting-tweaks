@@ -5,6 +5,7 @@
 ### Changes
 
 - Added 4x slabs to 2x blocks.
+- Categorized by versions of MC.
 
 ### Ideas (not used)
 
