@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"

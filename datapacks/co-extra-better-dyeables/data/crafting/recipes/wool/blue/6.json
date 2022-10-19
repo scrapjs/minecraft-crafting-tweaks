@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         },
         {
             "tag": "crafting:dyes/blue_dye"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_blue"
         }
     ],
     "result": {

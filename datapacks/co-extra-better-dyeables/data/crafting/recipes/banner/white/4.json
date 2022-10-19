@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_white"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_white"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_white"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_white"
         },
         {
             "tag": "crafting:dyes/white_dye"

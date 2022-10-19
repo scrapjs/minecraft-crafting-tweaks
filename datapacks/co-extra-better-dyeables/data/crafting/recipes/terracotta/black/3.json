@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_black"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_black"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_black"
         },
         {
             "tag": "crafting:dyes/black_dye"

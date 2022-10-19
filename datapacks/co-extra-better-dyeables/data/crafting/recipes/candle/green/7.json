@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
             "item": "minecraft:green_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_green"
         }
     ],
     "result": {

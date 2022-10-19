@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
             "item": "minecraft:orange_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_orange"
         }
     ],
     "result": {

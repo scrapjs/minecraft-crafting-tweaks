@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_red"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_red"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_red"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_red"
         },
         {
             "item": "minecraft:red_dye"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_red"
         }
     ],
     "result": {

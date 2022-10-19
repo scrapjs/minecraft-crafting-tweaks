@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_cyan"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_cyan"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_cyan"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"

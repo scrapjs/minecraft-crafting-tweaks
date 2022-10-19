@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
             "item": "minecraft:yellow_dye"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_yellow"
         }
     ],
     "result": {

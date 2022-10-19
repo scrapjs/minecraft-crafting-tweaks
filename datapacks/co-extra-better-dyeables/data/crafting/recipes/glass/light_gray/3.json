@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_light_gray"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_light_gray"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_light_gray"
         },
         {
             "item": "minecraft:light_gray_dye"

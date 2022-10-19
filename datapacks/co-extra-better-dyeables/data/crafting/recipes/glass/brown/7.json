@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
             "tag": "crafting:dyes/brown_dye"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_brown"
         }
     ],
     "result": {

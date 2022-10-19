@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
             "item": "minecraft:red_dye"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_red"
         }
     ],
     "result": {

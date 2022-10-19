@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_cyan"
         }
     ],
     "result": {

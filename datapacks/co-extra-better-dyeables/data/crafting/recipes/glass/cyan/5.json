@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_cyan"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_cyan"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_cyan"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_cyan"
         }
     ],
     "result": {

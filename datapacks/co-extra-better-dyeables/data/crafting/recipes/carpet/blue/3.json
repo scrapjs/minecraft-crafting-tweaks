@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_blue"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_blue"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_blue"
         },
         {
             "tag": "crafting:dyes/blue_dye"

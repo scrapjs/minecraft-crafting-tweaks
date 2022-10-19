@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
             "tag": "crafting:dyes/black_dye"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_black"
         }
     ],
     "result": {

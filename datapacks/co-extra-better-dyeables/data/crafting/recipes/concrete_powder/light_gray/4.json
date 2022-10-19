@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_light_gray"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_light_gray"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_light_gray"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_light_gray"
         },
         {
             "item": "minecraft:light_gray_dye"

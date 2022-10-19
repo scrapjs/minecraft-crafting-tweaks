@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
             "tag": "crafting:dyes/white_dye"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_white"
         }
     ],
     "result": {

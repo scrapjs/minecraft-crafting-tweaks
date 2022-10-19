@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_purple"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_purple"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_purple"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_purple"
         },
         {
             "item": "minecraft:purple_dye"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_purple"
         }
     ],
     "result": {

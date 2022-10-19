@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:glass/not_lime"
+        },
+        {
+            "tag": "crafting:glass/not_lime"
+        },
+        {
+            "tag": "crafting:glass/not_lime"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_stained_glass",
+        "count": 3
+    },
+    "group": "lime_glass"
+}

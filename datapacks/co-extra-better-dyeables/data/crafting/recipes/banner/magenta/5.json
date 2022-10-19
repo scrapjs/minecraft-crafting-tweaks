@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_magenta"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_magenta"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_magenta"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_magenta"
         },
         {
             "item": "minecraft:magenta_dye"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_magenta"
         }
     ],
     "result": {

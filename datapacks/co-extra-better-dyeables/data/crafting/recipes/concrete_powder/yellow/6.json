@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         },
         {
             "item": "minecraft:yellow_dye"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_yellow"
         }
     ],
     "result": {

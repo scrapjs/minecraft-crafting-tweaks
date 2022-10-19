@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_red"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_red"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_red"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_red"
         },
         {
             "item": "minecraft:red_dye"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_red"
         }
     ],
     "result": {

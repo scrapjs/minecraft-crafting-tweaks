@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_black"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_black"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_black"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_black"
         },
         {
             "tag": "crafting:dyes/black_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_black"
         }
     ],
     "result": {

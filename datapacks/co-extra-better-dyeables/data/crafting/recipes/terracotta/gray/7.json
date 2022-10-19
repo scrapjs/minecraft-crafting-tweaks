@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
             "item": "minecraft:gray_dye"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_gray"
         }
     ],
     "result": {

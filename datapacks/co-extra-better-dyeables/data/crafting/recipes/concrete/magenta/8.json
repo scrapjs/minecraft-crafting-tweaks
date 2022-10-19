@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
             "item": "minecraft:magenta_dye"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         },
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_magenta"
         }
     ],
     "result": {

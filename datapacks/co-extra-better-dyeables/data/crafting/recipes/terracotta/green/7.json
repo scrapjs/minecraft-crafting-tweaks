@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
             "item": "minecraft:green_dye"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_green"
         }
     ],
     "result": {

@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_brown"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_brown"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_brown"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_brown"
         },
         {
             "tag": "crafting:dyes/brown_dye"

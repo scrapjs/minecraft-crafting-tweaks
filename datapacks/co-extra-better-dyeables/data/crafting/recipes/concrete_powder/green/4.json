@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_green"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_green"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_green"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_green"
         },
         {
             "item": "minecraft:green_dye"

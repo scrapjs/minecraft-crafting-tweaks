@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_orange"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_orange"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_orange"
         },
         {
             "item": "minecraft:orange_dye"

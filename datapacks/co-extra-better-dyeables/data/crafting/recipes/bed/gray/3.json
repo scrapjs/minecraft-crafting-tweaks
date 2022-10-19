@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_gray"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_gray"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_gray"
         },
         {
             "item": "minecraft:gray_dye"

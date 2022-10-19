@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
             "item": "minecraft:light_blue_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_light_blue"
         }
     ],
     "result": {

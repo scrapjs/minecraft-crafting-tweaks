@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
             "item": "minecraft:yellow_dye"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_yellow"
         }
     ],
     "result": {

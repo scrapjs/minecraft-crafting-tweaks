@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         },
         {
             "item": "minecraft:lime_dye"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_lime"
         }
     ],
     "result": {

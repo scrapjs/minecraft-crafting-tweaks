@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:candle/not_lime"
+        },
+        {
+            "tag": "crafting:candle/not_lime"
+        },
+        {
+            "tag": "crafting:candle/not_lime"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_candle",
+        "count": 3
+    },
+    "group": "lime_candle"
+}

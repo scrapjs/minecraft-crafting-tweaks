@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_white"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_white"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_white"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_white"
         },
         {
             "tag": "crafting:dyes/white_dye"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_white"
         }
     ],
     "result": {

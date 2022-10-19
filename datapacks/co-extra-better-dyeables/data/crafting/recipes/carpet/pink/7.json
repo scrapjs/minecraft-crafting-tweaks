@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
             "item": "minecraft:pink_dye"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_pink"
         }
     ],
     "result": {

@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_pink"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_pink"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_pink"
         },
         {
             "item": "minecraft:pink_dye"

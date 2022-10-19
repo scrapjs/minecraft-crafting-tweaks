@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         },
         {
             "item": "minecraft:pink_dye"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_pink"
         }
     ],
     "result": {

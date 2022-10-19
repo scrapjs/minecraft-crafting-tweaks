@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_magenta"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_magenta"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_magenta"
         },
         {
             "item": "minecraft:magenta_dye"

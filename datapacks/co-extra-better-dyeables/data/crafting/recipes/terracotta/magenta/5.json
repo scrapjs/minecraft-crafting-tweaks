@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_magenta"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_magenta"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_magenta"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_magenta"
         },
         {
             "item": "minecraft:magenta_dye"
         },
         {
-            "tag": "crafting:terracotta"
+            "tag": "crafting:terracotta/not_magenta"
         }
     ],
     "result": {

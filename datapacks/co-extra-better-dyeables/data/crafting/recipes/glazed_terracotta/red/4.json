@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_red"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_red"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_red"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_red"
         },
         {
             "item": "minecraft:red_dye"

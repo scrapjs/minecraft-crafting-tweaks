@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
             "item": "minecraft:yellow_dye"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         },
         {
-            "tag": "crafting:glass_pane"
+            "tag": "crafting:glass_pane/not_yellow"
         }
     ],
     "result": {

@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         },
         {
             "item": "minecraft:light_gray_dye"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_light_gray"
         }
     ],
     "result": {

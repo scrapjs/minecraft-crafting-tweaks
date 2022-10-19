@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_orange"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_orange"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_orange"
         },
         {
             "item": "minecraft:orange_dye"

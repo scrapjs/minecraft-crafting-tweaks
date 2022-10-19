@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_blue"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_blue"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_blue"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_blue"
         },
         {
             "tag": "crafting:dyes/blue_dye"

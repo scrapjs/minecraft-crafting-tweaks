@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
             "item": "minecraft:gray_dye"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_gray"
         }
     ],
     "result": {

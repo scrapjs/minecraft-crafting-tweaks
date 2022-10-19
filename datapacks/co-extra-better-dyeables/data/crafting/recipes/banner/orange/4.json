@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_orange"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_orange"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_orange"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_orange"
         },
         {
             "item": "minecraft:orange_dye"

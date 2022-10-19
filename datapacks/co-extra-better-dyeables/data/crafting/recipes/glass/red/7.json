@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
             "item": "minecraft:red_dye"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         },
         {
-            "tag": "crafting:glass"
+            "tag": "crafting:glass/not_red"
         }
     ],
     "result": {

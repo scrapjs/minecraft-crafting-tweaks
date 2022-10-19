@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_red"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_red"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_red"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_red"
         },
         {
             "item": "minecraft:red_dye"

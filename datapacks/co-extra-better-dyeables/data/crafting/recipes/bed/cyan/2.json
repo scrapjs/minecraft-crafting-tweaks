@@ -2,10 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_cyan"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"

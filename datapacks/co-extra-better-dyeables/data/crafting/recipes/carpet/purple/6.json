@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         },
         {
             "item": "minecraft:purple_dye"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_purple"
         }
     ],
     "result": {

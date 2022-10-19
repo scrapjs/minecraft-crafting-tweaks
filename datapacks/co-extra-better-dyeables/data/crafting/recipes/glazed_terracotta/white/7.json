@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
             "tag": "crafting:dyes/white_dye"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         },
         {
-            "tag": "crafting:glazed_terracotta"
+            "tag": "crafting:glazed_terracotta/not_white"
         }
     ],
     "result": {

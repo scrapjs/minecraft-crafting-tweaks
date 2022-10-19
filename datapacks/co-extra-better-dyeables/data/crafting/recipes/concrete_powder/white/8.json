@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
             "tag": "crafting:dyes/white_dye"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         },
         {
-            "tag": "crafting:concrete_powder"
+            "tag": "crafting:concrete_powder/not_white"
         }
     ],
     "result": {

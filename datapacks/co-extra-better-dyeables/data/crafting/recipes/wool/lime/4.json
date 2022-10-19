@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_lime"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_lime"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_lime"
         },
         {
-            "tag": "crafting:wool"
+            "tag": "crafting:wool/not_lime"
         },
         {
             "item": "minecraft:lime_dye"

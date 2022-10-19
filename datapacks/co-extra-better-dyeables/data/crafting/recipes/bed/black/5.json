@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_black"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_black"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_black"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_black"
         },
         {
             "tag": "crafting:dyes/black_dye"
         },
         {
-            "tag": "crafting:bed"
+            "tag": "crafting:bed/not_black"
         }
     ],
     "result": {

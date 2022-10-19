@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
             "item": "minecraft:purple_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_purple"
         }
     ],
     "result": {

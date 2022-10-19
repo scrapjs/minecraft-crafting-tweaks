@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
             "item": "minecraft:cyan_dye"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         },
         {
-            "tag": "crafting:banner"
+            "tag": "crafting:banner/not_cyan"
         }
     ],
     "result": {

@@ -2,25 +2,25 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         },
         {
             "item": "minecraft:red_dye"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         },
         {
-            "tag": "crafting:carpet"
+            "tag": "crafting:carpet/not_red"
         }
     ],
     "result": {

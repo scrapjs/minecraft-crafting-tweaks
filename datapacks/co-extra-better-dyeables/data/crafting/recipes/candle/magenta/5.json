@@ -2,22 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_magenta"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_magenta"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_magenta"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_magenta"
         },
         {
             "item": "minecraft:magenta_dye"
         },
         {
-            "tag": "crafting:candle"
+            "tag": "crafting:candle/not_magenta"
         }
     ],
     "result": {

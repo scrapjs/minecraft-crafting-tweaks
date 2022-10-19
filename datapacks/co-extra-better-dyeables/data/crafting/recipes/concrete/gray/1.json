@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "crafting:concrete"
+            "tag": "crafting:concrete/not_gray"
         },
         {
             "item": "minecraft:gray_dye"
