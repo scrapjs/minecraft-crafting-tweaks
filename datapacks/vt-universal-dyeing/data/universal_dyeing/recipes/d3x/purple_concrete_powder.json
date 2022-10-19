@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "result": {
+        "item": "minecraft:purple_concrete_powder",
+        "count": 3
+    },
+    "group": "universal_dyeing_concrete_powder",
+    "ingredients": [
+        {"tag": "universal_dyeing:concrete_powder"},
+        {"tag": "universal_dyeing:concrete_powder"},
+        {"tag": "universal_dyeing:concrete_powder"},
+        {"item": "minecraft:purple_dye"}
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "result": {
+        "item": "minecraft:glass_pane",
+        "count": 3
+    },
+    "group": "",
+    "ingredients": [
+        {"tag": "universal_dyeing:stained_glass_pane"},
+        {"tag": "universal_dyeing:stained_glass_pane"},
+        {"tag": "universal_dyeing:stained_glass_pane"},
+        {"item": "minecraft:ice"}
+    ]
+}

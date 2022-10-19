@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "result": {
+        "item": "minecraft:white_wool",
+        "count": 3
+    },
+    "group": "universal_dyeing_wool",
+    "ingredients": [
+        {"tag": "universal_dyeing:wool"},
+        {"tag": "universal_dyeing:wool"},
+        {"tag": "universal_dyeing:wool"},
+        {"tag": "universal_dyeing:dyes/white_dye"}
+    ]
+}
