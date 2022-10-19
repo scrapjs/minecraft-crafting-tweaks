@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:dyes/brown_dye"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_carpet",
+        "count": 7
+    },
+    "group": "brown_carpet"
+}

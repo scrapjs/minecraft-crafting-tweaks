@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:dyes/brown_dye"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_candle",
+        "count": 8
+    },
+    "group": "brown_candle"
+}

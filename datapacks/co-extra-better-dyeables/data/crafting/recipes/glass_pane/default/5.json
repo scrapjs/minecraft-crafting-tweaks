@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "item": "minecraft:ice"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        }
+    ],
+    "result": {
+        "item": "minecraft:glass_pane",
+        "count": 5
+    },
+    "group": "default_glass_pane"
+}

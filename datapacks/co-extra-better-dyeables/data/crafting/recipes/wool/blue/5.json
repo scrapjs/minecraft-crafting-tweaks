@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:dyes/blue_dye"
+        },
+        {
+            "tag": "crafting:wool"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_wool",
+        "count": 5
+    },
+    "group": "blue_wool"
+}

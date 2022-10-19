@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:dyes/brown_dye"
+        },
+        {
+            "tag": "crafting:bed"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_bed",
+        "count": 5
+    },
+    "group": "brown_bed"
+}

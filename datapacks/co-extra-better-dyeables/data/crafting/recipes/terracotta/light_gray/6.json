@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "item": "minecraft:light_gray_dye"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_gray_terracotta",
+        "count": 6
+    },
+    "group": "light_gray_terracotta"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_terracotta",
+        "count": 2
+    },
+    "group": "orange_terracotta"
+}

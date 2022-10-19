@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_terracotta",
+        "count": 4
+    },
+    "group": "magenta_terracotta"
+}

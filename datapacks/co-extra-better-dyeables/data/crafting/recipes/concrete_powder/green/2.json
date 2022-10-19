@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "item": "minecraft:green_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:green_concrete_powder",
+        "count": 2
+    },
+    "group": "green_concrete_powder"
+}

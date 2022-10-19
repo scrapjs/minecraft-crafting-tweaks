@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_candle",
+        "count": 3
+    },
+    "group": "white_candle"
+}

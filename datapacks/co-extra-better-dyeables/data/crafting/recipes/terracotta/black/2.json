@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:dyes/black_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:black_terracotta",
+        "count": 2
+    },
+    "group": "black_terracotta"
+}

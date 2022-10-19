@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:stained_glass"
+        },
+        {
+            "tag": "crafting:stained_glass"
+        },
+        {
+            "tag": "crafting:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_stained_glass",
+        "count": 2
+    },
+    "group": "white_glass"
+}

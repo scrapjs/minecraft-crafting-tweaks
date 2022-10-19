@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_stained_glass_pane",
+        "count": 2
+    },
+    "group": "pink_glass_pane"
+}

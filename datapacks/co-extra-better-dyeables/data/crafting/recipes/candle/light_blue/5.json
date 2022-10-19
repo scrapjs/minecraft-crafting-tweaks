@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "tag": "crafting:candle"
+        },
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        {
+            "tag": "crafting:candle"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_blue_candle",
+        "count": 5
+    },
+    "group": "light_blue_candle"
+}

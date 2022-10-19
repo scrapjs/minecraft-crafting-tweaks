@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:dyes/blue_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_terracotta",
+        "count": 3
+    },
+    "group": "blue_terracotta"
+}

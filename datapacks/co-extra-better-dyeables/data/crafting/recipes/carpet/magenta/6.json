@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_carpet",
+        "count": 6
+    },
+    "group": "magenta_carpet"
+}

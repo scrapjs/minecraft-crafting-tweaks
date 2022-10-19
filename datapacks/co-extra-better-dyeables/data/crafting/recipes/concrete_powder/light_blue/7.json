@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:concrete_powder"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_blue_concrete_powder",
+        "count": 7
+    },
+    "group": "light_blue_concrete_powder"
+}

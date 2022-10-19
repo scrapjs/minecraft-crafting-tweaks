@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "tag": "crafting:terracotta"
+        },
+        {
+            "item": "minecraft:yellow_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:yellow_terracotta",
+        "count": 4
+    },
+    "group": "yellow_terracotta"
+}

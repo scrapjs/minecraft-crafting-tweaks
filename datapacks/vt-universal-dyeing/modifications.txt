@@ -1,4 +1,0 @@
-- Dyeing now shapeless.
-- Used unused tags.
-- To tags added source items.
-- Added 3x item dyeing.

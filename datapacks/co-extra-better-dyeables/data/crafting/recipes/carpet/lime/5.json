@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "tag": "crafting:carpet"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_carpet",
+        "count": 5
+    },
+    "group": "lime_carpet"
+}

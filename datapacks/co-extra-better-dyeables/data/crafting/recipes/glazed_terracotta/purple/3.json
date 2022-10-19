@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "item": "minecraft:purple_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:purple_glazed_terracotta",
+        "count": 3
+    },
+    "group": "purple_glazed_terracotta"
+}

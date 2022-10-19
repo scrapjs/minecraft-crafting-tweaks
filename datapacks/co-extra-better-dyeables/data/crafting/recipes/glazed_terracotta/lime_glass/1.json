@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_glazed_terracotta",
+        "count": 1
+    },
+    "group": "lime_glazed_terracotta"
+}

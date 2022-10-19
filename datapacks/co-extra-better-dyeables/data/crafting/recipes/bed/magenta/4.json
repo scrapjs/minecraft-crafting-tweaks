@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "tag": "crafting:bed"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_bed",
+        "count": 4
+    },
+    "group": "magenta_bed"
+}

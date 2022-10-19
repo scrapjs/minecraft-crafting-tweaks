@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "tag": "crafting:glazed_terracotta"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_glazed_terracotta",
+        "count": 4
+    },
+    "group": "magenta_glazed_terracotta"
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_stained_glass_pane",
+        "count": 5
+    },
+    "group": "lime_glass_pane"
+}

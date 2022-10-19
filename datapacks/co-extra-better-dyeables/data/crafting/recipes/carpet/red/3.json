@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "tag": "crafting:carpet"
+        },
+        {
+            "item": "minecraft:red_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:red_carpet",
+        "count": 3
+    },
+    "group": "red_carpet"
+}

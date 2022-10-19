@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "tag": "crafting:wool"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "tag": "crafting:wool"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_wool",
+        "count": 5
+    },
+    "group": "magenta_wool"
+}

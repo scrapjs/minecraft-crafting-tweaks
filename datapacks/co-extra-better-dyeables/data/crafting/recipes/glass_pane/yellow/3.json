@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "tag": "crafting:stained_glass_pane"
+        },
+        {
+            "item": "minecraft:yellow_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:yellow_stained_glass_pane",
+        "count": 3
+    },
+    "group": "yellow_glass_pane"
+}
