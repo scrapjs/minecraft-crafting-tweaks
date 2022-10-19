@@ -1,3 +1,7 @@
+# CO - cut copper extra module
+
+### Features
+
 - Add more cut copper recipes.
 - Add revert recipes to make copper blocks.
 - Fix stonecutter stairs count.
