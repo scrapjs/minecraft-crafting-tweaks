@@ -29,8 +29,18 @@
 - Enable stairs 2x2 crafts.
 - Extra copper 2x2 crafts.
 - Extra wooden log 2x2 crafts.
-- Craft recipes 2x2 for items and tools (new!).
+- Extra concrete powder crafts (**new!**).
+- Craft recipes 2x2 for items and tools (**new!**).
 - Overhaul download link.
+
+### Balance changes
+
+- Packing 4x ingredients instead of 9x (mostly).
+- 2x blocks required for 4x slabs (mostly), instead of 3x for 6x slabs (in general, still 1x block per 2x slabs).
+- 3x blocks required for 4x stairs (mostly), instead of 6x for 4x stairs (fix injustice).
+- 8x glass panes from 4x glass instead of 16x glass panes from 6x glass.
+- 3x trapdoors instead of 2x (crafting recipes mostly 3x2).
+- Items and tools requires less resources (mostly, items module).
 
 ### TODO
 
