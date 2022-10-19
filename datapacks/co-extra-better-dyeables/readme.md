@@ -1,6 +1,10 @@
-# Better Dyeables
+# Better Dyeables - CO edition
 
 That is better and modified version of Better Dyeables.
+
+### Main Idea
+
+A quintessentially different datapack. Such as "Universal Dyeing", "Better Dyeables" etc., as well as my ideas on the subject.
 
 ### Changes
 
