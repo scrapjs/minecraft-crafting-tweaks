@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:blackstone_slab"
+        },
+        {
+            "item": "minecraft:blackstone_slab"
+        },
+        {
+            "item": "minecraft:blackstone_slab"
         }
     ],
     "result": {
         "item": "minecraft:blackstone",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

@@ -7,11 +7,17 @@
         },
         {
             "item": "minecraft:sandstone_slab"
+        },
+        {
+            "item": "minecraft:sandstone_slab"
+        },
+        {
+            "item": "minecraft:sandstone_slab"
         }
     ],
     "result": {
         "item": "minecraft:sandstone",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

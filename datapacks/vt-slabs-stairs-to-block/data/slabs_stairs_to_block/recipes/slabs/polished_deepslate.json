@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:polished_deepslate_slab"
+        },
+        {
+            "item": "minecraft:polished_deepslate_slab"
+        },
+        {
+            "item": "minecraft:polished_deepslate_slab"
         }
     ],
     "result": {
         "item": "minecraft:polished_deepslate",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

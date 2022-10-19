@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:brick_slab"
+        },
+        {
+            "item": "minecraft:brick_slab"
+        },
+        {
+            "item": "minecraft:brick_slab"
         }
     ],
     "result": {
         "item": "minecraft:bricks",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

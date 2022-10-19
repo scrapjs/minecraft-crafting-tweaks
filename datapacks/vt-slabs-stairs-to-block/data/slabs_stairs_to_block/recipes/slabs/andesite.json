@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:andesite_slab"
+        },
+        {
+            "item": "minecraft:andesite_slab"
+        },
+        {
+            "item": "minecraft:andesite_slab"
         }
     ],
     "result": {
         "item": "minecraft:andesite",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

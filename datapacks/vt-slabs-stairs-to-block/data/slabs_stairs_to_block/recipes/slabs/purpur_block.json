@@ -7,11 +7,17 @@
         },
         {
             "item": "minecraft:purpur_slab"
+        },
+        {
+            "item": "minecraft:purpur_slab"
+        },
+        {
+            "item": "minecraft:purpur_slab"
         }
     ],
     "result": {
         "item": "minecraft:purpur_block",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

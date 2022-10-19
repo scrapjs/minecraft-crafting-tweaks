@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:dark_prismarine_slab"
+        },
+        {
+            "item": "minecraft:dark_prismarine_slab"
+        },
+        {
+            "item": "minecraft:dark_prismarine_slab"
         }
     ],
     "result": {
         "item": "minecraft:dark_prismarine",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:polished_granite_slab"
+        },
+        {
+            "item": "minecraft:polished_granite_slab"
+        },
+        {
+            "item": "minecraft:polished_granite_slab"
         }
     ],
     "result": {
         "item": "minecraft:polished_granite",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:birch_slab"
+        },
+        {
+            "item": "minecraft:birch_slab"
+        },
+        {
+            "item": "minecraft:birch_slab"
         }
     ],
     "result": {
         "item": "minecraft:birch_planks",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

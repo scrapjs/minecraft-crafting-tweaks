@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:diorite_slab"
+        },
+        {
+            "item": "minecraft:diorite_slab"
+        },
+        {
+            "item": "minecraft:diorite_slab"
         }
     ],
     "result": {
         "item": "minecraft:diorite",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }

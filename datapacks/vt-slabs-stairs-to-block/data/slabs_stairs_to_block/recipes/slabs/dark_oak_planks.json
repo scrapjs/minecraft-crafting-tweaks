@@ -6,11 +6,17 @@
         },
         {
             "item": "minecraft:dark_oak_slab"
+        },
+        {
+            "item": "minecraft:dark_oak_slab"
+        },
+        {
+            "item": "minecraft:dark_oak_slab"
         }
     ],
     "result": {
         "item": "minecraft:dark_oak_planks",
-        "count": 1
+        "count": 2
     },
     "group": "slabs_to_blocks"
 }
