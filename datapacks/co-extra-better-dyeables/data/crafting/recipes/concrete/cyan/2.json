@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "item": "minecraft:cyan_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cyan_concrete",
+        "count": 2
+    },
+    "group": "cyan_concrete"
+}

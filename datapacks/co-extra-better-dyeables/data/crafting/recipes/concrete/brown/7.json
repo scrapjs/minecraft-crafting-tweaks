@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:dyes/brown_dye"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_concrete",
+        "count": 7
+    },
+    "group": "brown_concrete"
+}

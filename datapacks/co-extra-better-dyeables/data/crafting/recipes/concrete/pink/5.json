@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "tag": "crafting:concrete"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_concrete",
+        "count": 5
+    },
+    "group": "pink_concrete"
+}

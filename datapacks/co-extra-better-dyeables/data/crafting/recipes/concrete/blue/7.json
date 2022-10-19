@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:dyes/blue_dye"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        },
+        {
+            "tag": "crafting:concrete"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_concrete",
+        "count": 7
+    },
+    "group": "blue_concrete"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "crafting:concrete_powder"
+        },
+        {
+            "tag": "crafting:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_concrete_powder",
+        "count": 1
+    },
+    "group": "white_concrete_powder"
+}
