@@ -44,7 +44,7 @@
 
 ### TODO
 
-- Add missed blocks
+- Add missed blocks and items
 - Add additional features
 - Add advancements (finally)
 
