@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:oak_slab"
+        },
+        {
             "item": "minecraft:oak_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:oak_planks",
         "count": 1

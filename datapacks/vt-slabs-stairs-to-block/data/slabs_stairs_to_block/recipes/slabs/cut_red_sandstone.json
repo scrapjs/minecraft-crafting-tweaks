@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:cut_red_sandstone_slab"
+        },
+        {
             "item": "minecraft:cut_red_sandstone_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:cut_red_sandstone",
         "count": 1

@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:mossy_cobblestone_slab"
+        },
+        {
             "item": "minecraft:mossy_cobblestone_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:mossy_cobblestone",
         "count": 1

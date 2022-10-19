@@ -1,0 +1,2 @@
+- 2x slabs crafts now shapeless.
+- Added 4x slabs to 2x blocks.

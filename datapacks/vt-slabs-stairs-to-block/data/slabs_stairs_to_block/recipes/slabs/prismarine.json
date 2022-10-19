@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:prismarine_slab"
+        },
+        {
             "item": "minecraft:prismarine_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:prismarine",
         "count": 1

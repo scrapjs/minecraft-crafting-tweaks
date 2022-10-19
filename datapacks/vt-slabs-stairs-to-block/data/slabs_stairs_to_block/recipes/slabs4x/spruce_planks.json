@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:spruce_slab"
+        },
+        {
+            "item": "minecraft:spruce_slab"
+        },
+        {
+            "item": "minecraft:spruce_slab"
+        },
+        {
+            "item": "minecraft:spruce_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:spruce_planks",
+        "count": 2
+    },
+    "group": "slabs_to_blocks"
+}

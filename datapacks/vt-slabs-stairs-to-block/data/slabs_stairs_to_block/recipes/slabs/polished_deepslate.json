@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:polished_deepslate_slab"
+        },
+        {
             "item": "minecraft:polished_deepslate_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:polished_deepslate",
         "count": 1

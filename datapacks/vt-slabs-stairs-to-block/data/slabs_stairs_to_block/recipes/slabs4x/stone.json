@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:stone_slab"
+        },
+        {
+            "item": "minecraft:stone_slab"
+        },
+        {
+            "item": "minecraft:stone_slab"
+        },
+        {
+            "item": "minecraft:stone_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:stone",
+        "count": 2
+    },
+    "group": "slabs_to_blocks"
+}

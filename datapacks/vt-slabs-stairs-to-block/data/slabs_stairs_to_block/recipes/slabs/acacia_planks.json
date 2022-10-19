@@ -1,13 +1,13 @@
 {
-    "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:acacia_slab"
+        },
+        {
             "item": "minecraft:acacia_slab"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:acacia_planks",
         "count": 1
