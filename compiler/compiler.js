@@ -33,6 +33,13 @@ let dataVersion = {
     "1_16": 7
 };
 
+let mcVersionString = {
+    "1_19": "1.19.x",
+    "1_18": "1.18.x",
+    "1_17": "1.17.x",
+    "1_16": "1.16.x"
+};
+
 
 
 let slabs = [
@@ -425,7 +432,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
 //
 fs.rmSync(`../datapack/data`, { recursive: true, force: true });
 fs.mkdirSync(`../datapack/data`, { recursive: true });
-fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for"}}`, 'utf8');
+fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
 
 //
 let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true });
