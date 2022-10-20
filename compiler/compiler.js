@@ -283,7 +283,7 @@ let templateStairs2x2 = (options)=>{
     return `{
     "type": "crafting_shaped",
     "pattern": [
-        "# "
+        "# ",
         "##"
     ],
     "key": {
