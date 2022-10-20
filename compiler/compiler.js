@@ -22,8 +22,8 @@ let usedModules = [
 
 let slabs = [
     {"source": "blackstone", "input": "blackstone_slab", "mc_version": "1_16"},
-    {"source": "crimson_planks", "input": "crimson_slab", "mc_version": "1_16"},
-    {"source": "warped_planks", "input": "warped_slab", "mc_version": "1_16"},
+    {"source": "crimson_planks", "input": "crimson_slab", "mc_version": "1_16", "group": "wooden_slab"},
+    {"source": "warped_planks", "input": "warped_slab", "mc_version": "1_16", "group": "wooden_slab"},
     {"source": "polished_blackstone", "input": "polished_blackstone_slab", "mc_version": "1_16"},
     {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_slab", "mc_version": "1_16"},
 
@@ -37,20 +37,20 @@ let slabs = [
     {"source": "exposed_cut_copper", "input": "exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"]},
     {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"]},
 
-    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_slab", "mc_version": "1_17", from: ["waxed_copper_block"]},
-    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_slab", "mc_version": "1_17", from: ["waxed_weathered_copper"]},
-    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_slab", "mc_version": "1_17", from: ["waxed_exposed_copper"]},
-    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_slab", "mc_version": "1_17", from: ["waxed_oxidized_copper"]},
+    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"]},
+    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"]},
+    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"]},
+    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"]},
 
-    {"source": "mangrove_planks", "input": "mangrove_slab", "mc_version": "1_19"},
+    {"source": "mangrove_planks", "input": "mangrove_slab", "mc_version": "1_19", "group": "wooden_slab"},
     {"source": "mud_bricks", "input": "mud_brick_slab", "mc_version": "1_19"},
 
-    {"source": "acacia_planks", "input": "acacia_slab", "mc_version": "1_xx"},
-    {"source": "oak_planks", "input": "oak_slab", "mc_version": "1_xx"},
-    {"source": "dark_oak_planks", "input": "dark_oak_slab", "mc_version": "1_xx"},
-    {"source": "birch_planks", "input": "birch_slab", "mc_version": "1_xx"},
-    {"source": "spruce_planks", "input": "spruce_slab", "mc_version": "1_xx"},
-    {"source": "jungle_planks", "input": "jungle_slab", "mc_version": "1_xx"},
+    {"source": "acacia_planks", "input": "acacia_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "oak_planks", "input": "oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "dark_oak_planks", "input": "dark_oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "birch_planks", "input": "birch_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "spruce_planks", "input": "spruce_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "jungle_planks", "input": "jungle_slab", "mc_version": "1_xx", "group": "wooden_slab"},
 
     {"source": "bricks", "input": "brick_slab", "mc_version": "1_xx"},
 
@@ -94,8 +94,8 @@ let slabs = [
 
 let stairs = [
     {"source": "blackstone", "input": "blackstone_stairs", "mc_version": "1_16"},
-    {"source": "crimson_planks", "input": "crimson_stairs", "mc_version": "1_16"},
-    {"source": "warped_planks", "input": "warped_stairs", "mc_version": "1_16"},
+    {"source": "crimson_planks", "input": "crimson_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
+    {"source": "warped_planks", "input": "warped_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
     {"source": "polished_blackstone", "input": "polished_blackstone_stairs", "mc_version": "1_16"},
     {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_stairs", "mc_version": "1_16"},
 
@@ -109,20 +109,20 @@ let stairs = [
     {"source": "exposed_cut_copper", "input": "exposed_cut_copper_stairs", "mc_version": "1_17", from: ["exposed_copper"]},
     {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_stairs", "mc_version": "1_17", from: ["oxidized_copper"]},
 
-    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_stairs", "mc_version": "1_17", from: ["waxed_copper_block"]},
-    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_stairs", "mc_version": "1_17", from: ["waxed_weathered_copper"]},
-    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_stairs", "mc_version": "1_17", from: ["waxed_exposed_copper"]},
-    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", from: ["waxed_oxidized_copper"]},
+    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs", from: ["waxed_copper_block"]},
+    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs", from: ["waxed_weathered_copper"]},
+    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs", from: ["waxed_exposed_copper"]},
+    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs", from: ["waxed_oxidized_copper"]},
 
-    {"source": "mangrove_planks", "input": "mangrove_stairs", "mc_version": "1_19"},
+    {"source": "mangrove_planks", "input": "mangrove_stairs", "group": "wooden_stairs", "mc_version": "1_19"},
     {"source": "mud_bricks", "input": "mud_brick_stairs", "mc_version": "1_19"},
 
-    {"source": "acacia_planks", "input": "acacia_stairs", "mc_version": "1_xx"},
-    {"source": "oak_planks", "input": "oak_stairs", "mc_version": "1_xx"},
-    {"source": "dark_oak_planks", "input": "dark_oak_stairs", "mc_version": "1_xx"},
-    {"source": "birch_planks", "input": "birch_stairs", "mc_version": "1_xx"},
-    {"source": "spruce_planks", "input": "spruce_stairs", "mc_version": "1_xx"},
-    {"source": "jungle_planks", "input": "jungle_stairs", "mc_version": "1_xx"},
+    {"source": "acacia_planks", "input": "acacia_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "oak_planks", "input": "oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "dark_oak_planks", "input": "dark_oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "birch_planks", "input": "birch_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "spruce_planks", "input": "spruce_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "jungle_planks", "input": "jungle_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
 
     {"source": "bricks", "input": "brick_stairs", "mc_version": "1_xx"},
 
@@ -251,7 +251,7 @@ let templateSlab2x1 = (options)=>{
         "item": "minecraft:${options.input}",
         "count": 4
     },
-    "group": "blocks_to_slab"
+    "group": "${options.group ? options.group : "blocks_to_slabs"}"
 }`
 };
 
@@ -270,7 +270,7 @@ let templateStairs2x2 = (options)=>{
         "item": "minecraft:${options.input}",
         "count": 4
     },
-    "group": "blocks_to_stairs"
+    "group": "${options.group ? options.group : "blocks_to_stairs"}"
 }`
 };
 
