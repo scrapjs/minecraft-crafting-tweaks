@@ -188,3 +188,6 @@ dist
 
 compiler/datapack
 compiler/datapack/*
+
+datapack
+datapack/*

@@ -425,18 +425,18 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
 };
 
 //
-fs.rmSync(`datapack/data`, { recursive: true, force: true });
-fs.mkdirSync(`datapack/data`, { recursive: true });
-fs.writeFileSync(`datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for"}}`, 'utf8');
+fs.rmSync(`../datapack/data`, { recursive: true, force: true });
+fs.mkdirSync(`../datapack/data`, { recursive: true });
+fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for"}}`, 'utf8');
 
 //
-let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), 'datapack/data', { overwrite: true });
+let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true });
 mergeTrees.merge();
 
 // remove disallowed version data from "crafting"
-let files = fs.readdirSync("datapack/data/crafting/recipes");
+let files = fs.readdirSync("../datapack/data/crafting/recipes");
 files.forEach((filename)=>{
     if (allowedData[usedMCVersion].indexOf(filename) == -1) {
-        fs.rmSync(`datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
+        fs.rmSync(`../datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
     };
 });
