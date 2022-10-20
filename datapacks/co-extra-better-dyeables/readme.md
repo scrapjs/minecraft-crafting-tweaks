@@ -11,11 +11,12 @@ A quintessentially different datapack. Such as "Universal Dyeing", "Better Dyeab
 - Added beds, concrete powder, glazed terracotta dyeing.
 - Added dyeing and undyeing already dyed blocks.
 - Added missed features.
+- Added not-same color policy.
 - Resorted and reordered.
 
-### Reserved
+### TODO
 
-- Not color tags (will used in future).
+- Disable default dyeing crafting recipes.
 
 ### Original
 
