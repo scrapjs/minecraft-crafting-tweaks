@@ -1,3 +1,4 @@
+
 let usedModules = [
     "co-2x2-core", 
     "co-2x2-extra-cut-copper", // WARNING: 1.17 and higher only
@@ -186,7 +187,10 @@ let stairs = [
     {"source": "end_stone_bricks", "input": "end_stone_brick_stairs", "mc_version": "1_xx"}
 ];
 
-
+//
+let MergeTrees = require('merge-trees');
+let fs = require('fs');
+let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 
 
 let templateSlab2x2Reverse = (options)=>{
@@ -195,7 +199,7 @@ let templateSlab2x2Reverse = (options)=>{
         tags.push(`
         {"item": "minecraft:${options.input}"}`);
     }
-    return `
+    return crlf(`
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [${tags.join(",")}
@@ -205,7 +209,7 @@ let templateSlab2x2Reverse = (options)=>{
         "count": 2
     },
     "group": "slabs_to_blocks"
-}`;
+}`, CRLF);
 };
 
 
@@ -215,7 +219,7 @@ let templateStairs2x2Reverse = (options)=>{
         tags.push(`
         {"item": "minecraft:${options.input}"}`);
     }
-    return `
+    return crlf(`
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [${tags.join(",")}
@@ -225,12 +229,12 @@ let templateStairs2x2Reverse = (options)=>{
         "count": 3
     },
     "group": "stairs_to_blocks"
-}`;
+}`, CRLF);
 };
 
 
 let templateSlab2x1Reverse = (options)=>{
-    return `{
+    return crlf(`{
     "type": "crafting_shaped",
     "pattern": [
         "##"
@@ -243,12 +247,12 @@ let templateSlab2x1Reverse = (options)=>{
         "count": 1
     },
     "group": "slabs_to_blocks"
-}`
+}`, CRLF);
 };
 
 // 
 let templateStub = (options)=>{
-    return `{
+    return crlf(`{
   "type": "minecraft:crafting_shaped",
   "group": "stub",
   "pattern": [],
@@ -257,12 +261,12 @@ let templateStub = (options)=>{
     "item": "minecraft:air",
     "count": 0
   }
-}`
+}`, CRLF);
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
 let templateSlab2x1 = (options)=>{
-    return `{
+    return crlf(`{
     "type": "crafting_shaped",
     "pattern": [
         "##"
@@ -275,12 +279,12 @@ let templateSlab2x1 = (options)=>{
         "count": 4
     },
     "group": "${options.group ? options.group : "blocks_to_slabs"}"
-}`
+}`, CRLF);
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
 let templateStairs2x2 = (options)=>{
-    return `{
+    return crlf(`{
     "type": "crafting_shaped",
     "pattern": [
         "# ",
@@ -294,7 +298,7 @@ let templateStairs2x2 = (options)=>{
         "count": 4
     },
     "group": "${options.group ? options.group : "blocks_to_stairs"}"
-}`
+}`, CRLF);
 };
 
 let names = ["banner", "bed", "candle", "concrete", "carpet", "concrete_powder", "glass", "glass_pane", "glazed_terracotta", "terracotta", "wool"];
@@ -316,7 +320,7 @@ let templateColors = (options)=>{
             `${options.color}_stained_${options.name}` : 
               (options.color != "default" ? `${options.color}_${options.name}` : `${options.name}`);
 
-    return `{
+    return crlf(`{
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {"tag": "better_dyeables:dye/${options.color}"},${tags.join(",")}
@@ -326,14 +330,8 @@ let templateColors = (options)=>{
         "count": ${options.count}
     },
     "group": "${options.color}_${options.name}"
-}`;
+}`, CRLF);
 };
-
-
-
-//
-let MergeTrees = require('merge-trees');
-let fs = require('fs');
 
 /*
 // NOT NEEDED!
