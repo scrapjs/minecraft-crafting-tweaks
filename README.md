@@ -44,6 +44,7 @@
 
 ### TODO
 
+- Make single datapack compiler.
 - Compatibility with other versions of MC.
 - Add missed blocks and items
 - Add additional features
@@ -51,6 +52,7 @@
 
 ### Problems
 
+These datapacks needs compiler or generator. <br/>
 This datapack is balanced for 4x raw ores, NOT for 9x. <br/>
 To fix coal fuel balance, needs mod.
 
