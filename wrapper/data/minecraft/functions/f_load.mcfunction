@@ -1,1 +1,1 @@
-tellraw @e [{"text":"Please, unzip that datapack (crafting recipes overhaul)."}]
+tellraw @p [{"text":"Please, unzip that datapack (crafting recipes overhaul)."}]
