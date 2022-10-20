@@ -8,7 +8,7 @@ let usedModules = [
     "co-2x2-slabs", 
     "co-2x2-stairs", 
     "co-extra-better-dyeables", 
-    "vt-double-slabs", // WARNING! only for 1.19, currently
+    "vt-double-slabs",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",
     "vt-straight-to-shapeless", 
@@ -371,55 +371,53 @@ if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
 
 //
 if (usedModules.indexOf("co-2x2-slabs") != -1) {
-    let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/recipes`;
+    let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/recipes/`;
 
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
         if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
         };
     });
 };
 
 //
 if (usedModules.indexOf("co-2x2-stairs") != -1) {
-    let rootDir = `../wrapper/datapacks/co-2x2-stairs/data/crafting/recipes`;
+    let rootDir = `../wrapper/datapacks/co-2x2-stairs/data/crafting/recipes/`;
 
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     stairs.forEach((obj)=>{
         if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
         };
     });
 };
 
 //
 if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
-    let rootDir = `../wrapper/datapacks/vt-slabs-stairs-to-block/data/slabs_stairs_to_block/recipes`;
+    let rootDir = `../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/recipes`;
+    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
-    fs.rmSync(`${rootDir}/stairs`, { recursive: true, force: true });
     stairs.forEach((obj)=>{
         if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/stairs/${obj.mc_version}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/stairs/${obj.mc_version}/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
         };
     });
 
-    fs.rmSync(`${rootDir}/slabs`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
         if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/slabs/${obj.mc_version}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/slabs/${obj.mc_version}/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
         };
     });
 
-    fs.rmSync(`${rootDir}/slabs2x`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
         if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/slabs2x/${obj.mc_version}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/slabs2x/${obj.mc_version}/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
         };
     });
 };
