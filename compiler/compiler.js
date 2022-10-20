@@ -1,6 +1,6 @@
 let usedModules = [
     "co-2x2-core", 
-    "co-2x2-extra-cut-copper", 
+    "co-2x2-extra-cut-copper", // WARNING: 1.17 and higher only
     "co-2x2-extra-log-crafts", 
     "co-2x2-items", 
     "co-disable-default-slabs", 
@@ -8,15 +8,30 @@ let usedModules = [
     "co-2x2-slabs", 
     "co-2x2-stairs", 
     "co-extra-better-dyeables", 
-    "vt-double-slabs", 
+    "vt-double-slabs", // WARNING! only for 1.19, currently
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",
     "vt-straight-to-shapeless", 
     "vt-unpackable-wool"
 ];
 
+let usedMCVersion = "1_19";
 
 
+
+let allowedData = {
+    "1_19": ["1_19", "1_18", "1_17", "1_16", "1_xx"],
+    "1_18": ["1_18", "1_17", "1_16", "1_xx"],
+    "1_17": ["1_17", "1_16", "1_xx"],
+    "1_16": ["1_16", "1_xx"]
+};
+
+let dataVersion = {
+    "1_19": 10,
+    "1_18": 9,
+    "1_17": 8,
+    "1_16": 7
+};
 
 
 
@@ -360,8 +375,10 @@ if (usedModules.indexOf("co-2x2-slabs") != -1) {
 
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
+        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
+        };
     });
 };
 
@@ -371,8 +388,10 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
 
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     stairs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
+        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
+        };
     });
 };
 
@@ -382,30 +401,42 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
 
     fs.rmSync(`${rootDir}/stairs`, { recursive: true, force: true });
     stairs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}/stairs/${obj.mc_version}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/stairs/${obj.mc_version}/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
+        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}/stairs/${obj.mc_version}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/stairs/${obj.mc_version}/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
+        };
     });
 
     fs.rmSync(`${rootDir}/slabs`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}/slabs/${obj.mc_version}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/slabs/${obj.mc_version}/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
+        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}/slabs/${obj.mc_version}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/slabs/${obj.mc_version}/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
+        };
     });
 
     fs.rmSync(`${rootDir}/slabs2x`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}/slabs2x/${obj.mc_version}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/slabs2x/${obj.mc_version}/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
+        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}/slabs2x/${obj.mc_version}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/slabs2x/${obj.mc_version}/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
+        };
     });
 };
 
 //
 fs.rmSync(`datapack/data`, { recursive: true, force: true });
 fs.mkdirSync(`datapack/data`, { recursive: true });
-fs.writeFileSync(`datapack/pack.mcmeta`, `{"pack":{"pack_format":10,"description":"Minecraft crafting recipes overhaul compiled for"}}`, 'utf8');
+fs.writeFileSync(`datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for"}}`, 'utf8');
 
 //
 let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), 'datapack/data', { overwrite: true });
 mergeTrees.merge();
 
-
+// remove disallowed version data from "crafting"
+let files = fs.readdirSync("datapack/data/crafting/recipes");
+files.forEach((filename)=>{
+    if (allowedData[usedMCVersion].indexOf(filename) == -1) {
+        fs.rmSync(`datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
+    };
+});
