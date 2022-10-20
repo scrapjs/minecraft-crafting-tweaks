@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:banner/not_brown"
+        },
+        {
+            "tag": "better_dyeables:banner/not_brown"
+        },
+        {
+            "tag": "better_dyeables:banner/not_brown"
+        },
+        {
+            "tag": "better_dyeables:banner/not_brown"
+        },
+        {
+            "tag": "better_dyeables:dyes/brown_dye"
+        },
+        {
+            "tag": "better_dyeables:banner/not_brown"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_banner",
+        "count": 5
+    },
+    "group": "brown_banner"
+}

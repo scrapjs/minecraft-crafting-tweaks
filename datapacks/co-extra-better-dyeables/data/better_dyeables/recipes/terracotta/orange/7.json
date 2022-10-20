@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_orange"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_terracotta",
+        "count": 7
+    },
+    "group": "orange_terracotta"
+}

@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        },
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_green"
+        }
+    ],
+    "result": {
+        "item": "minecraft:green_concrete_powder",
+        "count": 6
+    },
+    "group": "green_concrete_powder"
+}

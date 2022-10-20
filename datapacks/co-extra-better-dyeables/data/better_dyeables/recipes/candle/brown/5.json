@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:candle/not_brown"
+        },
+        {
+            "tag": "better_dyeables:candle/not_brown"
+        },
+        {
+            "tag": "better_dyeables:candle/not_brown"
+        },
+        {
+            "tag": "better_dyeables:candle/not_brown"
+        },
+        {
+            "tag": "better_dyeables:dyes/brown_dye"
+        },
+        {
+            "tag": "better_dyeables:candle/not_brown"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_candle",
+        "count": 5
+    },
+    "group": "brown_candle"
+}

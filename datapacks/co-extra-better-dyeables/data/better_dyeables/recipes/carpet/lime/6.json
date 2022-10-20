@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_lime"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_carpet",
+        "count": 6
+    },
+    "group": "lime_carpet"
+}

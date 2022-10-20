@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_blue"
+        },
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_blue"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_blue_bed",
+        "count": 5
+    },
+    "group": "light_blue_bed"
+}

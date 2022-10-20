@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glazed_terracotta/not_yellow"
+        },
+        {
+            "item": "minecraft:yellow_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:yellow_glazed_terracotta",
+        "count": 1
+    },
+    "group": "yellow_glazed_terracotta"
+}

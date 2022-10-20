@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:dyes/black_dye"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        },
+        {
+            "tag": "better_dyeables:wool/not_black"
+        }
+    ],
+    "result": {
+        "item": "minecraft:black_wool",
+        "count": 7
+    },
+    "group": "black_wool"
+}

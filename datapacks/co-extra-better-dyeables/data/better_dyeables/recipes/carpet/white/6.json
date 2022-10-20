@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_white"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_carpet",
+        "count": 6
+    },
+    "group": "white_carpet"
+}

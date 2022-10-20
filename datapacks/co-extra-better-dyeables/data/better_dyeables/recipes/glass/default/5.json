@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glass"
+        },
+        {
+            "tag": "better_dyeables:glass"
+        },
+        {
+            "tag": "better_dyeables:glass"
+        },
+        {
+            "tag": "better_dyeables:glass"
+        },
+        {
+            "item": "minecraft:ice"
+        },
+        {
+            "tag": "better_dyeables:glass"
+        }
+    ],
+    "result": {
+        "item": "minecraft:glass",
+        "count": 5
+    },
+    "group": "default_glass"
+}

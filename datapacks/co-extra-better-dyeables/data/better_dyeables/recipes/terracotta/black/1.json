@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:terracotta/not_black"
+        },
+        {
+            "tag": "better_dyeables:dyes/black_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:black_terracotta",
+        "count": 1
+    },
+    "group": "black_terracotta"
+}

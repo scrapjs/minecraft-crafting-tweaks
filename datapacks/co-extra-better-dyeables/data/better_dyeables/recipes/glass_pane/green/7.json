@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_green"
+        }
+    ],
+    "result": {
+        "item": "minecraft:green_stained_glass_pane",
+        "count": 7
+    },
+    "group": "green_glass_pane"
+}

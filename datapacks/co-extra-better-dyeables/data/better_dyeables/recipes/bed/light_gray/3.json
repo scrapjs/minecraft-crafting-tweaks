@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_light_gray"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_gray"
+        },
+        {
+            "tag": "better_dyeables:bed/not_light_gray"
+        },
+        {
+            "item": "minecraft:light_gray_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_gray_bed",
+        "count": 3
+    },
+    "group": "light_gray_bed"
+}

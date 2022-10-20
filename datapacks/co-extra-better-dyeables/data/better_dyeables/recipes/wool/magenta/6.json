@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:wool/not_magenta"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_wool",
+        "count": 6
+    },
+    "group": "magenta_wool"
+}

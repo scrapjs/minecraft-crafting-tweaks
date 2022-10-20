@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_magenta"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_stained_glass_pane",
+        "count": 8
+    },
+    "group": "magenta_glass_pane"
+}

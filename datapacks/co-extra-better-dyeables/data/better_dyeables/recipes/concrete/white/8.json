@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_white"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_concrete",
+        "count": 8
+    },
+    "group": "white_concrete"
+}

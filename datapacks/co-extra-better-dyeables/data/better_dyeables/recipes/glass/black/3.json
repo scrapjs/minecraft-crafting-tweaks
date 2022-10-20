@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glass/not_black"
+        },
+        {
+            "tag": "better_dyeables:glass/not_black"
+        },
+        {
+            "tag": "better_dyeables:glass/not_black"
+        },
+        {
+            "tag": "better_dyeables:dyes/black_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:black_stained_glass",
+        "count": 3
+    },
+    "group": "black_glass"
+}

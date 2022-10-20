@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_orange"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_concrete",
+        "count": 8
+    },
+    "group": "orange_concrete"
+}

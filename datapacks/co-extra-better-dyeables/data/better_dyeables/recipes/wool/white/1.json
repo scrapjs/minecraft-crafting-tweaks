@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_wool",
+        "count": 1
+    },
+    "group": "white_wool"
+}

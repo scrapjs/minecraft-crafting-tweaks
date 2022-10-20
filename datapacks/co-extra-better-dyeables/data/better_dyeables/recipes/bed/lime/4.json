@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_lime"
+        },
+        {
+            "tag": "better_dyeables:bed/not_lime"
+        },
+        {
+            "tag": "better_dyeables:bed/not_lime"
+        },
+        {
+            "tag": "better_dyeables:bed/not_lime"
+        },
+        {
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lime_bed",
+        "count": 4
+    },
+    "group": "lime_bed"
+}

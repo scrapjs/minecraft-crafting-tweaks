@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:candle/not_cyan"
+        },
+        {
+            "tag": "better_dyeables:candle/not_cyan"
+        },
+        {
+            "tag": "better_dyeables:candle/not_cyan"
+        },
+        {
+            "tag": "better_dyeables:candle/not_cyan"
+        },
+        {
+            "item": "minecraft:cyan_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cyan_candle",
+        "count": 4
+    },
+    "group": "cyan_candle"
+}

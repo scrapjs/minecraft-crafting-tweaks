@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_brown"
+        },
+        {
+            "tag": "better_dyeables:bed/not_brown"
+        },
+        {
+            "tag": "better_dyeables:bed/not_brown"
+        },
+        {
+            "tag": "better_dyeables:bed/not_brown"
+        },
+        {
+            "tag": "better_dyeables:dyes/brown_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:brown_bed",
+        "count": 4
+    },
+    "group": "brown_bed"
+}

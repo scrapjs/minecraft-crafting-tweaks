@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_orange"
+        },
+        {
+            "tag": "better_dyeables:bed/not_orange"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_bed",
+        "count": 2
+    },
+    "group": "orange_bed"
+}

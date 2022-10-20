@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:terracotta/not_white"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_white"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_terracotta",
+        "count": 3
+    },
+    "group": "white_terracotta"
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:terracotta/not_purple"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_purple"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_purple"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_purple"
+        },
+        {
+            "item": "minecraft:purple_dye"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_purple"
+        }
+    ],
+    "result": {
+        "item": "minecraft:purple_terracotta",
+        "count": 5
+    },
+    "group": "purple_terracotta"
+}

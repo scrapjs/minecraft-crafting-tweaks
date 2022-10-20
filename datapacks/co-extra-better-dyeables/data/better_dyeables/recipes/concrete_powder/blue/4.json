@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete_powder/not_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete_powder/not_blue"
+        },
+        {
+            "tag": "better_dyeables:dyes/blue_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:blue_concrete_powder",
+        "count": 4
+    },
+    "group": "blue_concrete_powder"
+}

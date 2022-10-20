@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:candle"
+        },
+        {
+            "tag": "better_dyeables:candle"
+        },
+        {
+            "tag": "better_dyeables:candle"
+        },
+        {
+            "tag": "better_dyeables:candle"
+        },
+        {
+            "item": "minecraft:ice"
+        }
+    ],
+    "result": {
+        "item": "minecraft:candle",
+        "count": 4
+    },
+    "group": "default_candle"
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:carpet/not_gray"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_gray"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_gray"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_gray"
+        },
+        {
+            "item": "minecraft:gray_dye"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_gray"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gray_carpet",
+        "count": 5
+    },
+    "group": "gray_carpet"
+}

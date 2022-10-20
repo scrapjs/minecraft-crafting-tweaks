@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:terracotta/not_red"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_red"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_red"
+        },
+        {
+            "tag": "better_dyeables:terracotta/not_red"
+        },
+        {
+            "item": "minecraft:red_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:red_terracotta",
+        "count": 4
+    },
+    "group": "red_terracotta"
+}

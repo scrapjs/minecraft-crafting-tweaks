@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glazed_terracotta/not_pink"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_glazed_terracotta",
+        "count": 1
+    },
+    "group": "pink_glazed_terracotta"
+}

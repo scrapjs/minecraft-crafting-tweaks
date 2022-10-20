@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_light_blue"
+        }
+    ],
+    "result": {
+        "item": "minecraft:light_blue_concrete",
+        "count": 7
+    },
+    "group": "light_blue_concrete"
+}

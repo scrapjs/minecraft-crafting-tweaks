@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:candle/not_orange"
+        },
+        {
+            "tag": "better_dyeables:candle/not_orange"
+        },
+        {
+            "tag": "better_dyeables:candle/not_orange"
+        },
+        {
+            "tag": "better_dyeables:candle/not_orange"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "tag": "better_dyeables:candle/not_orange"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_candle",
+        "count": 5
+    },
+    "group": "orange_candle"
+}

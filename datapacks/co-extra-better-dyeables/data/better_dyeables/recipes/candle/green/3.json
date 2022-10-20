@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:candle/not_green"
+        },
+        {
+            "tag": "better_dyeables:candle/not_green"
+        },
+        {
+            "tag": "better_dyeables:candle/not_green"
+        },
+        {
+            "item": "minecraft:green_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:green_candle",
+        "count": 3
+    },
+    "group": "green_candle"
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:carpet/not_pink"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_pink"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_pink"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_pink"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_carpet",
+        "count": 4
+    },
+    "group": "pink_carpet"
+}

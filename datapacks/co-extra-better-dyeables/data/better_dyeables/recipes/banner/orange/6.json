@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        },
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        },
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        },
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        },
+        {
+            "item": "minecraft:orange_dye"
+        },
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        },
+        {
+            "tag": "better_dyeables:banner/not_orange"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_banner",
+        "count": 6
+    },
+    "group": "orange_banner"
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:carpet/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_magenta"
+        },
+        {
+            "tag": "better_dyeables:carpet/not_magenta"
+        },
+        {
+            "item": "minecraft:magenta_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:magenta_carpet",
+        "count": 3
+    },
+    "group": "magenta_carpet"
+}

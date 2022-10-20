@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:banner/not_black"
+        },
+        {
+            "tag": "better_dyeables:banner/not_black"
+        },
+        {
+            "tag": "better_dyeables:banner/not_black"
+        },
+        {
+            "tag": "better_dyeables:banner/not_black"
+        },
+        {
+            "tag": "better_dyeables:dyes/black_dye"
+        },
+        {
+            "tag": "better_dyeables:banner/not_black"
+        },
+        {
+            "tag": "better_dyeables:banner/not_black"
+        }
+    ],
+    "result": {
+        "item": "minecraft:black_banner",
+        "count": 6
+    },
+    "group": "black_banner"
+}

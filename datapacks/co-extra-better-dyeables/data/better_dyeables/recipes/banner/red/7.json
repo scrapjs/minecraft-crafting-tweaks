@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "item": "minecraft:red_dye"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        },
+        {
+            "tag": "better_dyeables:banner/not_red"
+        }
+    ],
+    "result": {
+        "item": "minecraft:red_banner",
+        "count": 7
+    },
+    "group": "red_banner"
+}

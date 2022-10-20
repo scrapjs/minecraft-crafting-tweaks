@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "item": "minecraft:pink_dye"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        },
+        {
+            "tag": "better_dyeables:concrete/not_pink"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_concrete",
+        "count": 7
+    },
+    "group": "pink_concrete"
+}

@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        },
+        {
+            "item": "minecraft:gray_dye"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        },
+        {
+            "tag": "better_dyeables:glass_pane/not_gray"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gray_stained_glass_pane",
+        "count": 6
+    },
+    "group": "gray_glass_pane"
+}

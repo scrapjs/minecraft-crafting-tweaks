@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:banner/not_white"
+        },
+        {
+            "tag": "better_dyeables:banner/not_white"
+        },
+        {
+            "tag": "better_dyeables:banner/not_white"
+        },
+        {
+            "tag": "better_dyeables:banner/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        },
+        {
+            "tag": "better_dyeables:banner/not_white"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_banner",
+        "count": 5
+    },
+    "group": "white_banner"
+}

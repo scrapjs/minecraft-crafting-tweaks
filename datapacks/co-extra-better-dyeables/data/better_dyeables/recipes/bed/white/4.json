@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:bed/not_white"
+        },
+        {
+            "tag": "better_dyeables:bed/not_white"
+        },
+        {
+            "tag": "better_dyeables:bed/not_white"
+        },
+        {
+            "tag": "better_dyeables:bed/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_bed",
+        "count": 4
+    },
+    "group": "white_bed"
+}

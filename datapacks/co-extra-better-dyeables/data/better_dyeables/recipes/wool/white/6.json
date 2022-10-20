@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:dyes/white_dye"
+        },
+        {
+            "tag": "better_dyeables:wool/not_white"
+        },
+        {
+            "tag": "better_dyeables:wool/not_white"
+        }
+    ],
+    "result": {
+        "item": "minecraft:white_wool",
+        "count": 6
+    },
+    "group": "white_wool"
+}
