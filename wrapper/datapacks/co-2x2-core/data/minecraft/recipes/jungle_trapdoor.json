@@ -1,17 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "wooden_trapdoor",
-  "key": {
-    "#": {
-      "item": "minecraft:jungle_planks"
-    }
-  },
-  "pattern": [
-    "###",
-    "###"
-  ],
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "count": 3,
-    "item": "minecraft:jungle_trapdoor"
+    "item": "minecraft:air",
+    "count": 0
   }
 }

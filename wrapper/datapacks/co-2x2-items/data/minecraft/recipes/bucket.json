@@ -1,15 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:iron_ingot"
-    }
-  },
-  "pattern": [
-    "# ",
-    "##"
-  ],
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "item": "minecraft:bucket"
+    "item": "minecraft:air",
+    "count": 0
   }
 }

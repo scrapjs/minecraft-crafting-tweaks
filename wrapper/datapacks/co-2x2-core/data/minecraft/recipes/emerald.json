@@ -1,12 +1,10 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:emerald_block"
-    }
-  ],
+  "type": "minecraft:crafting_shaped",
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "item": "minecraft:emerald",
-    "count": 4
+    "item": "minecraft:air",
+    "count": 0
   }
 }

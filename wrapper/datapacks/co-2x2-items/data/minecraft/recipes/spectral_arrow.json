@@ -1,21 +1,10 @@
 {
-  "type": "minecraft:recipe_shapeless",
-  "ingredients": [
-      {
-          "item": "minecraft:glowstone_dust"
-      },
-      {
-          "item": "minecraft:glowstone_dust"
-      },
-      {
-          "item": "minecraft:glowstone_dust"
-      },
-      {
-          "item": "minecraft:arrow"
-      }
-  ],
+  "type": "minecraft:crafting_shaped",
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "count": 1,
-    "item": "minecraft:arrow"
+    "item": "minecraft:air",
+    "count": 0
   }
 }

@@ -1,23 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": [
-      {
-        "item": "minecraft:sand"
-      },
-      {
-        "item": "minecraft:red_sand"
-      }
-    ],
-    "X": {
-      "item": "minecraft:gunpowder"
-    }
-  },
-  "pattern": [
-    "#X",
-    "X#"
-  ],
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "item": "minecraft:tnt"
+    "item": "minecraft:air",
+    "count": 0
   }
 }

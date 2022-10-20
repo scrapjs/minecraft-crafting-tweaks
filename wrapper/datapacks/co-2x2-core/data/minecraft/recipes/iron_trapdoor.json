@@ -1,17 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "iron_door",
-  "pattern": [
-    "iii",
-    "iii"
-  ],
-  "key": {
-    "i": {
-      "item": "minecraft:iron_ingot"
-    }
-  },
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "item": "minecraft:iron_trapdoor",
-    "count": 3
+    "item": "minecraft:air",
+    "count": 0
   }
 }

@@ -1,17 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stained_glass_pane",
-  "key": {
-    "#": {
-      "item": "minecraft:magenta_stained_glass"
-    }
-  },
-  "pattern": [
-    "##",
-    "##"
-  ],
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "count": 8,
-    "item": "minecraft:magenta_stained_glass_pane"
+    "item": "minecraft:air",
+    "count": 0
   }
 }

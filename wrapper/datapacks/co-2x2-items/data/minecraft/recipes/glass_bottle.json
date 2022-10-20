@@ -1,16 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:glass"
-    }
-  },
-  "pattern": [
-    "# ",
-    "##"
-  ],
+  "group": "stub",
+  "pattern": [],
+  "key": {},
   "result": {
-    "count": 3,
-    "item": "minecraft:glass_bottle"
+    "item": "minecraft:air",
+    "count": 0
   }
 }
