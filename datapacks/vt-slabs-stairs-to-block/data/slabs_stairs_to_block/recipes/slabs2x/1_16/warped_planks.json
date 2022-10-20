@@ -4,9 +4,7 @@
         "##"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:warped_slab"
-        }
+        "#": {"item": "minecraft:warped_slab"}
     },
     "result": {
         "item": "minecraft:warped_planks",

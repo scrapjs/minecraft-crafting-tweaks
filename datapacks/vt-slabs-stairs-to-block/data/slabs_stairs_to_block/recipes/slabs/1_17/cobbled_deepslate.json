@@ -1,18 +1,11 @@
+
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "item": "minecraft:cobbled_deepslate_slab"
-        },
-        {
-            "item": "minecraft:cobbled_deepslate_slab"
-        },
-        {
-            "item": "minecraft:cobbled_deepslate_slab"
-        },
-        {
-            "item": "minecraft:cobbled_deepslate_slab"
-        }
+        {"item": "minecraft:cobbled_deepslate_slab"},
+        {"item": "minecraft:cobbled_deepslate_slab"},
+        {"item": "minecraft:cobbled_deepslate_slab"},
+        {"item": "minecraft:cobbled_deepslate_slab"}
     ],
     "result": {
         "item": "minecraft:cobbled_deepslate",

@@ -1,13 +1,10 @@
-
 {
     "type": "crafting_shaped",
     "pattern": [
-    	"##"
+        "##"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:purpur_slab"
-        }
+        "#": {"item": "minecraft:purpur_slab"}
     },
     "result": {
         "item": "minecraft:purpur_block",

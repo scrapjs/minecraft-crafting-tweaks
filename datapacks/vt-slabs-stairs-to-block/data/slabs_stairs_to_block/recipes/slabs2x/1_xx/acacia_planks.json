@@ -4,9 +4,7 @@
         "##"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:acacia_slab"
-        }
+        "#": {"item": "minecraft:acacia_slab"}
     },
     "result": {
         "item": "minecraft:acacia_planks",

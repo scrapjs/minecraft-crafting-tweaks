@@ -4,9 +4,7 @@
         "##"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:polished_deepslate_slab"
-        }
+        "#": {"item": "minecraft:polished_deepslate_slab"}
     },
     "result": {
         "item": "minecraft:polished_deepslate",

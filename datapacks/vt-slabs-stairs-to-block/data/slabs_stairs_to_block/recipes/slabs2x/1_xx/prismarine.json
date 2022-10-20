@@ -4,9 +4,7 @@
         "##"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:prismarine_slab"
-        }
+        "#": {"item": "minecraft:prismarine_slab"}
     },
     "result": {
         "item": "minecraft:prismarine",

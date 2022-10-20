@@ -1,22 +1,15 @@
+
 {
-    "type": "crafting_shapeless",
+    "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "item": "minecraft:polished_deepslate_stairs"
-        },
-        {
-            "item": "minecraft:polished_deepslate_stairs"
-        },
-        {
-            "item": "minecraft:polished_deepslate_stairs"
-        },
-        {
-            "item": "minecraft:polished_deepslate_stairs"
-        }
+        {"item": "minecraft:polished_deepslate_stairs"},
+        {"item": "minecraft:polished_deepslate_stairs"},
+        {"item": "minecraft:polished_deepslate_stairs"},
+        {"item": "minecraft:polished_deepslate_stairs"}
     ],
     "result": {
         "item": "minecraft:polished_deepslate",
         "count": 3
     },
-    "group": "stairs_to_block"
+    "group": "stairs_to_blocks"
 }
