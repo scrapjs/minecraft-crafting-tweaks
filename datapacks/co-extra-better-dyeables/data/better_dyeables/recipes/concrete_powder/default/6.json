@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/default"},
+        {"tag": "better_dyeables:concrete_powder"},
+        {"tag": "better_dyeables:concrete_powder"},
+        {"tag": "better_dyeables:concrete_powder"},
+        {"tag": "better_dyeables:concrete_powder"},
+        {"tag": "better_dyeables:concrete_powder"},
+        {"tag": "better_dyeables:concrete_powder"}
+    ],
+    "result": {
+        "item": "minecraft:concrete_powder",
+        "count": 6
+    },
+    "group": "default_concrete_powder"
+}

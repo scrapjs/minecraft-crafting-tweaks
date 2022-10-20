@@ -1,27 +1,13 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        },
-        {
-            "item": "minecraft:purple_dye"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_purple"
-        }
+        {"tag": "better_dyeables:dye/purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"},
+        {"tag": "better_dyeables:glass_pane/not_purple"}
     ],
     "result": {
         "item": "minecraft:purple_stained_glass_pane",

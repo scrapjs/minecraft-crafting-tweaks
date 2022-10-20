@@ -1,21 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:terracotta/not_green"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_green"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_green"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_green"
-        },
-        {
-            "item": "minecraft:green_dye"
-        }
+        {"tag": "better_dyeables:dye/green"},
+        {"tag": "better_dyeables:terracotta/not_green"},
+        {"tag": "better_dyeables:terracotta/not_green"},
+        {"tag": "better_dyeables:terracotta/not_green"},
+        {"tag": "better_dyeables:terracotta/not_green"}
     ],
     "result": {
         "item": "minecraft:green_terracotta",

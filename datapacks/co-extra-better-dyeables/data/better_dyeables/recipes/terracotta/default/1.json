@@ -1,12 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:terracotta"
-        },
-        {
-            "item": "minecraft:ice"
-        }
+        {"tag": "better_dyeables:dye/default"},
+        {"tag": "better_dyeables:terracotta"}
     ],
     "result": {
         "item": "minecraft:terracotta",

@@ -1,33 +1,15 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "item": "minecraft:lime_dye"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        },
-        {
-            "tag": "better_dyeables:candle/not_lime"
-        }
+        {"tag": "better_dyeables:dye/lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"},
+        {"tag": "better_dyeables:candle/not_lime"}
     ],
     "result": {
         "item": "minecraft:lime_candle",

@@ -1,24 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:bed/not_black"
-        },
-        {
-            "tag": "better_dyeables:bed/not_black"
-        },
-        {
-            "tag": "better_dyeables:bed/not_black"
-        },
-        {
-            "tag": "better_dyeables:bed/not_black"
-        },
-        {
-            "tag": "better_dyeables:dyes/black_dye"
-        },
-        {
-            "tag": "better_dyeables:bed/not_black"
-        }
+        {"tag": "better_dyeables:dye/black"},
+        {"tag": "better_dyeables:bed/not_black"},
+        {"tag": "better_dyeables:bed/not_black"},
+        {"tag": "better_dyeables:bed/not_black"},
+        {"tag": "better_dyeables:bed/not_black"},
+        {"tag": "better_dyeables:bed/not_black"}
     ],
     "result": {
         "item": "minecraft:black_bed",

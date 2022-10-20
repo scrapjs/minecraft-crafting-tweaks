@@ -1,12 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:terracotta/not_gray"
-        },
-        {
-            "item": "minecraft:gray_dye"
-        }
+        {"tag": "better_dyeables:dye/gray"},
+        {"tag": "better_dyeables:terracotta/not_gray"}
     ],
     "result": {
         "item": "minecraft:gray_terracotta",

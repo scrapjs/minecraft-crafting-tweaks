@@ -13,6 +13,7 @@ A quintessentially different datapack. Such as "Universal Dyeing", "Better Dyeab
 - Added missed features.
 - Added not-same color policy.
 - Resorted and reordered.
+- **I made almost full generator of such datapack!**
 
 ### TODO
 
@@ -22,3 +23,5 @@ A quintessentially different datapack. Such as "Universal Dyeing", "Better Dyeab
 
 https://www.planetminecraft.com/data-pack/better-dyeables/ <br/>
 Added some modified files from Vanilla Tweaks.
+
+**But since I have my own script generator, I no longer have to worry about copyright.**

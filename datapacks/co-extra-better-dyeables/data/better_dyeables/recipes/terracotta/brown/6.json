@@ -1,27 +1,13 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        },
-        {
-            "tag": "better_dyeables:dyes/brown_dye"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_brown"
-        }
+        {"tag": "better_dyeables:dye/brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"},
+        {"tag": "better_dyeables:terracotta/not_brown"}
     ],
     "result": {
         "item": "minecraft:brown_terracotta",

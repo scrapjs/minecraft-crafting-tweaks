@@ -1,27 +1,13 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        },
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        },
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        },
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        },
-        {
-            "item": "minecraft:magenta_dye"
-        },
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        },
-        {
-            "tag": "better_dyeables:bed/not_magenta"
-        }
+        {"tag": "better_dyeables:dye/magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"},
+        {"tag": "better_dyeables:bed/not_magenta"}
     ],
     "result": {
         "item": "minecraft:magenta_bed",

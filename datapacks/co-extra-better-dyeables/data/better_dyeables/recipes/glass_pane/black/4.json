@@ -1,21 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:glass_pane/not_black"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_black"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_black"
-        },
-        {
-            "tag": "better_dyeables:glass_pane/not_black"
-        },
-        {
-            "tag": "better_dyeables:dyes/black_dye"
-        }
+        {"tag": "better_dyeables:dye/black"},
+        {"tag": "better_dyeables:glass_pane/not_black"},
+        {"tag": "better_dyeables:glass_pane/not_black"},
+        {"tag": "better_dyeables:glass_pane/not_black"},
+        {"tag": "better_dyeables:glass_pane/not_black"}
     ],
     "result": {
         "item": "minecraft:black_stained_glass_pane",

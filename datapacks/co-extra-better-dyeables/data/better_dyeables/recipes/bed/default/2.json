@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/default"},
+        {"tag": "better_dyeables:bed"},
+        {"tag": "better_dyeables:bed"}
+    ],
+    "result": {
+        "item": "minecraft:bed",
+        "count": 2
+    },
+    "group": "default_bed"
+}

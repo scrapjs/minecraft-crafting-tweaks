@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/default"},
+        {"tag": "better_dyeables:banner"},
+        {"tag": "better_dyeables:banner"},
+        {"tag": "better_dyeables:banner"},
+        {"tag": "better_dyeables:banner"},
+        {"tag": "better_dyeables:banner"}
+    ],
+    "result": {
+        "item": "minecraft:banner",
+        "count": 5
+    },
+    "group": "default_banner"
+}

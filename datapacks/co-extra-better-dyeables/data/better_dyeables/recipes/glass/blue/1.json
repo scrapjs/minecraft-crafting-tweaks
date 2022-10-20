@@ -1,12 +1,8 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:glass/not_blue"
-        },
-        {
-            "tag": "better_dyeables:dyes/blue_dye"
-        }
+        {"tag": "better_dyeables:dye/blue"},
+        {"tag": "better_dyeables:glass/not_blue"}
     ],
     "result": {
         "item": "minecraft:blue_stained_glass",

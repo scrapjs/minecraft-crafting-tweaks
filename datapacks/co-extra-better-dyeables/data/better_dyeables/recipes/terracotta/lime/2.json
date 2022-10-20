@@ -1,15 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:terracotta/not_lime"
-        },
-        {
-            "tag": "better_dyeables:terracotta/not_lime"
-        },
-        {
-            "item": "minecraft:lime_dye"
-        }
+        {"tag": "better_dyeables:dye/lime"},
+        {"tag": "better_dyeables:terracotta/not_lime"},
+        {"tag": "better_dyeables:terracotta/not_lime"}
     ],
     "result": {
         "item": "minecraft:lime_terracotta",

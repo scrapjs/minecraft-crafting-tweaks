@@ -1,30 +1,14 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "item": "minecraft:yellow_dye"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        },
-        {
-            "tag": "better_dyeables:candle/not_yellow"
-        }
+        {"tag": "better_dyeables:dye/yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"},
+        {"tag": "better_dyeables:candle/not_yellow"}
     ],
     "result": {
         "item": "minecraft:yellow_candle",

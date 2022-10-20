@@ -1,24 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:glass/not_orange"
-        },
-        {
-            "tag": "better_dyeables:glass/not_orange"
-        },
-        {
-            "tag": "better_dyeables:glass/not_orange"
-        },
-        {
-            "tag": "better_dyeables:glass/not_orange"
-        },
-        {
-            "item": "minecraft:orange_dye"
-        },
-        {
-            "tag": "better_dyeables:glass/not_orange"
-        }
+        {"tag": "better_dyeables:dye/orange"},
+        {"tag": "better_dyeables:glass/not_orange"},
+        {"tag": "better_dyeables:glass/not_orange"},
+        {"tag": "better_dyeables:glass/not_orange"},
+        {"tag": "better_dyeables:glass/not_orange"},
+        {"tag": "better_dyeables:glass/not_orange"}
     ],
     "result": {
         "item": "minecraft:orange_stained_glass",

@@ -1,18 +1,10 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "tag": "better_dyeables:wool/not_cyan"
-        },
-        {
-            "tag": "better_dyeables:wool/not_cyan"
-        },
-        {
-            "tag": "better_dyeables:wool/not_cyan"
-        },
-        {
-            "item": "minecraft:cyan_dye"
-        }
+        {"tag": "better_dyeables:dye/cyan"},
+        {"tag": "better_dyeables:wool/not_cyan"},
+        {"tag": "better_dyeables:wool/not_cyan"},
+        {"tag": "better_dyeables:wool/not_cyan"}
     ],
     "result": {
         "item": "minecraft:cyan_wool",
