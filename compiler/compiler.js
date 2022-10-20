@@ -12,7 +12,8 @@ let usedModules = [
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",
     "vt-straight-to-shapeless", 
-    "vt-unpackable-wool"
+    "vt-unpackable-wool",
+    "vt-more-stairs"
 ];
 
 let usedMCVersion = "1_19";

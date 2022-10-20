@@ -1,11 +1,10 @@
 # Vanilla Tweaks mod - more stairs
 
-### Version 1.19
-
 ### Changes
 
-- Nonsense
+- Reorganize for datapack compiler
+- `co-disable-default-stairs` now required
 
-### INCOMPATIBLE
+### REQUIREMENTS
 
 - `co-disable-default-stairs`

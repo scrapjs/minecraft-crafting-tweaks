@@ -4,7 +4,10 @@
 
 - Disable vanilla stair crafts.
 
-### INCOMPATIBLE
+### REQUIREMENTS FOR
 
 - `vt-more-stairs`
+
+### INCOMPATIBLE
+
 - Vanilla Tweaks More Stairs
