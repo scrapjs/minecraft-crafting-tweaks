@@ -44,6 +44,7 @@
 
 ### TODO
 
+- More sorting and organizing.
 - Make single datapack compiler.
 - Compatibility with other versions of MC.
 - Add missed blocks and items
