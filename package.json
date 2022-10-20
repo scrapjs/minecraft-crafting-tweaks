@@ -1,0 +1,27 @@
+{
+  "name": "crafting-recipes-overhaul",
+  "version": "1.0.0",
+  "description": "- https://www.planetminecraft.com/data-pack/minecraft-crafting-overhaul/\r - https://www.curseforge.com/minecraft/customization/crafting-recipes-overhaul",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hydra2s/crafting-recipes-overhaul.git"
+  },
+  "keywords": [
+    "minecraft",
+    "datapack",
+    "modular"
+  ],
+  "author": "helixd, helixd2s, hydra2s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hydra2s/crafting-recipes-overhaul/issues"
+  },
+  "homepage": "https://github.com/hydra2s/crafting-recipes-overhaul#readme",
+  "dependencies": {
+    "merge-trees": "^2.0.0"
+  }
+}

@@ -185,3 +185,6 @@ dist
 *.exe
 *.out
 *.app
+
+compiler/datapack
+compiler/datapack/*
