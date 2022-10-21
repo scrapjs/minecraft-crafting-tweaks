@@ -7,7 +7,7 @@
 ## Datapacks or mod info links
 
 - https://www.planetminecraft.com/data-pack/minecraft-crafting-overhaul/
-- https://www.curseforge.com/minecraft/customization/crafting-recipes-overhaul
+- https://www.curseforge.com/minecraft/texture-packs/crafting-recipes-overhaul
 
 ## Minecraft mod or datapack for 2x2 crafts
 
