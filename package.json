@@ -23,6 +23,7 @@
   "homepage": "https://github.com/hydra2s/crafting-recipes-overhaul#readme",
   "dependencies": {
     "crlf-normalize": "^1.0.16",
+    "fs-extra": "^10.1.0",
     "merge-trees": "^2.0.0"
   }
 }

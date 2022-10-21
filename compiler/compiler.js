@@ -190,6 +190,7 @@ let stairs = [
 //
 let MergeTrees = require('merge-trees');
 let fs = require('fs');
+let fse = require('fs-extra');
 let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 
 let templateShapelessSingle = (options, outCount)=>{
@@ -587,3 +588,8 @@ files.forEach((filename)=>{
     };
 });
 
+// copy required files
+files = fs.readdirSync("./required");
+files.forEach((filename)=>{
+    fse.copySync(`./required/${filename}`, `../datapack/${filename}`);
+});
