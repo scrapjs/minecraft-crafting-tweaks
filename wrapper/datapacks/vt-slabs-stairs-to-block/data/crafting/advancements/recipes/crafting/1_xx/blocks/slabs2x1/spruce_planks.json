@@ -1,0 +1,17 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_slab": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:spruce_slab"}]}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:spruce_planks"}]}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "crafting:1_xx/blocks/slabs2x1/spruce_planks"
+            }
+        }
+    },
+    "requirements": [
+        ["has_slab","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["crafting:1_xx/blocks/slabs2x1/spruce_planks"] }
+}

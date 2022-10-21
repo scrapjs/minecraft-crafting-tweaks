@@ -301,6 +301,44 @@ let templateStairs2x2 = (options)=>{
 }`, CRLF);
 };
 
+
+
+
+let advancementTemplate = (options)=>{
+    let criterias = [];
+    let criteraNames = [];
+    
+    for (let key in options.criterias) {
+        criteraNames.push(key);
+        criterias.push(options.criterias[key]);
+    };
+    
+    let criteriaStrings = [];
+    for (let i=0;i<criterias.length;i++) {
+        criteriaStrings.push(`
+        "${criteraNames[i]}": ${JSON.stringify(criterias[i])}`);
+    };
+    
+    return crlf(`{
+    "parent": "minecraft:recipes/root",
+    "criteria": {${criteriaStrings.join(",")},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "${options.recipeAddress}"
+            }
+        }
+    },
+    "requirements": [
+        [${criteraNames.map((n)=>{return `"${n}"`;}).join(",")},"has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["${options.recipeAddress}"] }
+}`, CRLF);
+};
+
+
+
+
 let names = ["banner", "bed", "candle", "concrete", "carpet", "concrete_powder", "glass", "glass_pane", "glazed_terracotta", "terracotta", "wool"];
 let colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow", "default"];
 
@@ -359,73 +397,164 @@ if (usedModules.indexOf("co-disable-default-stairs") != -1) {
 
 //
 if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
-    let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/recipes`;
+    {
+        let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
 
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
-    names.forEach((name)=>{
-        colors.forEach((color)=>{
-            for (let i=1;i<=8;i++) {
-                //fs.writeFileSync(`${name}/${color}/${i}.json`, whatReplace(name, color, fs.readFileSync(`${name}/${color}/${i}.json`, 'utf8')), 'utf8');
-                fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
-                fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
-                    color, name, count: i
-                }), 'utf8');
-            }
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        names.forEach((name)=>{
+            colors.forEach((color)=>{
+                for (let i=1;i<=8;i++) {
+                    let rejectionCode = color != "default" ? `/not_${color}` : ``;
+                    let mcName = 
+                        (name == "glass" || name == "glass_pane") && 
+                         color != "default" ? 
+                            `${color}_stained_${name}` : 
+                              (color != "default" ? `${color}_${name}` : `${name}`);
+                    
+                    let criterias = {};
+                    criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
+                    criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
+                    criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
+                    
+                    fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
+                    fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, advancementTemplate({
+                        criterias, recipeAddress: `better_dyeables:${name}/${color}/${i}`
+                    }), 'utf8');
+                }
+            });
         });
-    });
+    }
+    
+    {
+        let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/recipes`;
+        
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        names.forEach((name)=>{
+            colors.forEach((color)=>{
+                for (let i=1;i<=8;i++) {
+                    fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
+                    fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
+                        color, name, count: i
+                    }), 'utf8');
+                }
+            });
+        });
+    }
 };
 
 //
 if (usedModules.indexOf("co-2x2-slabs") != -1) {
-    let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/recipes/`;
+    {
+        let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/advancements/recipes/crafting`;
 
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
-    slabs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
-        };
-    });
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        slabs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                let criterias = {};
+                criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
+                criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+                
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/slabs/blocks2x1/${obj.input}` }), 'utf8');
+            };
+        });
+    }
+    
+    {
+        let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/recipes`;
+
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        slabs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, templateSlab2x1(obj), 'utf8');
+            };
+        });
+    }
 };
 
 //
 if (usedModules.indexOf("co-2x2-stairs") != -1) {
-    let rootDir = `../wrapper/datapacks/co-2x2-stairs/data/crafting/recipes/`;
+    {
+        let rootDir = `../wrapper/datapacks/co-2x2-stairs/data/crafting/advancements/recipes/crafting`;
 
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
-    stairs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
-        };
-    });
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        stairs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                let criterias = {};
+                criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
+                criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+                
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/stairs/blocks2x2/${obj.input}` }), 'utf8');
+            };
+        });
+    }
+    
+    {
+        let rootDir = `../wrapper/datapacks/co-2x2-stairs/data/crafting/recipes`;
+
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+        stairs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, templateStairs2x2(obj), 'utf8');
+            };
+        });
+    }
 };
 
 //
 if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
-    let rootDir = `../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/recipes`;
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+    {
+        let rootDir = `../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/advancements/recipes/crafting`;
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
-    stairs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
-        };
-    });
+        stairs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                let criterias = {};
+                criterias["has_stairs"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+                criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
+                
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/blocks/stairs2x2/${obj.source}` }), 'utf8');
+            };
+        });
 
-    slabs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
-        };
-    });
+        slabs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                let criterias = {};
+                criterias["has_slab"  ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+                criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
+                
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x2/${obj.source}` }), 'utf8');
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x1/${obj.source}` }), 'utf8');
+            };
+        });
+    };
+    
+    {
+        let rootDir = `../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/recipes`;
+        fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
-    slabs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
-            fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
-        };
-    });
+        stairs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, templateStairs2x2Reverse(obj), 'utf8');
+            };
+        });
+
+        slabs.forEach((obj)=>{
+            if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
+                fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, templateSlab2x2Reverse(obj), 'utf8');
+                fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, templateSlab2x1Reverse(obj), 'utf8');
+            };
+        });
+    };
 };
 
 //
@@ -444,3 +573,4 @@ files.forEach((filename)=>{
         fs.rmSync(`../datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
     };
 });
+
