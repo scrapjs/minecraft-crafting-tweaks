@@ -6,7 +6,7 @@
         "##"
     ],
     "key": {
-        "#": { "tag": "crafting:horn_coral" }
+        "#": { "tag": "crafting:coral/horn_coral" }
     },
     "result": {
         "item": "minecraft:horn_coral_block",

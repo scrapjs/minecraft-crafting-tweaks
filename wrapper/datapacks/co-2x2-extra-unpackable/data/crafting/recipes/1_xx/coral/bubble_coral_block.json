@@ -6,7 +6,7 @@
         "##"
     ],
     "key": {
-        "#": { "tag": "crafting:bubble_coral" }
+        "#": { "tag": "crafting:coral/bubble_coral" }
     },
     "result": {
         "item": "minecraft:bubble_coral_block",
