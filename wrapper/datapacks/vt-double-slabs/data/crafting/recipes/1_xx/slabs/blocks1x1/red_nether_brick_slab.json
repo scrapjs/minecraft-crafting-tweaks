@@ -1,13 +1,12 @@
+
 {
-    "type": "crafting_shapeless",
+    "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        {
-            "item": "minecraft:red_nether_bricks"
-        }
+        {"item": "minecraft:red_nether_bricks"}
     ],
     "result": {
         "item": "minecraft:red_nether_brick_slab",
         "count": 2
     },
-    "group": "block_to_2_slabs"
+    "group": "stairs_to_blocks"
 }

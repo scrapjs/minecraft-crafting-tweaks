@@ -45,29 +45,29 @@ let mcVersionString = {
 
 
 let slabs = [
-    {"source": "blackstone", "input": "blackstone_slab", "mc_version": "1_16"},
+    {"source": "blackstone", "input": "blackstone_slab", "mc_version": "1_16", single: true},
     {"source": "crimson_planks", "input": "crimson_slab", "mc_version": "1_16", "group": "wooden_slab"},
     {"source": "warped_planks", "input": "warped_slab", "mc_version": "1_16", "group": "wooden_slab"},
     {"source": "polished_blackstone", "input": "polished_blackstone_slab", "mc_version": "1_16"},
-    {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_slab", "mc_version": "1_16"},
+    {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_slab", "mc_version": "1_16", single: true},
 
-    {"source": "cobbled_deepslate", "input": "cobbled_deepslate_slab", "mc_version": "1_17"},
-    {"source": "deepslate_bricks", "input": "deepslate_brick_slab", "mc_version": "1_17"},
-    {"source": "deepslate_tiles", "input": "deepslate_tile_slab", "mc_version": "1_17"},
-    {"source": "polished_deepslate", "input": "polished_deepslate_slab", "mc_version": "1_17"},
+    {"source": "cobbled_deepslate", "input": "cobbled_deepslate_slab", "mc_version": "1_17", single: true},
+    {"source": "deepslate_bricks", "input": "deepslate_brick_slab", "mc_version": "1_17", single: true},
+    {"source": "deepslate_tiles", "input": "deepslate_tile_slab", "mc_version": "1_17", single: true},
+    {"source": "polished_deepslate", "input": "polished_deepslate_slab", "mc_version": "1_17", single: true},
 
-    {"source": "cut_copper", "input": "cut_copper_slab", "mc_version": "1_17", from: ["copper_block"]},
-    {"source": "weathered_cut_copper", "input": "weathered_cut_copper_slab", "mc_version": "1_17", from: ["weathered_copper"]},
-    {"source": "exposed_cut_copper", "input": "exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"]},
-    {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"]},
+    {"source": "cut_copper", "input": "cut_copper_slab", "mc_version": "1_17", from: ["copper_block"], single: true},
+    {"source": "weathered_cut_copper", "input": "weathered_cut_copper_slab", "mc_version": "1_17", from: ["weathered_copper"], single: true},
+    {"source": "exposed_cut_copper", "input": "exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"], single: true},
+    {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"], single: true},
 
-    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"]},
-    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"]},
-    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"]},
-    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"]},
+    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"], single: true},
+    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"], single: true},
+    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"], single: true},
+    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"], single: true},
 
     {"source": "mangrove_planks", "input": "mangrove_slab", "mc_version": "1_19", "group": "wooden_slab"},
-    {"source": "mud_bricks", "input": "mud_brick_slab", "mc_version": "1_19"},
+    {"source": "mud_bricks", "input": "mud_brick_slab", "mc_version": "1_19", single: true},
 
     {"source": "acacia_planks", "input": "acacia_slab", "mc_version": "1_xx", "group": "wooden_slab"},
     {"source": "oak_planks", "input": "oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
@@ -76,44 +76,44 @@ let slabs = [
     {"source": "spruce_planks", "input": "spruce_slab", "mc_version": "1_xx", "group": "wooden_slab"},
     {"source": "jungle_planks", "input": "jungle_slab", "mc_version": "1_xx", "group": "wooden_slab"},
 
-    {"source": "bricks", "input": "brick_slab", "mc_version": "1_xx"},
+    {"source": "bricks", "input": "brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "cobblestone", "input": "cobblestone_slab", "mc_version": "1_xx"},
-    {"source": "mossy_cobblestone", "input": "mossy_cobblestone_slab", "mc_version": "1_xx"},
+    {"source": "cobblestone", "input": "cobblestone_slab", "mc_version": "1_xx", single: true},
+    {"source": "mossy_cobblestone", "input": "mossy_cobblestone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "stone_bricks", "input": "stone_brick_slab", "mc_version": "1_xx"},
+    {"source": "stone_bricks", "input": "stone_brick_slab", "mc_version": "1_xx", single: true},
     {"source": "stone", "input": "stone_slab", "mc_version": "1_xx"},
-    {"source": "mossy_stone_bricks", "input": "mossy_stone_brick_slab", "mc_version": "1_xx"},
+    {"source": "mossy_stone_bricks", "input": "mossy_stone_brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "cut_red_sandstone", "input": "cut_red_sandstone_slab", "mc_version": "1_xx"},
-    {"source": "cut_sandstone", "input": "cut_sandstone_slab", "mc_version": "1_xx"},
+    {"source": "cut_red_sandstone", "input": "cut_red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "cut_sandstone", "input": "cut_sandstone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "red_sandstone", "input": "red_sandstone_slab", "mc_version": "1_xx"},
-    {"source": "sandstone", "input": "sandstone_slab", "mc_version": "1_xx"},
+    {"source": "red_sandstone", "input": "red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "sandstone", "input": "sandstone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "smooth_stone", "input": "smooth_stone_slab", "mc_version": "1_xx"},
-    {"source": "smooth_sandstone", "input": "smooth_sandstone_slab", "mc_version": "1_xx"},
-    {"source": "smooth_red_sandstone", "input": "smooth_red_sandstone_slab", "mc_version": "1_xx"},
-    {"source": "smooth_quartz", "input": "smooth_quartz_slab", "mc_version": "1_xx"},
+    {"source": "smooth_stone", "input": "smooth_stone_slab", "mc_version": "1_xx", single: true},
+    {"source": "smooth_sandstone", "input": "smooth_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "smooth_red_sandstone", "input": "smooth_red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "smooth_quartz", "input": "smooth_quartz_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "red_nether_bricks", "input": "red_nether_brick_slab", "mc_version": "1_xx"},
-    {"source": "nether_bricks", "input": "nether_brick_slab", "mc_version": "1_xx"},
+    {"source": "red_nether_bricks", "input": "red_nether_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "nether_bricks", "input": "nether_brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "diorite", "input": "diorite_slab", "mc_version": "1_xx"},
-    {"source": "granite", "input": "granite_slab", "mc_version": "1_xx"},
-    {"source": "andesite", "input": "andesite_slab", "mc_version": "1_xx"},
+    {"source": "diorite", "input": "diorite_slab", "mc_version": "1_xx", single: true},
+    {"source": "granite", "input": "granite_slab", "mc_version": "1_xx", single: true},
+    {"source": "andesite", "input": "andesite_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "polished_diorite", "input": "polished_diorite_slab", "mc_version": "1_xx"},
-    {"source": "polished_granite", "input": "polished_granite_slab", "mc_version": "1_xx"},
-    {"source": "polished_andesite", "input": "polished_andesite_slab", "mc_version": "1_xx"},
+    {"source": "polished_diorite", "input": "polished_diorite_slab", "mc_version": "1_xx", single: true},
+    {"source": "polished_granite", "input": "polished_granite_slab", "mc_version": "1_xx", single: true},
+    {"source": "polished_andesite", "input": "polished_andesite_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "prismarine_bricks", "input": "prismarine_brick_slab", "mc_version": "1_xx"},
-    {"source": "prismarine", "input": "prismarine_slab", "mc_version": "1_xx"},
-    {"source": "dark_prismarine", "input": "dark_prismarine_slab", "mc_version": "1_xx"},
+    {"source": "prismarine_bricks", "input": "prismarine_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "prismarine", "input": "prismarine_slab", "mc_version": "1_xx", single: true},
+    {"source": "dark_prismarine", "input": "dark_prismarine_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "quartz_block", "input": "quartz_slab", "mc_version": "1_xx"},
-    {"source": "purpur_block", "input": "purpur_slab", "mc_version": "1_xx"},
-    {"source": "end_stone_bricks", "input": "end_stone_brick_slab", "mc_version": "1_xx"}
+    {"source": "quartz_block", "input": "quartz_slab", "mc_version": "1_xx", single: true},
+    {"source": "purpur_block", "input": "purpur_slab", "mc_version": "1_xx", single: true},
+    {"source": "end_stone_bricks", "input": "end_stone_brick_slab", "mc_version": "1_xx", single: true}
 ];
 
 let stairs = [
@@ -402,8 +402,41 @@ if (usedModules.indexOf("co-2x2-slabs") != -1) {
             fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, templateShapedSingle({
                 input: obj.source,
                 result: obj.input,
-                group: obj.group ? obj.group : "blocks_to_slab"
+                group: obj.group ? obj.group : "blocks_to_slabs"
             }, slabs2x1Pattern, 4), 'utf8');
+        };
+    });
+};
+
+//
+if (usedModules.indexOf("vt-double-slabs") != -1) {
+    let rootDirAdv = `../wrapper/datapacks/vt-double-slabs/data/crafting/advancements/recipes/crafting`;
+    let rootDir = `../wrapper/datapacks/vt-double-slabs/data/crafting/recipes`;
+
+    fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
+    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+
+    slabs.forEach((obj)=>{
+        if ((allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) && obj.single) {
+            let criterias = {};
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+            
+            // advancements
+            fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks1x1`, { recursive: true });
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks1x1/${obj.input}.json`, advancementTemplate({ 
+                criterias, 
+                recipeAddress: `crafting:${obj.mc_version}/slabs/blocks1x1/${obj.input}` 
+            }), 'utf8');
+            
+            // crafting
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks1x1`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks1x1/${obj.input}.json`, templateShapelessSingle({
+                input: obj.source,
+                result: obj.input,
+                count: 1,
+                group: obj.group ? obj.group : "block_to_slabs"
+            }, 2), 'utf8');
         };
     });
 };
