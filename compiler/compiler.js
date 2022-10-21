@@ -7,14 +7,14 @@ let usedModules = [
     "co-2x2-extra-log-crafts", 
     "co-2x2-items", 
     "co-2x1-slabs", 
-    "co-2x2-stairs", 
+    "co-1x1-slabs", 
+    "co-2x2-stairs",
+    "co-3x3-more-stairs",
     "co-2x2-extra-unpackable",
     "co-extra-better-dyeables",
-    "vt-double-slabs",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",
-    "vt-straight-to-shapeless",
-    "vt-more-stairs"
+    "vt-straight-to-shapeless"
 ];
 
 let usedMCVersion = "1_19";
@@ -414,9 +414,9 @@ if (usedModules.indexOf("co-2x2-slabs") != -1) {
 };
 
 //
-if (usedModules.indexOf("vt-double-slabs") != -1) {
-    let rootDirAdv = `../wrapper/datapacks/vt-double-slabs/data/crafting/advancements/recipes/crafting`;
-    let rootDir = `../wrapper/datapacks/vt-double-slabs/data/crafting/recipes`;
+if (usedModules.indexOf("co-1x1-slabs") != -1) {
+    let rootDirAdv = `../wrapper/datapacks/co-1x1-slabs/data/crafting/advancements/recipes/crafting`;
+    let rootDir = `../wrapper/datapacks/co-1x1-slabs/data/crafting/recipes`;
 
     fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
@@ -479,9 +479,9 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
 };
 
 //
-if (usedModules.indexOf("vt-more-stairs") != -1) {
-    let rootDirAdv = `../wrapper/datapacks/vt-more-stairs/data/crafting/advancements/recipes/crafting`;
-    let rootDir = `../wrapper/datapacks/vt-more-stairs/data/crafting/recipes`;
+if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
+    let rootDirAdv = `../wrapper/datapacks/co-3x3-more-stairs/data/crafting/advancements/recipes/crafting`;
+    let rootDir = `../wrapper/datapacks/co-3x3-more-stairs/data/crafting/recipes`;
 
     fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
