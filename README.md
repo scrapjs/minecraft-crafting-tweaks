@@ -44,12 +44,13 @@
 
 ### TODO
 
+- More datapack generation.
 - More sorting and organizing.
 - Make single datapack compiler.
 - Compatibility with other versions of MC.
 - Add missed blocks and items
 - Add additional features
-- Add advancements (finally)
+- Add advancements (finally, currently generated only)
 
 ### Problems
 
