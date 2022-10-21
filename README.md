@@ -25,13 +25,17 @@
 - Core datapack for 1.19 (with packing 2x2).
 - Disable default slabs and enable plates.
 - Disable default stairs.
-- Enable slabs 2x1 crafts.
-- Enable stairs 2x2 crafts.
+- Slabs 2x1 crafts.
+- Stairs 2x2 crafts.
+- Stairs 3x3 crafts (8 items).
 - Extra copper 2x2 crafts.
 - Extra wooden log 2x2 crafts.
-- Extra concrete powder crafts (**new!**).
-- Craft recipes 2x2 for items and tools (**new!**).
-- Overhaul download link.
+- Craft recipes 2x2 for items and tools.
+- Unpackable extra.
+- Extra better dyeables (most biggest).
+- Stairs and slabs to blocks.
+- Straight to shapeless items.
+- Powder to glass smelting.
 
 ### Balance changes
 
