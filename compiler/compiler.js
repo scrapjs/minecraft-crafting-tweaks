@@ -6,7 +6,7 @@ let usedModules = [
     "co-2x2-extra-cut-copper",
     "co-2x2-extra-log-crafts", 
     "co-2x2-items", 
-    "co-2x2-slabs", 
+    "co-2x1-slabs", 
     "co-2x2-stairs", 
     "co-2x2-extra-unpackable",
     "co-extra-better-dyeables",
