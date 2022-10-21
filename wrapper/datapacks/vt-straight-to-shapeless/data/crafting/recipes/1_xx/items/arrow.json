@@ -1,15 +1,9 @@
 {
-    "type": "minecraft:recipe_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
-        {
-            "item": "minecraft:flint"
-        },
-        {
-            "item": "minecraft:stick"
-        },
-        {
-            "item": "minecraft:feather"
-        }
+        { "item": "minecraft:flint" },
+        { "item": "minecraft:stick" },
+        { "item": "minecraft:feather" }
     ],
     "result": {
         "count": 4,
