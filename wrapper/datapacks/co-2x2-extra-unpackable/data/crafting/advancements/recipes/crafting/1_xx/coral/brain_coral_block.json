@@ -1,0 +1,41 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_coral": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:brain_coral"
+					}
+				]
+			}
+		},
+		"has_fan": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:brain_coral_fan"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "crafting:1_xx/coral/brain_coral_block"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_coral",
+			"has_fan",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": ["crafting:1_xx/coral/brain_coral_block"]
+	}
+}
