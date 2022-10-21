@@ -9,11 +9,11 @@ let usedModules = [
     "co-2x2-slabs", 
     "co-2x2-stairs", 
     "co-extra-better-dyeables", 
+    "co-extra-unpackable",
     "vt-double-slabs",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",
-    "vt-straight-to-shapeless", 
-    "vt-unpackable-wool",
+    "vt-straight-to-shapeless",
     "vt-more-stairs"
 ];
 

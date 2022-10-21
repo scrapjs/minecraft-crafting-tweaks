@@ -1,4 +1,4 @@
-# Vanilla Tweaks mod - unpackable wool
+# CO extra - unpackables
 
 ### Changes
 
