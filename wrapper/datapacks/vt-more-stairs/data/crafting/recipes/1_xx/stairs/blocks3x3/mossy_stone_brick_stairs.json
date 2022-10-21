@@ -1,18 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:mossy_stone_bricks"
-        }
+        "#": {"item": "minecraft:mossy_stone_bricks"}
     },
     "result": {
         "item": "minecraft:mossy_stone_brick_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

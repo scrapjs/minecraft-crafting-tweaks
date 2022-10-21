@@ -1,8 +1,6 @@
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
+    "pattern": ["##"],
     "key": {
         "#": {"item": "minecraft:purpur_block"}
     },
@@ -10,5 +8,5 @@
         "item": "minecraft:purpur_slab",
         "count": 4
     },
-    "group": "blocks_to_slabs"
+    "group": "blocks_to_slab"
 }

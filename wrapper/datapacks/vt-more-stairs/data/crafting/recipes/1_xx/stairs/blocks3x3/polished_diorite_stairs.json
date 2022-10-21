@@ -1,18 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:polished_diorite"
-        }
+        "#": {"item": "minecraft:polished_diorite"}
     },
     "result": {
         "item": "minecraft:polished_diorite_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

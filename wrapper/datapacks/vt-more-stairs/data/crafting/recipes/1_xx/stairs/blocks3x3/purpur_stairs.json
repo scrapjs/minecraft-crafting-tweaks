@@ -1,18 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:purpur_block"
-        }
+        "#": {"item": "minecraft:purpur_block"}
     },
     "result": {
         "item": "minecraft:purpur_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

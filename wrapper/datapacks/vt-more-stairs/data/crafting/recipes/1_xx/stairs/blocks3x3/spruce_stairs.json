@@ -1,19 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:spruce_planks"
-        }
+        "#": {"item": "minecraft:spruce_planks"}
     },
     "result": {
         "item": "minecraft:spruce_stairs",
         "count": 8
     },
-	"group": "wooden_stairs"
+    "group": "wooden_stairs"
 }

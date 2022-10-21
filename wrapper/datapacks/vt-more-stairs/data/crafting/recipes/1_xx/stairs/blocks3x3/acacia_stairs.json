@@ -1,19 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:acacia_planks"
-        }
+        "#": {"item": "minecraft:acacia_planks"}
     },
     "result": {
         "item": "minecraft:acacia_stairs",
         "count": 8
     },
-	"group": "wooden_stairs"
+    "group": "wooden_stairs"
 }

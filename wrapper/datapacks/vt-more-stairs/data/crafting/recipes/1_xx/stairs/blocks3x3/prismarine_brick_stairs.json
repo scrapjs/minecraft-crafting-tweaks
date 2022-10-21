@@ -1,19 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:prismarine_bricks"
-        }
+        "#": {"item": "minecraft:prismarine_bricks"}
     },
     "result": {
         "item": "minecraft:prismarine_brick_stairs",
         "count": 8
     },
-	"group": "prismarine_stairs"
+    "group": "blocks_to_stairs"
 }

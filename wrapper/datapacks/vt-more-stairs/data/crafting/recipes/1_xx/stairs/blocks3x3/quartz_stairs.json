@@ -1,18 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "tag": "more_stairs:quartz"
-        }
+        "#": {"item": "minecraft:quartz_block"}
     },
     "result": {
         "item": "minecraft:quartz_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

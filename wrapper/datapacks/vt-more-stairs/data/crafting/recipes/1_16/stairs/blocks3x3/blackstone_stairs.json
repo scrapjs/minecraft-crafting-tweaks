@@ -1,19 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:blackstone"
-        }
+        "#": {"item": "minecraft:blackstone"}
     },
     "result": {
         "item": "minecraft:blackstone_stairs",
         "count": 8
     },
-	"group": "wooden_stairs"
+    "group": "blocks_to_stairs"
 }

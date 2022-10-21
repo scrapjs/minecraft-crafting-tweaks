@@ -1,26 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
-	"key": {
-		"#": [
-			{
-				"item": "minecraft:sandstone"
-			},
-			{
-				"item": "minecraft:chiseled_sandstone"
-			},
-			{
-				"item": "minecraft:cut_sandstone"
-			}
-		]
-	},
+    "pattern": ["#  ", "## ", "###"],
+    "key": {
+        "#": {"item": "minecraft:sandstone"}
+    },
     "result": {
         "item": "minecraft:sandstone_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

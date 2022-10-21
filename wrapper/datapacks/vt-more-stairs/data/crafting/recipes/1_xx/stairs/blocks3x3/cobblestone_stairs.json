@@ -1,18 +1,12 @@
-
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "#  ",
-        "## ",
-        "###"
-    ],
+    "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {
-            "item": "minecraft:cobblestone"
-        }
+        "#": {"item": "minecraft:cobblestone"}
     },
     "result": {
         "item": "minecraft:cobblestone_stairs",
         "count": 8
-    }
+    },
+    "group": "blocks_to_stairs"
 }

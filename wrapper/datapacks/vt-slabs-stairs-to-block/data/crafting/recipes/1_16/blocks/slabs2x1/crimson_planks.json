@@ -1,8 +1,6 @@
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
+    "pattern": ["##"],
     "key": {
         "#": {"item": "minecraft:crimson_slab"}
     },
@@ -10,5 +8,5 @@
         "item": "minecraft:crimson_planks",
         "count": 1
     },
-    "group": "slabs_to_blocks"
+    "group": "wooden_slab"
 }

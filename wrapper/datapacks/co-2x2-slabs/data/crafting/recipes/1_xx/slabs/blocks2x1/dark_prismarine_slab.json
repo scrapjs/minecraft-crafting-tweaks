@@ -1,8 +1,6 @@
 {
     "type": "crafting_shaped",
-    "pattern": [
-        "##"
-    ],
+    "pattern": ["##"],
     "key": {
         "#": {"item": "minecraft:dark_prismarine"}
     },
@@ -10,5 +8,5 @@
         "item": "minecraft:dark_prismarine_slab",
         "count": 4
     },
-    "group": "blocks_to_slabs"
+    "group": "blocks_to_slab"
 }
