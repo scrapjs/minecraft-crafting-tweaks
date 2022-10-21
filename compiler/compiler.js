@@ -19,27 +19,31 @@ let usedModules = [
 
 let usedMCVersion = "1_19";
 
-
-
-let allowedData = {
-    "1_19": ["1_19", "1_18", "1_17", "1_16", "1_xx"],
-    "1_18": ["1_18", "1_17", "1_16", "1_xx"],
-    "1_17": ["1_17", "1_16", "1_xx"],
-    "1_16": ["1_16", "1_xx"]
+let disallowedData = {
+    "1_19": [],//["1_19", "1_18", "1_17", "1_16", "1_xx"],
+    "1_18": ["1_19"],//["1_18", "1_17", "1_16", "1_xx"],
+    "1_17": ["1_19", "1_18"],//["1_17", "1_16", "1_xx"],
+    "1_16": ["1_19", "1_18", "1_17"],//["1_16", "1_xx"]
+    "1_15": ["1_19", "1_18", "1_17", "1_16"],
+    "1_xx": ["1_19", "1_18", "1_17", "1_16"]
 };
 
 let dataVersion = {
     "1_19": 10,
     "1_18": 9,
     "1_17": 8,
-    "1_16": 7
+    "1_16": 7,
+    "1_15": 6,
+    "1_xx": 6
 };
 
 let mcVersionString = {
     "1_19": "1.19.x",
     "1_18": "1.18.x",
     "1_17": "1.17.x",
-    "1_16": "1.16.x"
+    "1_16": "1.16.x",
+    "1_15": "1.15.x",
+    "1_xx": "1.15.x"
 };
 
 
@@ -386,7 +390,7 @@ if (usedModules.indexOf("co-2x2-slabs") != -1) {
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
     slabs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
             criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
@@ -418,7 +422,7 @@ if (usedModules.indexOf("vt-double-slabs") != -1) {
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
     slabs.forEach((obj)=>{
-        if ((allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) && obj.single) {
+        if ((disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && obj.single) {
             let criterias = {};
             criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
@@ -451,7 +455,7 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
     stairs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
             criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
@@ -483,7 +487,7 @@ if (usedModules.indexOf("vt-more-stairs") != -1) {
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
     stairs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
             criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
@@ -515,7 +519,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
     stairs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
             criterias["has_stairs"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
@@ -536,7 +540,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     });
 
     slabs.forEach((obj)=>{
-        if (allowedData[usedMCVersion].indexOf(obj.mc_version) != -1 || !obj.mc_version) {
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
             criterias["has_slab"  ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
             criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
@@ -583,8 +587,16 @@ mergeTrees.merge();
 // remove disallowed version data from "crafting"
 let files = fs.readdirSync("../datapack/data/crafting/recipes");
 files.forEach((filename)=>{
-    if (allowedData[usedMCVersion].indexOf(filename) == -1) {
+    if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
         fs.rmSync(`../datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
+    };
+});
+
+// remove disallowed version data from "crafting"
+files = fs.readdirSync("../datapack/data/crafting/advancements/recipes/crafting");
+files.forEach((filename)=>{
+    if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
+        fs.rmSync(`../datapack/data/crafting/advancements/recipes/crafting/${filename}`, { recursive: true, force: true });
     };
 });
 
