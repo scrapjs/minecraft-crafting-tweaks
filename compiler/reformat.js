@@ -194,6 +194,7 @@ slabs.forEach((obj)=>{
         "mc_version": obj.mc_version, 
         "alternate": obj.alternate || false, 
         "single": obj.single || false,
+        "extra": obj.extra || false,
         
         // balance options
         "balance": {
@@ -215,6 +216,7 @@ stairs.forEach((obj)=>{
         "mc_version": obj.mc_version, 
         "alternate": obj.alternate || false, 
         "single": obj.single || false,
+        "extra": obj.extra || false,
         
         // balance options
         "balance": {
@@ -236,6 +238,7 @@ pressure_plates.forEach((obj)=>{
         "mc_version": obj.mc_version, 
         "alternate": obj.alternate || false, 
         "single": obj.single || false,
+        "extra": obj.extra || false,
         
         // balance options
         "balance": {
