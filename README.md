@@ -50,15 +50,11 @@
 
 ### TODO
 
-- **Mods support in generators and compiler.**
-- **Tags support in generators and compiler.**
 - More datapack generation.
 - More sorting and organizing.
-- Make single datapack compiler.
-- Compatibility with other versions of MC.
 - Add missed blocks and items
 - Add additional features
-- Add advancements (finally, currently generated only)
+- Add advancements (currently generated only)
 
 ### Problems
 
