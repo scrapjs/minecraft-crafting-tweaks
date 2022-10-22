@@ -61,16 +61,28 @@ let slabs = [
     {"source": "minecraft:deepslate_bricks", "input": "minecraft:deepslate_brick_slab", "mc_version": "1_17", single: true},
     {"source": "minecraft:deepslate_tiles", "input": "minecraft:deepslate_tile_slab", "mc_version": "1_17", single: true},
     {"source": "minecraft:polished_deepslate", "input": "minecraft:polished_deepslate_slab", "mc_version": "1_17", single: true},
+    
+    // currently, not supported
+    //{"source": "minecraft:copper_block", "input": "minecraft:cut_copper_slab", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:weathered_copper", "input": "minecraft:weathered_cut_copper_slab", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:exposed_copper", "input": "minecraft:exposed_cut_copper_slab", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:oxidized_copper", "input": "minecraft:oxidized_cut_copper_slab", "mc_version": "1_17", "alternate": true, "extra": true},
+    
+    // currently, not supported
+    //{"source": "minecraft:waxed_copper_block", "input": "minecraft:waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_weathered_copper", "input": "minecraft:waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_exposed_copper", "input": "minecraft:waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_oxidized_copper", "input": "minecraft:waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab", "alternate": true, "extra": true},
 
     {"source": "minecraft:cut_copper", "input": "minecraft:cut_copper_slab", "mc_version": "1_17", from: ["copper_block"], single: true},
-    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_slab", "mc_version": "1_17", from: ["weathered_copper"], single: true},
-    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"], single: true},
-    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"], single: true},
+    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_slab", "mc_version": "1_17", single: true},
 
-    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"], single: true},
-    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"], single: true},
-    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"], single: true},
-    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"], single: true},
+    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", single: true},
+    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab", single: true},
+    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab", single: true},
+    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab", single: true},
 
     {"source": "minecraft:mangrove_planks", "input": "minecraft:mangrove_slab", "mc_version": "1_19", "group": "wooden_slab"},
     {"source": "minecraft:mud_bricks", "input": "minecraft:mud_brick_slab", "mc_version": "1_19", single: true},
@@ -133,16 +145,28 @@ let stairs = [
     {"source": "minecraft:deepslate_bricks", "input": "minecraft:deepslate_brick_stairs", "mc_version": "1_17"},
     {"source": "minecraft:deepslate_tiles", "input": "minecraft:deepslate_tile_stairs", "mc_version": "1_17"},
     {"source": "minecraft:polished_deepslate", "input": "minecraft:polished_deepslate_stairs", "mc_version": "1_17"},
+    
+    // currently, not supported
+    //{"source": "minecraft:copper_block", "input": "minecraft:cut_copper_stairs", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:weathered_copper", "input": "minecraft:weathered_cut_copper_stairs", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:exposed_copper", "input": "minecraft:exposed_cut_copper_stairs", "mc_version": "1_17", "alternate": true, "extra": true},
+    //{"source": "minecraft:oxidized_copper", "input": "minecraft:oxidized_cut_copper_stairs", "mc_version": "1_17", "alternate": true, "extra": true},
+    
+    // currently, not supported
+    //{"source": "minecraft:waxed_copper_block", "input": "minecraft:waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_weathered_copper", "input": "minecraft:waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_exposed_copper", "input": "minecraft:waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs", "alternate": true, "extra": true},
+    //{"source": "minecraft:waxed_oxidized_copper", "input": "minecraft:waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs", "alternate": true, "extra": true},
 
-    {"source": "minecraft:cut_copper", "input": "minecraft:cut_copper_stairs", "mc_version": "1_17", from: ["copper_block"]},
-    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_stairs", "mc_version": "1_17", from: ["weathered_copper"]},
-    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_stairs", "mc_version": "1_17", from: ["exposed_copper"]},
-    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_stairs", "mc_version": "1_17", from: ["oxidized_copper"]},
+    {"source": "minecraft:cut_copper", "input": "minecraft:cut_copper_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_stairs", "mc_version": "1_17"},
 
-    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs", from: ["waxed_copper_block"]},
-    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs", from: ["waxed_weathered_copper"]},
-    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs", from: ["waxed_exposed_copper"]},
-    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs", from: ["waxed_oxidized_copper"]},
+    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs"},
+    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs"},
+    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs"},
+    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs"},
 
     {"source": "minecraft:mangrove_planks", "input": "minecraft:mangrove_stairs", "group": "wooden_stairs", "mc_version": "1_19"},
     {"source": "minecraft:mud_bricks", "input": "minecraft:mud_brick_stairs", "mc_version": "1_19"},
@@ -217,6 +241,10 @@ let MergeTrees = require('merge-trees');
 let fs = require('fs');
 let fse = require('fs-extra');
 let {crlf, LF, CRLF, CR} = require('crlf-normalize');
+
+// will used in future
+let blocks = JSON.parse(fs.readFileSync("./blocks.json", "utf8"));
+
 
 let templateShapelessSingle = (options, outCount)=>{
     let tags = [];

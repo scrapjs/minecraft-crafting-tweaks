@@ -1,0 +1,2319 @@
+{
+    "minecraft:blackstone": {
+        "source": {
+            "item": "minecraft:blackstone"
+        },
+        "filename": "blackstone",
+        "mc_version": "1_16",
+        "slab": {
+            "filename": "blackstone_slab",
+            "source": {
+                "item": "minecraft:blackstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "blackstone_stairs",
+            "source": {
+                "item": "minecraft:blackstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:crimson_planks": {
+        "source": {
+            "item": "minecraft:crimson_planks"
+        },
+        "filename": "crimson_planks",
+        "mc_version": "1_16",
+        "slab": {
+            "filename": "crimson_slab",
+            "source": {
+                "item": "minecraft:crimson_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "crimson_stairs",
+            "source": {
+                "item": "minecraft:crimson_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "crimson_pressure_plate",
+            "source": {
+                "item": "minecraft:crimson_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:warped_planks": {
+        "source": {
+            "item": "minecraft:warped_planks"
+        },
+        "filename": "warped_planks",
+        "mc_version": "1_16",
+        "slab": {
+            "filename": "warped_slab",
+            "source": {
+                "item": "minecraft:warped_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "warped_stairs",
+            "source": {
+                "item": "minecraft:warped_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "warped_pressure_plate",
+            "source": {
+                "item": "minecraft:warped_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:polished_blackstone": {
+        "source": {
+            "item": "minecraft:polished_blackstone"
+        },
+        "filename": "polished_blackstone",
+        "mc_version": "1_16",
+        "slab": {
+            "filename": "polished_blackstone_slab",
+            "source": {
+                "item": "minecraft:polished_blackstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_blackstone_stairs",
+            "source": {
+                "item": "minecraft:polished_blackstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "polished_blackstone_pressure_plate",
+            "source": {
+                "item": "minecraft:polished_blackstone_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:polished_blackstone_bricks": {
+        "source": {
+            "item": "minecraft:polished_blackstone_bricks"
+        },
+        "filename": "polished_blackstone_bricks",
+        "mc_version": "1_16",
+        "slab": {
+            "filename": "polished_blackstone_brick_slab",
+            "source": {
+                "item": "minecraft:polished_blackstone_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_blackstone_brick_stairs",
+            "source": {
+                "item": "minecraft:polished_blackstone_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_16",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:cobbled_deepslate": {
+        "source": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "filename": "cobbled_deepslate",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "cobbled_deepslate_slab",
+            "source": {
+                "item": "minecraft:cobbled_deepslate_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cobbled_deepslate_stairs",
+            "source": {
+                "item": "minecraft:cobbled_deepslate_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:deepslate_bricks": {
+        "source": {
+            "item": "minecraft:deepslate_bricks"
+        },
+        "filename": "deepslate_bricks",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "deepslate_brick_slab",
+            "source": {
+                "item": "minecraft:deepslate_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "deepslate_brick_stairs",
+            "source": {
+                "item": "minecraft:deepslate_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:deepslate_tiles": {
+        "source": {
+            "item": "minecraft:deepslate_tiles"
+        },
+        "filename": "deepslate_tiles",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "deepslate_tile_slab",
+            "source": {
+                "item": "minecraft:deepslate_tile_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "deepslate_tile_stairs",
+            "source": {
+                "item": "minecraft:deepslate_tile_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:polished_deepslate": {
+        "source": {
+            "item": "minecraft:polished_deepslate"
+        },
+        "filename": "polished_deepslate",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "polished_deepslate_slab",
+            "source": {
+                "item": "minecraft:polished_deepslate_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_deepslate_stairs",
+            "source": {
+                "item": "minecraft:polished_deepslate_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:copper_block": {
+        "source": {
+            "item": "minecraft:copper_block"
+        },
+        "filename": "copper_block",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "cut_copper_slab_from_copper_block",
+            "source": {
+                "item": "minecraft:cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cut_copper_stairs_from_copper_block",
+            "source": {
+                "item": "minecraft:cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:weathered_copper": {
+        "source": {
+            "item": "minecraft:weathered_copper"
+        },
+        "filename": "weathered_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "weathered_cut_copper_slab_from_weathered_copper",
+            "source": {
+                "item": "minecraft:weathered_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "weathered_cut_copper_stairs_from_weathered_copper",
+            "source": {
+                "item": "minecraft:weathered_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:exposed_copper": {
+        "source": {
+            "item": "minecraft:exposed_copper"
+        },
+        "filename": "exposed_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "exposed_cut_copper_slab_from_exposed_copper",
+            "source": {
+                "item": "minecraft:exposed_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "exposed_cut_copper_stairs_from_exposed_copper",
+            "source": {
+                "item": "minecraft:exposed_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:oxidized_copper": {
+        "source": {
+            "item": "minecraft:oxidized_copper"
+        },
+        "filename": "oxidized_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "oxidized_cut_copper_slab_from_oxidized_copper",
+            "source": {
+                "item": "minecraft:oxidized_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "oxidized_cut_copper_stairs_from_oxidized_copper",
+            "source": {
+                "item": "minecraft:oxidized_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_copper_block": {
+        "source": {
+            "item": "minecraft:waxed_copper_block"
+        },
+        "filename": "waxed_copper_block",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_cut_copper_slab_from_waxed_copper_block",
+            "source": {
+                "item": "minecraft:waxed_cut_copper_slab"
+            },
+            "group": "waxed_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_cut_copper_stairs_from_waxed_copper_block",
+            "source": {
+                "item": "minecraft:waxed_cut_copper_stairs"
+            },
+            "group": "waxed_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_weathered_copper": {
+        "source": {
+            "item": "minecraft:waxed_weathered_copper"
+        },
+        "filename": "waxed_weathered_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_weathered_cut_copper_slab_from_waxed_weathered_copper",
+            "source": {
+                "item": "minecraft:waxed_weathered_cut_copper_slab"
+            },
+            "group": "waxed_weathered_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_weathered_cut_copper_stairs_from_waxed_weathered_copper",
+            "source": {
+                "item": "minecraft:waxed_weathered_cut_copper_stairs"
+            },
+            "group": "waxed_weathered_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_exposed_copper": {
+        "source": {
+            "item": "minecraft:waxed_exposed_copper"
+        },
+        "filename": "waxed_exposed_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_exposed_cut_copper_slab_from_waxed_exposed_copper",
+            "source": {
+                "item": "minecraft:waxed_exposed_cut_copper_slab"
+            },
+            "group": "waxed_exposed_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_exposed_cut_copper_stairs_from_waxed_exposed_copper",
+            "source": {
+                "item": "minecraft:waxed_exposed_cut_copper_stairs"
+            },
+            "group": "waxed_exposed_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_oxidized_copper": {
+        "source": {
+            "item": "minecraft:waxed_oxidized_copper"
+        },
+        "filename": "waxed_oxidized_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_oxidized_cut_copper_slab_from_waxed_oxidized_copper",
+            "source": {
+                "item": "minecraft:waxed_oxidized_cut_copper_slab"
+            },
+            "group": "waxed_oxidized_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_copper",
+            "source": {
+                "item": "minecraft:waxed_oxidized_cut_copper_stairs"
+            },
+            "group": "waxed_oxidized_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": true,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:cut_copper": {
+        "source": {
+            "item": "minecraft:cut_copper"
+        },
+        "filename": "cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "cut_copper_slab",
+            "source": {
+                "item": "minecraft:cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cut_copper_stairs",
+            "source": {
+                "item": "minecraft:cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:weathered_cut_copper": {
+        "source": {
+            "item": "minecraft:weathered_cut_copper"
+        },
+        "filename": "weathered_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "weathered_cut_copper_slab",
+            "source": {
+                "item": "minecraft:weathered_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "weathered_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:weathered_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:exposed_cut_copper": {
+        "source": {
+            "item": "minecraft:exposed_cut_copper"
+        },
+        "filename": "exposed_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "exposed_cut_copper_slab",
+            "source": {
+                "item": "minecraft:exposed_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "exposed_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:exposed_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:oxidized_cut_copper": {
+        "source": {
+            "item": "minecraft:oxidized_cut_copper"
+        },
+        "filename": "oxidized_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "oxidized_cut_copper_slab",
+            "source": {
+                "item": "minecraft:oxidized_cut_copper_slab"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "oxidized_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:oxidized_cut_copper_stairs"
+            },
+            "group": "",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_cut_copper": {
+        "source": {
+            "item": "minecraft:waxed_cut_copper"
+        },
+        "filename": "waxed_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_cut_copper_slab",
+            "source": {
+                "item": "minecraft:waxed_cut_copper_slab"
+            },
+            "group": "waxed_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:waxed_cut_copper_stairs"
+            },
+            "group": "waxed_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_weathered_cut_copper": {
+        "source": {
+            "item": "minecraft:waxed_weathered_cut_copper"
+        },
+        "filename": "waxed_weathered_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_weathered_cut_copper_slab",
+            "source": {
+                "item": "minecraft:waxed_weathered_cut_copper_slab"
+            },
+            "group": "waxed_weathered_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_weathered_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:waxed_weathered_cut_copper_stairs"
+            },
+            "group": "waxed_weathered_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_exposed_cut_copper": {
+        "source": {
+            "item": "minecraft:waxed_exposed_cut_copper"
+        },
+        "filename": "waxed_exposed_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_exposed_cut_copper_slab",
+            "source": {
+                "item": "minecraft:waxed_exposed_cut_copper_slab"
+            },
+            "group": "waxed_exposed_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_exposed_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:waxed_exposed_cut_copper_stairs"
+            },
+            "group": "waxed_exposed_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:waxed_oxidized_cut_copper": {
+        "source": {
+            "item": "minecraft:waxed_oxidized_cut_copper"
+        },
+        "filename": "waxed_oxidized_cut_copper",
+        "mc_version": "1_17",
+        "slab": {
+            "filename": "waxed_oxidized_cut_copper_slab",
+            "source": {
+                "item": "minecraft:waxed_oxidized_cut_copper_slab"
+            },
+            "group": "waxed_oxidized_cut_copper_slab",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "waxed_oxidized_cut_copper_stairs",
+            "source": {
+                "item": "minecraft:waxed_oxidized_cut_copper_stairs"
+            },
+            "group": "waxed_oxidized_cut_copper_stairs",
+            "mc_version": "1_17",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:mangrove_planks": {
+        "source": {
+            "item": "minecraft:mangrove_planks"
+        },
+        "filename": "mangrove_planks",
+        "mc_version": "1_19",
+        "slab": {
+            "filename": "mangrove_slab",
+            "source": {
+                "item": "minecraft:mangrove_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_19",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "mangrove_stairs",
+            "source": {
+                "item": "minecraft:mangrove_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_19",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "mangrove_pressure_plate",
+            "source": {
+                "item": "minecraft:mangrove_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_19",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:mud_bricks": {
+        "source": {
+            "item": "minecraft:mud_bricks"
+        },
+        "filename": "mud_bricks",
+        "mc_version": "1_19",
+        "slab": {
+            "filename": "mud_brick_slab",
+            "source": {
+                "item": "minecraft:mud_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_19",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "mud_brick_stairs",
+            "source": {
+                "item": "minecraft:mud_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_19",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:acacia_planks": {
+        "source": {
+            "item": "minecraft:acacia_planks"
+        },
+        "filename": "acacia_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "acacia_slab",
+            "source": {
+                "item": "minecraft:acacia_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "acacia_stairs",
+            "source": {
+                "item": "minecraft:acacia_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "acacia_pressure_plate",
+            "source": {
+                "item": "minecraft:acacia_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:oak_planks": {
+        "source": {
+            "item": "minecraft:oak_planks"
+        },
+        "filename": "oak_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "oak_slab",
+            "source": {
+                "item": "minecraft:oak_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "oak_stairs",
+            "source": {
+                "item": "minecraft:oak_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "oak_pressure_plate",
+            "source": {
+                "item": "minecraft:oak_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:dark_oak_planks": {
+        "source": {
+            "item": "minecraft:dark_oak_planks"
+        },
+        "filename": "dark_oak_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "dark_oak_slab",
+            "source": {
+                "item": "minecraft:dark_oak_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "dark_oak_stairs",
+            "source": {
+                "item": "minecraft:dark_oak_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "dark_oak_pressure_plate",
+            "source": {
+                "item": "minecraft:dark_oak_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:birch_planks": {
+        "source": {
+            "item": "minecraft:birch_planks"
+        },
+        "filename": "birch_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "birch_slab",
+            "source": {
+                "item": "minecraft:birch_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "birch_stairs",
+            "source": {
+                "item": "minecraft:birch_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "birch_pressure_plate",
+            "source": {
+                "item": "minecraft:birch_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:spruce_planks": {
+        "source": {
+            "item": "minecraft:spruce_planks"
+        },
+        "filename": "spruce_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "spruce_slab",
+            "source": {
+                "item": "minecraft:spruce_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "spruce_stairs",
+            "source": {
+                "item": "minecraft:spruce_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "spruce_pressure_plate",
+            "source": {
+                "item": "minecraft:spruce_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:jungle_planks": {
+        "source": {
+            "item": "minecraft:jungle_planks"
+        },
+        "filename": "jungle_planks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "jungle_slab",
+            "source": {
+                "item": "minecraft:jungle_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "jungle_stairs",
+            "source": {
+                "item": "minecraft:jungle_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "jungle_pressure_plate",
+            "source": {
+                "item": "minecraft:jungle_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:bricks": {
+        "source": {
+            "item": "minecraft:bricks"
+        },
+        "filename": "bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "brick_slab",
+            "source": {
+                "item": "minecraft:brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "brick_stairs",
+            "source": {
+                "item": "minecraft:brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:cobblestone": {
+        "source": {
+            "item": "minecraft:cobblestone"
+        },
+        "filename": "cobblestone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "cobblestone_slab",
+            "source": {
+                "item": "minecraft:cobblestone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cobblestone_stairs",
+            "source": {
+                "item": "minecraft:cobblestone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:mossy_cobblestone": {
+        "source": {
+            "item": "minecraft:mossy_cobblestone"
+        },
+        "filename": "mossy_cobblestone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "mossy_cobblestone_slab",
+            "source": {
+                "item": "minecraft:mossy_cobblestone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "mossy_cobblestone_stairs",
+            "source": {
+                "item": "minecraft:mossy_cobblestone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:stone_bricks": {
+        "source": {
+            "item": "minecraft:stone_bricks"
+        },
+        "filename": "stone_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "stone_brick_slab",
+            "source": {
+                "item": "minecraft:stone_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "stone_brick_stairs",
+            "source": {
+                "item": "minecraft:stone_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:stone": {
+        "source": {
+            "item": "minecraft:stone"
+        },
+        "filename": "stone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "stone_slab",
+            "source": {
+                "item": "minecraft:stone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "stone_stairs",
+            "source": {
+                "item": "minecraft:stone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "stone_pressure_plate",
+            "source": {
+                "item": "minecraft:stone_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:mossy_stone_bricks": {
+        "source": {
+            "item": "minecraft:mossy_stone_bricks"
+        },
+        "filename": "mossy_stone_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "mossy_stone_brick_slab",
+            "source": {
+                "item": "minecraft:mossy_stone_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "mossy_stone_brick_stairs",
+            "source": {
+                "item": "minecraft:mossy_stone_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:cut_red_sandstone": {
+        "source": {
+            "item": "minecraft:cut_red_sandstone"
+        },
+        "filename": "cut_red_sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "cut_red_sandstone_slab",
+            "source": {
+                "item": "minecraft:cut_red_sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cut_red_sandstone_stairs",
+            "source": {
+                "item": "minecraft:cut_red_sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:cut_sandstone": {
+        "source": {
+            "item": "minecraft:cut_sandstone"
+        },
+        "filename": "cut_sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "cut_sandstone_slab",
+            "source": {
+                "item": "minecraft:cut_sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "cut_sandstone_stairs",
+            "source": {
+                "item": "minecraft:cut_sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:red_sandstone": {
+        "source": {
+            "item": "minecraft:red_sandstone"
+        },
+        "filename": "red_sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "red_sandstone_slab",
+            "source": {
+                "item": "minecraft:red_sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "red_sandstone_stairs",
+            "source": {
+                "item": "minecraft:red_sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:sandstone": {
+        "source": {
+            "item": "minecraft:sandstone"
+        },
+        "filename": "sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "sandstone_slab",
+            "source": {
+                "item": "minecraft:sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "sandstone_stairs",
+            "source": {
+                "item": "minecraft:sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:smooth_stone": {
+        "source": {
+            "item": "minecraft:smooth_stone"
+        },
+        "filename": "smooth_stone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "smooth_stone_slab",
+            "source": {
+                "item": "minecraft:smooth_stone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        }
+    },
+    "minecraft:smooth_sandstone": {
+        "source": {
+            "item": "minecraft:smooth_sandstone"
+        },
+        "filename": "smooth_sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "smooth_sandstone_slab",
+            "source": {
+                "item": "minecraft:smooth_sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "smooth_sandstone_stairs",
+            "source": {
+                "item": "minecraft:smooth_sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:smooth_red_sandstone": {
+        "source": {
+            "item": "minecraft:smooth_red_sandstone"
+        },
+        "filename": "smooth_red_sandstone",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "smooth_red_sandstone_slab",
+            "source": {
+                "item": "minecraft:smooth_red_sandstone_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "smooth_red_sandstone_stairs",
+            "source": {
+                "item": "minecraft:smooth_red_sandstone_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:smooth_quartz": {
+        "source": {
+            "item": "minecraft:smooth_quartz"
+        },
+        "filename": "smooth_quartz",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "smooth_quartz_slab",
+            "source": {
+                "item": "minecraft:smooth_quartz_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "smooth_quartz_stairs",
+            "source": {
+                "item": "minecraft:smooth_quartz_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:red_nether_bricks": {
+        "source": {
+            "item": "minecraft:red_nether_bricks"
+        },
+        "filename": "red_nether_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "red_nether_brick_slab",
+            "source": {
+                "item": "minecraft:red_nether_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "red_nether_brick_stairs",
+            "source": {
+                "item": "minecraft:red_nether_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:nether_bricks": {
+        "source": {
+            "item": "minecraft:nether_bricks"
+        },
+        "filename": "nether_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "nether_brick_slab",
+            "source": {
+                "item": "minecraft:nether_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "nether_brick_stairs",
+            "source": {
+                "item": "minecraft:nether_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:diorite": {
+        "source": {
+            "item": "minecraft:diorite"
+        },
+        "filename": "diorite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "diorite_slab",
+            "source": {
+                "item": "minecraft:diorite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "diorite_stairs",
+            "source": {
+                "item": "minecraft:diorite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:granite": {
+        "source": {
+            "item": "minecraft:granite"
+        },
+        "filename": "granite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "granite_slab",
+            "source": {
+                "item": "minecraft:granite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "granite_stairs",
+            "source": {
+                "item": "minecraft:granite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:andesite": {
+        "source": {
+            "item": "minecraft:andesite"
+        },
+        "filename": "andesite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "andesite_slab",
+            "source": {
+                "item": "minecraft:andesite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "andesite_stairs",
+            "source": {
+                "item": "minecraft:andesite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:polished_diorite": {
+        "source": {
+            "item": "minecraft:polished_diorite"
+        },
+        "filename": "polished_diorite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "polished_diorite_slab",
+            "source": {
+                "item": "minecraft:polished_diorite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_diorite_stairs",
+            "source": {
+                "item": "minecraft:polished_diorite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:polished_granite": {
+        "source": {
+            "item": "minecraft:polished_granite"
+        },
+        "filename": "polished_granite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "polished_granite_slab",
+            "source": {
+                "item": "minecraft:polished_granite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_granite_stairs",
+            "source": {
+                "item": "minecraft:polished_granite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:polished_andesite": {
+        "source": {
+            "item": "minecraft:polished_andesite"
+        },
+        "filename": "polished_andesite",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "polished_andesite_slab",
+            "source": {
+                "item": "minecraft:polished_andesite_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "polished_andesite_stairs",
+            "source": {
+                "item": "minecraft:polished_andesite_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:prismarine_bricks": {
+        "source": {
+            "item": "minecraft:prismarine_bricks"
+        },
+        "filename": "prismarine_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "prismarine_brick_slab",
+            "source": {
+                "item": "minecraft:prismarine_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "prismarine_brick_stairs",
+            "source": {
+                "item": "minecraft:prismarine_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:prismarine": {
+        "source": {
+            "item": "minecraft:prismarine"
+        },
+        "filename": "prismarine",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "prismarine_slab",
+            "source": {
+                "item": "minecraft:prismarine_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "prismarine_stairs",
+            "source": {
+                "item": "minecraft:prismarine_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:dark_prismarine": {
+        "source": {
+            "item": "minecraft:dark_prismarine"
+        },
+        "filename": "dark_prismarine",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "dark_prismarine_slab",
+            "source": {
+                "item": "minecraft:dark_prismarine_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "dark_prismarine_stairs",
+            "source": {
+                "item": "minecraft:dark_prismarine_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:quartz_block": {
+        "source": {
+            "item": "minecraft:quartz_block"
+        },
+        "filename": "quartz_block",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "quartz_slab",
+            "source": {
+                "item": "minecraft:quartz_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "quartz_stairs",
+            "source": {
+                "item": "minecraft:quartz_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:purpur_block": {
+        "source": {
+            "item": "minecraft:purpur_block"
+        },
+        "filename": "purpur_block",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "purpur_slab",
+            "source": {
+                "item": "minecraft:purpur_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "purpur_stairs",
+            "source": {
+                "item": "minecraft:purpur_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:end_stone_bricks": {
+        "source": {
+            "item": "minecraft:end_stone_bricks"
+        },
+        "filename": "end_stone_bricks",
+        "mc_version": "1_xx",
+        "slab": {
+            "filename": "end_stone_brick_slab",
+            "source": {
+                "item": "minecraft:end_stone_brick_slab"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": true,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "end_stone_brick_stairs",
+            "source": {
+                "item": "minecraft:end_stone_brick_stairs"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+    "minecraft:iron_ingot": {
+        "source": {
+            "item": "minecraft:iron_ingot"
+        },
+        "filename": "iron_ingot",
+        "mc_version": "1_xx",
+        "pressure_plate": {
+            "filename": "heavy_weighted_pressure_plate",
+            "source": {
+                "item": "minecraft:heavy_weighted_pressure_plate"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+    "minecraft:gold_ingot": {
+        "source": {
+            "item": "minecraft:gold_ingot"
+        },
+        "filename": "gold_ingot",
+        "mc_version": "1_xx",
+        "pressure_plate": {
+            "filename": "light_weighted_pressure_plate",
+            "source": {
+                "item": "minecraft:light_weighted_pressure_plate"
+            },
+            "group": "",
+            "mc_version": "1_xx",
+            "alternate": false,
+            "single": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    }
+}
