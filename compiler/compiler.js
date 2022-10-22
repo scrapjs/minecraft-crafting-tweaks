@@ -19,6 +19,7 @@ let usedModules = [
     "vt-straight-to-shapeless"
 ];
 
+let mergeVersions = true; // currently, incompatible with most built-in advancements!
 let allowVanillaRecipeConflicts = true; // required Polymorph mod!
 let usedMCVersion = "1_19";
 
@@ -48,6 +49,8 @@ let mcVersionString = {
     "1_15": "1.15.x",
     "1_xx": "1.15.x"
 };
+
+let mcVersions = ["1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
 
 //
 let MergeTrees = require('merge-trees');
@@ -211,8 +214,6 @@ if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
             
             //
             for (let i=1;i<=8;i++) {
-                
-
                 let criterias = {};
                 criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
                 criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
@@ -259,13 +260,14 @@ let generateModuleRecipes = (options)=>{
 
             //
             let filename = (options.type != "block" ? obj[options.type] : obj)["filename"];
-            let directory = `${obj.mc_version}/${namings[options.type]}/${options.subdir||""}`;
+            let unversion = `${namings[options.type]}/${options.subdir||""}`;
+            let directory = `${obj.mc_version}/${unversion}`;
 
             // advancements
             fs.mkdirSync(    `${rootDirAdv}/${directory}`, { recursive: true });
             fs.writeFileSync(`${rootDirAdv}/${directory}/${filename}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${directory}/${filename}` 
+                recipeAddress: `crafting:${mergeVersions ? unversion : directory}/${filename}` 
             }), 'utf8');
             
             // crafting
@@ -496,27 +498,58 @@ fs.mkdirSync(`../datapack/data`, { recursive: true });
 fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
 
 //
-let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true });
-mergeTrees.merge();
+let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true }); mergeTrees.merge();
 
 // remove disallowed version data from "crafting"
-let files = fs.readdirSync("../datapack/data/crafting/recipes");
-files.forEach((filename)=>{
-    if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
-        fs.rmSync(`../datapack/data/crafting/recipes/${filename}`, { recursive: true, force: true });
+{
+    let outputs = {};
+    let directory = `../datapack/data/crafting/recipes`;
+    let files = fs.readdirSync(`${directory}`);
+    
+    files.forEach((filename)=>{
+        if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
+            fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
+        };
+    });
+    
+    if (mergeVersions) {
+        files.forEach((filename)=>{
+            if (mcVersions.indexOf(filename) != -1) {
+                let versioned = fs.readdirSync(`${directory}/${filename}`);
+                versioned.forEach((fn)=>{
+                    outputs[`${directory}/${fn}`] = outputs[`${directory}/${fn}`] || [];
+                    outputs[`${directory}/${fn}`].push(`${directory}/${filename}/${fn}`);
+                });
+            };
+        });
+
+        for (let key in outputs) {
+            let mergeTrees = new MergeTrees( outputs[key], key, { overwrite: true }); mergeTrees.merge();
+        };
+
+        files.forEach((filename)=>{
+            if (mcVersions.indexOf(filename) != -1 && mergeVersions) {
+                fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
+            };
+        });
     };
-});
+};
 
 // remove disallowed version data from "crafting"
-files = fs.readdirSync("../datapack/data/crafting/advancements/recipes/crafting");
-files.forEach((filename)=>{
-    if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
-        fs.rmSync(`../datapack/data/crafting/advancements/recipes/crafting/${filename}`, { recursive: true, force: true });
-    };
-});
+{
+    let directory = `../datapack/data/crafting/advancements/recipes/crafting`;
+    let files = fs.readdirSync(`${directory}`);
+    files.forEach((filename)=>{
+        if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
+            fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
+        }
+    });
+};
 
 // copy required files
-files = fs.readdirSync("./required");
-files.forEach((filename)=>{
-    fse.copySync(`./required/${filename}`, `../datapack/${filename}`);
-});
+{
+    let files = fs.readdirSync("./required");
+    files.forEach((filename)=>{
+        fse.copySync(`./required/${filename}`, `../datapack/${filename}`);
+    });
+}

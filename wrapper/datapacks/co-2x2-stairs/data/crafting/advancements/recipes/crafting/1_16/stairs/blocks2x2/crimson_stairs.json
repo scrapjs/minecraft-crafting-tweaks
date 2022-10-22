@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_16/stairs/blocks2x2/crimson_stairs"
+                "recipe": "crafting:stairs/blocks2x2/crimson_stairs"
             }
         }
     },
     "requirements": [
         ["has_stairs","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_16/stairs/blocks2x2/crimson_stairs"] }
+    "rewards": { "recipes": ["crafting:stairs/blocks2x2/crimson_stairs"] }
 }

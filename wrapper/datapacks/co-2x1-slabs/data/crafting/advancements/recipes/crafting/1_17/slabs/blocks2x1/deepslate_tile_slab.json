@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_17/slabs/blocks2x1/deepslate_tile_slab"
+                "recipe": "crafting:slabs/blocks2x1/deepslate_tile_slab"
             }
         }
     },
     "requirements": [
         ["has_slab","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_17/slabs/blocks2x1/deepslate_tile_slab"] }
+    "rewards": { "recipes": ["crafting:slabs/blocks2x1/deepslate_tile_slab"] }
 }

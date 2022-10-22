@@ -7,6 +7,7 @@
         "mc_version": "1_16",
         "slab": {
             "filename": "blackstone_slab",
+            "reversed": "blackstone_from_blackstone_slab",
             "source": {
                 "item": "minecraft:blackstone_slab"
             },
@@ -22,6 +23,7 @@
         },
         "stairs": {
             "filename": "blackstone_stairs",
+            "reversed": "blackstone_from_blackstone_stairs",
             "source": {
                 "item": "minecraft:blackstone_stairs"
             },
@@ -44,6 +46,7 @@
         "mc_version": "1_16",
         "slab": {
             "filename": "crimson_slab",
+            "reversed": "crimson_planks_from_crimson_slab",
             "source": {
                 "item": "minecraft:crimson_slab"
             },
@@ -59,6 +62,7 @@
         },
         "stairs": {
             "filename": "crimson_stairs",
+            "reversed": "crimson_planks_from_crimson_stairs",
             "source": {
                 "item": "minecraft:crimson_stairs"
             },
@@ -74,6 +78,7 @@
         },
         "pressure_plate": {
             "filename": "crimson_pressure_plate",
+            "reversed": "crimson_planks_from_crimson_pressure_plate",
             "source": {
                 "item": "minecraft:crimson_pressure_plate"
             },
@@ -96,6 +101,7 @@
         "mc_version": "1_16",
         "slab": {
             "filename": "warped_slab",
+            "reversed": "warped_planks_from_warped_slab",
             "source": {
                 "item": "minecraft:warped_slab"
             },
@@ -111,6 +117,7 @@
         },
         "stairs": {
             "filename": "warped_stairs",
+            "reversed": "warped_planks_from_warped_stairs",
             "source": {
                 "item": "minecraft:warped_stairs"
             },
@@ -126,6 +133,7 @@
         },
         "pressure_plate": {
             "filename": "warped_pressure_plate",
+            "reversed": "warped_planks_from_warped_pressure_plate",
             "source": {
                 "item": "minecraft:warped_pressure_plate"
             },
@@ -148,6 +156,7 @@
         "mc_version": "1_16",
         "slab": {
             "filename": "polished_blackstone_slab",
+            "reversed": "polished_blackstone_from_polished_blackstone_slab",
             "source": {
                 "item": "minecraft:polished_blackstone_slab"
             },
@@ -163,6 +172,7 @@
         },
         "stairs": {
             "filename": "polished_blackstone_stairs",
+            "reversed": "polished_blackstone_from_polished_blackstone_stairs",
             "source": {
                 "item": "minecraft:polished_blackstone_stairs"
             },
@@ -178,6 +188,7 @@
         },
         "pressure_plate": {
             "filename": "polished_blackstone_pressure_plate",
+            "reversed": "polished_blackstone_from_polished_blackstone_pressure_plate",
             "source": {
                 "item": "minecraft:polished_blackstone_pressure_plate"
             },
@@ -200,6 +211,7 @@
         "mc_version": "1_16",
         "slab": {
             "filename": "polished_blackstone_brick_slab",
+            "reversed": "polished_blackstone_bricks_from_polished_blackstone_brick_slab",
             "source": {
                 "item": "minecraft:polished_blackstone_brick_slab"
             },
@@ -215,6 +227,7 @@
         },
         "stairs": {
             "filename": "polished_blackstone_brick_stairs",
+            "reversed": "polished_blackstone_bricks_from_polished_blackstone_brick_stairs",
             "source": {
                 "item": "minecraft:polished_blackstone_brick_stairs"
             },
@@ -237,6 +250,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "cobbled_deepslate_slab",
+            "reversed": "cobbled_deepslate_from_cobbled_deepslate_slab",
             "source": {
                 "item": "minecraft:cobbled_deepslate_slab"
             },
@@ -252,6 +266,7 @@
         },
         "stairs": {
             "filename": "cobbled_deepslate_stairs",
+            "reversed": "cobbled_deepslate_from_cobbled_deepslate_stairs",
             "source": {
                 "item": "minecraft:cobbled_deepslate_stairs"
             },
@@ -274,6 +289,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "deepslate_brick_slab",
+            "reversed": "deepslate_bricks_from_deepslate_brick_slab",
             "source": {
                 "item": "minecraft:deepslate_brick_slab"
             },
@@ -289,6 +305,7 @@
         },
         "stairs": {
             "filename": "deepslate_brick_stairs",
+            "reversed": "deepslate_bricks_from_deepslate_brick_stairs",
             "source": {
                 "item": "minecraft:deepslate_brick_stairs"
             },
@@ -311,6 +328,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "deepslate_tile_slab",
+            "reversed": "deepslate_tiles_from_deepslate_tile_slab",
             "source": {
                 "item": "minecraft:deepslate_tile_slab"
             },
@@ -326,6 +344,7 @@
         },
         "stairs": {
             "filename": "deepslate_tile_stairs",
+            "reversed": "deepslate_tiles_from_deepslate_tile_stairs",
             "source": {
                 "item": "minecraft:deepslate_tile_stairs"
             },
@@ -348,6 +367,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "polished_deepslate_slab",
+            "reversed": "polished_deepslate_from_polished_deepslate_slab",
             "source": {
                 "item": "minecraft:polished_deepslate_slab"
             },
@@ -363,6 +383,7 @@
         },
         "stairs": {
             "filename": "polished_deepslate_stairs",
+            "reversed": "polished_deepslate_from_polished_deepslate_stairs",
             "source": {
                 "item": "minecraft:polished_deepslate_stairs"
             },
@@ -385,6 +406,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "cut_copper_slab_from_copper_block",
+            "reversed": "copper_block_from_cut_copper_slab",
             "source": {
                 "item": "minecraft:cut_copper_slab"
             },
@@ -400,6 +422,7 @@
         },
         "stairs": {
             "filename": "cut_copper_stairs_from_copper_block",
+            "reversed": "copper_block_from_cut_copper_stairs",
             "source": {
                 "item": "minecraft:cut_copper_stairs"
             },
@@ -422,6 +445,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "weathered_cut_copper_slab_from_weathered_copper",
+            "reversed": "weathered_copper_from_weathered_cut_copper_slab",
             "source": {
                 "item": "minecraft:weathered_cut_copper_slab"
             },
@@ -437,6 +461,7 @@
         },
         "stairs": {
             "filename": "weathered_cut_copper_stairs_from_weathered_copper",
+            "reversed": "weathered_copper_from_weathered_cut_copper_stairs",
             "source": {
                 "item": "minecraft:weathered_cut_copper_stairs"
             },
@@ -459,6 +484,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "exposed_cut_copper_slab_from_exposed_copper",
+            "reversed": "exposed_copper_from_exposed_cut_copper_slab",
             "source": {
                 "item": "minecraft:exposed_cut_copper_slab"
             },
@@ -474,6 +500,7 @@
         },
         "stairs": {
             "filename": "exposed_cut_copper_stairs_from_exposed_copper",
+            "reversed": "exposed_copper_from_exposed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:exposed_cut_copper_stairs"
             },
@@ -496,6 +523,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "oxidized_cut_copper_slab_from_oxidized_copper",
+            "reversed": "oxidized_copper_from_oxidized_cut_copper_slab",
             "source": {
                 "item": "minecraft:oxidized_cut_copper_slab"
             },
@@ -511,6 +539,7 @@
         },
         "stairs": {
             "filename": "oxidized_cut_copper_stairs_from_oxidized_copper",
+            "reversed": "oxidized_copper_from_oxidized_cut_copper_stairs",
             "source": {
                 "item": "minecraft:oxidized_cut_copper_stairs"
             },
@@ -533,6 +562,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_cut_copper_slab_from_waxed_copper_block",
+            "reversed": "waxed_copper_block_from_waxed_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_cut_copper_slab"
             },
@@ -548,6 +578,7 @@
         },
         "stairs": {
             "filename": "waxed_cut_copper_stairs_from_waxed_copper_block",
+            "reversed": "waxed_copper_block_from_waxed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_cut_copper_stairs"
             },
@@ -570,6 +601,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_weathered_cut_copper_slab_from_waxed_weathered_copper",
+            "reversed": "waxed_weathered_copper_from_waxed_weathered_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_weathered_cut_copper_slab"
             },
@@ -585,6 +617,7 @@
         },
         "stairs": {
             "filename": "waxed_weathered_cut_copper_stairs_from_waxed_weathered_copper",
+            "reversed": "waxed_weathered_copper_from_waxed_weathered_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_weathered_cut_copper_stairs"
             },
@@ -607,6 +640,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_exposed_cut_copper_slab_from_waxed_exposed_copper",
+            "reversed": "waxed_exposed_copper_from_waxed_exposed_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_exposed_cut_copper_slab"
             },
@@ -622,6 +656,7 @@
         },
         "stairs": {
             "filename": "waxed_exposed_cut_copper_stairs_from_waxed_exposed_copper",
+            "reversed": "waxed_exposed_copper_from_waxed_exposed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_exposed_cut_copper_stairs"
             },
@@ -644,6 +679,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_oxidized_cut_copper_slab_from_waxed_oxidized_copper",
+            "reversed": "waxed_oxidized_copper_from_waxed_oxidized_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_oxidized_cut_copper_slab"
             },
@@ -659,6 +695,7 @@
         },
         "stairs": {
             "filename": "waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_copper",
+            "reversed": "waxed_oxidized_copper_from_waxed_oxidized_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_oxidized_cut_copper_stairs"
             },
@@ -681,6 +718,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "cut_copper_slab",
+            "reversed": "cut_copper_from_cut_copper_slab",
             "source": {
                 "item": "minecraft:cut_copper_slab"
             },
@@ -696,6 +734,7 @@
         },
         "stairs": {
             "filename": "cut_copper_stairs",
+            "reversed": "cut_copper_from_cut_copper_stairs",
             "source": {
                 "item": "minecraft:cut_copper_stairs"
             },
@@ -718,6 +757,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "weathered_cut_copper_slab",
+            "reversed": "weathered_cut_copper_from_weathered_cut_copper_slab",
             "source": {
                 "item": "minecraft:weathered_cut_copper_slab"
             },
@@ -733,6 +773,7 @@
         },
         "stairs": {
             "filename": "weathered_cut_copper_stairs",
+            "reversed": "weathered_cut_copper_from_weathered_cut_copper_stairs",
             "source": {
                 "item": "minecraft:weathered_cut_copper_stairs"
             },
@@ -755,6 +796,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "exposed_cut_copper_slab",
+            "reversed": "exposed_cut_copper_from_exposed_cut_copper_slab",
             "source": {
                 "item": "minecraft:exposed_cut_copper_slab"
             },
@@ -770,6 +812,7 @@
         },
         "stairs": {
             "filename": "exposed_cut_copper_stairs",
+            "reversed": "exposed_cut_copper_from_exposed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:exposed_cut_copper_stairs"
             },
@@ -792,6 +835,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "oxidized_cut_copper_slab",
+            "reversed": "oxidized_cut_copper_from_oxidized_cut_copper_slab",
             "source": {
                 "item": "minecraft:oxidized_cut_copper_slab"
             },
@@ -807,6 +851,7 @@
         },
         "stairs": {
             "filename": "oxidized_cut_copper_stairs",
+            "reversed": "oxidized_cut_copper_from_oxidized_cut_copper_stairs",
             "source": {
                 "item": "minecraft:oxidized_cut_copper_stairs"
             },
@@ -829,6 +874,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_cut_copper_slab",
+            "reversed": "waxed_cut_copper_from_waxed_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_cut_copper_slab"
             },
@@ -844,6 +890,7 @@
         },
         "stairs": {
             "filename": "waxed_cut_copper_stairs",
+            "reversed": "waxed_cut_copper_from_waxed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_cut_copper_stairs"
             },
@@ -866,6 +913,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_weathered_cut_copper_slab",
+            "reversed": "waxed_weathered_cut_copper_from_waxed_weathered_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_weathered_cut_copper_slab"
             },
@@ -881,6 +929,7 @@
         },
         "stairs": {
             "filename": "waxed_weathered_cut_copper_stairs",
+            "reversed": "waxed_weathered_cut_copper_from_waxed_weathered_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_weathered_cut_copper_stairs"
             },
@@ -903,6 +952,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_exposed_cut_copper_slab",
+            "reversed": "waxed_exposed_cut_copper_from_waxed_exposed_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_exposed_cut_copper_slab"
             },
@@ -918,6 +968,7 @@
         },
         "stairs": {
             "filename": "waxed_exposed_cut_copper_stairs",
+            "reversed": "waxed_exposed_cut_copper_from_waxed_exposed_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_exposed_cut_copper_stairs"
             },
@@ -940,6 +991,7 @@
         "mc_version": "1_17",
         "slab": {
             "filename": "waxed_oxidized_cut_copper_slab",
+            "reversed": "waxed_oxidized_cut_copper_from_waxed_oxidized_cut_copper_slab",
             "source": {
                 "item": "minecraft:waxed_oxidized_cut_copper_slab"
             },
@@ -955,6 +1007,7 @@
         },
         "stairs": {
             "filename": "waxed_oxidized_cut_copper_stairs",
+            "reversed": "waxed_oxidized_cut_copper_from_waxed_oxidized_cut_copper_stairs",
             "source": {
                 "item": "minecraft:waxed_oxidized_cut_copper_stairs"
             },
@@ -977,6 +1030,7 @@
         "mc_version": "1_19",
         "slab": {
             "filename": "mangrove_slab",
+            "reversed": "mangrove_planks_from_mangrove_slab",
             "source": {
                 "item": "minecraft:mangrove_slab"
             },
@@ -992,6 +1046,7 @@
         },
         "stairs": {
             "filename": "mangrove_stairs",
+            "reversed": "mangrove_planks_from_mangrove_stairs",
             "source": {
                 "item": "minecraft:mangrove_stairs"
             },
@@ -1007,6 +1062,7 @@
         },
         "pressure_plate": {
             "filename": "mangrove_pressure_plate",
+            "reversed": "mangrove_planks_from_mangrove_pressure_plate",
             "source": {
                 "item": "minecraft:mangrove_pressure_plate"
             },
@@ -1029,6 +1085,7 @@
         "mc_version": "1_19",
         "slab": {
             "filename": "mud_brick_slab",
+            "reversed": "mud_bricks_from_mud_brick_slab",
             "source": {
                 "item": "minecraft:mud_brick_slab"
             },
@@ -1044,6 +1101,7 @@
         },
         "stairs": {
             "filename": "mud_brick_stairs",
+            "reversed": "mud_bricks_from_mud_brick_stairs",
             "source": {
                 "item": "minecraft:mud_brick_stairs"
             },
@@ -1066,6 +1124,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "acacia_slab",
+            "reversed": "acacia_planks_from_acacia_slab",
             "source": {
                 "item": "minecraft:acacia_slab"
             },
@@ -1081,6 +1140,7 @@
         },
         "stairs": {
             "filename": "acacia_stairs",
+            "reversed": "acacia_planks_from_acacia_stairs",
             "source": {
                 "item": "minecraft:acacia_stairs"
             },
@@ -1096,6 +1156,7 @@
         },
         "pressure_plate": {
             "filename": "acacia_pressure_plate",
+            "reversed": "acacia_planks_from_acacia_pressure_plate",
             "source": {
                 "item": "minecraft:acacia_pressure_plate"
             },
@@ -1118,6 +1179,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "oak_slab",
+            "reversed": "oak_planks_from_oak_slab",
             "source": {
                 "item": "minecraft:oak_slab"
             },
@@ -1133,6 +1195,7 @@
         },
         "stairs": {
             "filename": "oak_stairs",
+            "reversed": "oak_planks_from_oak_stairs",
             "source": {
                 "item": "minecraft:oak_stairs"
             },
@@ -1148,6 +1211,7 @@
         },
         "pressure_plate": {
             "filename": "oak_pressure_plate",
+            "reversed": "oak_planks_from_oak_pressure_plate",
             "source": {
                 "item": "minecraft:oak_pressure_plate"
             },
@@ -1170,6 +1234,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "dark_oak_slab",
+            "reversed": "dark_oak_planks_from_dark_oak_slab",
             "source": {
                 "item": "minecraft:dark_oak_slab"
             },
@@ -1185,6 +1250,7 @@
         },
         "stairs": {
             "filename": "dark_oak_stairs",
+            "reversed": "dark_oak_planks_from_dark_oak_stairs",
             "source": {
                 "item": "minecraft:dark_oak_stairs"
             },
@@ -1200,6 +1266,7 @@
         },
         "pressure_plate": {
             "filename": "dark_oak_pressure_plate",
+            "reversed": "dark_oak_planks_from_dark_oak_pressure_plate",
             "source": {
                 "item": "minecraft:dark_oak_pressure_plate"
             },
@@ -1222,6 +1289,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "birch_slab",
+            "reversed": "birch_planks_from_birch_slab",
             "source": {
                 "item": "minecraft:birch_slab"
             },
@@ -1237,6 +1305,7 @@
         },
         "stairs": {
             "filename": "birch_stairs",
+            "reversed": "birch_planks_from_birch_stairs",
             "source": {
                 "item": "minecraft:birch_stairs"
             },
@@ -1252,6 +1321,7 @@
         },
         "pressure_plate": {
             "filename": "birch_pressure_plate",
+            "reversed": "birch_planks_from_birch_pressure_plate",
             "source": {
                 "item": "minecraft:birch_pressure_plate"
             },
@@ -1274,6 +1344,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "spruce_slab",
+            "reversed": "spruce_planks_from_spruce_slab",
             "source": {
                 "item": "minecraft:spruce_slab"
             },
@@ -1289,6 +1360,7 @@
         },
         "stairs": {
             "filename": "spruce_stairs",
+            "reversed": "spruce_planks_from_spruce_stairs",
             "source": {
                 "item": "minecraft:spruce_stairs"
             },
@@ -1304,6 +1376,7 @@
         },
         "pressure_plate": {
             "filename": "spruce_pressure_plate",
+            "reversed": "spruce_planks_from_spruce_pressure_plate",
             "source": {
                 "item": "minecraft:spruce_pressure_plate"
             },
@@ -1326,6 +1399,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "jungle_slab",
+            "reversed": "jungle_planks_from_jungle_slab",
             "source": {
                 "item": "minecraft:jungle_slab"
             },
@@ -1341,6 +1415,7 @@
         },
         "stairs": {
             "filename": "jungle_stairs",
+            "reversed": "jungle_planks_from_jungle_stairs",
             "source": {
                 "item": "minecraft:jungle_stairs"
             },
@@ -1356,6 +1431,7 @@
         },
         "pressure_plate": {
             "filename": "jungle_pressure_plate",
+            "reversed": "jungle_planks_from_jungle_pressure_plate",
             "source": {
                 "item": "minecraft:jungle_pressure_plate"
             },
@@ -1378,6 +1454,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "brick_slab",
+            "reversed": "bricks_from_brick_slab",
             "source": {
                 "item": "minecraft:brick_slab"
             },
@@ -1393,6 +1470,7 @@
         },
         "stairs": {
             "filename": "brick_stairs",
+            "reversed": "bricks_from_brick_stairs",
             "source": {
                 "item": "minecraft:brick_stairs"
             },
@@ -1415,6 +1493,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "cobblestone_slab",
+            "reversed": "cobblestone_from_cobblestone_slab",
             "source": {
                 "item": "minecraft:cobblestone_slab"
             },
@@ -1430,6 +1509,7 @@
         },
         "stairs": {
             "filename": "cobblestone_stairs",
+            "reversed": "cobblestone_from_cobblestone_stairs",
             "source": {
                 "item": "minecraft:cobblestone_stairs"
             },
@@ -1452,6 +1532,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "mossy_cobblestone_slab",
+            "reversed": "mossy_cobblestone_from_mossy_cobblestone_slab",
             "source": {
                 "item": "minecraft:mossy_cobblestone_slab"
             },
@@ -1467,6 +1548,7 @@
         },
         "stairs": {
             "filename": "mossy_cobblestone_stairs",
+            "reversed": "mossy_cobblestone_from_mossy_cobblestone_stairs",
             "source": {
                 "item": "minecraft:mossy_cobblestone_stairs"
             },
@@ -1489,6 +1571,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "stone_brick_slab",
+            "reversed": "stone_bricks_from_stone_brick_slab",
             "source": {
                 "item": "minecraft:stone_brick_slab"
             },
@@ -1504,6 +1587,7 @@
         },
         "stairs": {
             "filename": "stone_brick_stairs",
+            "reversed": "stone_bricks_from_stone_brick_stairs",
             "source": {
                 "item": "minecraft:stone_brick_stairs"
             },
@@ -1526,6 +1610,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "stone_slab",
+            "reversed": "stone_from_stone_slab",
             "source": {
                 "item": "minecraft:stone_slab"
             },
@@ -1541,6 +1626,7 @@
         },
         "stairs": {
             "filename": "stone_stairs",
+            "reversed": "stone_from_stone_stairs",
             "source": {
                 "item": "minecraft:stone_stairs"
             },
@@ -1556,6 +1642,7 @@
         },
         "pressure_plate": {
             "filename": "stone_pressure_plate",
+            "reversed": "stone_from_stone_pressure_plate",
             "source": {
                 "item": "minecraft:stone_pressure_plate"
             },
@@ -1578,6 +1665,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "mossy_stone_brick_slab",
+            "reversed": "mossy_stone_bricks_from_mossy_stone_brick_slab",
             "source": {
                 "item": "minecraft:mossy_stone_brick_slab"
             },
@@ -1593,6 +1681,7 @@
         },
         "stairs": {
             "filename": "mossy_stone_brick_stairs",
+            "reversed": "mossy_stone_bricks_from_mossy_stone_brick_stairs",
             "source": {
                 "item": "minecraft:mossy_stone_brick_stairs"
             },
@@ -1615,6 +1704,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "cut_red_sandstone_slab",
+            "reversed": "cut_red_sandstone_from_cut_red_sandstone_slab",
             "source": {
                 "item": "minecraft:cut_red_sandstone_slab"
             },
@@ -1630,6 +1720,7 @@
         },
         "stairs": {
             "filename": "cut_red_sandstone_stairs",
+            "reversed": "cut_red_sandstone_from_cut_red_sandstone_stairs",
             "source": {
                 "item": "minecraft:cut_red_sandstone_stairs"
             },
@@ -1652,6 +1743,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "cut_sandstone_slab",
+            "reversed": "cut_sandstone_from_cut_sandstone_slab",
             "source": {
                 "item": "minecraft:cut_sandstone_slab"
             },
@@ -1667,6 +1759,7 @@
         },
         "stairs": {
             "filename": "cut_sandstone_stairs",
+            "reversed": "cut_sandstone_from_cut_sandstone_stairs",
             "source": {
                 "item": "minecraft:cut_sandstone_stairs"
             },
@@ -1689,6 +1782,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "red_sandstone_slab",
+            "reversed": "red_sandstone_from_red_sandstone_slab",
             "source": {
                 "item": "minecraft:red_sandstone_slab"
             },
@@ -1704,6 +1798,7 @@
         },
         "stairs": {
             "filename": "red_sandstone_stairs",
+            "reversed": "red_sandstone_from_red_sandstone_stairs",
             "source": {
                 "item": "minecraft:red_sandstone_stairs"
             },
@@ -1726,6 +1821,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "sandstone_slab",
+            "reversed": "sandstone_from_sandstone_slab",
             "source": {
                 "item": "minecraft:sandstone_slab"
             },
@@ -1741,6 +1837,7 @@
         },
         "stairs": {
             "filename": "sandstone_stairs",
+            "reversed": "sandstone_from_sandstone_stairs",
             "source": {
                 "item": "minecraft:sandstone_stairs"
             },
@@ -1763,6 +1860,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "smooth_stone_slab",
+            "reversed": "smooth_stone_from_smooth_stone_slab",
             "source": {
                 "item": "minecraft:smooth_stone_slab"
             },
@@ -1785,6 +1883,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "smooth_sandstone_slab",
+            "reversed": "smooth_sandstone_from_smooth_sandstone_slab",
             "source": {
                 "item": "minecraft:smooth_sandstone_slab"
             },
@@ -1800,6 +1899,7 @@
         },
         "stairs": {
             "filename": "smooth_sandstone_stairs",
+            "reversed": "smooth_sandstone_from_smooth_sandstone_stairs",
             "source": {
                 "item": "minecraft:smooth_sandstone_stairs"
             },
@@ -1822,6 +1922,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "smooth_red_sandstone_slab",
+            "reversed": "smooth_red_sandstone_from_smooth_red_sandstone_slab",
             "source": {
                 "item": "minecraft:smooth_red_sandstone_slab"
             },
@@ -1837,6 +1938,7 @@
         },
         "stairs": {
             "filename": "smooth_red_sandstone_stairs",
+            "reversed": "smooth_red_sandstone_from_smooth_red_sandstone_stairs",
             "source": {
                 "item": "minecraft:smooth_red_sandstone_stairs"
             },
@@ -1859,6 +1961,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "smooth_quartz_slab",
+            "reversed": "smooth_quartz_from_smooth_quartz_slab",
             "source": {
                 "item": "minecraft:smooth_quartz_slab"
             },
@@ -1874,6 +1977,7 @@
         },
         "stairs": {
             "filename": "smooth_quartz_stairs",
+            "reversed": "smooth_quartz_from_smooth_quartz_stairs",
             "source": {
                 "item": "minecraft:smooth_quartz_stairs"
             },
@@ -1896,6 +2000,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "red_nether_brick_slab",
+            "reversed": "red_nether_bricks_from_red_nether_brick_slab",
             "source": {
                 "item": "minecraft:red_nether_brick_slab"
             },
@@ -1911,6 +2016,7 @@
         },
         "stairs": {
             "filename": "red_nether_brick_stairs",
+            "reversed": "red_nether_bricks_from_red_nether_brick_stairs",
             "source": {
                 "item": "minecraft:red_nether_brick_stairs"
             },
@@ -1933,6 +2039,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "nether_brick_slab",
+            "reversed": "nether_bricks_from_nether_brick_slab",
             "source": {
                 "item": "minecraft:nether_brick_slab"
             },
@@ -1948,6 +2055,7 @@
         },
         "stairs": {
             "filename": "nether_brick_stairs",
+            "reversed": "nether_bricks_from_nether_brick_stairs",
             "source": {
                 "item": "minecraft:nether_brick_stairs"
             },
@@ -1970,6 +2078,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "diorite_slab",
+            "reversed": "diorite_from_diorite_slab",
             "source": {
                 "item": "minecraft:diorite_slab"
             },
@@ -1985,6 +2094,7 @@
         },
         "stairs": {
             "filename": "diorite_stairs",
+            "reversed": "diorite_from_diorite_stairs",
             "source": {
                 "item": "minecraft:diorite_stairs"
             },
@@ -2007,6 +2117,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "granite_slab",
+            "reversed": "granite_from_granite_slab",
             "source": {
                 "item": "minecraft:granite_slab"
             },
@@ -2022,6 +2133,7 @@
         },
         "stairs": {
             "filename": "granite_stairs",
+            "reversed": "granite_from_granite_stairs",
             "source": {
                 "item": "minecraft:granite_stairs"
             },
@@ -2044,6 +2156,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "andesite_slab",
+            "reversed": "andesite_from_andesite_slab",
             "source": {
                 "item": "minecraft:andesite_slab"
             },
@@ -2059,6 +2172,7 @@
         },
         "stairs": {
             "filename": "andesite_stairs",
+            "reversed": "andesite_from_andesite_stairs",
             "source": {
                 "item": "minecraft:andesite_stairs"
             },
@@ -2081,6 +2195,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "polished_diorite_slab",
+            "reversed": "polished_diorite_from_polished_diorite_slab",
             "source": {
                 "item": "minecraft:polished_diorite_slab"
             },
@@ -2096,6 +2211,7 @@
         },
         "stairs": {
             "filename": "polished_diorite_stairs",
+            "reversed": "polished_diorite_from_polished_diorite_stairs",
             "source": {
                 "item": "minecraft:polished_diorite_stairs"
             },
@@ -2118,6 +2234,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "polished_granite_slab",
+            "reversed": "polished_granite_from_polished_granite_slab",
             "source": {
                 "item": "minecraft:polished_granite_slab"
             },
@@ -2133,6 +2250,7 @@
         },
         "stairs": {
             "filename": "polished_granite_stairs",
+            "reversed": "polished_granite_from_polished_granite_stairs",
             "source": {
                 "item": "minecraft:polished_granite_stairs"
             },
@@ -2155,6 +2273,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "polished_andesite_slab",
+            "reversed": "polished_andesite_from_polished_andesite_slab",
             "source": {
                 "item": "minecraft:polished_andesite_slab"
             },
@@ -2170,6 +2289,7 @@
         },
         "stairs": {
             "filename": "polished_andesite_stairs",
+            "reversed": "polished_andesite_from_polished_andesite_stairs",
             "source": {
                 "item": "minecraft:polished_andesite_stairs"
             },
@@ -2192,6 +2312,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "prismarine_brick_slab",
+            "reversed": "prismarine_bricks_from_prismarine_brick_slab",
             "source": {
                 "item": "minecraft:prismarine_brick_slab"
             },
@@ -2207,6 +2328,7 @@
         },
         "stairs": {
             "filename": "prismarine_brick_stairs",
+            "reversed": "prismarine_bricks_from_prismarine_brick_stairs",
             "source": {
                 "item": "minecraft:prismarine_brick_stairs"
             },
@@ -2229,6 +2351,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "prismarine_slab",
+            "reversed": "prismarine_from_prismarine_slab",
             "source": {
                 "item": "minecraft:prismarine_slab"
             },
@@ -2244,6 +2367,7 @@
         },
         "stairs": {
             "filename": "prismarine_stairs",
+            "reversed": "prismarine_from_prismarine_stairs",
             "source": {
                 "item": "minecraft:prismarine_stairs"
             },
@@ -2266,6 +2390,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "dark_prismarine_slab",
+            "reversed": "dark_prismarine_from_dark_prismarine_slab",
             "source": {
                 "item": "minecraft:dark_prismarine_slab"
             },
@@ -2281,6 +2406,7 @@
         },
         "stairs": {
             "filename": "dark_prismarine_stairs",
+            "reversed": "dark_prismarine_from_dark_prismarine_stairs",
             "source": {
                 "item": "minecraft:dark_prismarine_stairs"
             },
@@ -2303,6 +2429,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "quartz_slab",
+            "reversed": "quartz_block_from_quartz_slab",
             "source": {
                 "item": "minecraft:quartz_slab"
             },
@@ -2318,6 +2445,7 @@
         },
         "stairs": {
             "filename": "quartz_stairs",
+            "reversed": "quartz_block_from_quartz_stairs",
             "source": {
                 "item": "minecraft:quartz_stairs"
             },
@@ -2340,6 +2468,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "purpur_slab",
+            "reversed": "purpur_block_from_purpur_slab",
             "source": {
                 "item": "minecraft:purpur_slab"
             },
@@ -2355,6 +2484,7 @@
         },
         "stairs": {
             "filename": "purpur_stairs",
+            "reversed": "purpur_block_from_purpur_stairs",
             "source": {
                 "item": "minecraft:purpur_stairs"
             },
@@ -2377,6 +2507,7 @@
         "mc_version": "1_xx",
         "slab": {
             "filename": "end_stone_brick_slab",
+            "reversed": "end_stone_bricks_from_end_stone_brick_slab",
             "source": {
                 "item": "minecraft:end_stone_brick_slab"
             },
@@ -2392,6 +2523,7 @@
         },
         "stairs": {
             "filename": "end_stone_brick_stairs",
+            "reversed": "end_stone_bricks_from_end_stone_brick_stairs",
             "source": {
                 "item": "minecraft:end_stone_brick_stairs"
             },
@@ -2414,6 +2546,7 @@
         "mc_version": "1_xx",
         "pressure_plate": {
             "filename": "heavy_weighted_pressure_plate",
+            "reversed": "iron_ingot_from_heavy_weighted_pressure_plate",
             "source": {
                 "item": "minecraft:heavy_weighted_pressure_plate"
             },
@@ -2436,6 +2569,7 @@
         "mc_version": "1_xx",
         "pressure_plate": {
             "filename": "light_weighted_pressure_plate",
+            "reversed": "gold_ingot_from_light_weighted_pressure_plate",
             "source": {
                 "item": "minecraft:light_weighted_pressure_plate"
             },

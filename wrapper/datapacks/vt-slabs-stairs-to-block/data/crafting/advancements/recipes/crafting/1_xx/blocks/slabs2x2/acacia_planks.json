@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_xx/blocks/slabs2x2/acacia_planks"
+                "recipe": "crafting:blocks/slabs2x2/acacia_planks"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_xx/blocks/slabs2x2/acacia_planks"] }
+    "rewards": { "recipes": ["crafting:blocks/slabs2x2/acacia_planks"] }
 }

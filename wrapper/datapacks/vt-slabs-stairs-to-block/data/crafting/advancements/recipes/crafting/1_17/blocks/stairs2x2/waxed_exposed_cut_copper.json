@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_17/blocks/stairs2x2/waxed_exposed_cut_copper"
+                "recipe": "crafting:blocks/stairs2x2/waxed_exposed_cut_copper"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_17/blocks/stairs2x2/waxed_exposed_cut_copper"] }
+    "rewards": { "recipes": ["crafting:blocks/stairs2x2/waxed_exposed_cut_copper"] }
 }

@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_xx/blocks/slabs2x1/smooth_quartz"
+                "recipe": "crafting:blocks/slabs2x1/smooth_quartz"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_xx/blocks/slabs2x1/smooth_quartz"] }
+    "rewards": { "recipes": ["crafting:blocks/slabs2x1/smooth_quartz"] }
 }

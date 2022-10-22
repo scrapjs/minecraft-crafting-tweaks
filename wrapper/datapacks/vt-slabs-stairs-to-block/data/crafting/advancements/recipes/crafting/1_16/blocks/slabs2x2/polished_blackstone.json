@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_16/blocks/slabs2x2/polished_blackstone"
+                "recipe": "crafting:blocks/slabs2x2/polished_blackstone"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_16/blocks/slabs2x2/polished_blackstone"] }
+    "rewards": { "recipes": ["crafting:blocks/slabs2x2/polished_blackstone"] }
 }

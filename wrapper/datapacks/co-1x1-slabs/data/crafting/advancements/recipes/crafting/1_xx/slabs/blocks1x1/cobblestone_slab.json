@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_xx/slabs/blocks1x1/cobblestone_slab"
+                "recipe": "crafting:slabs/blocks1x1/cobblestone_slab"
             }
         }
     },
     "requirements": [
         ["has_slab","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_xx/slabs/blocks1x1/cobblestone_slab"] }
+    "rewards": { "recipes": ["crafting:slabs/blocks1x1/cobblestone_slab"] }
 }

@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_16/blocks/stairs2x2/blackstone"
+                "recipe": "crafting:blocks/stairs2x2/blackstone"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_16/blocks/stairs2x2/blackstone"] }
+    "rewards": { "recipes": ["crafting:blocks/stairs2x2/blackstone"] }
 }

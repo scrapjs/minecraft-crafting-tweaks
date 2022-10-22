@@ -189,6 +189,7 @@ slabs.forEach((obj)=>{
     blocks[obj.source].mc_version = blocks[obj.source].mc_version || obj.mc_version; // TODO: correct MC version
     blocks[obj.source].slab = {
         "filename": obj.alternate ? (obj.input.split(":")[1] + "_from_" + blocks[obj.source].filename) : obj.input.split(":")[1],
+        "reversed": blocks[obj.source].filename + "_from_" + obj.input.split(":")[1],
         "source": { "item": obj.input }, 
         "group": obj.group || "", 
         "mc_version": obj.mc_version, 
@@ -211,6 +212,7 @@ stairs.forEach((obj)=>{
     blocks[obj.source].mc_version = blocks[obj.source].mc_version || obj.mc_version; // TODO: correct MC version
     blocks[obj.source].stairs = {
         "filename": obj.alternate ? (obj.input.split(":")[1] + "_from_" + blocks[obj.source].filename) : obj.input.split(":")[1],
+        "reversed": blocks[obj.source].filename + "_from_" + obj.input.split(":")[1],
         "source": { "item": obj.input }, 
         "group": obj.group || "", 
         "mc_version": obj.mc_version, 
@@ -233,6 +235,7 @@ pressure_plates.forEach((obj)=>{
     blocks[obj.source].mc_version = blocks[obj.source].mc_version || obj.mc_version; // TODO: correct MC version
     blocks[obj.source].pressure_plate = {
         "filename": obj.alternate ? (obj.input.split(":")[1] + "_from_" + blocks[obj.source].filename) : obj.input.split(":")[1],
+        "reversed": blocks[obj.source].filename + "_from_" + obj.input.split(":")[1],
         "source": { "item": obj.input }, 
         "group": obj.group || "", 
         "mc_version": obj.mc_version, 
@@ -250,4 +253,3 @@ pressure_plates.forEach((obj)=>{
 
 let fs = require("fs");
 fs.writeFileSync("blocks.json", JSON.stringify(blocks, null, 4), "utf8");
-

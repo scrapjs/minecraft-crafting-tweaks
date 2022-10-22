@@ -6,12 +6,12 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "crafting:1_xx/blocks/stairs2x2/stone_bricks"
+                "recipe": "crafting:blocks/stairs2x2/stone_bricks"
             }
         }
     },
     "requirements": [
         ["has_block","has_result","has_the_recipe"]
     ],
-    "rewards": { "recipes": ["crafting:1_xx/blocks/stairs2x2/stone_bricks"] }
+    "rewards": { "recipes": ["crafting:blocks/stairs2x2/stone_bricks"] }
 }
