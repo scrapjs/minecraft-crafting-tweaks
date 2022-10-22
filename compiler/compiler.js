@@ -3,6 +3,7 @@ let usedModules = [
     "co-2x2-core", 
     "co-disable-default-slabs", 
     "co-disable-default-stairs", 
+    "co-disable-default-pressure-plates", // recommended for balance, if enabled "co-3x1-pressure-plates"
     "co-2x2-extra-cut-copper",
     "co-2x2-extra-log-crafts", 
     "co-2x2-items", 
@@ -13,6 +14,7 @@ let usedModules = [
     "co-3x1-pressure-plates",
     "co-2x2-extra-unpackable",
     "co-2x2-more-bark",
+    "co-2x2-extra-polymorph", // conflicts with modified 2x2 crafting recipes, required Polymorph mod for resolve it
     "co-extra-better-dyeables",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block", // may require `allowVanillaRecipeConflicts` and Polymorph mod
