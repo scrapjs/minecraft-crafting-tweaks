@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:cut_sandstone_slab"},
-        {"item": "minecraft:cut_sandstone_slab"},
-        {"item": "minecraft:cut_sandstone_slab"},
-        {"item": "minecraft:cut_sandstone_slab"}
+        {"item":"minecraft:cut_sandstone_slab"},
+        {"item":"minecraft:cut_sandstone_slab"},
+        {"item":"minecraft:cut_sandstone_slab"},
+        {"item":"minecraft:cut_sandstone_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:cut_sandstone",
+        "item": "minecraft:cut_sandstone",
         "count": 2
     },
     "group": "stairs_to_blocks"

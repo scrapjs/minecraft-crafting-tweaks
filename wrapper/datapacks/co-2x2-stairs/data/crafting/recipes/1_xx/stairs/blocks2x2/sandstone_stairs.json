@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["# ", "##"],
     "key": {
-        "#": {"item": "minecraft:sandstone"}
+        "#": {"item":"minecraft:sandstone"}
     },
     "result": {
         "item": "minecraft:sandstone_stairs",
         "count": 4
     },
-    "group": "blocks_to_stairs"
+    "group": "stairs"
 }

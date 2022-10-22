@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:deepslate_tile_stairs"},
-        {"item": "minecraft:deepslate_tile_stairs"},
-        {"item": "minecraft:deepslate_tile_stairs"},
-        {"item": "minecraft:deepslate_tile_stairs"}
+        {"item":"minecraft:deepslate_tile_stairs"},
+        {"item":"minecraft:deepslate_tile_stairs"},
+        {"item":"minecraft:deepslate_tile_stairs"},
+        {"item":"minecraft:deepslate_tile_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:deepslate_tiles",
-        "count": 3
+        "item": "minecraft:deepslate_tiles",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

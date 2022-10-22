@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:cobblestone"}
+        {"item":"minecraft:cobblestone"}
     ],
     "result": {
-        "item": "minecraft:minecraft:cobblestone_slab",
+        "item": "minecraft:cobblestone_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

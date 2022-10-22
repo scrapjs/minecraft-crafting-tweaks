@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:andesite_slab"},
-        {"item": "minecraft:andesite_slab"},
-        {"item": "minecraft:andesite_slab"},
-        {"item": "minecraft:andesite_slab"}
+        {"item":"minecraft:andesite_slab"},
+        {"item":"minecraft:andesite_slab"},
+        {"item":"minecraft:andesite_slab"},
+        {"item":"minecraft:andesite_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:andesite",
+        "item": "minecraft:andesite",
         "count": 2
     },
     "group": "stairs_to_blocks"

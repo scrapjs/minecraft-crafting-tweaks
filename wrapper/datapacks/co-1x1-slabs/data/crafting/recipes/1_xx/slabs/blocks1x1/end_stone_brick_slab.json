@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:end_stone_bricks"}
+        {"item":"minecraft:end_stone_bricks"}
     ],
     "result": {
-        "item": "minecraft:minecraft:end_stone_brick_slab",
+        "item": "minecraft:end_stone_brick_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

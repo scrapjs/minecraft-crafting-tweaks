@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:sandstone"}
+        {"item":"minecraft:sandstone"}
     ],
     "result": {
-        "item": "minecraft:minecraft:sandstone_slab",
+        "item": "minecraft:sandstone_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

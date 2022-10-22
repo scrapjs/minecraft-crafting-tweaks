@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:spruce_slab"},
-        {"item": "minecraft:spruce_slab"},
-        {"item": "minecraft:spruce_slab"},
-        {"item": "minecraft:spruce_slab"}
+        {"item":"minecraft:spruce_slab"},
+        {"item":"minecraft:spruce_slab"},
+        {"item":"minecraft:spruce_slab"},
+        {"item":"minecraft:spruce_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:spruce_planks",
+        "item": "minecraft:spruce_planks",
         "count": 2
     },
     "group": "stairs_to_blocks"

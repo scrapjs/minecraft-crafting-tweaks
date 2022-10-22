@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:polished_andesite"}
+        {"item":"minecraft:polished_andesite"}
     ],
     "result": {
-        "item": "minecraft:minecraft:polished_andesite_slab",
+        "item": "minecraft:polished_andesite_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

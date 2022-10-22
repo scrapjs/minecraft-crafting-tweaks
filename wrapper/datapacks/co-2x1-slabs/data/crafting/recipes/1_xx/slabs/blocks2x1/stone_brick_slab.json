@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["##"],
     "key": {
-        "#": {"item": "minecraft:stone_bricks"}
+        "#": {"item":"minecraft:stone_bricks"}
     },
     "result": {
         "item": "minecraft:stone_brick_slab",
         "count": 4
     },
-    "group": "blocks_to_slabs"
+    "group": "slabs"
 }

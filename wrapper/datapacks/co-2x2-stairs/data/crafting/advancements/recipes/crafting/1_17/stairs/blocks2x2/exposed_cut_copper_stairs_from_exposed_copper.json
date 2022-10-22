@@ -1,0 +1,17 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_stairs": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:exposed_copper"}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:exposed_cut_copper_stairs"}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "crafting:1_17/stairs/blocks2x2/exposed_cut_copper_stairs_from_exposed_copper"
+            }
+        }
+    },
+    "requirements": [
+        ["has_stairs","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["crafting:1_17/stairs/blocks2x2/exposed_cut_copper_stairs_from_exposed_copper"] }
+}

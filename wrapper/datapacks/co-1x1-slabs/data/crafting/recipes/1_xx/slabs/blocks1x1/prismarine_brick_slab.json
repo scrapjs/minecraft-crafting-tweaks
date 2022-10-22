@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:prismarine_bricks"}
+        {"item":"minecraft:prismarine_bricks"}
     ],
     "result": {
-        "item": "minecraft:minecraft:prismarine_brick_slab",
+        "item": "minecraft:prismarine_brick_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

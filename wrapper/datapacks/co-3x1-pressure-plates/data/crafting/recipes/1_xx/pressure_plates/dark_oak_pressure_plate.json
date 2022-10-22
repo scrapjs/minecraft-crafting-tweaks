@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["###"],
     "key": {
-        "#": {"item": "minecraft:dark_oak_planks"}
+        "#": {"item":"minecraft:dark_oak_planks"}
     },
     "result": {
         "item": "minecraft:dark_oak_pressure_plate",
         "count": 1
     },
-    "group": "wooden_pressure_plate"
+    "group": "pressure_plates"
 }

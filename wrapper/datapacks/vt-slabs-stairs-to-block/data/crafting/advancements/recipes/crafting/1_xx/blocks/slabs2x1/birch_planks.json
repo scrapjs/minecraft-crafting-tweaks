@@ -1,8 +1,8 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_slab": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:birch_slab"}]}},
-        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:birch_planks"}]}},
+        "has_block": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:birch_slab"}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:birch_planks"}},
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
@@ -11,7 +11,7 @@
         }
     },
     "requirements": [
-        ["has_slab","has_result","has_the_recipe"]
+        ["has_block","has_result","has_the_recipe"]
     ],
     "rewards": { "recipes": ["crafting:1_xx/blocks/slabs2x1/birch_planks"] }
 }

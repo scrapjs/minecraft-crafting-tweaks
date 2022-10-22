@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:polished_granite"}
+        {"item":"minecraft:polished_granite"}
     ],
     "result": {
-        "item": "minecraft:minecraft:polished_granite_slab",
+        "item": "minecraft:polished_granite_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

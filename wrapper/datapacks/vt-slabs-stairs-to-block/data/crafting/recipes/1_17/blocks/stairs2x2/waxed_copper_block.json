@@ -1,0 +1,15 @@
+
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"item":"minecraft:waxed_cut_copper_stairs"},
+        {"item":"minecraft:waxed_cut_copper_stairs"},
+        {"item":"minecraft:waxed_cut_copper_stairs"},
+        {"item":"minecraft:waxed_cut_copper_stairs"}
+    ],
+    "result": {
+        "item": "minecraft:waxed_copper_block",
+        "count": "#  ", "## ", "###"
+    },
+    "group": "stairs_to_blocks"
+}

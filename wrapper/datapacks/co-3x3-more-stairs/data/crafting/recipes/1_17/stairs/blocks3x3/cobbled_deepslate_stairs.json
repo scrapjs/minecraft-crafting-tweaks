@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {"item": "minecraft:cobbled_deepslate"}
+        "#": {"item":"minecraft:cobbled_deepslate"}
     },
     "result": {
         "item": "minecraft:cobbled_deepslate_stairs",
-        "count": 8
+        "count": 4
     },
-    "group": "blocks_to_stairs"
+    "group": "stairs"
 }

@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["#  ", "## ", "###"],
     "key": {
-        "#": {"item": "minecraft:blackstone"}
+        "#": {"item":"minecraft:blackstone"}
     },
     "result": {
         "item": "minecraft:blackstone_stairs",
-        "count": 8
+        "count": 4
     },
-    "group": "blocks_to_stairs"
+    "group": "stairs"
 }

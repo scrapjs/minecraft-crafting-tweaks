@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["###"],
     "key": {
-        "#": {"item": "minecraft:mangrove_planks"}
+        "#": {"item":"minecraft:mangrove_planks"}
     },
     "result": {
         "item": "minecraft:mangrove_pressure_plate",
         "count": 1
     },
-    "group": "wooden_pressure_plate"
+    "group": "pressure_plates"
 }

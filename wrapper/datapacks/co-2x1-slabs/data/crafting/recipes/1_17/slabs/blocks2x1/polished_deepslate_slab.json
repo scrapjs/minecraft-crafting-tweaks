@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["##"],
     "key": {
-        "#": {"item": "minecraft:polished_deepslate"}
+        "#": {"item":"minecraft:polished_deepslate"}
     },
     "result": {
         "item": "minecraft:polished_deepslate_slab",
         "count": 4
     },
-    "group": "blocks_to_slabs"
+    "group": "slabs"
 }

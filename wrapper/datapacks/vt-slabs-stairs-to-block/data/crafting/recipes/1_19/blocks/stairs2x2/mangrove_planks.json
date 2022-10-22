@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:mangrove_stairs"},
-        {"item": "minecraft:mangrove_stairs"},
-        {"item": "minecraft:mangrove_stairs"},
-        {"item": "minecraft:mangrove_stairs"}
+        {"item":"minecraft:mangrove_stairs"},
+        {"item":"minecraft:mangrove_stairs"},
+        {"item":"minecraft:mangrove_stairs"},
+        {"item":"minecraft:mangrove_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:mangrove_planks",
-        "count": 3
+        "item": "minecraft:mangrove_planks",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:acacia_stairs"},
-        {"item": "minecraft:acacia_stairs"},
-        {"item": "minecraft:acacia_stairs"},
-        {"item": "minecraft:acacia_stairs"}
+        {"item":"minecraft:acacia_stairs"},
+        {"item":"minecraft:acacia_stairs"},
+        {"item":"minecraft:acacia_stairs"},
+        {"item":"minecraft:acacia_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:acacia_planks",
-        "count": 3
+        "item": "minecraft:acacia_planks",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

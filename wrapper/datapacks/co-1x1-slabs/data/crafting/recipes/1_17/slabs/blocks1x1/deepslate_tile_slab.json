@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:deepslate_tiles"}
+        {"item":"minecraft:deepslate_tiles"}
     ],
     "result": {
-        "item": "minecraft:minecraft:deepslate_tile_slab",
+        "item": "minecraft:deepslate_tile_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

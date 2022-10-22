@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:polished_blackstone_stairs"},
-        {"item": "minecraft:polished_blackstone_stairs"},
-        {"item": "minecraft:polished_blackstone_stairs"},
-        {"item": "minecraft:polished_blackstone_stairs"}
+        {"item":"minecraft:polished_blackstone_stairs"},
+        {"item":"minecraft:polished_blackstone_stairs"},
+        {"item":"minecraft:polished_blackstone_stairs"},
+        {"item":"minecraft:polished_blackstone_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:polished_blackstone",
-        "count": 3
+        "item": "minecraft:polished_blackstone",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

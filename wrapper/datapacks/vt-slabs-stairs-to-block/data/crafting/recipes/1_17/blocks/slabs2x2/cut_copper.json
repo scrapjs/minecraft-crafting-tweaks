@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:cut_copper_slab"},
-        {"item": "minecraft:cut_copper_slab"},
-        {"item": "minecraft:cut_copper_slab"},
-        {"item": "minecraft:cut_copper_slab"}
+        {"item":"minecraft:cut_copper_slab"},
+        {"item":"minecraft:cut_copper_slab"},
+        {"item":"minecraft:cut_copper_slab"},
+        {"item":"minecraft:cut_copper_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:cut_copper",
+        "item": "minecraft:cut_copper",
         "count": 2
     },
     "group": "stairs_to_blocks"

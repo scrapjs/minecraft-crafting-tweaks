@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:oak_stairs"},
-        {"item": "minecraft:oak_stairs"},
-        {"item": "minecraft:oak_stairs"},
-        {"item": "minecraft:oak_stairs"}
+        {"item":"minecraft:oak_stairs"},
+        {"item":"minecraft:oak_stairs"},
+        {"item":"minecraft:oak_stairs"},
+        {"item":"minecraft:oak_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:oak_planks",
-        "count": 3
+        "item": "minecraft:oak_planks",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:cobblestone_stairs"},
-        {"item": "minecraft:cobblestone_stairs"},
-        {"item": "minecraft:cobblestone_stairs"},
-        {"item": "minecraft:cobblestone_stairs"}
+        {"item":"minecraft:cobblestone_stairs"},
+        {"item":"minecraft:cobblestone_stairs"},
+        {"item":"minecraft:cobblestone_stairs"},
+        {"item":"minecraft:cobblestone_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:cobblestone",
-        "count": 3
+        "item": "minecraft:cobblestone",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

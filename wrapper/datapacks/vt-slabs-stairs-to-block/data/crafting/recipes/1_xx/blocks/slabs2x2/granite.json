@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:granite_slab"},
-        {"item": "minecraft:granite_slab"},
-        {"item": "minecraft:granite_slab"},
-        {"item": "minecraft:granite_slab"}
+        {"item":"minecraft:granite_slab"},
+        {"item":"minecraft:granite_slab"},
+        {"item":"minecraft:granite_slab"},
+        {"item":"minecraft:granite_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:granite",
+        "item": "minecraft:granite",
         "count": 2
     },
     "group": "stairs_to_blocks"

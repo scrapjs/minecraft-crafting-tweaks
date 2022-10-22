@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:sandstone_stairs"},
-        {"item": "minecraft:sandstone_stairs"},
-        {"item": "minecraft:sandstone_stairs"},
-        {"item": "minecraft:sandstone_stairs"}
+        {"item":"minecraft:sandstone_stairs"},
+        {"item":"minecraft:sandstone_stairs"},
+        {"item":"minecraft:sandstone_stairs"},
+        {"item":"minecraft:sandstone_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:sandstone",
-        "count": 3
+        "item": "minecraft:sandstone",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

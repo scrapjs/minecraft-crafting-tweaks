@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["# ", "##"],
     "key": {
-        "#": {"item": "minecraft:warped_planks"}
+        "#": {"item":"minecraft:warped_planks"}
     },
     "result": {
         "item": "minecraft:warped_stairs",
         "count": 4
     },
-    "group": "wooden_stairs"
+    "group": "stairs"
 }

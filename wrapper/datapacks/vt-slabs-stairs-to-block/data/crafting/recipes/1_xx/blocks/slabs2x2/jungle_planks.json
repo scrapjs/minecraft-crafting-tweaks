@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:jungle_slab"},
-        {"item": "minecraft:jungle_slab"},
-        {"item": "minecraft:jungle_slab"},
-        {"item": "minecraft:jungle_slab"}
+        {"item":"minecraft:jungle_slab"},
+        {"item":"minecraft:jungle_slab"},
+        {"item":"minecraft:jungle_slab"},
+        {"item":"minecraft:jungle_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:jungle_planks",
+        "item": "minecraft:jungle_planks",
         "count": 2
     },
     "group": "stairs_to_blocks"

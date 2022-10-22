@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:dark_oak_slab"},
-        {"item": "minecraft:dark_oak_slab"},
-        {"item": "minecraft:dark_oak_slab"},
-        {"item": "minecraft:dark_oak_slab"}
+        {"item":"minecraft:dark_oak_slab"},
+        {"item":"minecraft:dark_oak_slab"},
+        {"item":"minecraft:dark_oak_slab"},
+        {"item":"minecraft:dark_oak_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:dark_oak_planks",
+        "item": "minecraft:dark_oak_planks",
         "count": 2
     },
     "group": "stairs_to_blocks"

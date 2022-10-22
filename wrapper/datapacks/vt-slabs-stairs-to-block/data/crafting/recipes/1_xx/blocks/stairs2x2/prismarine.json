@@ -2,14 +2,14 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:prismarine_stairs"},
-        {"item": "minecraft:prismarine_stairs"},
-        {"item": "minecraft:prismarine_stairs"},
-        {"item": "minecraft:prismarine_stairs"}
+        {"item":"minecraft:prismarine_stairs"},
+        {"item":"minecraft:prismarine_stairs"},
+        {"item":"minecraft:prismarine_stairs"},
+        {"item":"minecraft:prismarine_stairs"}
     ],
     "result": {
-        "item": "minecraft:minecraft:prismarine",
-        "count": 3
+        "item": "minecraft:prismarine",
+        "count": "#  ", "## ", "###"
     },
     "group": "stairs_to_blocks"
 }

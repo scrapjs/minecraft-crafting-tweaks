@@ -2,13 +2,13 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:deepslate_brick_slab"},
-        {"item": "minecraft:deepslate_brick_slab"},
-        {"item": "minecraft:deepslate_brick_slab"},
-        {"item": "minecraft:deepslate_brick_slab"}
+        {"item":"minecraft:deepslate_brick_slab"},
+        {"item":"minecraft:deepslate_brick_slab"},
+        {"item":"minecraft:deepslate_brick_slab"},
+        {"item":"minecraft:deepslate_brick_slab"}
     ],
     "result": {
-        "item": "minecraft:minecraft:deepslate_bricks",
+        "item": "minecraft:deepslate_bricks",
         "count": 2
     },
     "group": "stairs_to_blocks"

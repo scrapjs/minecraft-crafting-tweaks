@@ -2,10 +2,10 @@
 {
     "type": "crafting_shapeless",
     "ingredients": [
-        {"item": "minecraft:stone_bricks"}
+        {"item":"minecraft:stone_bricks"}
     ],
     "result": {
-        "item": "minecraft:minecraft:stone_brick_slab",
+        "item": "minecraft:stone_brick_slab",
         "count": 2
     },
     "group": "stairs_to_blocks"

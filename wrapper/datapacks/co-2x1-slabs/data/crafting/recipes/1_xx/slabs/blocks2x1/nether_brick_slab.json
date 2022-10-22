@@ -2,11 +2,11 @@
     "type": "crafting_shaped",
     "pattern": ["##"],
     "key": {
-        "#": {"item": "minecraft:nether_bricks"}
+        "#": {"item":"minecraft:nether_bricks"}
     },
     "result": {
         "item": "minecraft:nether_brick_slab",
         "count": 4
     },
-    "group": "blocks_to_slabs"
+    "group": "slabs"
 }
