@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"tag": "better_dyeables:dye/default"},
         {"tag": "better_dyeables:terracotta"}

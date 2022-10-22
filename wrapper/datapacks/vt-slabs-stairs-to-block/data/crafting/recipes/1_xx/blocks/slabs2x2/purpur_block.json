@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:purpur_slab"},
         {"item": "minecraft:purpur_slab"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:purpur_slab"}
     ],
     "result": {
-        "item": "minecraft:purpur_block",
+        "item": "minecraft:minecraft:purpur_block",
         "count": 2
     },
     "group": "stairs_to_blocks"

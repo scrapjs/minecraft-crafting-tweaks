@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"tag": "better_dyeables:dye/gray"},
         {"tag": "better_dyeables:glass_pane/not_gray"}

@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:stone_stairs"},
         {"item": "minecraft:stone_stairs"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:stone_stairs"}
     ],
     "result": {
-        "item": "minecraft:stone",
+        "item": "minecraft:minecraft:stone",
         "count": 3
     },
     "group": "stairs_to_blocks"

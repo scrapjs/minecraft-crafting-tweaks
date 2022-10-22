@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:dark_prismarine_slab"},
         {"item": "minecraft:dark_prismarine_slab"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:dark_prismarine_slab"}
     ],
     "result": {
-        "item": "minecraft:dark_prismarine",
+        "item": "minecraft:minecraft:dark_prismarine",
         "count": 2
     },
     "group": "stairs_to_blocks"

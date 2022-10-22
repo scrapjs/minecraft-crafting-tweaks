@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:polished_blackstone_brick_slab"},
         {"item": "minecraft:polished_blackstone_brick_slab"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:polished_blackstone_brick_slab"}
     ],
     "result": {
-        "item": "minecraft:polished_blackstone_bricks",
+        "item": "minecraft:minecraft:polished_blackstone_bricks",
         "count": 2
     },
     "group": "stairs_to_blocks"

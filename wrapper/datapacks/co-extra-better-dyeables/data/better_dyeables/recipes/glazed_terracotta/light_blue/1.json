@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"tag": "better_dyeables:dye/light_blue"},
         {"tag": "better_dyeables:glazed_terracotta/not_light_blue"}

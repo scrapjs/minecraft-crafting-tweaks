@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:mangrove_stairs"},
         {"item": "minecraft:mangrove_stairs"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:mangrove_stairs"}
     ],
     "result": {
-        "item": "minecraft:mangrove_planks",
+        "item": "minecraft:minecraft:mangrove_planks",
         "count": 3
     },
     "group": "stairs_to_blocks"

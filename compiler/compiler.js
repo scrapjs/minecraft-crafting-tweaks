@@ -10,6 +10,7 @@ let usedModules = [
     "co-1x1-slabs", 
     "co-2x2-stairs",
     "co-3x3-more-stairs",
+    "co-3x1-pressure-plates",
     "co-2x2-extra-unpackable",
     "co-extra-better-dyeables",
     "vt-powder-to-glass", 
@@ -49,146 +50,165 @@ let mcVersionString = {
 
 
 let slabs = [
-    {"source": "blackstone", "input": "blackstone_slab", "mc_version": "1_16", single: true},
-    {"source": "crimson_planks", "input": "crimson_slab", "mc_version": "1_16", "group": "wooden_slab"},
-    {"source": "warped_planks", "input": "warped_slab", "mc_version": "1_16", "group": "wooden_slab"},
-    {"source": "polished_blackstone", "input": "polished_blackstone_slab", "mc_version": "1_16"},
-    {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_slab", "mc_version": "1_16", single: true},
+    {"source": "minecraft:blackstone", "input": "minecraft:blackstone_slab", "mc_version": "1_16", single: true},
+    {"source": "minecraft:crimson_planks", "input": "minecraft:crimson_slab", "mc_version": "1_16", "group": "wooden_slab"},
+    {"source": "minecraft:warped_planks", "input": "minecraft:warped_slab", "mc_version": "1_16", "group": "wooden_slab"},
+    {"source": "minecraft:polished_blackstone", "input": "minecraft:polished_blackstone_slab", "mc_version": "1_16"},
+    {"source": "minecraft:polished_blackstone_bricks", "input": "minecraft:polished_blackstone_brick_slab", "mc_version": "1_16", single: true},
 
-    {"source": "cobbled_deepslate", "input": "cobbled_deepslate_slab", "mc_version": "1_17", single: true},
-    {"source": "deepslate_bricks", "input": "deepslate_brick_slab", "mc_version": "1_17", single: true},
-    {"source": "deepslate_tiles", "input": "deepslate_tile_slab", "mc_version": "1_17", single: true},
-    {"source": "polished_deepslate", "input": "polished_deepslate_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:cobbled_deepslate", "input": "minecraft:cobbled_deepslate_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:deepslate_bricks", "input": "minecraft:deepslate_brick_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:deepslate_tiles", "input": "minecraft:deepslate_tile_slab", "mc_version": "1_17", single: true},
+    {"source": "minecraft:polished_deepslate", "input": "minecraft:polished_deepslate_slab", "mc_version": "1_17", single: true},
 
-    {"source": "cut_copper", "input": "cut_copper_slab", "mc_version": "1_17", from: ["copper_block"], single: true},
-    {"source": "weathered_cut_copper", "input": "weathered_cut_copper_slab", "mc_version": "1_17", from: ["weathered_copper"], single: true},
-    {"source": "exposed_cut_copper", "input": "exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"], single: true},
-    {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"], single: true},
+    {"source": "minecraft:cut_copper", "input": "minecraft:cut_copper_slab", "mc_version": "1_17", from: ["copper_block"], single: true},
+    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_slab", "mc_version": "1_17", from: ["weathered_copper"], single: true},
+    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_slab", "mc_version": "1_17", from: ["exposed_copper"], single: true},
+    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_slab", "mc_version": "1_17", from: ["oxidized_copper"], single: true},
 
-    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"], single: true},
-    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"], single: true},
-    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"], single: true},
-    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"], single: true},
+    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_cut_copper_slab", from: ["waxed_copper_block"], single: true},
+    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_slab", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_slab",from: ["waxed_weathered_copper"], single: true},
+    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_slab", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_slab",from: ["waxed_exposed_copper"], single: true},
+    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_slab", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_slab",from: ["waxed_oxidized_copper"], single: true},
 
-    {"source": "mangrove_planks", "input": "mangrove_slab", "mc_version": "1_19", "group": "wooden_slab"},
-    {"source": "mud_bricks", "input": "mud_brick_slab", "mc_version": "1_19", single: true},
+    {"source": "minecraft:mangrove_planks", "input": "minecraft:mangrove_slab", "mc_version": "1_19", "group": "wooden_slab"},
+    {"source": "minecraft:mud_bricks", "input": "minecraft:mud_brick_slab", "mc_version": "1_19", single: true},
 
-    {"source": "acacia_planks", "input": "acacia_slab", "mc_version": "1_xx", "group": "wooden_slab"},
-    {"source": "oak_planks", "input": "oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
-    {"source": "dark_oak_planks", "input": "dark_oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
-    {"source": "birch_planks", "input": "birch_slab", "mc_version": "1_xx", "group": "wooden_slab"},
-    {"source": "spruce_planks", "input": "spruce_slab", "mc_version": "1_xx", "group": "wooden_slab"},
-    {"source": "jungle_planks", "input": "jungle_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:acacia_planks", "input": "minecraft:acacia_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:oak_planks", "input": "minecraft:oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:dark_oak_planks", "input": "minecraft:dark_oak_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:birch_planks", "input": "minecraft:birch_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:spruce_planks", "input": "minecraft:spruce_slab", "mc_version": "1_xx", "group": "wooden_slab"},
+    {"source": "minecraft:jungle_planks", "input": "minecraft:jungle_slab", "mc_version": "1_xx", "group": "wooden_slab"},
 
-    {"source": "bricks", "input": "brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:bricks", "input": "minecraft:brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "cobblestone", "input": "cobblestone_slab", "mc_version": "1_xx", single: true},
-    {"source": "mossy_cobblestone", "input": "mossy_cobblestone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:cobblestone", "input": "minecraft:cobblestone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:mossy_cobblestone", "input": "minecraft:mossy_cobblestone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "stone_bricks", "input": "stone_brick_slab", "mc_version": "1_xx", single: true},
-    {"source": "stone", "input": "stone_slab", "mc_version": "1_xx"},
-    {"source": "mossy_stone_bricks", "input": "mossy_stone_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:stone_bricks", "input": "minecraft:stone_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:stone", "input": "minecraft:stone_slab", "mc_version": "1_xx"},
+    {"source": "minecraft:mossy_stone_bricks", "input": "minecraft:mossy_stone_brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "cut_red_sandstone", "input": "cut_red_sandstone_slab", "mc_version": "1_xx", single: true},
-    {"source": "cut_sandstone", "input": "cut_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:cut_red_sandstone", "input": "minecraft:cut_red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:cut_sandstone", "input": "minecraft:cut_sandstone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "red_sandstone", "input": "red_sandstone_slab", "mc_version": "1_xx", single: true},
-    {"source": "sandstone", "input": "sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:red_sandstone", "input": "minecraft:red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:sandstone", "input": "minecraft:sandstone_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "smooth_stone", "input": "smooth_stone_slab", "mc_version": "1_xx", single: true},
-    {"source": "smooth_sandstone", "input": "smooth_sandstone_slab", "mc_version": "1_xx", single: true},
-    {"source": "smooth_red_sandstone", "input": "smooth_red_sandstone_slab", "mc_version": "1_xx", single: true},
-    {"source": "smooth_quartz", "input": "smooth_quartz_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:smooth_stone", "input": "minecraft:smooth_stone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:smooth_sandstone", "input": "minecraft:smooth_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:smooth_red_sandstone", "input": "minecraft:smooth_red_sandstone_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:smooth_quartz", "input": "minecraft:smooth_quartz_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "red_nether_bricks", "input": "red_nether_brick_slab", "mc_version": "1_xx", single: true},
-    {"source": "nether_bricks", "input": "nether_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:red_nether_bricks", "input": "minecraft:red_nether_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:nether_bricks", "input": "minecraft:nether_brick_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "diorite", "input": "diorite_slab", "mc_version": "1_xx", single: true},
-    {"source": "granite", "input": "granite_slab", "mc_version": "1_xx", single: true},
-    {"source": "andesite", "input": "andesite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:diorite", "input": "minecraft:diorite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:granite", "input": "minecraft:granite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:andesite", "input": "minecraft:andesite_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "polished_diorite", "input": "polished_diorite_slab", "mc_version": "1_xx", single: true},
-    {"source": "polished_granite", "input": "polished_granite_slab", "mc_version": "1_xx", single: true},
-    {"source": "polished_andesite", "input": "polished_andesite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:polished_diorite", "input": "minecraft:polished_diorite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:polished_granite", "input": "minecraft:polished_granite_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:polished_andesite", "input": "minecraft:polished_andesite_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "prismarine_bricks", "input": "prismarine_brick_slab", "mc_version": "1_xx", single: true},
-    {"source": "prismarine", "input": "prismarine_slab", "mc_version": "1_xx", single: true},
-    {"source": "dark_prismarine", "input": "dark_prismarine_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:prismarine_bricks", "input": "minecraft:prismarine_brick_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:prismarine", "input": "minecraft:prismarine_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:dark_prismarine", "input": "minecraft:dark_prismarine_slab", "mc_version": "1_xx", single: true},
 
-    {"source": "quartz_block", "input": "quartz_slab", "mc_version": "1_xx", single: true},
-    {"source": "purpur_block", "input": "purpur_slab", "mc_version": "1_xx", single: true},
-    {"source": "end_stone_bricks", "input": "end_stone_brick_slab", "mc_version": "1_xx", single: true}
+    {"source": "minecraft:quartz_block", "input": "minecraft:quartz_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:purpur_block", "input": "minecraft:purpur_slab", "mc_version": "1_xx", single: true},
+    {"source": "minecraft:end_stone_bricks", "input": "minecraft:end_stone_brick_slab", "mc_version": "1_xx", single: true}
 ];
 
 let stairs = [
-    {"source": "blackstone", "input": "blackstone_stairs", "mc_version": "1_16"},
-    {"source": "crimson_planks", "input": "crimson_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
-    {"source": "warped_planks", "input": "warped_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
-    {"source": "polished_blackstone", "input": "polished_blackstone_stairs", "mc_version": "1_16"},
-    {"source": "polished_blackstone_bricks", "input": "polished_blackstone_brick_stairs", "mc_version": "1_16"},
+    {"source": "minecraft:blackstone", "input": "minecraft:blackstone_stairs", "mc_version": "1_16"},
+    {"source": "minecraft:crimson_planks", "input": "minecraft:crimson_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
+    {"source": "minecraft:warped_planks", "input": "minecraft:warped_stairs", "group": "wooden_stairs", "mc_version": "1_16"},
+    {"source": "minecraft:polished_blackstone", "input": "minecraft:polished_blackstone_stairs", "mc_version": "1_16"},
+    {"source": "minecraft:polished_blackstone_bricks", "input": "minecraft:polished_blackstone_brick_stairs", "mc_version": "1_16"},
 
-    {"source": "cobbled_deepslate", "input": "cobbled_deepslate_stairs", "mc_version": "1_17"},
-    {"source": "deepslate_bricks", "input": "deepslate_brick_stairs", "mc_version": "1_17"},
-    {"source": "deepslate_tiles", "input": "deepslate_tile_stairs", "mc_version": "1_17"},
-    {"source": "polished_deepslate", "input": "polished_deepslate_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:cobbled_deepslate", "input": "minecraft:cobbled_deepslate_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:deepslate_bricks", "input": "minecraft:deepslate_brick_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:deepslate_tiles", "input": "minecraft:deepslate_tile_stairs", "mc_version": "1_17"},
+    {"source": "minecraft:polished_deepslate", "input": "minecraft:polished_deepslate_stairs", "mc_version": "1_17"},
 
-    {"source": "cut_copper", "input": "cut_copper_stairs", "mc_version": "1_17", from: ["copper_block"]},
-    {"source": "weathered_cut_copper", "input": "weathered_cut_copper_stairs", "mc_version": "1_17", from: ["weathered_copper"]},
-    {"source": "exposed_cut_copper", "input": "exposed_cut_copper_stairs", "mc_version": "1_17", from: ["exposed_copper"]},
-    {"source": "oxidized_cut_copper", "input": "oxidized_cut_copper_stairs", "mc_version": "1_17", from: ["oxidized_copper"]},
+    {"source": "minecraft:cut_copper", "input": "minecraft:cut_copper_stairs", "mc_version": "1_17", from: ["copper_block"]},
+    {"source": "minecraft:weathered_cut_copper", "input": "minecraft:weathered_cut_copper_stairs", "mc_version": "1_17", from: ["weathered_copper"]},
+    {"source": "minecraft:exposed_cut_copper", "input": "minecraft:exposed_cut_copper_stairs", "mc_version": "1_17", from: ["exposed_copper"]},
+    {"source": "minecraft:oxidized_cut_copper", "input": "minecraft:oxidized_cut_copper_stairs", "mc_version": "1_17", from: ["oxidized_copper"]},
 
-    {"source": "waxed_cut_copper", "input": "waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs", from: ["waxed_copper_block"]},
-    {"source": "waxed_weathered_cut_copper", "input": "waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs", from: ["waxed_weathered_copper"]},
-    {"source": "waxed_exposed_cut_copper", "input": "waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs", from: ["waxed_exposed_copper"]},
-    {"source": "waxed_oxidized_cut_copper", "input": "waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs", from: ["waxed_oxidized_copper"]},
+    {"source": "minecraft:waxed_cut_copper", "input": "minecraft:waxed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_cut_copper_stairs", from: ["waxed_copper_block"]},
+    {"source": "minecraft:waxed_weathered_cut_copper", "input": "minecraft:waxed_weathered_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_weathered_cut_copper_stairs", from: ["waxed_weathered_copper"]},
+    {"source": "minecraft:waxed_exposed_cut_copper", "input": "minecraft:waxed_exposed_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_exposed_cut_copper_stairs", from: ["waxed_exposed_copper"]},
+    {"source": "minecraft:waxed_oxidized_cut_copper", "input": "minecraft:waxed_oxidized_cut_copper_stairs", "mc_version": "1_17", "group": "waxed_oxidized_cut_copper_stairs", from: ["waxed_oxidized_copper"]},
 
-    {"source": "mangrove_planks", "input": "mangrove_stairs", "group": "wooden_stairs", "mc_version": "1_19"},
-    {"source": "mud_bricks", "input": "mud_brick_stairs", "mc_version": "1_19"},
+    {"source": "minecraft:mangrove_planks", "input": "minecraft:mangrove_stairs", "group": "wooden_stairs", "mc_version": "1_19"},
+    {"source": "minecraft:mud_bricks", "input": "minecraft:mud_brick_stairs", "mc_version": "1_19"},
 
-    {"source": "acacia_planks", "input": "acacia_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
-    {"source": "oak_planks", "input": "oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
-    {"source": "dark_oak_planks", "input": "dark_oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
-    {"source": "birch_planks", "input": "birch_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
-    {"source": "spruce_planks", "input": "spruce_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
-    {"source": "jungle_planks", "input": "jungle_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:acacia_planks", "input": "minecraft:acacia_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:oak_planks", "input": "minecraft:oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:dark_oak_planks", "input": "minecraft:dark_oak_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:birch_planks", "input": "minecraft:birch_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:spruce_planks", "input": "minecraft:spruce_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:jungle_planks", "input": "minecraft:jungle_stairs", "group": "wooden_stairs", "mc_version": "1_xx"},
 
-    {"source": "bricks", "input": "brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:bricks", "input": "minecraft:brick_stairs", "mc_version": "1_xx"},
 
-    {"source": "cobblestone", "input": "cobblestone_stairs", "mc_version": "1_xx"},
-    {"source": "mossy_cobblestone", "input": "mossy_cobblestone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:cobblestone", "input": "minecraft:cobblestone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:mossy_cobblestone", "input": "minecraft:mossy_cobblestone_stairs", "mc_version": "1_xx"},
 
-    {"source": "stone_bricks", "input": "stone_brick_stairs", "mc_version": "1_xx"},
-    {"source": "stone", "input": "stone_stairs", "mc_version": "1_xx"},
-    {"source": "mossy_stone_bricks", "input": "mossy_stone_brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:stone_bricks", "input": "minecraft:stone_brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:stone", "input": "minecraft:stone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:mossy_stone_bricks", "input": "minecraft:mossy_stone_brick_stairs", "mc_version": "1_xx"},
 
-    {"source": "cut_red_sandstone", "input": "cut_red_sandstone_stairs", "mc_version": "1_xx"},
-    {"source": "cut_sandstone", "input": "cut_sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:cut_red_sandstone", "input": "minecraft:cut_red_sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:cut_sandstone", "input": "minecraft:cut_sandstone_stairs", "mc_version": "1_xx"},
 
-    {"source": "red_sandstone", "input": "red_sandstone_stairs", "mc_version": "1_xx"},
-    {"source": "sandstone", "input": "sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:red_sandstone", "input": "minecraft:red_sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:sandstone", "input": "minecraft:sandstone_stairs", "mc_version": "1_xx"},
 
-    {"source": "smooth_sandstone", "input": "smooth_sandstone_stairs", "mc_version": "1_xx"},
-    {"source": "smooth_red_sandstone", "input": "smooth_red_sandstone_stairs", "mc_version": "1_xx"},
-    {"source": "smooth_quartz", "input": "smooth_quartz_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:smooth_sandstone", "input": "minecraft:smooth_sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:smooth_red_sandstone", "input": "minecraft:smooth_red_sandstone_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:smooth_quartz", "input": "minecraft:smooth_quartz_stairs", "mc_version": "1_xx"},
 
-    {"source": "red_nether_bricks", "input": "red_nether_brick_stairs", "mc_version": "1_xx"},
-    {"source": "nether_bricks", "input": "nether_brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:red_nether_bricks", "input": "minecraft:red_nether_brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:nether_bricks", "input": "minecraft:nether_brick_stairs", "mc_version": "1_xx"},
 
-    {"source": "diorite", "input": "diorite_stairs", "mc_version": "1_xx"},
-    {"source": "granite", "input": "granite_stairs", "mc_version": "1_xx"},
-    {"source": "andesite", "input": "andesite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:diorite", "input": "minecraft:diorite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:granite", "input": "minecraft:granite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:andesite", "input": "minecraft:andesite_stairs", "mc_version": "1_xx"},
 
-    {"source": "polished_diorite", "input": "polished_diorite_stairs", "mc_version": "1_xx"},
-    {"source": "polished_granite", "input": "polished_granite_stairs", "mc_version": "1_xx"},
-    {"source": "polished_andesite", "input": "polished_andesite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:polished_diorite", "input": "minecraft:polished_diorite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:polished_granite", "input": "minecraft:polished_granite_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:polished_andesite", "input": "minecraft:polished_andesite_stairs", "mc_version": "1_xx"},
 
-    {"source": "prismarine_bricks", "input": "prismarine_brick_stairs", "mc_version": "1_xx"},
-    {"source": "prismarine", "input": "prismarine_stairs", "mc_version": "1_xx"},
-    {"source": "dark_prismarine", "input": "dark_prismarine_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:prismarine_bricks", "input": "minecraft:prismarine_brick_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:prismarine", "input": "minecraft:prismarine_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:dark_prismarine", "input": "minecraft:dark_prismarine_stairs", "mc_version": "1_xx"},
 
-    {"source": "quartz_block", "input": "quartz_stairs", "mc_version": "1_xx"},
-    {"source": "purpur_block", "input": "purpur_stairs", "mc_version": "1_xx"},
-    {"source": "end_stone_bricks", "input": "end_stone_brick_stairs", "mc_version": "1_xx"}
+    {"source": "minecraft:quartz_block", "input": "minecraft:quartz_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:purpur_block", "input": "minecraft:purpur_stairs", "mc_version": "1_xx"},
+    {"source": "minecraft:end_stone_bricks", "input": "minecraft:end_stone_brick_stairs", "mc_version": "1_xx"}
+];
+
+let pressure_plates = [
+    {"source": "minecraft:mangrove_planks", "input": "minecraft:mangrove_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_19"},
+
+    {"source": "minecraft:crimson_planks", "input": "minecraft:crimson_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_16"},
+    {"source": "minecraft:warped_planks", "input": "minecraft:warped_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_16"},
+    {"source": "minecraft:polished_blackstone", "input": "minecraft:polished_blackstone_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_16"},
+
+    {"source": "minecraft:acacia_planks", "input": "minecraft:acacia_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:oak_planks", "input": "minecraft:oak_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:dark_oak_planks", "input": "minecraft:dark_oak_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:birch_planks", "input": "minecraft:birch_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:spruce_planks", "input": "minecraft:spruce_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:jungle_planks", "input": "minecraft:jungle_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:stone", "input": "minecraft:stone_pressure_plate", "group": "wooden_pressure_plate", "mc_version": "1_xx"},
+
+    {"source": "minecraft:iron_ingot", "input": "minecraft:heavy_weighted_pressure_plate", "mc_version": "1_xx"},
+    {"source": "minecraft:gold_ingot", "input": "minecraft:light_weighted_pressure_plate", "mc_version": "1_xx"}
 ];
 
 //
@@ -201,11 +221,11 @@ let templateShapelessSingle = (options, outCount)=>{
     let tags = [];
     for (let i=0;i<options.count;i++) {
         tags.push(`
-        {"item": "minecraft:${options.input}"}`);
+        {"item": "${options.input}"}`);
     }
     return crlf(`
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [${tags.join(",")}
     ],
     "result": {
@@ -218,16 +238,7 @@ let templateShapelessSingle = (options, outCount)=>{
 
 // 
 let templateStub = (options)=>{
-    return crlf(`{
-  "type": "minecraft:crafting_shaped",
-  "group": "stub",
-  "pattern": [],
-  "key": {},
-  "result": {
-    "item": "minecraft:air",
-    "count": 0
-  }
-}`, CRLF);
+    return crlf(JSON.stringify({"type": "crafting_shaped","group": "stub","pattern": [],"key": {},"result": {"item": "minecraft:air","count": 0}}), CRLF);
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
@@ -236,16 +247,17 @@ let templateShapedSingle = (options, pattern, outCount)=>{
     "type": "crafting_shaped",
     "pattern": [${pattern}],
     "key": {
-        "#": {"item": "minecraft:${options.input}"}
+        "#": {"item": "${options.input}"}
     },
     "result": {
-        "item": "minecraft:${options.result}",
+        "item": "${options.result}",
         "count": ${outCount}
     },
     "group": "${options.group}"
 }`, CRLF);
 };
 
+let PP3x1Pattern = `"###"`;
 let stairs3x3Pattern = `"#  ", "## ", "###"`;
 let stairs2x2Pattern = `"# ", "##"`;
 let slabs2x1Pattern = `"##"`;
@@ -284,9 +296,6 @@ let advancementTemplate = (options)=>{
 }`, CRLF);
 };
 
-
-
-
 let names = ["banner", "bed", "candle", "concrete", "carpet", "concrete_powder", "glass", "glass_pane", "glazed_terracotta", "terracotta", "wool"];
 let colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow", "default"];
 
@@ -307,7 +316,7 @@ let templateColors = (options)=>{
               (options.color != "default" ? `${options.color}_${options.name}` : `${options.name}`);
 
     return crlf(`{
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"tag": "better_dyeables:dye/${options.color}"},${tags.join(",")}
     ],
@@ -320,15 +329,16 @@ let templateColors = (options)=>{
 };
 
 /*
-// NOT NEEDED!
 //
 if (usedModules.indexOf("co-disable-default-slabs") != -1) {
     let rootDir = `../wrapper/datapacks/co-disable-default-slabs/data/minecraft/recipes`;
 
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+    //fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     slabs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/${obj.input}.json`, templateStub(obj), 'utf8');
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.input.split(":")[1]}.json`, templateStub({}), 'utf8');
+        };
     });
 };
 
@@ -336,10 +346,12 @@ if (usedModules.indexOf("co-disable-default-slabs") != -1) {
 if (usedModules.indexOf("co-disable-default-stairs") != -1) {
     let rootDir = `../wrapper/datapacks/co-disable-default-stairs/data/minecraft/recipes`;
 
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+    //fs.rmSync(`${rootDir}`, { recursive: true, force: true });
     stairs.forEach((obj)=>{
-        fs.mkdirSync(`${rootDir}`, { recursive: true });
-        fs.writeFileSync(`${rootDir}/${obj.input}.json`, templateStub(obj), 'utf8');
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDir}`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.input.split(":")[1]}.json`, templateStub({}), 'utf8');
+        };
     });
 };*/
 
@@ -382,29 +394,70 @@ if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
 };
 
 //
-if (usedModules.indexOf("co-2x2-slabs") != -1) {
-    let rootDirAdv = `../wrapper/datapacks/co-2x2-slabs/data/crafting/advancements/recipes/crafting`;
-    let rootDir = `../wrapper/datapacks/co-2x2-slabs/data/crafting/recipes`;
+if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
+    let rootDirAdv = `../wrapper/datapacks/co-3x1-pressure-plates/data/crafting/advancements/recipes/crafting`;
+    let rootDir = `../wrapper/datapacks/co-3x1-pressure-plates/data/crafting/recipes`;
 
     fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
 
+    pressure_plates.forEach((obj)=>{
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
+            let criterias = {};
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
+            
+            // advancements
+            fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/pressure_plates`, { recursive: true });
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/pressure_plates/${obj.input.split(":")[1]}.json`, advancementTemplate({ 
+                criterias, 
+                recipeAddress: `crafting:${obj.mc_version}/pressure_plates/${obj.input.split(":")[1]}` 
+            }), 'utf8');
+            
+            // crafting
+            fs.mkdirSync(`${rootDir}/${obj.mc_version}/pressure_plates`, { recursive: true });
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/pressure_plates/${obj.input.split(":")[1]}.json`, templateShapedSingle({
+                input: obj.source,
+                result: obj.input,
+                group: obj.group ? obj.group : "pressure_plates"
+            }, PP3x1Pattern, 1), 'utf8');
+        };
+    });
+};
+
+//
+if (usedModules.indexOf("co-2x1-slabs") != -1) {
+    let rootDirAdv = `../wrapper/datapacks/co-2x1-slabs/data/crafting/advancements/recipes/crafting`;
+    let rootDir = `../wrapper/datapacks/co-2x1-slabs/data/crafting/recipes`;
+    let rootDirMc = `../wrapper/datapacks/co-2x1-slabs/data/minecraft/recipes`;
+
+    fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
+    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
+
+    /*
+    pressure_plates.forEach((obj)=>{
+        if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
+            fs.mkdirSync(`${rootDirMc}`, { recursive: true });
+            fs.writeFileSync(`${rootDirMc}/${obj.input.split(":")[1]}.json`, templateStub({}), 'utf8');
+        };
+    });*/
+
     slabs.forEach((obj)=>{
         if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
-            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
             
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks2x1/${obj.input.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/slabs/blocks2x1/${obj.input}` 
+                recipeAddress: `crafting:${obj.mc_version}/slabs/blocks2x1/${obj.input.split(":")[1]}` 
             }), 'utf8');
             
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input}.json`, templateShapedSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks2x1/${obj.input.split(":")[1]}.json`, templateShapedSingle({
                 input: obj.source,
                 result: obj.input,
                 group: obj.group ? obj.group : "blocks_to_slabs"
@@ -424,19 +477,19 @@ if (usedModules.indexOf("co-1x1-slabs") != -1) {
     slabs.forEach((obj)=>{
         if ((disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && obj.single) {
             let criterias = {};
-            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
             
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks1x1`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks1x1/${obj.input}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/slabs/blocks1x1/${obj.input.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/slabs/blocks1x1/${obj.input}` 
+                recipeAddress: `crafting:${obj.mc_version}/slabs/blocks1x1/${obj.input.split(":")[1]}` 
             }), 'utf8');
             
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/slabs/blocks1x1`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks1x1/${obj.input}.json`, templateShapelessSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/slabs/blocks1x1/${obj.input.split(":")[1]}.json`, templateShapelessSingle({
                 input: obj.source,
                 result: obj.input,
                 count: 1,
@@ -457,19 +510,19 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
     stairs.forEach((obj)=>{
         if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
-            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
             
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks2x2/${obj.input.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/stairs/blocks2x2/${obj.input}` 
+                recipeAddress: `crafting:${obj.mc_version}/stairs/blocks2x2/${obj.input.split(":")[1]}` 
             }), 'utf8');
 
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input}.json`, templateShapedSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks2x2/${obj.input.split(":")[1]}.json`, templateShapedSingle({
                 input: obj.source,
                 result: obj.input,
                 group: obj.group ? obj.group : "blocks_to_stairs"
@@ -489,19 +542,19 @@ if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
     stairs.forEach((obj)=>{
         if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
-            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
+            criterias["has_block" ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
             
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks3x3`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks3x3/${obj.input}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/stairs/blocks3x3/${obj.input.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/stairs/blocks3x3/${obj.input}` 
+                recipeAddress: `crafting:${obj.mc_version}/stairs/blocks3x3/${obj.input.split(":")[1]}` 
             }), 'utf8');
 
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/stairs/blocks3x3`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks3x3/${obj.input}.json`, templateShapedSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/stairs/blocks3x3/${obj.input.split(":")[1]}.json`, templateShapedSingle({
                 input: obj.source,
                 result: obj.input,
                 group: obj.group ? obj.group : "blocks_to_stairs"
@@ -521,16 +574,19 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     stairs.forEach((obj)=>{
         if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
-            criterias["has_stairs"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
+            criterias["has_stairs"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}` } ] } };
             
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, advancementTemplate({ criterias, recipeAddress: `crafting:${obj.mc_version}/blocks/stairs2x2/${obj.source}` }), 'utf8');
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/stairs2x2/${obj.source.split(":")[1]}.json`, advancementTemplate({ 
+                criterias, 
+                recipeAddress: `crafting:${obj.mc_version}/blocks/stairs2x2/${obj.source.split(":")[1]}` 
+            }), 'utf8');
 
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source}.json`, templateShapelessSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/stairs2x2/${obj.source.split(":")[1]}.json`, templateShapelessSingle({
                 input: obj.input,
                 result: obj.source,
                 count: 4,
@@ -542,30 +598,30 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     slabs.forEach((obj)=>{
         if (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) {
             let criterias = {};
-            criterias["has_slab"  ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.input}`} ] } };
-            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${obj.source}` } ] } };
+            criterias["has_slab"  ] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.input}`} ] } };
+            criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `${obj.source}` } ] } };
 
             // advancements
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
             fs.mkdirSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x2/${obj.source.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x2/${obj.source}` 
+                recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x2/${obj.source.split(":")[1]}` 
             }), 'utf8');
-            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, advancementTemplate({ 
+            fs.writeFileSync(`${rootDirAdv}/${obj.mc_version}/blocks/slabs2x1/${obj.source.split(":")[1]}.json`, advancementTemplate({ 
                 criterias, 
-                recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x1/${obj.source}` 
+                recipeAddress: `crafting:${obj.mc_version}/blocks/slabs2x1/${obj.source.split(":")[1]}` 
             }), 'utf8');
             
             // crafting
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/`, { recursive: true });
             fs.mkdirSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source}.json`, templateShapedSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x1/${obj.source.split(":")[1]}.json`, templateShapedSingle({
                 input: obj.input,
                 result: obj.source,
                 group: obj.group ? obj.group : "slabs_to_blocks"
             }, slabs2x1Pattern, 1), 'utf8');
-            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source}.json`, templateShapelessSingle({
+            fs.writeFileSync(`${rootDir}/${obj.mc_version}/blocks/slabs2x2/${obj.source.split(":")[1]}.json`, templateShapelessSingle({
                 input: obj.input,
                 result: obj.source,
                 count: 4,

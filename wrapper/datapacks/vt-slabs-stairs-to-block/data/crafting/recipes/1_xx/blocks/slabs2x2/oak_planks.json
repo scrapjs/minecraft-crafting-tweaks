@@ -1,6 +1,6 @@
 
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "crafting_shapeless",
     "ingredients": [
         {"item": "minecraft:oak_slab"},
         {"item": "minecraft:oak_slab"},
@@ -8,7 +8,7 @@
         {"item": "minecraft:oak_slab"}
     ],
     "result": {
-        "item": "minecraft:oak_planks",
+        "item": "minecraft:minecraft:oak_planks",
         "count": 2
     },
     "group": "stairs_to_blocks"
