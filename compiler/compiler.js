@@ -173,19 +173,44 @@ let templateColors = (options)=>{
 if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
     let rootDirAdv = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
     let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/recipes`;
+    let rootDirMc = `../wrapper/datapacks/co-extra-better-dyeables/data/minecraft/recipes`;
 
     fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
-    
+
     names.forEach((name)=>{
         colors.forEach((color)=>{
+            let rejectionCode = color != "default" ? `/not_${color}` : ``;
+            let mcName = 
+                (name == "glass" || name == "glass_pane") && 
+                color != "default" ? 
+                `${color}_stained_${name}` : 
+                    (color != "default" ? `${color}_${name}` : `${name}`);
+            
+            // kill vanilla dyeing!
+            if (color != "default" && name != "glazed_terracotta" && name != "concrete_powder" && name != "concrete" && name != "banner") {
+                fs.mkdirSync(    `${rootDirMc}`, { recursive: true });
+                
+                if (name == "bed") {
+                    if (color != "white") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
+                } else
+                if (name == "carpet") {
+                    if (color != "white") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
+                } else
+                if (name == "glass_pane") {
+                    if (color != "default") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
+                } else
+                if (name == "glass") {
+                    if (color != "default") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
+                } else
+                {
+                    fs.writeFileSync(`${rootDirMc}/${mcName}.json`, templateStub({}), 'utf8');
+                }
+            };
+            
+            //
             for (let i=1;i<=8;i++) {
-                let rejectionCode = color != "default" ? `/not_${color}` : ``;
-                let mcName = 
-                    (name == "glass" || name == "glass_pane") && 
-                        color != "default" ? 
-                        `${color}_stained_${name}` : 
-                            (color != "default" ? `${color}_${name}` : `${name}`);
+                
 
                 let criterias = {};
                 criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
