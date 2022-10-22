@@ -7,7 +7,7 @@ let usedModules = [
     "co-2x2-extra-log-crafts", 
     "co-2x2-items", 
     "co-2x1-slabs", 
-    "co-1x1-slabs", 
+    "co-1x1-slabs", // may require `allowVanillaRecipeConflicts` and Polymorph mod
     "co-2x2-stairs",
     "co-3x3-more-stairs",
     "co-3x1-pressure-plates",
