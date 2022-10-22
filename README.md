@@ -30,6 +30,7 @@
 - Slabs 2x1 crafts.
 - Stairs 2x2 crafts.
 - Stairs 3x3 crafts (8 items).
+- Pressure plates 3x1.
 - Extra copper 2x2 crafts.
 - Extra wooden log 2x2 crafts.
 - Craft recipes 2x2 for items and tools.
@@ -37,6 +38,8 @@
 - Extra better dyeables (most biggest).
 - Stairs and slabs to blocks.
 - Straight to shapeless items.
+- Extras for `Polymorph` mod.
+- Vanilla resolve conflicts (dedicated for `Polymorph` compatibility).
 - Powder to glass smelting.
 
 ### Balance changes
