@@ -12,6 +12,7 @@ let usedModules = [
     "co-3x3-more-stairs",
     "co-3x1-pressure-plates",
     "co-2x2-extra-unpackable",
+    "co-2x2-more-bark",
     "co-extra-better-dyeables",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block",

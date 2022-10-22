@@ -1,17 +1,1 @@
-{
-  "type": "crafting_shaped",
-  "group": "bark",
-  "pattern": [
-    "##",
-    "##"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:stripped_dark_oak_log"
-    }
-  },
-  "result": {
-    "item": "minecraft:stripped_dark_oak_wood",
-    "count": 4
-  }
-}
+{"type":"crafting_shaped","group":"stub","pattern":[],"key":{},"result":{"item":"minecraft:air","count":0}}

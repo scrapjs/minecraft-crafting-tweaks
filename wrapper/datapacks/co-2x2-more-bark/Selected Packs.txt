@@ -1,4 +1,0 @@
-Vanilla Tweaks Crafting Tweaks
-Version: 1.19
-Packs:
-	more bark
