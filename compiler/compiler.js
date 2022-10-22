@@ -15,10 +15,11 @@ let usedModules = [
     "co-2x2-more-bark",
     "co-extra-better-dyeables",
     "vt-powder-to-glass", 
-    "vt-slabs-stairs-to-block",
+    "vt-slabs-stairs-to-block", // may require `allowVanillaRecipeConflicts` and Polymorph mod
     "vt-straight-to-shapeless"
 ];
 
+let allowVanillaRecipeConflicts = true; // required Polymorph mod!
 let usedMCVersion = "1_19";
 
 let disallowedData = {
@@ -454,11 +455,21 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         from: "slab",
         subdir: "slabs2x1",
         handler: (obj, options)=>{
-            return templateShapedSingle({
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 1, slabs2x1Pattern);
+            if (allowVanillaRecipeConflicts) {
+                // required polymorph for some crafting recipes!
+                return templateShapelessSingle({
+                    count: 2,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 1);
+            } else {
+                return templateShapedSingle({
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 1, slabs2x1Pattern);
+            }
         }
     });
 

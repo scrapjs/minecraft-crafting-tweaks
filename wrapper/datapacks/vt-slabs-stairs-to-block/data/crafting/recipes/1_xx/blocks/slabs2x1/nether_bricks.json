@@ -1,12 +1,13 @@
+
 {
-    "type": "crafting_shaped",
-    "pattern": ["##"],
-    "key": {
-        "#": {"item":"minecraft:nether_brick_slab"}
-    },
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"item":"minecraft:nether_brick_slab"},
+        {"item":"minecraft:nether_brick_slab"}
+    ],
     "result": {
         "item": "minecraft:nether_bricks",
         "count": 1
     },
-    "group": "blocks"
+    "group": "stairs_to_blocks"
 }
