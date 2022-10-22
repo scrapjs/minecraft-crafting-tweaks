@@ -313,11 +313,12 @@ if (usedModules.indexOf("co-disable-default-stairs") != -1) {
 
 //
 if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
-    fs.rmSync(`${`../wrapper/datapacks/co-3x1-pressure-plates/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/co-3x1-pressure-plates/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/co-3x1-pressure-plates`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/co-3x1-pressure-plates`,
+        datapack,
         blocks,
         type: "pressure_plate",
         from: "block",
@@ -342,11 +343,12 @@ if (usedModules.indexOf("co-2x1-slabs") != -1) {
         from: "block"
     });*/
 
-    fs.rmSync(`${`../wrapper/datapacks/co-2x1-slabs/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/co-2x1-slabs/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/co-2x1-slabs`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/co-2x1-slabs`,
+        datapack,
         blocks,
         type: "slab",
         from: "block",
@@ -364,11 +366,12 @@ if (usedModules.indexOf("co-2x1-slabs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-1x1-slabs") != -1) {
-    fs.rmSync(`${`../wrapper/datapacks/co-1x1-slabs/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/co-1x1-slabs/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/co-1x1-slabs`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/co-1x1-slabs`,
+        datapack,
         blocks,
         type: "slab",
         from: "block",
@@ -387,11 +390,12 @@ if (usedModules.indexOf("co-1x1-slabs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-2x2-stairs") != -1) {
-    fs.rmSync(`${`../wrapper/datapacks/co-2x2-stairs/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/co-2x2-stairs/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/co-2x2-stairs`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/co-2x2-stairs`,
+        datapack,
         blocks,
         type: "stairs",
         from: "block",
@@ -409,11 +413,12 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
-    fs.rmSync(`${`../wrapper/datapacks/co-3x3-more-stairs/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/co-3x3-more-stairs/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/co-3x3-more-stairs`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/co-3x3-more-stairs`,
+        datapack,
         blocks,
         type: "stairs",
         from: "block",
@@ -431,11 +436,12 @@ if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
 
 // TODO: multiple configurations support
 if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
-    fs.rmSync(`${`../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/advancements/recipes/crafting`}`, { recursive: true, force: true });
-    fs.rmSync(`${`../wrapper/datapacks/vt-slabs-stairs-to-block/data/crafting/recipes`}`, { recursive: true, force: true });
+    let datapack = `../wrapper/datapacks/vt-slabs-stairs-to-block`;
+    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/vt-slabs-stairs-to-block`,
+        datapack,
         blocks,
         type: "block",
         from: "stairs",
@@ -451,7 +457,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/vt-slabs-stairs-to-block`,
+        datapack,
         blocks,
         type: "block",
         from: "slab",
@@ -476,7 +482,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
     });
 
     generateModuleRecipes({
-        datapack: `../wrapper/datapacks/vt-slabs-stairs-to-block`,
+        datapack,
         blocks,
         type: "block",
         from: "slab",
