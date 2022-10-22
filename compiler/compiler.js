@@ -500,50 +500,50 @@ fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersio
 //
 let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true }); mergeTrees.merge();
 
-// remove disallowed version data from "crafting"
-{
+let mergeVersionsFn = (directory = `../datapack/data/crafting/recipes`)=>{
     let outputs = {};
-    let directory = `../datapack/data/crafting/recipes`;
     let files = fs.readdirSync(`${directory}`);
     
     files.forEach((filename)=>{
-        if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
+        if (mcVersions.indexOf(filename) != -1) {
+            let versioned = fs.readdirSync(`${directory}/${filename}`);
+            versioned.forEach((fn)=>{
+                outputs[`${directory}/${fn}`] = outputs[`${directory}/${fn}`] || [];
+                outputs[`${directory}/${fn}`].push(`${directory}/${filename}/${fn}`);
+            });
+        };
+    });
+
+    for (let key in outputs) {
+        let mergeTrees = new MergeTrees( outputs[key], key, { overwrite: true }); mergeTrees.merge();
+    };
+
+    files.forEach((filename)=>{
+        if (mcVersions.indexOf(filename) != -1 && mergeVersions) {
             fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
         };
     });
-    
-    if (mergeVersions) {
-        files.forEach((filename)=>{
-            if (mcVersions.indexOf(filename) != -1) {
-                let versioned = fs.readdirSync(`${directory}/${filename}`);
-                versioned.forEach((fn)=>{
-                    outputs[`${directory}/${fn}`] = outputs[`${directory}/${fn}`] || [];
-                    outputs[`${directory}/${fn}`].push(`${directory}/${filename}/${fn}`);
-                });
-            };
-        });
-
-        for (let key in outputs) {
-            let mergeTrees = new MergeTrees( outputs[key], key, { overwrite: true }); mergeTrees.merge();
-        };
-
-        files.forEach((filename)=>{
-            if (mcVersions.indexOf(filename) != -1 && mergeVersions) {
-                fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
-            };
-        });
-    };
 };
 
-// remove disallowed version data from "crafting"
-{
-    let directory = `../datapack/data/crafting/advancements/recipes/crafting`;
+let removeDisallowedFn = (directory = `../datapack/data/crafting/recipes`)=>{
     let files = fs.readdirSync(`${directory}`);
     files.forEach((filename)=>{
         if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
             fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
         }
     });
+};
+
+// remove disallowed version data from "crafting"
+{
+    removeDisallowedFn(`../datapack/data/crafting/recipes`);
+    removeDisallowedFn(`../datapack/data/crafting/advancements/recipes/crafting`);
+};
+
+//
+if (mergeVersions) {
+    mergeVersionsFn(`../datapack/data/crafting/recipes`);
+    mergeVersionsFn(`../datapack/data/crafting/advancements/recipes/crafting`);
 };
 
 // copy required files
