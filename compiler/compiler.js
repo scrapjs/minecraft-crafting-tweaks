@@ -83,7 +83,7 @@ let templateStub = (options)=>{
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
-let templateShapedSingle = (options, pattern, outCount)=>{
+let templateShapedSingle = (options, outCount, pattern)=>{
     return crlf(`{
     "type": "crafting_shaped",
     "pattern": [${pattern}],
@@ -299,7 +299,7 @@ if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, PP3x1Pattern, 1);
+            }, 1, PP3x1Pattern);
         }
     });
 };
@@ -328,7 +328,7 @@ if (usedModules.indexOf("co-2x1-slabs") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, slabs2x1Pattern, 4);
+            }, 4, slabs2x1Pattern);
         }
     });
 
@@ -374,7 +374,7 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, stairs2x2Pattern, 4);
+            }, 4, stairs2x2Pattern);
         }
     });
 };
@@ -396,7 +396,7 @@ if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, stairs3x3Pattern, 4);
+            }, 4, stairs3x3Pattern);
         }
     });
 };
@@ -418,7 +418,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, stairs3x3Pattern, 3);
+            }, 3);
         }
     });
 
@@ -433,7 +433,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
-            }, slabs2x1Pattern, 1);
+            }, 1, slabs2x1Pattern);
         }
     });
 
