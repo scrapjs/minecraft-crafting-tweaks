@@ -48,6 +48,8 @@
 
 ### TODO
 
+- **Mods support in generators and compiler.**
+- **Tags support in generators and compiler.**
 - More datapack generation.
 - More sorting and organizing.
 - Make single datapack compiler.
