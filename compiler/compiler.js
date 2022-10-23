@@ -63,39 +63,33 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 // will used in future
 let blocks = JSON.parse(fs.readFileSync("./blocks.json", "utf8"));
 
-
-let templateShapelessSingle = (options, outCount)=>{
-    let tags = [];
-    for (let i=0;i<options.count;i++) {
-        tags.push(`
-        ${JSON.stringify(options.input)}`);
-    }
-    return crlf(`
-{
-    "type": "crafting_shapeless",
-    "ingredients": [${tags.join(",")}
-    ],
-    "result": {
-        "item": "${options.result["item"]}",
-        "count": ${outCount}
-    },
-    "group": "stairs_to_blocks"
-}`, CRLF);
-};
-
 // 
 let templateStub = (options)=>{
     return crlf(JSON.stringify({"type": "crafting_shaped","group": "stub","pattern": [],"key": {},"result": {"item": "minecraft:air","count": 0}}), CRLF);
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
-let templateShapedSingle = (options, outCount, pattern)=>{
-    return crlf(`{
+let templateRecipeSingle = (options, outCount, pattern = null)=>{
+    let tags = [];
+    for (let i=0;i<options.count;i++) {
+        tags.push(`
+        ${JSON.stringify(options.input)}`);
+    };
+    return crlf(pattern ? `{
     "type": "crafting_shaped",
     "pattern": [${pattern}],
     "key": {
         "#": ${JSON.stringify(options.input)}
     },
+    "result": {
+        "item": "${options.result["item"]}",
+        "count": ${outCount}
+    },
+    "group": "${options.group}"
+}` : `{
+    "type": "crafting_shapeless",
+    "ingredients": [${tags.join(",")}
+    ],
     "result": {
         "item": "${options.result["item"]}",
         "count": ${outCount}
@@ -327,7 +321,8 @@ if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
         from: "block",
         subdir: "",
         handler: (obj, options)=>{
-            return templateShapedSingle({
+            return templateRecipeSingle({
+                count: 3,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
@@ -357,7 +352,8 @@ if (usedModules.indexOf("co-2x1-slabs") != -1) {
         from: "block",
         subdir: "blocks2x1",
         handler: (obj, options)=>{
-            return templateShapedSingle({
+            return templateRecipeSingle({
+                count: 2,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
                 group: obj.group ? obj.group : namings[options.type]
@@ -381,7 +377,7 @@ if (usedModules.indexOf("co-1x1-slabs") != -1) {
         subdir: "blocks1x1",
         single: true,
         handler: (obj, options)=>{
-            return templateShapelessSingle({
+            return templateRecipeSingle({
                 count: 1,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
@@ -404,7 +400,7 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
         from: "block",
         subdir: "blocks2x2",
         handler: (obj, options)=>{
-            return templateShapedSingle({
+            return templateRecipeSingle({
                 count: 1,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
@@ -427,7 +423,7 @@ if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
         from: "block",
         subdir: "blocks3x3",
         handler: (obj, options)=>{
-            return templateShapedSingle({
+            return templateRecipeSingle({
                 count: 1,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
@@ -450,7 +446,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         from: "stairs",
         subdir: "stairs4x",
         handler: (obj, options)=>{
-            return templateShapelessSingle({
+            return templateRecipeSingle({
                 count: 4,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],
@@ -466,21 +462,12 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         from: "slab",
         subdir: allowVanillaRecipeConflicts ? "slabs2x" : "slabs2x1",
         handler: (obj, options)=>{
-            if (allowVanillaRecipeConflicts) {
-                // required polymorph for some crafting recipes!
-                return templateShapelessSingle({
-                    count: 2,
-                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                    group: obj.group ? obj.group : namings[options.type]
-                }, 1);
-            } else {
-                return templateShapedSingle({
-                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                    group: obj.group ? obj.group : namings[options.type]
-                }, 1, slabs2x1Pattern);
-            }
+            return templateRecipeSingle({
+                count: 2,
+                input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                group: obj.group ? obj.group : namings[options.type]
+            }, 1, allowVanillaRecipeConflicts ? null : slabs2x1Pattern);
         }
     });
 
@@ -491,7 +478,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         from: "slab",
         subdir: "slabs4x",
         handler: (obj, options)=>{
-            return templateShapelessSingle({
+            return templateRecipeSingle({
                 count: 4,
                 input:  (options.type != "block" ? obj : obj[options.from])["source"],
                 result: (options.type != "block" ? obj[options.type] : obj)["source"],

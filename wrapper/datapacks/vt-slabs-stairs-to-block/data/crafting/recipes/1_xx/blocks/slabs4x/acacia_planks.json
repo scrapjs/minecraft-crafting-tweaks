@@ -1,4 +1,3 @@
-
 {
     "type": "crafting_shapeless",
     "ingredients": [
@@ -11,5 +10,5 @@
         "item": "minecraft:acacia_planks",
         "count": 2
     },
-    "group": "stairs_to_blocks"
+    "group": "blocks"
 }

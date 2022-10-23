@@ -1,4 +1,3 @@
-
 {
     "type": "crafting_shapeless",
     "ingredients": [
@@ -9,5 +8,5 @@
         "item": "minecraft:waxed_exposed_cut_copper",
         "count": 1
     },
-    "group": "stairs_to_blocks"
+    "group": "blocks"
 }
