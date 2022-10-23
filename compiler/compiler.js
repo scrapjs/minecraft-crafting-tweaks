@@ -175,7 +175,7 @@ let templateColors = (options)=>{
 }`, CRLF);
 };
 
-//
+// TODO: shulker boxes support
 if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
     let rootDirAdv = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
     let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/recipes`;
@@ -215,7 +215,8 @@ if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
             };
             
             //
-            for (let i=1;i<=8;i++) {
+            let maxCount = name != "bed" ? 8 : 1;
+            for (let i=1;i<=maxCount;i++) {
                 let criterias = {};
                 criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
                 criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
