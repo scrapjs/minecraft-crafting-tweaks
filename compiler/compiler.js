@@ -69,7 +69,7 @@ let templateStub = (options)=>{
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
-let templateRecipeSingle = (options, outCount, pattern = null)=>{
+let templateRecipeSingle = (options, outCount = 1, pattern = null)=>{
     let tags = [];
     for (let i=0;i<options.count;i++) {
         tags.push(`
