@@ -448,7 +448,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         blocks,
         type: "block",
         from: "stairs",
-        subdir: "stairs2x2",
+        subdir: "stairs4x",
         handler: (obj, options)=>{
             return templateShapelessSingle({
                 count: 4,
@@ -464,7 +464,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         blocks,
         type: "block",
         from: "slab",
-        subdir: "slabs2x1",
+        subdir: allowVanillaRecipeConflicts ? "slabs2x" : "slabs2x1",
         handler: (obj, options)=>{
             if (allowVanillaRecipeConflicts) {
                 // required polymorph for some crafting recipes!
@@ -489,7 +489,7 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
         blocks,
         type: "block",
         from: "slab",
-        subdir: "slabs2x2",
+        subdir: "slabs4x",
         handler: (obj, options)=>{
             return templateShapelessSingle({
                 count: 4,
