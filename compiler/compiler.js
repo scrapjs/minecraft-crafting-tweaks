@@ -259,7 +259,7 @@ let generateModuleRecipes = (options)=>{
         if ((disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && outsource && !outsource.extra && (options.single ? ((options.type != "block" ? obj[options.type] : obj)["single"] || allowVanillaRecipeConflicts) : true) && !obj.extra) {
             let criterias = {};
             criterias[`has_${options.type}`] = { "trigger": "minecraft:inventory_changed", "conditions": (options.type != "block" ? obj : obj[options.from])["source"] };
-            criterias["has_result"]      = { "trigger": "minecraft:inventory_changed", "conditions": (options.type != "block" ? obj[options.type] : obj)["source"] };
+            criterias["has_result"]          = { "trigger": "minecraft:inventory_changed", "conditions": (options.type != "block" ? obj[options.type] : obj)["source"] };
 
             //
             let filename = (options.type != "block" ? obj[options.type] : obj)["filename"];
