@@ -68,11 +68,11 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 const arrayMerge = (target, source) => {
     target = target || source || [];
     if (source.some(e => { if (e instanceof Object) { return true; } return false; })) {
-        //return recursiveMerge(target, source);
+        //return (target = recursiveMerge(target, source)); // unsupported dublicate detection
         return (target = source); // currently unmergable correctly, it's not object
     } else 
     if (source.some(e => { if (Array.isArray(e)) { return true; } return false; })) {
-        return (target = recursiveMerge(target, source)); // try to merge two arrays manually
+        return (target = recursiveMerge(target, source)); // try to merge two arrays manually, but there is no correct position detection
     } else {
         return (target = [...new Set([...target,...source])]);
     };
