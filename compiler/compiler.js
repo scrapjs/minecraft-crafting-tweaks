@@ -67,10 +67,14 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 //
 const arrayMerge = (target, source) => {
     target = target || source || [];
-    if (target.some(e => { if (e instanceof Object || Array.isArray(e)) { return true; } return false; })) {
-        return recursiveMerge(target, source);
+    if (target.some(e => { if (e instanceof Object) { return true; } return false; })) {
+        //return recursiveMerge(target, source);
+        return (target = source); // currently unmergable correctly, it's not object
+    } else 
+    if (target.some(e => { if (Array.isArray(e)) { return true; } return false; })) {
+        return (target = recursiveMerge(target, source)); // try to merge two arrays manually
     } else {
-        return [...new Set([...target,...source])];
+        return (target = [...new Set([...target,...source])]);
     };
 };
 
