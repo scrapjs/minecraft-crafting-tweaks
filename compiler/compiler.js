@@ -65,45 +65,45 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 //
-const arrayMerge = (target, source) => {
+const arrayMerge = (target, source, options = {}) => {
     target = target || source || [];
     if (source.some(e => { if (e instanceof Object) { return true; } return false; })) {
         //return (target = recursiveMerge(target, source)); // unsupported dublicate detection
         return (target = source); // currently unmergable correctly, it's not object
     } else 
     if (source.some(e => { if (Array.isArray(e)) { return true; } return false; })) {
-        return (target = recursiveMerge(target, source)); // try to merge two arrays manually, but there is no correct position detection
+        return (target = recursiveMerge(target, source, options)); // try to merge two arrays manually, but there is no correct position detection
     } else {
         return (target = [...new Set([...target,...source])]);
     };
 };
 
 //
-const objectMerge = (target, source) => {
+const objectMerge = (target, source, options = {}) => {
     target = target || source || {};
 
-    if (Array.isArray(target)) { target = arrayMerge( target, source); } else
+    if (Array.isArray(target)) { target = arrayMerge( target, source, options); } else
 
     if (target instanceof Object) {
-        recursiveMerge(target, source);
+        recursiveMerge(target, source, options);
     };
 
     return target;
 };
 
 //
-const recursiveMerge = (target, source) => {
+const recursiveMerge = (target, source, options = {}) => {
     target = target || source || {};
     for (let key=0;key<target.length;key++) {
-        if (Array.isArray(source[key])    && Array.isArray(target[key])   ) { target[key] =  arrayMerge(target[key], source[key]); } else
-        if (source[key] instanceof Object && target[key] instanceof Object) { target[key] = objectMerge(target[key], source[key]); } else
+        if (Array.isArray(source[key])    && Array.isArray(target[key])   ) { target[key] =  arrayMerge(target[key], source[key], options); } else
+        if (source[key] instanceof Object && target[key] instanceof Object) { target[key] = objectMerge(target[key], source[key], options); } else
         { target[key] = source[key]; };
     }
     return target;
 };
 
 // TODO: remake function
-let copyFolderRecursiveSync = (src, dest) => {
+let copyFolderRecursiveSync = (src, dest, options = {}) => {
     let exists = fs.existsSync(src);
     let stats = exists && fs.statSync(src);
     let isDirectory = exists && stats.isDirectory();
@@ -129,7 +129,7 @@ let copyFolderRecursiveSync = (src, dest) => {
     }
 };
 
-let mergeDirectories = (inputs, target, options) => {
+let mergeDirectories = (inputs, target, options = {}) => {
     Array.from(inputs).forEach((filename)=>{
         copyFolderRecursiveSync(filename, target);
     });
