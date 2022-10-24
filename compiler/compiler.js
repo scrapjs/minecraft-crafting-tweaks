@@ -55,10 +55,85 @@ let mcVersionString = {
 let mcVersions = ["1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
 
 //
-let MergeTrees = require('merge-trees');
+let path = require('path');
 let fs = require('fs');
 let fse = require('fs-extra');
 let {crlf, LF, CRLF, CR} = require('crlf-normalize');
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// Smart Merging Directories Library ///////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+//
+const arrayMerge = (target, source) => {
+    target = target || source || [];
+    if (target.some(e => { if (e instanceof Object || Array.isArray(e)) { return true; } return false; })) {
+        return recursiveMerge(target, source);
+    } else {
+        return [...new Set([...target,...source])];
+    };
+};
+
+//
+const objectMerge = (target, source) => {
+    target = target || source || {};
+
+    if (Array.isArray(target)) { target = arrayMerge( target, source); } else
+
+    if (target instanceof Object) {
+        recursiveMerge(target, source);
+    };
+
+    return target;
+};
+
+//
+const recursiveMerge = (target, source) => {
+    target = target || source || {};
+    for (let key=0;key<target.length;key++) {
+        if (Array.isArray(source[key])    && Array.isArray(target[key])   ) { target[key] =  arrayMerge(target[key], source[key]); } else
+        if (source[key] instanceof Object && target[key] instanceof Object) { target[key] = objectMerge(target[key], source[key]); } else
+        { target[key] = source[key]; };
+    }
+    return target;
+};
+
+// TODO: remake function
+let copyFolderRecursiveSync = (src, dest) => {
+    let exists = fs.existsSync(src);
+    let stats = exists && fs.statSync(src);
+    let isDirectory = exists && stats.isDirectory();
+    if (isDirectory) {
+        fs.mkdirSync(dest, { recursive: true });
+        fs.readdirSync(src).forEach(function(childItemName) {
+            copyFolderRecursiveSync(path.join(src, childItemName), path.join(dest, childItemName));
+        });
+    } else {
+        if (fs.existsSync(dest)) {
+            let matched = src.match(/\.[0-9a-z]+$/i);
+            if (matched && matched[0] == ".json") {
+                console.log("merging JSON " + src + " to " + dest);
+                let srcJson = JSON.parse(fs.readFileSync(src, "utf8"));
+                let dstJson = JSON.parse(fs.readFileSync(dest, "utf8"));
+                fs.writeFileSync(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4), "utf8");
+            } else {
+                fs.copyFileSync(src, dest);
+            }
+        } else {
+            fs.copyFileSync(src, dest);
+        }
+    }
+};
+
+let mergeDirectories = (inputs, target, options) => {
+    Array.from(inputs).forEach((filename)=>{
+        copyFolderRecursiveSync(filename, target);
+    });
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 // will used in future
 let blocks = JSON.parse(fs.readFileSync("./blocks.json", "utf8"));
@@ -494,7 +569,7 @@ fs.mkdirSync(`../datapack/data`, { recursive: true });
 fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
 
 //
-let mergeTrees = new MergeTrees( usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true }); mergeTrees.merge();
+mergeDirectories(usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), '../datapack/data', { overwrite: true });
 
 let mergeVersionsFn = (directory = `../datapack/data/crafting/recipes`)=>{
     let outputs = {};
@@ -511,7 +586,7 @@ let mergeVersionsFn = (directory = `../datapack/data/crafting/recipes`)=>{
     });
 
     for (let key in outputs) {
-        let mergeTrees = new MergeTrees( outputs[key], key, { overwrite: true }); mergeTrees.merge();
+        mergeDirectories(outputs[key], key, { overwrite: true });
     };
 
     files.forEach((filename)=>{
