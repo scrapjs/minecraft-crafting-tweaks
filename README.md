@@ -53,6 +53,7 @@
 
 ### TODO
 
+- **Mass JSON merger for resource and data packs.**
 - More datapack generation.
 - More sorting and organizing.
 - Add missed blocks and items
