@@ -9,6 +9,11 @@
 - https://www.planetminecraft.com/data-pack/minecraft-crafting-overhaul/
 - https://www.curseforge.com/minecraft/texture-packs/crafting-recipes-overhaul
 
+## Other resources
+
+- https://drive.google.com/drive/folders/1seBzo8MzU2HBUp_ZmI0ZQbT5lOA68BeB?usp=sharing (my resource packs)
+- https://drive.google.com/drive/folders/1iRnlNJgAHiCen6T6rD8AVm3PnDL6cNW0?usp=sharing (CO - other assets)
+
 ## Also, recommended [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph-fabric) mod!
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
