@@ -1,1 +1,1 @@
-{"type":"crafting_shaped","group":"stub","pattern":[],"key":{},"result":{"item":"minecraft:air","count":0}}
+{"type":"crafting_shapeless","ingredients":[{"item":"minecraft:barrier"}],"result":{"item":"minecraft:barrier","count":1}}

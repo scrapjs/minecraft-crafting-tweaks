@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:recipe_shapeless",
+  "type": "crafting_shapeless",
   "ingredients": [
       {
           "item": "minecraft:glowstone_dust"
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 1,
-    "item": "minecraft:arrow"
+    "item": "minecraft:spectral_arrow"
   }
 }

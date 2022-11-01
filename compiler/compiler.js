@@ -144,7 +144,11 @@ let blocks = JSON.parse(fs.readFileSync("./blocks.json", "utf8"));
 
 // 
 let templateStub = (options)=>{
-    return crlf(JSON.stringify({"type": "crafting_shaped","group": "stub","pattern": [],"key": {},"result": {"item": "minecraft:air","count": 0}}), CRLF);
+    return crlf(JSON.stringify({
+        "type": "crafting_shapeless",
+        "ingredients": [{ "item": "minecraft:barrier" }],
+        "result": { "item": "minecraft:barrier", "count": 1 }
+    }), CRLF);
 };
 
 // TODO: add groups, such as `wooden_slab`, etc.
@@ -287,24 +291,25 @@ if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
                 }
             };
             
-            //
-            let maxCount = name != "bed" ? 8 : 1;
-            for (let i=1;i<=maxCount;i++) {
-                let criterias = {};
-                criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
-                criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
-                criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
+            if (!(color == "default" && (name == "bed" || name == "wool" || name == "carpet" || name == "concrete_powder" || name == "concrete" || name == "banner" || name == "glazed_terracotta"))) {
+                let maxCount = name != "bed" ? 8 : 1;
+                for (let i=1;i<=maxCount;i++) {
+                    let criterias = {};
+                    criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
+                    criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
+                    criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
 
-                fs.mkdirSync(`${rootDirAdv}/${name}/${color}`, { recursive: true });
-                fs.writeFileSync(`${rootDirAdv}/${name}/${color}/${i}.json`, advancementTemplate({
-                    criterias, 
-                    recipeAddress: `better_dyeables:${name}/${color}/${i}`
-                }), 'utf8');
+                    fs.mkdirSync(`${rootDirAdv}/${name}/${color}`, { recursive: true });
+                    fs.writeFileSync(`${rootDirAdv}/${name}/${color}/${i}.json`, advancementTemplate({
+                        criterias, 
+                        recipeAddress: `better_dyeables:${name}/${color}/${i}`
+                    }), 'utf8');
 
-                fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
-                fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
-                    color, name, count: i
-                }), 'utf8');
+                    fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
+                    fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
+                        color, name, count: i
+                    }), 'utf8');
+                }
             }
         });
     });

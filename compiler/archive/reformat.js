@@ -131,9 +131,6 @@ let stairs = [
     {"source": "minecraft:stone", "input": "minecraft:stone_stairs", "mc_version": "1_xx"},
     {"source": "minecraft:mossy_stone_bricks", "input": "minecraft:mossy_stone_brick_stairs", "mc_version": "1_xx"},
 
-    {"source": "minecraft:cut_red_sandstone", "input": "minecraft:cut_red_sandstone_stairs", "mc_version": "1_xx"},
-    {"source": "minecraft:cut_sandstone", "input": "minecraft:cut_sandstone_stairs", "mc_version": "1_xx"},
-
     {"source": "minecraft:red_sandstone", "input": "minecraft:red_sandstone_stairs", "mc_version": "1_xx"},
     {"source": "minecraft:sandstone", "input": "minecraft:sandstone_stairs", "mc_version": "1_xx"},
 

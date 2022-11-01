@@ -1717,22 +1717,6 @@
                 "requiredCount": 1,
                 "resultCount": 2
             }
-        },
-        "stairs": {
-            "filename": "cut_red_sandstone_stairs",
-            "reversed": "cut_red_sandstone_from_cut_red_sandstone_stairs",
-            "source": {
-                "item": "minecraft:cut_red_sandstone_stairs"
-            },
-            "group": "",
-            "mc_version": "1_xx",
-            "alternate": false,
-            "single": false,
-            "extra": false,
-            "balance": {
-                "requiredCount": 3,
-                "resultCount": 4
-            }
         }
     },
     "minecraft:cut_sandstone": {
@@ -1755,22 +1739,6 @@
             "balance": {
                 "requiredCount": 1,
                 "resultCount": 2
-            }
-        },
-        "stairs": {
-            "filename": "cut_sandstone_stairs",
-            "reversed": "cut_sandstone_from_cut_sandstone_stairs",
-            "source": {
-                "item": "minecraft:cut_sandstone_stairs"
-            },
-            "group": "",
-            "mc_version": "1_xx",
-            "alternate": false,
-            "single": false,
-            "extra": false,
-            "balance": {
-                "requiredCount": 3,
-                "resultCount": 4
             }
         }
     },
