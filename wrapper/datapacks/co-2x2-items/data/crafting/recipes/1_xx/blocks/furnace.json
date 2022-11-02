@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
-      "tag": "minecraft:stone_crafting_materials"
-    }
+    "#": { "tag": "minecraft:stone_crafting_materials" }
   },
   "pattern": [
     "##",

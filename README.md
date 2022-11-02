@@ -58,7 +58,7 @@
 
 ### TODO
 
-- **Mass JSON merger for resource and data packs.**
+- Minecraft 1.20 update content.
 - More datapack generation.
 - More sorting and organizing.
 - Add missed blocks and items

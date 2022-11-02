@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": [
-      {
-        "item": "minecraft:sand"
-      },
-      {
-        "item": "minecraft:red_sand"
-      }
+      { "item": "minecraft:sand" },
+      { "item": "minecraft:red_sand" }
     ],
     "X": {
       "item": "minecraft:gunpowder"
