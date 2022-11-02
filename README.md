@@ -1,4 +1,4 @@
-# Crafting Recipes Overhaul 2x2
+# Crafting Recipes Overhaul
 
 ## ℹ️ [Info Center](https://github.com/hydra2s-info) ℹ️ 
 ## 💬 [Обсуждения/Discussions](https://github.com/hydra2s-info/about/discussions) 💬
@@ -14,7 +14,7 @@
 - https://shorturl.at/exXY4 (my resource packs)
 - https://shorturl.at/auvH6 (CO - other assets)
 
-## Also, recommended [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph-fabric) mod!
+## Also, recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
