@@ -1,6 +1,7 @@
 
 let usedModules = [
     "co-2x2-core", 
+    "co-hardcraft",
     //"co-disable-default-slabs", // if you used Polymorph, you can disable it
     "co-disable-default-stairs", 
     //"co-disable-default-pressure-plates", // recommended for balance, if enabled "co-3x1-pressure-plates", required if you not used Polymorph mod
