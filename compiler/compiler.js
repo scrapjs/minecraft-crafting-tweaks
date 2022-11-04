@@ -23,18 +23,20 @@ let usedModules = [
 
 let mergeVersions = true; // currently, incompatible with most built-in advancements!
 let allowVanillaRecipeConflicts = true; // required Polymorph mod!
-let usedMCVersion = "1_19";
+let usedMCVersion = "1_20";
 
 let disallowedData = {
-    "1_19": [],//["1_19", "1_18", "1_17", "1_16", "1_xx"],
-    "1_18": ["1_19"],//["1_18", "1_17", "1_16", "1_xx"],
-    "1_17": ["1_19", "1_18"],//["1_17", "1_16", "1_xx"],
-    "1_16": ["1_19", "1_18", "1_17"],//["1_16", "1_xx"]
-    "1_15": ["1_19", "1_18", "1_17", "1_16"],
-    "1_xx": ["1_19", "1_18", "1_17", "1_16"]
+    "1_20": [],
+    "1_19": ["1.20"],//["1_19", "1_18", "1_17", "1_16", "1_xx"],
+    "1_18": ["1.20", "1_19"],//["1_18", "1_17", "1_16", "1_xx"],
+    "1_17": ["1.20", "1_19", "1_18"],//["1_17", "1_16", "1_xx"],
+    "1_16": ["1.20", "1_19", "1_18", "1_17"],//["1_16", "1_xx"]
+    "1_15": ["1.20", "1_19", "1_18", "1_17", "1_16"],
+    "1_xx": ["1.20", "1_19", "1_18", "1_17", "1_16"]
 };
 
 let dataVersion = {
+    "1_20": 11,
     "1_19": 10,
     "1_18": 9,
     "1_17": 8,
@@ -44,6 +46,7 @@ let dataVersion = {
 };
 
 let mcVersionString = {
+    "1_20": "1.20.x",
     "1_19": "1.19.x",
     "1_18": "1.18.x",
     "1_17": "1.17.x",
@@ -52,7 +55,7 @@ let mcVersionString = {
     "1_xx": "1.15.x"
 };
 
-let mcVersions = ["1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
+let mcVersions = ["1_20", "1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
 
 //
 let path = require('path');
@@ -333,8 +336,7 @@ let generateModuleRecipes = (options)=>{
 
     Array.from(Object.entries(options.blocks)).forEach(([key, obj])=>{
         let outsource = options.type != "block" ? obj[options.type] : obj[options.from];
-        
-        if ((disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && outsource && !outsource.extra && (options.single ? ((options.type != "block" ? obj[options.type] : obj)["single"] || allowVanillaRecipeConflicts) : true) && !obj.extra) {
+        if (outsource && (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && !outsource.extra && (options.single ? ((options.type != "block" ? obj[options.type] : obj)["single"] || allowVanillaRecipeConflicts) : true) && !obj.extra) {
             let criterias = {};
             criterias[`has_${options.type}`] = { "trigger": "minecraft:inventory_changed", "conditions": (options.type != "block" ? obj : obj[options.from])["source"] };
             criterias["has_result"]          = { "trigger": "minecraft:inventory_changed", "conditions": (options.type != "block" ? obj[options.type] : obj)["source"] };

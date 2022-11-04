@@ -1,4 +1,100 @@
 {
+    "minecraft:bamboo_planks": {
+        "source": {
+            "item": "minecraft:bamboo_planks"
+        },
+        "filename": "bamboo_planks",
+        "mc_version": "1_20",
+        "slab": {
+            "filename": "bamboo_slab",
+            "reversed": "bamboo_planks_from_bamboo_slab",
+            "source": {
+                "item": "minecraft:bamboo_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_20",
+            "alternate": false,
+            "single": false,
+            "extra": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "bamboo_stairs",
+            "reversed": "bamboo_planks_from_bamboo_stairs",
+            "source": {
+                "item": "minecraft:bamboo_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_20",
+            "alternate": false,
+            "single": false,
+            "extra": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        },
+        "pressure_plate": {
+            "filename": "bamboo_pressure_plate",
+            "reversed": "bamboo_planks_from_bamboo_pressure_plate",
+            "source": {
+                "item": "minecraft:bamboo_pressure_plate"
+            },
+            "group": "wooden_pressure_plate",
+            "mc_version": "1_20",
+            "alternate": false,
+            "single": false,
+            "extra": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 1
+            }
+        }
+    },
+
+    "minecraft:bamboo_mosaic": {
+        "source": {
+            "item": "minecraft:bamboo_mosaic"
+        },
+        "filename": "bamboo_mosaic_planks",
+        "mc_version": "1_20",
+        "slab": {
+            "filename": "bamboo_mosaic_slab",
+            "reversed": "bamboo_mosaic_planks_from_bamboo_mosaic_slab",
+            "source": {
+                "item": "minecraft:bamboo_mosaic_slab"
+            },
+            "group": "wooden_slab",
+            "mc_version": "1_20",
+            "alternate": false,
+            "single": false,
+            "extra": false,
+            "balance": {
+                "requiredCount": 1,
+                "resultCount": 2
+            }
+        },
+        "stairs": {
+            "filename": "bamboo_mosaic_stairs",
+            "reversed": "bamboo_mosaic_planks_from_bamboo_mosaic_stairs",
+            "source": {
+                "item": "minecraft:bamboo_mosaic_stairs"
+            },
+            "group": "wooden_stairs",
+            "mc_version": "1_20",
+            "alternate": false,
+            "single": false,
+            "extra": false,
+            "balance": {
+                "requiredCount": 3,
+                "resultCount": 4
+            }
+        }
+    },
+
     "minecraft:blackstone": {
         "source": {
             "item": "minecraft:blackstone"
