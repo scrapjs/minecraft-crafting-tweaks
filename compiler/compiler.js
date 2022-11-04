@@ -372,8 +372,6 @@ let generateVanillaStub = (options)=>{
     });
 };
 
-/*
-//
 if (usedModules.indexOf("co-disable-default-slabs") != -1) {
     generateVanillaStub({
         datapack: `../wrapper/datapacks/co-disable-default-slabs`,
@@ -392,7 +390,16 @@ if (usedModules.indexOf("co-disable-default-stairs") != -1) {
         from: "block"
     });
 };
-*/
+
+//
+if (usedModules.indexOf("co-disable-default-pressure-plates") != -1) {
+    generateVanillaStub({
+        datapack: `../wrapper/datapacks/co-disable-default-pressure-plates`,
+        blocks,
+        type: "pressure_plate",
+        from: "block"
+    });
+};
 
 //
 if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
