@@ -14,6 +14,8 @@
 - https://shorturl.at/exXY4 (my resource packs)
 - https://shorturl.at/auvH6 (CO - other assets)
 - https://shorturl.at/amqyC (my compiled mods)
+- https://github.com/hydra2s/polymorph/ (my version of Polymorph mod)
+- https://github.com/hydra2s/reasonable-sorting/ (my version of Reasonable Sorting mod)
 
 ## Also, recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
 
