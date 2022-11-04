@@ -13,6 +13,7 @@
 
 - https://shorturl.at/exXY4 (my resource packs)
 - https://shorturl.at/auvH6 (CO - other assets)
+- https://shorturl.at/amqyC (my compiled mods)
 
 ## Also, recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
 
