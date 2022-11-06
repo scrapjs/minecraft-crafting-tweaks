@@ -65,16 +65,16 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
             let dstMatched = dest.match(/\.[0-9a-z]+$/i);
             let srcMatched = src.match(/\.[0-9a-z]+$/i);
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
-                console.log("merging JSON " + src + " to " + dest);
-                let srcJson = JSON.parse(fs.readFileSync(src, "utf8").replaceAll("}{}", "}"));
-                let dstJson = JSON.parse(fs.readFileSync(dest, "utf8").replaceAll("}{}", "}"));
+                //console.log("merging JSON " + src + " to " + dest);
+                let srcJson = JSON.parse(fs.readFileSync(src, "utf8").replaceAll("}{}", "}").replaceAll("}{","}"));
+                let dstJson = JSON.parse(fs.readFileSync(dest, "utf8").replaceAll("}{}", "}").replaceAll("}{","}"));
                 
-                console.log("SRC JSON: " + JSON.stringify(srcJson));
-                console.log("DST JSON: " + JSON.stringify(dstJson));
-                console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
+                //console.log("SRC JSON: " + JSON.stringify(srcJson));
+                //console.log("DST JSON: " + JSON.stringify(dstJson));
+                //console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
                 
                 fs.rmSync(dest);
-                fs.writeFileSync(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}"), "utf8");
+                fs.writeFileSync(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8");
             } else {
                 fs.copyFileSync(src, dest);
             }
