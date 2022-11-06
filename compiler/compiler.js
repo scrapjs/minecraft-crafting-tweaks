@@ -64,6 +64,7 @@ let fs = require('fs');
 let fse = require('fs-extra');
 let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Smart Merging Directories Library ///////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -71,37 +72,42 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 //
 const arrayMerge = (target, source, options = {}) => {
     target = target || source || [];
-    if (source.some(e => { if (e instanceof Object) { return true; } return false; })) {
+    if (source.some(Array.isArray)) {
+        return (target = recursiveMerge(target, source, options)); // try to merge two arrays manually, but there is no correct position detection
+    } else 
+    if (source.some(e => (typeof e == "object"))) {
         //return (target = recursiveMerge(target, source)); // unsupported dublicate detection
         return (target = source); // currently unmergable correctly, it's not object
     } else 
-    if (source.some(e => { if (Array.isArray(e)) { return true; } return false; })) {
-        return (target = recursiveMerge(target, source, options)); // try to merge two arrays manually, but there is no correct position detection
-    } else {
-        return (target = [...new Set([...target,...source])]);
+    {
+        return (target = Array.from(new Set([
+            ...(target||[]), 
+            ...(source||[])
+        ])));
     };
 };
 
 //
 const objectMerge = (target, source, options = {}) => {
     target = target || source || {};
-
-    if (Array.isArray(target)) { target = arrayMerge( target, source, options); } else
-
-    if (target instanceof Object) {
-        recursiveMerge(target, source, options);
-    };
-
+    if (Array.isArray(source)) { target = arrayMerge( target, source, options); } else
+    if (typeof source == "object") { target = recursiveMerge(target, source, options); } else
+    { target = source; };
     return target;
 };
 
 //
 const recursiveMerge = (target, source, options = {}) => {
     target = target || source || {};
-    for (let key=0;key<target.length;key++) {
-        if (Array.isArray(source[key])    && Array.isArray(target[key])   ) { target[key] =  arrayMerge(target[key], source[key], options); } else
-        if (source[key] instanceof Object && target[key] instanceof Object) { target[key] = objectMerge(target[key], source[key], options); } else
-        { target[key] = source[key]; };
+    if (typeof source == "object") {
+        for (let key in source) {
+            target[key] = objectMerge(target[key], source[key], options);
+        }
+    } else 
+    if (Array.isArray(source)) {
+        for (let key = 0; key < source.length; key++) {
+            target[key] = objectMerge(target[key], source[key], options);
+        }
     }
     return target;
 };
@@ -118,12 +124,19 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
         });
     } else {
         if (fs.existsSync(dest)) {
-            let matched = src.match(/\.[0-9a-z]+$/i);
-            if (matched && matched[0] == ".json") {
-                console.log("merging JSON " + src + " to " + dest);
-                let srcJson = JSON.parse(fs.readFileSync(src, "utf8"));
-                let dstJson = JSON.parse(fs.readFileSync(dest, "utf8"));
-                fs.writeFileSync(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4), "utf8");
+            let dstMatched = dest.match(/\.[0-9a-z]+$/i);
+            let srcMatched = src.match(/\.[0-9a-z]+$/i);
+            if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
+                //console.log("merging JSON " + src + " to " + dest);
+                let srcJson = JSON.parse(fs.readFileSync(src, "utf8").replaceAll("}{}", "}"));
+                let dstJson = JSON.parse(fs.readFileSync(dest, "utf8").replaceAll("}{}", "}"));
+                
+                //console.log("SRC JSON: " + JSON.stringify(srcJson));
+                //console.log("DST JSON: " + JSON.stringify(dstJson));
+                //console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
+                
+                fs.rmSync(dest);
+                fs.writeFileSync(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}"), "utf8");
             } else {
                 fs.copyFileSync(src, dest);
             }
