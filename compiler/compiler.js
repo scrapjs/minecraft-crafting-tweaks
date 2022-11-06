@@ -129,16 +129,23 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
             let dstMatched = dest.match(/\.[0-9a-z]+$/i);
             let srcMatched = src.match(/\.[0-9a-z]+$/i);
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
-                //console.log("merging JSON " + src + " to " + dest);
-                let srcJson = JSON.parse(stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}"));
-                let dstJson = JSON.parse(stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}"));
+                //
+                console.log("merging JSON " + src + " to " + dest);
                 
-                //console.log("SRC JSON: " + JSON.stringify(srcJson));
-                //console.log("DST JSON: " + JSON.stringify(dstJson));
+                //
+                let srcJsonRaw = stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let dstJsonRaw = stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let srcJson = JSON.parse(srcJsonRaw);
+                let dstJson = JSON.parse(dstJsonRaw);
+                
+                //
+                //console.log("SRC JSON: " + JSON.stringify(srcJsonRaw));
+                //console.log("DST JSON: " + JSON.stringify(dstJsonRaw));
                 //console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
                 
+                //
                 fs.rmSync(dest);
-                fs.writeFileSync(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8"));
+                fs.writeFileSync(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
             } else {
                 fs.copyFileSync(src, dest);
             }

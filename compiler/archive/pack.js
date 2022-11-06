@@ -68,16 +68,23 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
             let dstMatched = dest.match(/\.[0-9a-z]+$/i);
             let srcMatched = src.match(/\.[0-9a-z]+$/i);
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
+                //
                 console.log("merging JSON " + src + " to " + dest);
-                let srcJson = JSON.parse(stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}"));
-                let dstJson = JSON.parse(stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}"));
                 
-                console.log("SRC JSON: " + JSON.stringify(srcJson));
-                console.log("DST JSON: " + JSON.stringify(dstJson));
+                //
+                let srcJsonRaw = stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let dstJsonRaw = stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let srcJson = JSON.parse(srcJsonRaw);
+                let dstJson = JSON.parse(dstJsonRaw);
+                
+                //
+                console.log("SRC JSON: " + JSON.stringify(srcJsonRaw));
+                console.log("DST JSON: " + JSON.stringify(dstJsonRaw));
                 console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
                 
+                //
                 fs.rmSync(dest);
-                fs.writeFileSync(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8"));
+                fs.writeFileSync(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
             } else {
                 fs.copyFileSync(src, dest);
             }
@@ -99,5 +106,9 @@ let mergeDirectories = (inputs, target, options = {}) => {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 //
+if(fs.existsSync("./DPX")) fs.rmSync("./DPX", { recursive: true });
+if(fs.existsSync("./RPX")) fs.rmSync("./RPX", { recursive: true });
 if(fs.existsSync("./VanillaTweaked")) fs.rmSync("./VanillaTweaked", { recursive: true });
-mergeDirectories(["./0", "./1", "./2", "./3", "./4", "./5", "./6", "./7", "./8", "./9", "./10", "./11", "./12", "./13", "./14", "./15", "./16", "./17"], "VanillaTweaked");
+mergeDirectories(["./RP0", "./RP1", "./RP2", "./RP3", "./RP4", "./RP5", "./RP6", "./RP7", "./RP8", "./RP9", "./RP10", "./RP11", "./RP12", "./RP13", "./RP14", "./RP15", "./RP16", "./RP17"], "RPX");
+mergeDirectories(["./DP0", "./DP1", "./DP2", "./DP3", "./DP4", "./DP5"], "DPX");
+mergeDirectories(["./DPX", "./RPX"], "VanillaTweaked");
