@@ -72,6 +72,16 @@ let {crlf, LF, CRLF, CR} = require('crlf-normalize');
 const stripComments = (data => data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => g ? "" : m));
 
 //
+function isJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
+//
 const arrayMerge = (target, source, options = {}) => {
     target = target || source || [];
     if (source.some(Array.isArray)) {
@@ -79,7 +89,11 @@ const arrayMerge = (target, source, options = {}) => {
     } else 
     if (source.some(e => (typeof e == "object"))) {
         //return (target = recursiveMerge(target, source)); // unsupported dublicate detection
-        return (target = source); // currently unmergable correctly, it's not object
+        //return (target = source); // currently unmergable correctly, it's not object
+        return (target = Array.from(new Set([
+            ...(target||[]).map((o)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
+            ...(source||[]).map((o)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
+        ])).map((o)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));
     } else 
     {
         return (target = Array.from(new Set([
