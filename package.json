@@ -25,6 +25,9 @@
     "copy-symlink": "^2.0.0",
     "crlf-normalize": "^1.0.16",
     "fs-extra": "^10.1.0",
-    "merge-trees": "^2.0.0"
+    "json-to-properties": "^1.1.3",
+    "merge-trees": "^2.0.0",
+    "properties-file": "^2.1.12",
+    "properties-to-json": "^0.2.1"
   }
 }

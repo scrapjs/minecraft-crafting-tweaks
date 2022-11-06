@@ -128,6 +128,14 @@ const recursiveMerge = (target, source, options = {}) => {
     return target;
 };
 
+//
+const propertiesToJson = require('properties-file').propertiesToJson;
+const jsonToProperties = (obj)=>{
+    let props = [];
+    for (var el in obj) { props.push(el + " = " + obj[el]); }
+    return props.join("\n");
+}
+
 // TODO: remake function
 let copyFolderRecursiveSync = (src, dest, options = {}) => {
     let exists = fs.existsSync(src);
@@ -142,9 +150,28 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
         if (fs.existsSync(dest)) {
             let dstMatched = dest.match(/\.[0-9a-z]+$/i);
             let srcMatched = src.match(/\.[0-9a-z]+$/i);
+            if (dstMatched && srcMatched && srcMatched[0] == ".properties" && dstMatched[0] == ".properties") {
+                //
+                console.log("merging PROPERTIES " + src + " to " + dest);
+                
+                //
+                let srcJsonRaw = propertiesToJson(fs.readFileSync(src, "utf8"));
+                let dstJsonRaw = propertiesToJson(fs.readFileSync(dest, "utf8"));
+                let srcJson = JSON.parse(srcJsonRaw);
+                let dstJson = JSON.parse(dstJsonRaw);
+                
+                //
+                console.log("SRC PROPERTIES: " + jsonToProperties(srcJsonRaw));
+                console.log("DST PROPERTIES: " + jsonToProperties(dstJsonRaw));
+                console.log("RESULT PROPERTIES: " + jsonToProperties(objectMerge(dstJson, srcJson)));
+                
+                //
+                fs.rmSync(dest);
+                fs.writeFileSync(dest, jsonToProperties(objectMerge(dstJson, srcJson)));
+            } else
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
                 //
-                console.log("merging JSON " + src + " to " + dest);
+                //console.log("merging JSON " + src + " to " + dest);
                 
                 //
                 let srcJsonRaw = stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
