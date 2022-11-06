@@ -150,6 +150,6 @@ let mergeDirectories = (inputs, target, options = {}) => {
 if(fs.existsSync("./DPX")) fs.rmSync("./DPX", { recursive: true });
 if(fs.existsSync("./RPX")) fs.rmSync("./RPX", { recursive: true });
 if(fs.existsSync("./VanillaTweaked")) fs.rmSync("./VanillaTweaked", { recursive: true });
-mergeDirectories(["./RP/RP0", "./RP/RP1", "./RP/RP2", "./RP/RP3", "./RP/RP4", "./RP/RP5", "./RP/RP6", "./RP/RP7", "./RP/RP8", "./RP/RP9", "./RP/RP10", "./RP/RP11", "./RP/RP12", "./RP/RP13", "./RP/RP14", "./RP/RP15", "./RP/RP16", "./RP/RP17"], "RPX");
-mergeDirectories(["./DP/DP0", "./DP/DP1", "./DP/DP2", "./DP/DP3", "./DP/DP4", "./DP/DP5"], "DPX");
+mergeDirectories(["./RP/RP0", "./RP/RP1", "./RP/RP2", "./RP/RP3", "./RP/RP4", "./RP/RP5", "./RP/RP6", "./RP/RP7", "./RP/RP8", "./RP/RP9", "./RP/RP10", "./RP/RP11", "./RP/RP12", "./RP/RP13", "./RP/RP14", "./RP/RP15", "./RP/RP16", "./RP/RP17", "./RP/RP18"], "RPX");
+mergeDirectories(["./DP/DP0", "./DP/DP1", "./DP/DP2", "./DP/DP3", "./DP/DP4", "./DP/DP5", "./DP/DP6"], "DPX");
 mergeDirectories(["./RPX", "./DPX"], "VanillaTweaked");
