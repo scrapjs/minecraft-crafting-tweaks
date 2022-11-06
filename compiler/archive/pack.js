@@ -18,7 +18,11 @@ const arrayMerge = (target, source, options = {}) => {
     } else 
     if (source.some(e => (typeof e == "object"))) {
         //return (target = recursiveMerge(target, source)); // unsupported dublicate detection
-        return (target = source); // currently unmergable correctly, it's not object
+        //return (target = source); // currently unmergable correctly, it's not object
+        return (target = Array.from(new Set([
+            ...(target||[]), 
+            ...(source||[])
+        ])));
     } else 
     {
         return (target = Array.from(new Set([
@@ -109,6 +113,6 @@ let mergeDirectories = (inputs, target, options = {}) => {
 if(fs.existsSync("./DPX")) fs.rmSync("./DPX", { recursive: true });
 if(fs.existsSync("./RPX")) fs.rmSync("./RPX", { recursive: true });
 if(fs.existsSync("./VanillaTweaked")) fs.rmSync("./VanillaTweaked", { recursive: true });
-mergeDirectories(["./RP0", "./RP1", "./RP2", "./RP3", "./RP4", "./RP5", "./RP6", "./RP7", "./RP8", "./RP9", "./RP10", "./RP11", "./RP12", "./RP13", "./RP14", "./RP15", "./RP16", "./RP17"], "RPX");
-mergeDirectories(["./DP0", "./DP1", "./DP2", "./DP3", "./DP4", "./DP5"], "DPX");
-mergeDirectories(["./DPX", "./RPX"], "VanillaTweaked");
+mergeDirectories(["./RP/RP0", "./RP/RP1", "./RP/RP2", "./RP/RP3", "./RP/RP4", "./RP/RP5", "./RP/RP6", "./RP/RP7", "./RP/RP8", "./RP/RP9", "./RP/RP10", "./RP/RP11", "./RP/RP12", "./RP/RP13", "./RP/RP14", "./RP/RP15", "./RP/RP16", "./RP/RP17"], "RPX");
+mergeDirectories(["./DP/DP0", "./DP/DP1", "./DP/DP2", "./DP/DP3", "./DP/DP4", "./DP/DP5"], "DPX");
+mergeDirectories(["./RPX", "./DPX"], "VanillaTweaked");
