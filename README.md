@@ -15,6 +15,8 @@
 - https://shorturl.at/auvH6 (CO - other assets)
 - https://shorturl.at/amqyC (my compiled mods)
 
+## Recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
+
 ## All our forks in https://github.com/hydra2s
 
 - https://github.com/hydra2s/polymorph 
@@ -24,8 +26,6 @@
 - https://github.com/hydra2s/Tool-Stats 
 - https://github.com/hydra2s/FoodEffectTooltips
 - https://github.com/hydra2s/reasonable-sorting
-
-## Also, recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
