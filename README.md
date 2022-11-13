@@ -14,8 +14,16 @@
 - https://shorturl.at/exXY4 (my resource packs)
 - https://shorturl.at/auvH6 (CO - other assets)
 - https://shorturl.at/amqyC (my compiled mods)
-- https://github.com/hydra2s/polymorph/ (my version of Polymorph mod)
-- https://github.com/hydra2s/reasonable-sorting/ (my version of Reasonable Sorting mod)
+
+## All our forks in https://github.com/hydra2s
+
+- https://github.com/hydra2s/polymorph 
+- https://github.com/hydra2s/UniversalOres
+- https://github.com/hydra2s/minecraft-advancednbttooltip
+- https://github.com/hydra2s/AppleSkin 
+- https://github.com/hydra2s/Tool-Stats 
+- https://github.com/hydra2s/FoodEffectTooltips
+- https://github.com/hydra2s/reasonable-sorting
 
 ## Also, recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
 
