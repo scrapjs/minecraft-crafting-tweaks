@@ -202,7 +202,8 @@ src/main/resources/resourcepacks/data/crop/datapacks
 src/main/resources/resourcepacks/data/crop/datapacks/*
 src/main/resources/resourcepacks/crop/data/crop/datapacks
 src/main/resources/resourcepacks/crop/data/crop/datapacks/*
-
+src/main/resources/datapacks
+src/main/resources/datapacks/*
 
 # gradle
 

@@ -30,7 +30,7 @@ let usedMCVersion = "1_19";
 
 //
 let srcDir = `../wrapper/datapacks/`;
-let dstDir = `../src/main/resources/resourcepacks/crop`;
+let dstDir = `../src/main/resources/datapacks`;
 let dataIdentifier = `crop`;
 
 //
@@ -101,10 +101,11 @@ const arrayMerge = (target, source, options = {}) => {
     } else 
     if (source.some(e => (typeof e == "object"))) {
         // merge only if dublicated as string
-        return (target = Array.from(new Set([
+        /*return (target = Array.from(new Set([
             ...(target||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
             ...(source||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
-        ])).map((o,i)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));
+        ])).map((o,i)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));*/
+        return (target = recursiveMerge(target, source, options));
     } else 
     {
         return (target = Array.from(new Set([
@@ -155,8 +156,8 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
     
     if (isDirectory) {
         await fsPromises.mkdir(dest, { recursive: true });
-        await Promise.all(Array.from(await fsPromises.readdir(src)).map(async(childItemName) => {
-            return copyFolderRecursive(path.join(src, childItemName), path.join(dest, childItemName));
+        return await Promise.all(Array.from(await fsPromises.readdir(src)).map(async(childItemName) => {
+            return await copyFolderRecursive(path.join(src, childItemName), path.join(dest, childItemName));
         }));
     } else 
     if (isFile) {
@@ -180,7 +181,7 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 
                 //
                 await fsPromises.rm(dest);
-                await fsPromises.writeFile(dest, jsonToProperties(objectMerge(dstJson, srcJson)));
+                return await fsPromises.writeFile(dest, jsonToProperties(objectMerge(dstJson, srcJson)));
             } else
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
                 //
@@ -199,12 +200,12 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 
                 //
                 await fsPromises.rm(dest);
-                await fsPromises.writeFile(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
+                return await fsPromises.writeFile(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
             } else {
-                await fsPromises.copyFile(src, dest);
+                return await fsPromises.copyFile(src, dest);
             }
         } else {
-            await fsPromises.copyFile(src, dest);
+            return await fsPromises.copyFile(src, dest);
         }
     }
 };
@@ -212,7 +213,7 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
 //
 let mergeDirectories = async (inputs, target, options = {}) => {
     await Promise.all(Array.from(inputs).map(async(filename)=>{
-        return copyFolderRecursive(filename, target);
+        return await copyFolderRecursive(filename, target);
     }));
 };
 
@@ -410,8 +411,9 @@ let removeDisallowedFn = async (directory)=>{
     let files = await checkFileExists(`${directory}`) ? await fsPromises.readdir(`${directory}`) : [];
     await Promise.all(files.map(async (filename)=>{
         if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
-            await fsPromises.rm(`${directory}/${filename}`, { recursive: true, force: true });
+            return await fsPromises.rm(`${directory}/${filename}`, { recursive: true, force: true });
         }
+        return null;
     }));
 };
 
@@ -496,6 +498,8 @@ const MAIN = async ()=>{
             }));
         }));
     };
+    
+    
     
     if (usedModules.indexOf("co-disable-default-slabs") != -1) {
         await generateVanillaStub({
@@ -650,6 +654,8 @@ const MAIN = async ()=>{
             }
         });
     };
+    
+    
 
     // TODO: multiple configurations support
     if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
@@ -705,25 +711,25 @@ const MAIN = async ()=>{
             }
         });
     };
+    
 
-    //
-    await fsPromises.rm(`${dstDir}/data`, { recursive: true, force: true });
-    await fsPromises.mkdir(`${dstDir}/data`, { recursive: true });
-    await fsPromises.writeFile(`${dstDir}/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
-
+    
     //
     if (experimentalDatapacks) {
         await Promise.all(usedModules.map(async (M)=>{
+            
             let FM_DIR = `${srcDir}/${M}`;
             let files = await fsPromises.readdir(`${FM_DIR}`);
             let names = await fsPromises.readdir(`${FM_DIR}/data`);
             await Promise.all(names.filter((s)=>s.indexOf(".")<0).map(async(F)=>{
-                let DP_DIR = `${dstDir}/data/${dataIdentifier}/datapacks/${M.replaceAll("-","_")}`;
+                let DP_DIR = `${dstDir}/${M.replaceAll("-","_")}`;
                 await fsPromises.mkdir(`${DP_DIR}`, { recursive: true });
                 
                 //
                 await Promise.all(files.filter((s)=>s.indexOf(".")>=0).map(async(F)=>{
-                    return fsPromises.copyFile(`${FM_DIR}/${F}`, `${DP_DIR}/${F}`);
+                    if (!(await checkFileExists(`${DP_DIR}/${F}`))) {
+                        return await fsePromises.copy(`${FM_DIR}/${F}`, `${DP_DIR}/${F}`);
+                    }
                     //await fsPromises.writeFile(`${DP_DIR}/${F}`, await fsPromises.readFile(`${FM_DIR}/${F}`));
                 }));
                 
@@ -732,29 +738,56 @@ const MAIN = async ()=>{
                 await mergeDirectories([`${FM_DIR}/data/${F}`], `${DP_DIR}/data/${F}`, { overwrite: true });
 
                 // remove disallowed version data from "crafting"
+                
                 {
-                    await removeDisallowedFn(`${DP_DIR}/data/${F}`);
+                    //await removeDisallowedFn(`${DP_DIR}/data/${F}`);
                     await removeDisallowedFn(`${DP_DIR}/data/${F}/recipes`);
                     await removeDisallowedFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
                 };
 
                 //
                 if (mergeVersions) {
-                    await mergeVersionsFn(`${DP_DIR}/data/${F}`);
+                    //await mergeVersionsFn(`${DP_DIR}/data/${F}`);
                     await mergeVersionsFn(`${DP_DIR}/data/${F}/recipes`);
                     await mergeVersionsFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
                 };
             }));
             
+            /*
             //
             await removeDisallowedFn(`${FM_DIR}/data`);
             
             //
             if (mergeVersions) {
                 await mergeVersionsFn(`${FM_DIR}/data`, experimentalDatapacks);
+            }*/
+            
+            // copy required files
+            {
+                let files = await fsPromises.readdir("./required");
+                await Promise.all(files.map(async(filename)=>{
+                    if (!(await checkFileExists(`${dstDir}/../${filename}`))) {
+                        return await fsePromises.copy(`./required/${filename}`, `${dstDir}/../${filename}`);
+                    }
+                }));
+            }
+
+            //
+            {
+                await fsPromises.mkdir(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
+                await fsPromises.writeFile(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
+public class Modules {
+    public static String[] moduleNames = new String[]{ ${usedModules.map((s)=>`"${s.replaceAll("-","_")}"`).join(",")} };
+}
+                `, 'utf8');
             }
         }));
     } else {
+        //
+        await fsPromises.rm(`${dstDir}/data`, { recursive: true, force: true });
+        await fsPromises.mkdir(`${dstDir}/data`, { recursive: true });
+        await fsPromises.writeFile(`${dstDir}/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
+        
         //
         let DP_DIR = `${dstDir}/data`;
         await mergeDirectories(usedModules.map((M)=>{ return `${srcDir}/${M}/data`; }), `${DP_DIR}`, { overwrite: true });
@@ -770,25 +803,27 @@ const MAIN = async ()=>{
             await mergeVersionsFn(`${DP_DIR}/crafting/recipes`);
             await mergeVersionsFn(`${DP_DIR}/crafting/advancements/recipes/crafting`);
         };
-    }
+        
+        // copy required files
+        {
+            let files = await fsPromises.readdir("./required");
+            await Promise.all(files.map(async(filename)=>{
+                return fsePromises.copy(`./required/${filename}`, `${dstDir}/${filename}`);
+            }));
+        }
 
-    // copy required files
-    {
-        let files = await fsPromises.readdir("./required");
-        await Promise.all(files.map(async(filename)=>{
-            return fsePromises.copy(`./required/${filename}`, `${dstDir}/${filename}`);
-        }));
-    }
-
-    //
-    {
-        await fsPromises.mkdir(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
-        await fsPromises.writeFile(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
+        //
+        {
+            await fsPromises.mkdir(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
+            await fsPromises.writeFile(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
 public class Modules {
     public static String[] moduleNames = new String[]{ ${usedModules.map((s)=>`"${s.replaceAll("-","_")}"`).join(",")} };
 }
-        `, 'utf8');
+            `, 'utf8');
+        }
     }
+
+
 };
 
 MAIN();

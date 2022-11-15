@@ -28,10 +28,11 @@ const arrayMerge = (target, source, options = {}) => {
     } else 
     if (source.some(e => (typeof e == "object"))) {
         // merge only if dublicated as string
-        return (target = Array.from(new Set([
+        /*return (target = Array.from(new Set([
             ...(target||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
             ...(source||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
-        ])).map((o,i)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));
+        ])).map((o,i)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));*/
+        return (target = recursiveMerge(target, source, options));
     } else 
     {
         return (target = Array.from(new Set([
