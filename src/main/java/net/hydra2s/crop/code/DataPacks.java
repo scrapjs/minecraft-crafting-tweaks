@@ -30,8 +30,9 @@ public class DataPacks {
     public DataPacks () {
         var container = FabricLoader.getInstance().getModContainer("crop").get();
         Arrays.stream(Modules.moduleNames).forEachOrdered((m)->{
+            // TODO: make core functions to optional
             var identifier = new Identifier("crop", "crop/data/crop/datapacks/" + m);
-            ResourceManagerHelper.registerBuiltinResourcePack(identifier, container, ResourcePackActivationType.DEFAULT_ENABLED);
+            ResourceManagerHelper.registerBuiltinResourcePack(identifier, container, m.contains("core") ? ResourcePackActivationType.ALWAYS_ENABLED : ResourcePackActivationType.DEFAULT_ENABLED);
         });
     }
 }

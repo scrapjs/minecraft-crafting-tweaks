@@ -8,7 +8,13 @@ import net.minecraft.block.Blocks;
 public class FuelMod {
 
     public FuelMod() {
-        FuelRegistry.INSTANCE.add(Blocks.COAL_BLOCK, 6400);
+        this.changeCoalFuelTime(6400);
+    }
+
+    // TODO: make changeable by config
+    public void changeCoalFuelTime(int ticks) {
+        FuelRegistry.INSTANCE.remove(Blocks.COAL_BLOCK);
+        FuelRegistry.INSTANCE.add(Blocks.COAL_BLOCK, ticks);
     }
 
 }
