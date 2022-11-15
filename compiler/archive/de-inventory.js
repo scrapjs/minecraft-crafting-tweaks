@@ -13,7 +13,7 @@ function Stringify_WithSpaces(obj) {
 
 files.forEach((filename)=>{
     if (filename.match(/\.[0-9a-z]+$/i)[0] == ".json") {
-        let json = JSON.parse(fs.readFileSync(filename, "utf8"));
+        let json = JSON5.parse(fs.readFileSync(filename, "utf8"));
         json["container.inventory"] = "";
         fs.writeFileSync(filename, Stringify_WithSpaces(json), "utf8");
     }

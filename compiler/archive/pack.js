@@ -13,7 +13,7 @@ const stripComments = (data => data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s
 //
 function isJsonString(str) {
     try {
-        JSON.parse(str);
+        JSON5.parse(str);
     } catch (e) {
         return false;
     }
@@ -31,7 +31,7 @@ const arrayMerge = (target, source, options = {}) => {
         /*return (target = Array.from(new Set([
             ...(target||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
             ...(source||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
-        ])).map((o,i)=>{ return isJsonString(o) ? JSON.parse(o) : o; }));*/
+        ])).map((o,i)=>{ return isJsonString(o) ? JSON5.parse(o) : o; }));*/
         return (target = recursiveMerge(target, source, options));
     } else 
     {
@@ -96,8 +96,8 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
                 //
                 let srcJsonRaw = propertiesToJson(fs.readFileSync(src, "utf8"));
                 let dstJsonRaw = propertiesToJson(fs.readFileSync(dest, "utf8"));
-                let srcJson = JSON.parse(srcJsonRaw);
-                let dstJson = JSON.parse(dstJsonRaw);
+                let srcJson = JSON5.parse(srcJsonRaw);
+                let dstJson = JSON5.parse(dstJsonRaw);
                 
                 //
                 console.log("SRC PROPERTIES: " + jsonToProperties(srcJsonRaw));
@@ -115,8 +115,8 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
                 //
                 let srcJsonRaw = stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
                 let dstJsonRaw = stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
-                let srcJson = JSON.parse(srcJsonRaw);
-                let dstJson = JSON.parse(dstJsonRaw);
+                let srcJson = JSON5.parse(srcJsonRaw);
+                let dstJson = JSON5.parse(dstJsonRaw);
                 
                 //
                 //console.log("SRC JSON: " + JSON.stringify(srcJsonRaw));

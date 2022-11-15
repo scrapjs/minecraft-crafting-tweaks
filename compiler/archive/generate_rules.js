@@ -29,7 +29,7 @@ let types = [
     {"suffix": "_hyphae", "prefix": "minecraft:"         , "materials": [...nether_materials]},
 ];
 
-let json = JSON.parse(fs.readFileSync("./reasonable-sorting.json", "utf8"));
+let json = JSON5.parse(fs.readFileSync("./reasonable-sorting.json", "utf8"));
 
 let materialed = {};
 types.forEach((type)=>{
