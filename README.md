@@ -26,6 +26,7 @@
 - https://github.com/hydra2s/Tool-Stats 
 - https://github.com/hydra2s/FoodEffectTooltips
 - https://github.com/hydra2s/reasonable-sorting
+- https://github.com/hydra2s/nbt-crafting
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
