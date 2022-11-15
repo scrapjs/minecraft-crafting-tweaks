@@ -1,1 +1,0 @@
-tellraw @a {"text":"Data Pack loaded"}
