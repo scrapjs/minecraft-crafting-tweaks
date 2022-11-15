@@ -86,7 +86,7 @@ const stripComments = (data => data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s
 //
 function isJsonString(str) {
     try {
-        JSON5.parse(str);
+        JSOX.parse(str);
     } catch (e) {
         return false;
     }
@@ -104,7 +104,7 @@ const arrayMerge = (target, source, options = {}) => {
         /*return (target = Array.from(new Set([
             ...(target||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
             ...(source||[]).map((o,i)=>{ return (typeof o == "object") ? JSON.stringify(o) : o; }), 
-        ])).map((o,i)=>{ return isJsonString(o) ? JSON5.parse(o) : o; }));*/
+        ])).map((o,i)=>{ return isJsonString(o) ? JSOX.parse(o) : o; }));*/
         return (target = recursiveMerge(target, source, options));
     } else 
     {
@@ -171,8 +171,8 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 //
                 let srcJsonRaw = propertiesToJson(await fsPromises.readFile(src, "utf8"));
                 let dstJsonRaw = propertiesToJson(await fsPromises.readFile(dest, "utf8"));
-                let srcJson = JSON5.parse(srcJsonRaw);
-                let dstJson = JSON5.parse(dstJsonRaw);
+                let srcJson = JSOX.parse(srcJsonRaw);
+                let dstJson = JSOX.parse(dstJsonRaw);
                 
                 //
                 console.log("SRC PROPERTIES: " + jsonToProperties(srcJsonRaw));
@@ -190,8 +190,8 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 //
                 let srcJsonRaw = stripComments(await fsPromises.readFile(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
                 let dstJsonRaw = stripComments(await fsPromises.readFile(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
-                let srcJson = JSON5.parse(srcJsonRaw);
-                let dstJson = JSON5.parse(dstJsonRaw);
+                let srcJson = JSOX.parse(srcJsonRaw);
+                let dstJson = JSOX.parse(dstJsonRaw);
                 
                 //
                 //console.log("SRC JSON: " + JSON.stringify(srcJsonRaw));
@@ -260,7 +260,7 @@ let templateRecipeSingle = (options, outCount = 1, pattern = null)=>{
 }`, CRLF);
 };
 
-let JSON5 = null;
+let JSOX = null;
 let PP3x1Pattern = `"###"`;
 let stairs3x3Pattern = `"#  ", "## ", "###"`;
 let stairs2x2Pattern = `"# ", "##"`;
@@ -426,8 +426,8 @@ const MAIN = async ()=>{
     fsPromises = fs.promises;
     fsePromises = await import('fs-extra');
     _normalize = await import('crlf-normalize');
-    JSON5 = (await import('json-6')).default;
-
+    JSOX = (await import('jsox')).JSOX;
+    
     //
     crlf = _normalize.crlf;
     LF   = _normalize.LF;
@@ -435,7 +435,7 @@ const MAIN = async ()=>{
     CR   = _normalize.CR;
     
     //
-    let blocks = JSON5.parse(await fsPromises.readFile("./blocks.json5", "utf8"));
+    let blocks = JSOX.parse(await fsPromises.readFile("./blocks.json5", "utf8"));
     
     // TODO: shulker boxes support
     if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
