@@ -426,7 +426,7 @@ const MAIN = async ()=>{
     fsPromises = fs.promises;
     fsePromises = await import('fs-extra');
     _normalize = await import('crlf-normalize');
-    JSON5 = (await import('json5')).default;
+    JSON5 = (await import('json-6')).default;
 
     //
     crlf = _normalize.crlf;
