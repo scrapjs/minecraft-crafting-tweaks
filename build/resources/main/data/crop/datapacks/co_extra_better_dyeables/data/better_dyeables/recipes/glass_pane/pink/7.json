@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"},
+        {"tag": "better_dyeables:glass_pane/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_stained_glass_pane",
+        "count": 7
+    },
+    "group": "pink_glass_pane"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/blue"},
+        {"tag": "better_dyeables:carpet/not_blue"},
+        {"tag": "better_dyeables:carpet/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_carpet",
+        "count": 2
+    },
+    "group": "blue_carpet"
+}

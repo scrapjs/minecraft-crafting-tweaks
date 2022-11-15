@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/light_gray"},
+        {"tag": "better_dyeables:terracotta/not_light_gray"},
+        {"tag": "better_dyeables:terracotta/not_light_gray"},
+        {"tag": "better_dyeables:terracotta/not_light_gray"},
+        {"tag": "better_dyeables:terracotta/not_light_gray"}
+    ],
+    "result": {
+        "item": "minecraft:light_gray_terracotta",
+        "count": 4
+    },
+    "group": "light_gray_terracotta"
+}

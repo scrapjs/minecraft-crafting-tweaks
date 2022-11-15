@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/red"},
+        {"tag": "better_dyeables:glass/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_stained_glass",
+        "count": 1
+    },
+    "group": "red_glass"
+}

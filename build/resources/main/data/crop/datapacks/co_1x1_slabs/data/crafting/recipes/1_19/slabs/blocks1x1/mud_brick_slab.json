@@ -1,0 +1,11 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"item":"minecraft:mud_bricks"}
+    ],
+    "result": {
+        "item": "minecraft:mud_brick_slab",
+        "count": 2
+    },
+    "group": "slabs"
+}

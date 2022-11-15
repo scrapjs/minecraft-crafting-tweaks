@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"},
+        {"tag": "better_dyeables:banner/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_banner",
+        "count": 8
+    },
+    "group": "yellow_banner"
+}

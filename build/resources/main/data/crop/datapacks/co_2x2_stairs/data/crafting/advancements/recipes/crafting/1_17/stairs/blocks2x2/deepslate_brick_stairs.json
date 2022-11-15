@@ -1,0 +1,17 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_stairs": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:deepslate_bricks"}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:deepslate_brick_stairs"}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "crafting:stairs/blocks2x2/deepslate_brick_stairs"
+            }
+        }
+    },
+    "requirements": [
+        ["has_stairs","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["crafting:stairs/blocks2x2/deepslate_brick_stairs"] }
+}

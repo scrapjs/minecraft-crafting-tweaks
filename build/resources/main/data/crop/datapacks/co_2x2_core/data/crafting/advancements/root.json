@@ -1,0 +1,15 @@
+{
+    "display": {
+        "title": { "text": "Crafting recipes overhaul (beta) - compiled datapack...", "color": "white" },
+        "description": { "text": "Most crafts now are 2x2.", "color": "gold" },
+        "icon": { "item": "minecraft:player_head" },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/moss_block.png"
+    },
+    "criteria": {
+        "Start": { "trigger": "minecraft:tick" }
+    }
+}

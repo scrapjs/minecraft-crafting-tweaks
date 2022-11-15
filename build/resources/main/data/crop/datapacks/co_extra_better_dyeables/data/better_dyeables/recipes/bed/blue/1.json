@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/blue"},
+        {"tag": "better_dyeables:bed/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_bed",
+        "count": 1
+    },
+    "group": "blue_bed"
+}

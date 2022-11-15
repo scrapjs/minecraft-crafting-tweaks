@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"},
+        {"tag": "better_dyeables:concrete/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_concrete",
+        "count": 8
+    },
+    "group": "gray_concrete"
+}

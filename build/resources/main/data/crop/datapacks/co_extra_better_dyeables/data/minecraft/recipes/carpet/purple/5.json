@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/purple"},
+        {"tag": "better_dyeables:carpet/not_purple"},
+        {"tag": "better_dyeables:carpet/not_purple"},
+        {"tag": "better_dyeables:carpet/not_purple"},
+        {"tag": "better_dyeables:carpet/not_purple"},
+        {"tag": "better_dyeables:carpet/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_carpet",
+        "count": 5
+    },
+    "group": "purple_carpet"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/cyan"},
+        {"tag": "better_dyeables:concrete_powder/not_cyan"},
+        {"tag": "better_dyeables:concrete_powder/not_cyan"},
+        {"tag": "better_dyeables:concrete_powder/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_concrete_powder",
+        "count": 3
+    },
+    "group": "cyan_concrete_powder"
+}

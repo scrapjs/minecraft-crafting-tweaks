@@ -1,0 +1,11 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"item":"minecraft:waxed_weathered_cut_copper"}
+    ],
+    "result": {
+        "item": "minecraft:waxed_weathered_cut_copper_slab",
+        "count": 2
+    },
+    "group": "slabs"
+}

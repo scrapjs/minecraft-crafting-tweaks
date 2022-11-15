@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/pink"},
+        {"tag": "better_dyeables:banner/not_pink"},
+        {"tag": "better_dyeables:banner/not_pink"},
+        {"tag": "better_dyeables:banner/not_pink"},
+        {"tag": "better_dyeables:banner/not_pink"},
+        {"tag": "better_dyeables:banner/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_banner",
+        "count": 5
+    },
+    "group": "pink_banner"
+}

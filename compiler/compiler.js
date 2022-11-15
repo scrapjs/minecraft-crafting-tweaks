@@ -30,7 +30,8 @@ let usedMCVersion = "1_19";
 
 //
 let srcDir = `../wrapper/datapacks/`;
-let dstDir = `../src/main/resources/`
+let dstDir = `../src/main/resources/`;
+let dataIdentifier = `crop`;
 
 //
 let disallowedData = {
@@ -700,7 +701,7 @@ if (experimentalDatapacks) {
         let files = fs.readdirSync(`${FM_DIR}`);
         let names = fs.readdirSync(`${FM_DIR}/data`);
         names.filter((s)=>s.indexOf(".")<0).map((F)=>{
-            let DP_DIR = `${dstDir}/data/minecraft/datapacks/${M.replaceAll("-","_")}`;
+            let DP_DIR = `${dstDir}/data/${dataIdentifier}/datapacks/${M.replaceAll("-","_")}`;
             fs.mkdirSync(`${DP_DIR}`, { recursive: true });
             
             //

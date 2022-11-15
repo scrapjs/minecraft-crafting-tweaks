@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"},
+        {"tag": "better_dyeables:candle/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_candle",
+        "count": 8
+    },
+    "group": "gray_candle"
+}

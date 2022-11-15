@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"},
+        {"tag": "better_dyeables:carpet/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_carpet",
+        "count": 7
+    },
+    "group": "orange_carpet"
+}

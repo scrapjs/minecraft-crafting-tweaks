@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/white"},
+        {"tag": "better_dyeables:concrete_powder/not_white"},
+        {"tag": "better_dyeables:concrete_powder/not_white"},
+        {"tag": "better_dyeables:concrete_powder/not_white"},
+        {"tag": "better_dyeables:concrete_powder/not_white"},
+        {"tag": "better_dyeables:concrete_powder/not_white"}
+    ],
+    "result": {
+        "item": "minecraft:white_concrete_powder",
+        "count": 5
+    },
+    "group": "white_concrete_powder"
+}

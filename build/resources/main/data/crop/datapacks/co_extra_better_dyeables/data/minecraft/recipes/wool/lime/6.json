@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/lime"},
+        {"tag": "better_dyeables:wool/not_lime"},
+        {"tag": "better_dyeables:wool/not_lime"},
+        {"tag": "better_dyeables:wool/not_lime"},
+        {"tag": "better_dyeables:wool/not_lime"},
+        {"tag": "better_dyeables:wool/not_lime"},
+        {"tag": "better_dyeables:wool/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_wool",
+        "count": 6
+    },
+    "group": "lime_wool"
+}

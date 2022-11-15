@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/gray"},
+        {"tag": "better_dyeables:glazed_terracotta/not_gray"},
+        {"tag": "better_dyeables:glazed_terracotta/not_gray"},
+        {"tag": "better_dyeables:glazed_terracotta/not_gray"},
+        {"tag": "better_dyeables:glazed_terracotta/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_glazed_terracotta",
+        "count": 4
+    },
+    "group": "gray_glazed_terracotta"
+}

@@ -1,0 +1,1 @@
+## Uninstall Data Pack (scoreboards, bossbars, etc)

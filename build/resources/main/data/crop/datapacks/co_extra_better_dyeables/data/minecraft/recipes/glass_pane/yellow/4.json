@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/yellow"},
+        {"tag": "better_dyeables:glass_pane/not_yellow"},
+        {"tag": "better_dyeables:glass_pane/not_yellow"},
+        {"tag": "better_dyeables:glass_pane/not_yellow"},
+        {"tag": "better_dyeables:glass_pane/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_stained_glass_pane",
+        "count": 4
+    },
+    "group": "yellow_glass_pane"
+}

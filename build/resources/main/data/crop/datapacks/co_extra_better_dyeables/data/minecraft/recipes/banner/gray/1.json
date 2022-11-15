@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/gray"},
+        {"tag": "better_dyeables:banner/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_banner",
+        "count": 1
+    },
+    "group": "gray_banner"
+}

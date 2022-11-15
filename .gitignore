@@ -194,3 +194,9 @@ datapack/*
 
 src/main/resources/data/minecraft/datapacks
 src/main/resources/data/minecraft/datapacks/*
+src/main/resources/data/crop/datapacks
+src/main/resources/data/crop/datapacks/*
+src/main/resources/resourcepacks/data/minecraft/datapacks
+src/main/resources/resourcepacks/data/minecraft/datapacks/*
+src/main/resources/resourcepacks/data/crop/datapacks
+src/main/resources/resourcepacks/data/crop/datapacks/*

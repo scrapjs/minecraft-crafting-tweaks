@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"},
+        {"tag": "better_dyeables:banner/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_banner",
+        "count": 7
+    },
+    "group": "lime_banner"
+}

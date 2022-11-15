@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/yellow"},
+        {"tag": "better_dyeables:wool/not_yellow"},
+        {"tag": "better_dyeables:wool/not_yellow"},
+        {"tag": "better_dyeables:wool/not_yellow"},
+        {"tag": "better_dyeables:wool/not_yellow"},
+        {"tag": "better_dyeables:wool/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_wool",
+        "count": 5
+    },
+    "group": "yellow_wool"
+}

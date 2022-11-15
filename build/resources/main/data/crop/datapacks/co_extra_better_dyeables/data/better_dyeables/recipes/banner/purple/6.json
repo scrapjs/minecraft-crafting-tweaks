@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/purple"},
+        {"tag": "better_dyeables:banner/not_purple"},
+        {"tag": "better_dyeables:banner/not_purple"},
+        {"tag": "better_dyeables:banner/not_purple"},
+        {"tag": "better_dyeables:banner/not_purple"},
+        {"tag": "better_dyeables:banner/not_purple"},
+        {"tag": "better_dyeables:banner/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_banner",
+        "count": 6
+    },
+    "group": "purple_banner"
+}

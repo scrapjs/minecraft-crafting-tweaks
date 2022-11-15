@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/blue"},
+        {"tag": "better_dyeables:banner/not_blue"},
+        {"tag": "better_dyeables:banner/not_blue"},
+        {"tag": "better_dyeables:banner/not_blue"},
+        {"tag": "better_dyeables:banner/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_banner",
+        "count": 4
+    },
+    "group": "blue_banner"
+}

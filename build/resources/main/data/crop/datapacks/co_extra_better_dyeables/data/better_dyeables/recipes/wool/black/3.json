@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/black"},
+        {"tag": "better_dyeables:wool/not_black"},
+        {"tag": "better_dyeables:wool/not_black"},
+        {"tag": "better_dyeables:wool/not_black"}
+    ],
+    "result": {
+        "item": "minecraft:black_wool",
+        "count": 3
+    },
+    "group": "black_wool"
+}

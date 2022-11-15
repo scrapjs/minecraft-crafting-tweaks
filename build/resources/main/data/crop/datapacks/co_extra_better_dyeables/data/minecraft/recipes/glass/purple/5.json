@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/purple"},
+        {"tag": "better_dyeables:glass/not_purple"},
+        {"tag": "better_dyeables:glass/not_purple"},
+        {"tag": "better_dyeables:glass/not_purple"},
+        {"tag": "better_dyeables:glass/not_purple"},
+        {"tag": "better_dyeables:glass/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_stained_glass",
+        "count": 5
+    },
+    "group": "purple_glass"
+}

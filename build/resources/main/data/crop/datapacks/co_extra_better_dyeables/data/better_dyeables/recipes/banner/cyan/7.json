@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"},
+        {"tag": "better_dyeables:banner/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_banner",
+        "count": 7
+    },
+    "group": "cyan_banner"
+}

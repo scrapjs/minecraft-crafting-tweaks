@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"},
+        {"tag": "better_dyeables:wool/not_green"}
+    ],
+    "result": {
+        "item": "minecraft:green_wool",
+        "count": 7
+    },
+    "group": "green_wool"
+}

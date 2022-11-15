@@ -1,0 +1,17 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_block": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:mossy_cobblestone_stairs"}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"item":"minecraft:mossy_cobblestone"}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "crafting:blocks/stairs4x/mossy_cobblestone"
+            }
+        }
+    },
+    "requirements": [
+        ["has_block","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["crafting:blocks/stairs4x/mossy_cobblestone"] }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/cyan"},
+        {"tag": "better_dyeables:carpet/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_carpet",
+        "count": 1
+    },
+    "group": "cyan_carpet"
+}

@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/magenta"},
+        {"tag": "better_dyeables:candle/not_magenta"},
+        {"tag": "better_dyeables:candle/not_magenta"},
+        {"tag": "better_dyeables:candle/not_magenta"},
+        {"tag": "better_dyeables:candle/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_candle",
+        "count": 4
+    },
+    "group": "magenta_candle"
+}

@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/magenta"},
+        {"tag": "better_dyeables:banner/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_banner",
+        "count": 1
+    },
+    "group": "magenta_banner"
+}

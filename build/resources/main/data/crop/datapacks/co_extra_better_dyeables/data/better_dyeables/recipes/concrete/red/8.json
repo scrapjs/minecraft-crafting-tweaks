@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"},
+        {"tag": "better_dyeables:concrete/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_concrete",
+        "count": 8
+    },
+    "group": "red_concrete"
+}

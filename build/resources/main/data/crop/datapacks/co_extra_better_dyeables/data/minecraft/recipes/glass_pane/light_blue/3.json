@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/light_blue"},
+        {"tag": "better_dyeables:glass_pane/not_light_blue"},
+        {"tag": "better_dyeables:glass_pane/not_light_blue"},
+        {"tag": "better_dyeables:glass_pane/not_light_blue"}
+    ],
+    "result": {
+        "item": "minecraft:light_blue_stained_glass_pane",
+        "count": 3
+    },
+    "group": "light_blue_glass_pane"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/lime"},
+        {"tag": "better_dyeables:glass/not_lime"},
+        {"tag": "better_dyeables:glass/not_lime"},
+        {"tag": "better_dyeables:glass/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_stained_glass",
+        "count": 3
+    },
+    "group": "lime_glass"
+}

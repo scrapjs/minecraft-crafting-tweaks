@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/red"},
+        {"tag": "better_dyeables:candle/not_red"},
+        {"tag": "better_dyeables:candle/not_red"},
+        {"tag": "better_dyeables:candle/not_red"},
+        {"tag": "better_dyeables:candle/not_red"},
+        {"tag": "better_dyeables:candle/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_candle",
+        "count": 5
+    },
+    "group": "red_candle"
+}

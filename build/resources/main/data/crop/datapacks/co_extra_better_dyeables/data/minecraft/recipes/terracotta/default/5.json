@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "better_dyeables:dye/default"},
+        {"tag": "better_dyeables:terracotta"},
+        {"tag": "better_dyeables:terracotta"},
+        {"tag": "better_dyeables:terracotta"},
+        {"tag": "better_dyeables:terracotta"},
+        {"tag": "better_dyeables:terracotta"}
+    ],
+    "result": {
+        "item": "minecraft:terracotta",
+        "count": 5
+    },
+    "group": "default_terracotta"
+}
