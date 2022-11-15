@@ -68,16 +68,19 @@ let mcVersionString = {
 let mcVersions = ["1_20", "1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
 
 //
-let path = require('path');
-let fs = require('fs');
-let fse = require('fs-extra');
-let {crlf, LF, CRLF, CR} = require('crlf-normalize');
+let path;
+let fs;
+let fse;
+let crlf, LF, CRLF, CR;
+let fsPromises;
+let fsePromises;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Smart Merging Directories Library ///////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 //
+const checkFileExists = async path => !!(await fsPromises.stat(path).catch(e => false));
 const stripComments = (data => data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => g ? "" : m));
 
 //
@@ -145,17 +148,19 @@ const jsonToProperties = (obj)=>{
 }
 
 // TODO: remake function
-let copyFolderRecursiveSync = (src, dest, options = {}) => {
-    let exists = fs.existsSync(src);
-    let stats = exists && fs.statSync(src);
-    let isDirectory = exists && stats.isDirectory();
+let copyFolderRecursive = async (src, dest, options = {}) => {
+    let stats = await fsPromises.stat(src);
+    let isDirectory = stats.isDirectory();
+    let isFile = stats.isFile();
+    
     if (isDirectory) {
-        fs.mkdirSync(dest, { recursive: true });
-        fs.readdirSync(src).forEach(function(childItemName) {
-            copyFolderRecursiveSync(path.join(src, childItemName), path.join(dest, childItemName));
-        });
-    } else {
-        if (fs.existsSync(dest)) {
+        await fsPromises.mkdir(dest, { recursive: true });
+        await Promise.all(Array.from(await fsPromises.readdir(src)).map(async(childItemName) => {
+            return copyFolderRecursive(path.join(src, childItemName), path.join(dest, childItemName));
+        }));
+    } else 
+    if (isFile) {
+        if (await checkFileExists(dest)) {
             let dstMatched = dest.match(/\.[0-9a-z]+$/i);
             let srcMatched = src.match(/\.[0-9a-z]+$/i);
             if (dstMatched && srcMatched && srcMatched[0] == ".properties" && dstMatched[0] == ".properties") {
@@ -163,8 +168,8 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
                 console.log("merging PROPERTIES " + src + " to " + dest);
                 
                 //
-                let srcJsonRaw = propertiesToJson(fs.readFileSync(src, "utf8"));
-                let dstJsonRaw = propertiesToJson(fs.readFileSync(dest, "utf8"));
+                let srcJsonRaw = propertiesToJson(await fsPromises.readFile(src, "utf8"));
+                let dstJsonRaw = propertiesToJson(await fsPromises.readFile(dest, "utf8"));
                 let srcJson = JSON.parse(srcJsonRaw);
                 let dstJson = JSON.parse(dstJsonRaw);
                 
@@ -174,16 +179,16 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
                 console.log("RESULT PROPERTIES: " + jsonToProperties(objectMerge(dstJson, srcJson)));
                 
                 //
-                fs.rmSync(dest);
-                fs.writeFileSync(dest, jsonToProperties(objectMerge(dstJson, srcJson)));
+                await fsPromises.rm(dest);
+                await fsPromises.writeFile(dest, jsonToProperties(objectMerge(dstJson, srcJson)));
             } else
             if (dstMatched && srcMatched && srcMatched[0] == ".json" && dstMatched[0] == ".json") {
                 //
                 //console.log("merging JSON " + src + " to " + dest);
                 
                 //
-                let srcJsonRaw = stripComments(fs.readFileSync(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
-                let dstJsonRaw = stripComments(fs.readFileSync(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let srcJsonRaw = stripComments(await fsPromises.readFile(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let dstJsonRaw = stripComments(await fsPromises.readFile(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
                 let srcJson = JSON.parse(srcJsonRaw);
                 let dstJson = JSON.parse(dstJsonRaw);
                 
@@ -193,30 +198,27 @@ let copyFolderRecursiveSync = (src, dest, options = {}) => {
                 //console.log("RESULT JSON: " + JSON.stringify(objectMerge(dstJson, srcJson)));
                 
                 //
-                fs.rmSync(dest);
-                fs.writeFileSync(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
+                await fsPromises.rm(dest);
+                await fsPromises.writeFile(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
             } else {
-                fs.copyFileSync(src, dest);
+                await fsPromises.copyFile(src, dest);
             }
         } else {
-            fs.copyFileSync(src, dest);
+            await fsPromises.copyFile(src, dest);
         }
     }
 };
 
 //
-let mergeDirectories = (inputs, target, options = {}) => {
-    Array.from(inputs).forEach((filename)=>{
-        copyFolderRecursiveSync(filename, target);
-    });
+let mergeDirectories = async (inputs, target, options = {}) => {
+    await Promise.all(Array.from(inputs).map(async(filename)=>{
+        return copyFolderRecursive(filename, target);
+    }));
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
-// will used in future
-let blocks = JSON.parse(fs.readFileSync("./blocks.json", "utf8"));
 
 // 
 let templateStub = (options)=>{
@@ -261,8 +263,6 @@ let PP3x1Pattern = `"###"`;
 let stairs3x3Pattern = `"#  ", "## ", "###"`;
 let stairs2x2Pattern = `"# ", "##"`;
 let slabs2x1Pattern = `"##"`;
-
-
 
 let advancementTemplate = (options)=>{
     let criterias = [];
@@ -328,71 +328,6 @@ let templateColors = (options)=>{
 }`, CRLF);
 };
 
-// TODO: shulker boxes support
-if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
-    let rootDirAdv = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
-    let rootDir = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/recipes`;
-    let rootDirMc = `${srcDir}/co-extra-better-dyeables/data/minecraft/recipes`;
-
-    fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
-    fs.rmSync(`${rootDir}`, { recursive: true, force: true });
-
-    names.forEach((name)=>{
-        colors.forEach((color)=>{
-            let rejectionCode = color != "default" ? `/not_${color}` : ``;
-            let mcName = 
-                (name == "glass" || name == "glass_pane") && 
-                color != "default" ? 
-                `${color}_stained_${name}` : 
-                    (color != "default" ? `${color}_${name}` : `${name}`);
-            
-            // kill vanilla dyeing!
-            if (color != "default" && name != "glazed_terracotta" && name != "concrete_powder" && name != "concrete" && name != "banner") {
-                fs.mkdirSync(    `${rootDirMc}`, { recursive: true });
-                
-                if (name == "bed") {
-                    if (color != "white") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
-                } else
-                if (name == "carpet") {
-                    if (color != "white") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
-                } else
-                if (name == "glass_pane") {
-                    if (color != "default") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
-                } else
-                if (name == "glass") {
-                    if (color != "default") { fs.writeFileSync(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
-                } else
-                {
-                    fs.writeFileSync(`${rootDirMc}/${mcName}.json`, templateStub({}), 'utf8');
-                }
-            };
-            
-            if (!(color == "default" && (name == "bed" || name == "wool" || name == "carpet" || name == "concrete_powder" || name == "concrete" || name == "banner" || name == "glazed_terracotta"))) {
-                let maxCount = name != "bed" ? 8 : 1;
-                for (let i=1;i<=maxCount;i++) {
-                    let criterias = {};
-                    criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
-                    criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
-                    criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
-
-                    fs.mkdirSync(`${rootDirAdv}/${name}/${color}`, { recursive: true });
-                    fs.writeFileSync(`${rootDirAdv}/${name}/${color}/${i}.json`, advancementTemplate({
-                        criterias, 
-                        recipeAddress: `better_dyeables:${name}/${color}/${i}`
-                    }), 'utf8');
-
-                    fs.mkdirSync(`${rootDir}/${name}/${color}`, { recursive: true });
-                    fs.writeFileSync(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
-                        color, name, count: i
-                    }), 'utf8');
-                }
-            }
-        });
-    });
-};
-
-
-
 //
 let namings = {
     "block": "blocks",
@@ -403,11 +338,11 @@ let namings = {
 };
 
 //
-let generateModuleRecipes = (options)=>{
+let generateModuleRecipes = async (options)=>{
     let rootDirAdv = `${options.datapack}/data/crafting/advancements/recipes/crafting`;
     let rootDir = `${options.datapack}/data/crafting/recipes`;
 
-    Array.from(Object.entries(options.blocks)).forEach(([key, obj])=>{
+    await Promise.all(Array.from(Object.entries(options.blocks)).map(async ([key, obj])=>{
         let outsource = options.type != "block" ? obj[options.type] : obj[options.from];
         if (outsource && (disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && !outsource.extra && (options.single ? ((options.type != "block" ? obj[options.type] : obj)["single"] || allowVanillaRecipeConflicts) : true) && !obj.extra) {
             let criterias = {};
@@ -420,355 +355,440 @@ let generateModuleRecipes = (options)=>{
             let directory = `${obj.mc_version}/${unversion}`;
 
             // advancements
-            fs.mkdirSync(    `${rootDirAdv}/${directory}`, { recursive: true });
-            fs.writeFileSync(`${rootDirAdv}/${directory}/${filename}.json`, advancementTemplate({ 
+            await fsPromises.mkdir(    `${rootDirAdv}/${directory}`, { recursive: true });
+            await fsPromises.writeFile(`${rootDirAdv}/${directory}/${filename}.json`, advancementTemplate({ 
                 criterias, 
                 recipeAddress: `crafting:${mergeVersions ? unversion : directory}/${filename}` 
             }), 'utf8');
             
             // crafting
-            fs.mkdirSync(    `${rootDir}/${directory}`, { recursive: true });
-            fs.writeFileSync(`${rootDir}/${directory}/${filename}.json`, options.handler(obj, options), 'utf8');
+            await fsPromises.mkdir(    `${rootDir}/${directory}`, { recursive: true });
+            await fsPromises.writeFile(`${rootDir}/${directory}/${filename}.json`, options.handler(obj, options), 'utf8');
         };
-    });
+    }));
 };
 
 //
-let generateVanillaStub = (options)=>{
+let generateVanillaStub = async (options)=>{
     let rootDirMc = `${options.datapack}/data/minecraft/recipes`;
 
-    Array.from(Object.entries(options.blocks)).forEach(([key, obj])=>{
+    await Promise.all(Array.from(Object.entries(options.blocks)).map(async([key, obj])=>{
         if ((disallowedData[usedMCVersion].indexOf(obj.mc_version) == -1 || !obj.mc_version) && (options.type != "block" ? obj[options.type] : obj[options.from])) {
-            fs.mkdirSync(    `${rootDirMc}`, { recursive: true });
-            fs.writeFileSync(`${rootDirMc}/${(options.type != "block" ? obj[options.type] : obj)["filename"]}.json`, templateStub({}), 'utf8');
+            await fsPromises.mkdir(    `${rootDirMc}`, { recursive: true });
+            await fsPromises.writeFile(`${rootDirMc}/${(options.type != "block" ? obj[options.type] : obj)["filename"]}.json`, templateStub({}), 'utf8');
         };
-    });
-};
-
-if (usedModules.indexOf("co-disable-default-slabs") != -1) {
-    generateVanillaStub({
-        datapack: `${srcDir}/co-disable-default-slabs`,
-        blocks,
-        type: "slab",
-        from: "block"
-    });
+    }));
 };
 
 //
-if (usedModules.indexOf("co-disable-default-stairs") != -1) {
-    generateVanillaStub({
-        datapack: `${srcDir}/co-disable-default-stairs`,
-        blocks,
-        type: "stairs",
-        from: "block"
-    });
-};
-
-//
-if (usedModules.indexOf("co-disable-default-pressure-plates") != -1) {
-    generateVanillaStub({
-        datapack: `${srcDir}/co-disable-default-pressure-plates`,
-        blocks,
-        type: "pressure_plate",
-        from: "block"
-    });
-};
-
-//
-if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
-    let datapack = `${srcDir}/co-3x1-pressure-plates`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "pressure_plate",
-        from: "block",
-        subdir: "",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 3,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 1, PP3x1Pattern);
-        }
-    });
-};
-
-//
-if (usedModules.indexOf("co-2x1-slabs") != -1) {
-    /*
-    generateVanillaStub({
-        datapack: `${srcDir}/co-2x1-slabs`,
-        blocks,
-        type: "pressure_plate",
-        from: "block"
-    });*/
-
-    let datapack = `${srcDir}/co-2x1-slabs`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "slab",
-        from: "block",
-        subdir: "blocks2x1",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 2,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 4, slabs2x1Pattern);
-        }
-    });
-
-};
-
-// TODO: multiple configurations
-if (usedModules.indexOf("co-1x1-slabs") != -1) {
-    let datapack = `${srcDir}/co-1x1-slabs`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "slab",
-        from: "block",
-        subdir: "blocks1x1",
-        single: true,
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 1,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 2);
-        }
-    });
-};
-
-// TODO: multiple configurations
-if (usedModules.indexOf("co-2x2-stairs") != -1) {
-    let datapack = `${srcDir}/co-2x2-stairs`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "stairs",
-        from: "block",
-        subdir: "blocks2x2",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 1,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 4, stairs2x2Pattern);
-        }
-    });
-};
-
-// TODO: multiple configurations
-if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
-    let datapack = `${srcDir}/co-3x3-more-stairs`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "stairs",
-        from: "block",
-        subdir: "blocks3x3",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 1,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 8, stairs3x3Pattern);
-        }
-    });
-};
-
-// TODO: multiple configurations support
-if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
-    let datapack = `${srcDir}/vt-slabs-stairs-to-block`;
-    fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
-    fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "block",
-        from: "stairs",
-        subdir: "stairs4x",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 4,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 3);
-        }
-    });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "block",
-        from: "slab",
-        subdir: allowVanillaRecipeConflicts ? "slabs2x" : "slabs2x1",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 2,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 1, allowVanillaRecipeConflicts ? null : slabs2x1Pattern);
-        }
-    });
-
-    generateModuleRecipes({
-        datapack,
-        blocks,
-        type: "block",
-        from: "slab",
-        subdir: "slabs4x",
-        handler: (obj, options)=>{
-            return templateRecipeSingle({
-                count: 4,
-                input:  (options.type != "block" ? obj : obj[options.from])["source"],
-                result: (options.type != "block" ? obj[options.type] : obj)["source"],
-                group: obj.group ? obj.group : namings[options.type]
-            }, 2);
-        }
-    });
-};
-
-//
-fs.rmSync(`${dstDir}/data`, { recursive: true, force: true });
-fs.mkdirSync(`${dstDir}/data`, { recursive: true });
-fs.writeFileSync(`${dstDir}/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
-
-//
-let mergeVersionsFn = (directory, experimentalDatapacks = false)=>{
+let mergeVersionsFn = async (directory, experimentalDatapacks = false)=>{
     let outputs = {};
-    let files = fs.existsSync(`${directory}`) ? fs.readdirSync(`${directory}`) : [];
+    let files = await checkFileExists(`${directory}`) ? await fsPromises.readdir(`${directory}`) : [];
     
-    files.forEach((filename)=>{
+    await Promise.all(files.map(async (filename)=>{
         if (mcVersions.indexOf(filename) != -1) {
-            let versioned = fs.readdirSync(`${directory}/${filename}`);
+            let versioned = await fsPromises.readdir(`${directory}/${filename}`);
             versioned.forEach((fn)=>{
-                outputs[`${directory}/${fn}`] = outputs[`${directory}/${fn}`] || [];
-                outputs[`${directory}/${fn}`].push(`${directory}/${filename}`);
+                outputs[`${directory}/${fn}/../`] = outputs[`${directory}/${fn}/../`] || [];
+                outputs[`${directory}/${fn}/../`].push(`${directory}/${filename}`);
             });
         };
-    });
+    }));
 
-    for (let key in outputs) {
-        mergeDirectories(outputs[key], key, { overwrite: true });
+    await Promise.all(Array.from(Object.keys(outputs)).map(async (key)=>{
+        await mergeDirectories(outputs[key], key, { overwrite: true });
+    }));
+
+    await Promise.all(files.map(async (filename)=>{
+        if (mcVersions.indexOf(filename) != -1 && mergeVersions) {
+            await fsPromises.rm(`${directory}/${filename}`, { recursive: true, force: true });
+        };
+    }));
+};
+
+let removeDisallowedFn = async (directory)=>{
+    let files = await checkFileExists(`${directory}`) ? await fsPromises.readdir(`${directory}`) : [];
+    await Promise.all(files.map(async (filename)=>{
+        if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
+            await fsPromises.rm(`${directory}/${filename}`, { recursive: true, force: true });
+        }
+    }));
+};
+
+//
+const MAIN = async ()=>{
+    //
+    path = await import('path');
+    fs = await import('fs');
+    fsPromises = fs.promises;
+    fsePromises = await import('fs-extra');
+    _normalize = await import('crlf-normalize');
+    
+    //
+    crlf = _normalize.crlf;
+    LF   = _normalize.LF;
+    CRLF = _normalize.CRLF;
+    CR   = _normalize.CR;
+    
+    //
+    let blocks = JSON.parse(await fsPromises.readFile("./blocks.json", "utf8"));
+    
+    // TODO: shulker boxes support
+    if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
+        let rootDirAdv = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
+        let rootDir = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/recipes`;
+        let rootDirMc = `${srcDir}/co-extra-better-dyeables/data/minecraft/recipes`;
+
+        await fsPromises.rm(`${rootDirAdv}`, { recursive: true, force: true });
+        await fsPromises.rm(`${rootDir}`, { recursive: true, force: true });
+
+        await Promise.all(names.map(async (name)=>{
+            await Promise.all(colors.map(async (color)=>{
+                let rejectionCode = color != "default" ? `/not_${color}` : ``;
+                let mcName = 
+                    (name == "glass" || name == "glass_pane") && 
+                    color != "default" ? 
+                    `${color}_stained_${name}` : 
+                        (color != "default" ? `${color}_${name}` : `${name}`);
+                
+                // kill vanilla dyeing!
+                if (color != "default" && name != "glazed_terracotta" && name != "concrete_powder" && name != "concrete" && name != "banner") {
+                    await fsPromises.mkdir(    `${rootDirMc}`, { recursive: true });
+                    
+                    if (name == "bed") {
+                        if (color != "white") { await fsPromises.writeFile(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
+                    } else
+                    if (name == "carpet") {
+                        if (color != "white") { await fsPromises.writeFile(`${rootDirMc}/${mcName}_from_white_${name}.json`, templateStub({}), 'utf8'); };
+                    } else
+                    if (name == "glass_pane") {
+                        if (color != "default") { await fsPromises.writeFile(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
+                    } else
+                    if (name == "glass") {
+                        if (color != "default") { await fsPromises.writeFile(`${rootDirMc}/${mcName}_from_${name}.json`, templateStub({}), 'utf8'); };
+                    } else
+                    {
+                        await fsPromises.writeFile(`${rootDirMc}/${mcName}.json`, templateStub({}), 'utf8');
+                    }
+                };
+                
+                if (!(color == "default" && (name == "bed" || name == "wool" || name == "carpet" || name == "concrete_powder" || name == "concrete" || name == "banner" || name == "glazed_terracotta"))) {
+                    let maxCount = name != "bed" ? 8 : 1;
+                    await Promise.all(Array.from(Array(maxCount).keys()).map((m)=>(m+1)).map(async(i)=>{
+                        let criterias = {};
+                        criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
+                        criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
+                        criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
+
+                        await fsPromises.mkdir(`${rootDirAdv}/${name}/${color}`, { recursive: true });
+                        await fsPromises.writeFile(`${rootDirAdv}/${name}/${color}/${i}.json`, advancementTemplate({
+                            criterias, 
+                            recipeAddress: `better_dyeables:${name}/${color}/${i}`
+                        }), 'utf8');
+
+                        await fsPromises.mkdir(`${rootDir}/${name}/${color}`, { recursive: true });
+                        await fsPromises.writeFile(`${rootDir}/${name}/${color}/${i}.json`, templateColors({
+                            color, name, count: i
+                        }), 'utf8');
+                        
+                    }));
+                }
+            }));
+        }));
+    };
+    
+    if (usedModules.indexOf("co-disable-default-slabs") != -1) {
+        await generateVanillaStub({
+            datapack: `${srcDir}/co-disable-default-slabs`,
+            blocks,
+            type: "slab",
+            from: "block"
+        });
     };
 
-    files.forEach((filename)=>{
-        if (mcVersions.indexOf(filename) != -1 && mergeVersions) {
-            fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
-        };
-    });
-};
+    //
+    if (usedModules.indexOf("co-disable-default-stairs") != -1) {
+        await generateVanillaStub({
+            datapack: `${srcDir}/co-disable-default-stairs`,
+            blocks,
+            type: "stairs",
+            from: "block"
+        });
+    };
 
-let removeDisallowedFn = (directory)=>{
-    let files = fs.existsSync(`${directory}`) ? fs.readdirSync(`${directory}`) : [];
-    files.forEach((filename)=>{
-        if (disallowedData[usedMCVersion].indexOf(filename) != -1) {
-            fs.rmSync(`${directory}/${filename}`, { recursive: true, force: true });
-        }
-    });
-};
+    //
+    if (usedModules.indexOf("co-disable-default-pressure-plates") != -1) {
+        await generateVanillaStub({
+            datapack: `${srcDir}/co-disable-default-pressure-plates`,
+            blocks,
+            type: "pressure_plate",
+            from: "block"
+        });
+    };
 
-//
-if (experimentalDatapacks) {
-    usedModules.map((M)=>{
-        let FM_DIR = `${srcDir}/${M}`;
-        let files = fs.readdirSync(`${FM_DIR}`);
-        let names = fs.readdirSync(`${FM_DIR}/data`);
-        names.filter((s)=>s.indexOf(".")<0).map((F)=>{
-            let DP_DIR = `${dstDir}/data/${dataIdentifier}/datapacks/${M.replaceAll("-","_")}`;
-            fs.mkdirSync(`${DP_DIR}`, { recursive: true });
+    //
+    if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
+        let datapack = `${srcDir}/co-3x1-pressure-plates`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "pressure_plate",
+            from: "block",
+            subdir: "",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 3,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 1, PP3x1Pattern);
+            }
+        });
+    };
+
+    //
+    if (usedModules.indexOf("co-2x1-slabs") != -1) {
+        /*
+        await generateVanillaStub({
+            datapack: `${srcDir}/co-2x1-slabs`,
+            blocks,
+            type: "pressure_plate",
+            from: "block"
+        });*/
+
+        let datapack = `${srcDir}/co-2x1-slabs`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "slab",
+            from: "block",
+            subdir: "blocks2x1",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 2,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 4, slabs2x1Pattern);
+            }
+        });
+
+    };
+
+    // TODO: multiple configurations
+    if (usedModules.indexOf("co-1x1-slabs") != -1) {
+        let datapack = `${srcDir}/co-1x1-slabs`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "slab",
+            from: "block",
+            subdir: "blocks1x1",
+            single: true,
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 1,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 2);
+            }
+        });
+    };
+
+    // TODO: multiple configurations
+    if (usedModules.indexOf("co-2x2-stairs") != -1) {
+        let datapack = `${srcDir}/co-2x2-stairs`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "stairs",
+            from: "block",
+            subdir: "blocks2x2",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 1,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 4, stairs2x2Pattern);
+            }
+        });
+    };
+
+    // TODO: multiple configurations
+    if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
+        let datapack = `${srcDir}/co-3x3-more-stairs`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "stairs",
+            from: "block",
+            subdir: "blocks3x3",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 1,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 8, stairs3x3Pattern);
+            }
+        });
+    };
+
+    // TODO: multiple configurations support
+    if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
+        let datapack = `${srcDir}/vt-slabs-stairs-to-block`;
+        await fsPromises.rm(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
+        await fsPromises.rm(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "block",
+            from: "stairs",
+            subdir: "stairs4x",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 4,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 3);
+            }
+        });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "block",
+            from: "slab",
+            subdir: allowVanillaRecipeConflicts ? "slabs2x" : "slabs2x1",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 2,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 1, allowVanillaRecipeConflicts ? null : slabs2x1Pattern);
+            }
+        });
+
+        await generateModuleRecipes({
+            datapack,
+            blocks,
+            type: "block",
+            from: "slab",
+            subdir: "slabs4x",
+            handler: (obj, options)=>{
+                return templateRecipeSingle({
+                    count: 4,
+                    input:  (options.type != "block" ? obj : obj[options.from])["source"],
+                    result: (options.type != "block" ? obj[options.type] : obj)["source"],
+                    group: obj.group ? obj.group : namings[options.type]
+                }, 2);
+            }
+        });
+    };
+
+    //
+    await fsPromises.rm(`${dstDir}/data`, { recursive: true, force: true });
+    await fsPromises.mkdir(`${dstDir}/data`, { recursive: true });
+    await fsPromises.writeFile(`${dstDir}/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
+
+    //
+    if (experimentalDatapacks) {
+        await Promise.all(usedModules.map(async (M)=>{
+            let FM_DIR = `${srcDir}/${M}`;
+            let files = await fsPromises.readdir(`${FM_DIR}`);
+            let names = await fsPromises.readdir(`${FM_DIR}/data`);
+            await Promise.all(names.filter((s)=>s.indexOf(".")<0).map(async(F)=>{
+                let DP_DIR = `${dstDir}/data/${dataIdentifier}/datapacks/${M.replaceAll("-","_")}`;
+                await fsPromises.mkdir(`${DP_DIR}`, { recursive: true });
+                
+                //
+                await Promise.all(files.filter((s)=>s.indexOf(".")>=0).map(async(F)=>{
+                    return fsPromises.copyFile(`${FM_DIR}/${F}`, `${DP_DIR}/${F}`);
+                    //await fsPromises.writeFile(`${DP_DIR}/${F}`, await fsPromises.readFile(`${FM_DIR}/${F}`));
+                }));
+                
+                //await fsPromises.copyFile(`${srcDir}/${M}`, `${DP_DIR}`);
+                //await mergeDirectories(names.map((N)=>`${FM_DIR}/data/${N}`), `${DP_DIR}/data/${F}`, { overwrite: true });
+                await mergeDirectories([`${FM_DIR}/data/${F}`], `${DP_DIR}/data/${F}`, { overwrite: true });
+
+                // remove disallowed version data from "crafting"
+                {
+                    await removeDisallowedFn(`${DP_DIR}/data/${F}`);
+                    await removeDisallowedFn(`${DP_DIR}/data/${F}/recipes`);
+                    await removeDisallowedFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
+                };
+
+                //
+                if (mergeVersions) {
+                    await mergeVersionsFn(`${DP_DIR}/data/${F}`);
+                    await mergeVersionsFn(`${DP_DIR}/data/${F}/recipes`);
+                    await mergeVersionsFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
+                };
+            }));
             
             //
-            files.filter((s)=>s.indexOf(".")>=0).map((F)=>{
-                fs.copyFileSync(`${FM_DIR}/${F}`, `${DP_DIR}/${F}`);
-                //fs.writeFileSync(`${DP_DIR}/${F}`, fs.readFileSync(`${FM_DIR}/${F}`));
-            });
+            await removeDisallowedFn(`${FM_DIR}/data`);
             
-            //efs.copyFileSync(`${srcDir}/${M}`, `${DP_DIR}`);
-            mergeDirectories(names.map((N)=>`${FM_DIR}/data/${N}`), `${DP_DIR}/data/${F}`, { overwrite: true });
-
-            // remove disallowed version data from "crafting"
-            {
-                removeDisallowedFn(`${DP_DIR}/data/${F}`);
-                removeDisallowedFn(`${DP_DIR}/data/${F}/crafting/recipes`);
-                removeDisallowedFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
-            };
-
             //
             if (mergeVersions) {
-                mergeVersionsFn(`${DP_DIR}/data/${F}`);
-                mergeVersionsFn(`${DP_DIR}/data/${F}/crafting/recipes`);
-                mergeVersionsFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
-            };
-        });
-        
+                await mergeVersionsFn(`${FM_DIR}/data`, experimentalDatapacks);
+            }
+        }));
+    } else {
         //
-        removeDisallowedFn(`${FM_DIR}/data`);
+        let DP_DIR = `${dstDir}/data`;
+        await mergeDirectories(usedModules.map((M)=>{ return `${srcDir}/${M}/data`; }), `${DP_DIR}`, { overwrite: true });
         
+        // remove disallowed version data from "crafting"
+        {
+            await removeDisallowedFn(`${DP_DIR}/crafting/recipes`);
+            await removeDisallowedFn(`${DP_DIR}/crafting/advancements/recipes/crafting`);
+        };
+
         //
         if (mergeVersions) {
-            mergeVersionsFn(`${FM_DIR}/data`, experimentalDatapacks);
-        }
-    });
-} else {
-    //
-    let DP_DIR = `${dstDir}/data`;
-    mergeDirectories(usedModules.map((M)=>{ return `${srcDir}/${M}/data`; }), `${DP_DIR}`, { overwrite: true });
-    
-    // remove disallowed version data from "crafting"
+            await mergeVersionsFn(`${DP_DIR}/crafting/recipes`);
+            await mergeVersionsFn(`${DP_DIR}/crafting/advancements/recipes/crafting`);
+        };
+    }
+
+    // copy required files
     {
-        removeDisallowedFn(`${DP_DIR}/crafting/recipes`);
-        removeDisallowedFn(`${DP_DIR}/crafting/advancements/recipes/crafting`);
-    };
+        let files = await fsPromises.readdir("./required");
+        await Promise.all(files.map(async(filename)=>{
+            return fsePromises.copy(`./required/${filename}`, `${dstDir}/${filename}`);
+        }));
+    }
 
     //
-    if (mergeVersions) {
-        mergeVersionsFn(`${DP_DIR}/crafting/recipes`);
-        mergeVersionsFn(`${DP_DIR}/crafting/advancements/recipes/crafting`);
-    };
-}
-
-// copy required files
-{
-    let files = fs.readdirSync("./required");
-    files.forEach((filename)=>{
-        fse.copySync(`./required/${filename}`, `${dstDir}/${filename}`);
-    });
-}
-
-//
-{
-    fs.mkdirSync(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
-    fs.writeFileSync(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
-    
+    {
+        await fsPromises.mkdir(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
+        await fsPromises.writeFile(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
 public class Modules {
     public static String[] moduleNames = new String[]{ ${usedModules.map((s)=>`"${s.replaceAll("-","_")}"`).join(",")} };
 }
-    `, 'utf8');
-}
+        `, 'utf8');
+    }
+};
+
+MAIN();
