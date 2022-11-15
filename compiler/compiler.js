@@ -22,11 +22,17 @@ let usedModules = [
     "vt-straight-to-shapeless"
 ];
 
-let experimentalDatapacks = false;
+//
+let experimentalDatapacks = true; // required Fabric mod!
 let mergeVersions = true; // currently, incompatible with most built-in advancements!
 let allowVanillaRecipeConflicts = true; // required Polymorph mod!
 let usedMCVersion = "1_19";
 
+//
+let srcDir = `../wrapper/datapacks/`;
+let dstDir = `../src/main/resources/`
+
+//
 let disallowedData = {
     "1_20": [],
     "1_19": ["1.20"],//["1_19", "1_18", "1_17", "1_16", "1_xx"],
@@ -57,6 +63,7 @@ let mcVersionString = {
     "1_xx": "1.15.x"
 };
 
+// 
 let mcVersions = ["1_20", "1_19", "1_18", "1_17", "1_16", "1_15", "1_14", "1_13", "1_xx"];
 
 //
@@ -322,9 +329,9 @@ let templateColors = (options)=>{
 
 // TODO: shulker boxes support
 if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
-    let rootDirAdv = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
-    let rootDir = `../wrapper/datapacks/co-extra-better-dyeables/data/better_dyeables/recipes`;
-    let rootDirMc = `../wrapper/datapacks/co-extra-better-dyeables/data/minecraft/recipes`;
+    let rootDirAdv = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
+    let rootDir = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/recipes`;
+    let rootDirMc = `${srcDir}/co-extra-better-dyeables/data/minecraft/recipes`;
 
     fs.rmSync(`${rootDirAdv}`, { recursive: true, force: true });
     fs.rmSync(`${rootDir}`, { recursive: true, force: true });
@@ -439,7 +446,7 @@ let generateVanillaStub = (options)=>{
 
 if (usedModules.indexOf("co-disable-default-slabs") != -1) {
     generateVanillaStub({
-        datapack: `../wrapper/datapacks/co-disable-default-slabs`,
+        datapack: `${srcDir}/co-disable-default-slabs`,
         blocks,
         type: "slab",
         from: "block"
@@ -449,7 +456,7 @@ if (usedModules.indexOf("co-disable-default-slabs") != -1) {
 //
 if (usedModules.indexOf("co-disable-default-stairs") != -1) {
     generateVanillaStub({
-        datapack: `../wrapper/datapacks/co-disable-default-stairs`,
+        datapack: `${srcDir}/co-disable-default-stairs`,
         blocks,
         type: "stairs",
         from: "block"
@@ -459,7 +466,7 @@ if (usedModules.indexOf("co-disable-default-stairs") != -1) {
 //
 if (usedModules.indexOf("co-disable-default-pressure-plates") != -1) {
     generateVanillaStub({
-        datapack: `../wrapper/datapacks/co-disable-default-pressure-plates`,
+        datapack: `${srcDir}/co-disable-default-pressure-plates`,
         blocks,
         type: "pressure_plate",
         from: "block"
@@ -468,7 +475,7 @@ if (usedModules.indexOf("co-disable-default-pressure-plates") != -1) {
 
 //
 if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
-    let datapack = `../wrapper/datapacks/co-3x1-pressure-plates`;
+    let datapack = `${srcDir}/co-3x1-pressure-plates`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -493,13 +500,13 @@ if (usedModules.indexOf("co-3x1-pressure-plates") != -1) {
 if (usedModules.indexOf("co-2x1-slabs") != -1) {
     /*
     generateVanillaStub({
-        datapack: `../wrapper/datapacks/co-2x1-slabs`,
+        datapack: `${srcDir}/co-2x1-slabs`,
         blocks,
         type: "pressure_plate",
         from: "block"
     });*/
 
-    let datapack = `../wrapper/datapacks/co-2x1-slabs`;
+    let datapack = `${srcDir}/co-2x1-slabs`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -523,7 +530,7 @@ if (usedModules.indexOf("co-2x1-slabs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-1x1-slabs") != -1) {
-    let datapack = `../wrapper/datapacks/co-1x1-slabs`;
+    let datapack = `${srcDir}/co-1x1-slabs`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -547,7 +554,7 @@ if (usedModules.indexOf("co-1x1-slabs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-2x2-stairs") != -1) {
-    let datapack = `../wrapper/datapacks/co-2x2-stairs`;
+    let datapack = `${srcDir}/co-2x2-stairs`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -570,7 +577,7 @@ if (usedModules.indexOf("co-2x2-stairs") != -1) {
 
 // TODO: multiple configurations
 if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
-    let datapack = `../wrapper/datapacks/co-3x3-more-stairs`;
+    let datapack = `${srcDir}/co-3x3-more-stairs`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -593,7 +600,7 @@ if (usedModules.indexOf("co-3x3-more-stairs") != -1) {
 
 // TODO: multiple configurations support
 if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
-    let datapack = `../wrapper/datapacks/vt-slabs-stairs-to-block`;
+    let datapack = `${srcDir}/vt-slabs-stairs-to-block`;
     fs.rmSync(`${datapack}/data/crafting/advancements/recipes/crafting`, { recursive: true, force: true });
     fs.rmSync(`${datapack}/data/crafting/recipes`, { recursive: true, force: true });
 
@@ -647,9 +654,9 @@ if (usedModules.indexOf("vt-slabs-stairs-to-block") != -1) {
 };
 
 //
-fs.rmSync(`../datapack/data`, { recursive: true, force: true });
-fs.mkdirSync(`../datapack/data`, { recursive: true });
-fs.writeFileSync(`../datapack/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
+fs.rmSync(`${dstDir}/data`, { recursive: true, force: true });
+fs.mkdirSync(`${dstDir}/data`, { recursive: true });
+fs.writeFileSync(`${dstDir}/pack.mcmeta`, `{"pack":{"pack_format":${dataVersion[usedMCVersion]},"description":"Minecraft crafting recipes overhaul compiled for ${mcVersionString[usedMCVersion]}"}}`, 'utf8');
 
 //
 let mergeVersionsFn = (directory, experimentalDatapacks = false)=>{
@@ -689,11 +696,11 @@ let removeDisallowedFn = (directory)=>{
 //
 if (experimentalDatapacks) {
     usedModules.map((M)=>{
-        let FM_DIR = `../wrapper/datapacks/${M}`;
+        let FM_DIR = `${srcDir}/${M}`;
         let files = fs.readdirSync(`${FM_DIR}`);
         let names = fs.readdirSync(`${FM_DIR}/data`);
         names.filter((s)=>s.indexOf(".")<0).map((F)=>{
-            let DP_DIR = `../datapack/data/minecraft/datapacks/${M.replaceAll("-","_")}`;
+            let DP_DIR = `${dstDir}/data/minecraft/datapacks/${M.replaceAll("-","_")}`;
             fs.mkdirSync(`${DP_DIR}`, { recursive: true });
             
             //
@@ -702,7 +709,7 @@ if (experimentalDatapacks) {
                 //fs.writeFileSync(`${DP_DIR}/${F}`, fs.readFileSync(`${FM_DIR}/${F}`));
             });
             
-            //efs.copyFileSync(`../wrapper/datapacks/${M}`, `${DP_DIR}`);
+            //efs.copyFileSync(`${srcDir}/${M}`, `${DP_DIR}`);
             mergeDirectories(names.map((N)=>`${FM_DIR}/data/${N}`), `${DP_DIR}/data/${F}`, { overwrite: true });
 
             // remove disallowed version data from "crafting"
@@ -722,8 +729,8 @@ if (experimentalDatapacks) {
     });
 } else {
     //
-    let DP_DIR = `../datapack/data`;
-    mergeDirectories(usedModules.map((M)=>{ return `../wrapper/datapacks/${M}/data`; }), `${DP_DIR}`, { overwrite: true });
+    let DP_DIR = `${dstDir}/data`;
+    mergeDirectories(usedModules.map((M)=>{ return `${srcDir}/${M}/data`; }), `${DP_DIR}`, { overwrite: true });
     
     // remove disallowed version data from "crafting"
     {
@@ -742,6 +749,6 @@ if (experimentalDatapacks) {
 {
     let files = fs.readdirSync("./required");
     files.forEach((filename)=>{
-        fse.copySync(`./required/${filename}`, `../datapack/${filename}`);
+        fse.copySync(`./required/${filename}`, `${dstDir}/${filename}`);
     });
 }
