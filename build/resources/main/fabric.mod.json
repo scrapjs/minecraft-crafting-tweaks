@@ -10,7 +10,7 @@
     "sources": ""
   },
   "license": "CC0-1.0",
-  "icon": "pack.png",
+  "icon": "assets/pack.png",
   "environment": "*",
   "entrypoints": {
     "main": ["net.hydra2s.crop.Initialize"]

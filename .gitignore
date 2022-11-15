@@ -200,3 +200,40 @@ src/main/resources/resourcepacks/data/minecraft/datapacks
 src/main/resources/resourcepacks/data/minecraft/datapacks/*
 src/main/resources/resourcepacks/data/crop/datapacks
 src/main/resources/resourcepacks/data/crop/datapacks/*
+src/main/resources/resourcepacks/crop/data/crop/datapacks
+src/main/resources/resourcepacks/crop/data/crop/datapacks/*
+
+
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# eclipse
+
+*.launch
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+run/

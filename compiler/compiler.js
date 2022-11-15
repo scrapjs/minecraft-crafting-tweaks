@@ -30,7 +30,7 @@ let usedMCVersion = "1_19";
 
 //
 let srcDir = `../wrapper/datapacks/`;
-let dstDir = `../src/main/resources/`;
+let dstDir = `../src/main/resources/resourcepacks/crop`;
 let dataIdentifier = `crop`;
 
 //
@@ -715,18 +715,26 @@ if (experimentalDatapacks) {
 
             // remove disallowed version data from "crafting"
             {
-                removeDisallowedFn(`${DP_DIR}/data`);
+                removeDisallowedFn(`${DP_DIR}/data/${F}`);
+                removeDisallowedFn(`${DP_DIR}/data/${F}/crafting/recipes`);
+                removeDisallowedFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
             };
 
             //
             if (mergeVersions) {
-                mergeVersionsFn(`${DP_DIR}/data`, experimentalDatapacks);
+                mergeVersionsFn(`${DP_DIR}/data/${F}`);
+                mergeVersionsFn(`${DP_DIR}/data/${F}/crafting/recipes`);
+                mergeVersionsFn(`${DP_DIR}/data/${F}/advancements/recipes/crafting`);
             };
         });
         
         //
         removeDisallowedFn(`${FM_DIR}/data`);
-        mergeVersionsFn(`${FM_DIR}/data`, experimentalDatapacks);
+        
+        //
+        if (mergeVersions) {
+            mergeVersionsFn(`${FM_DIR}/data`, experimentalDatapacks);
+        }
     });
 } else {
     //
@@ -752,4 +760,15 @@ if (experimentalDatapacks) {
     files.forEach((filename)=>{
         fse.copySync(`./required/${filename}`, `${dstDir}/${filename}`);
     });
+}
+
+//
+{
+    fs.mkdirSync(`../src/main/java/net/hydra2s/crop/generated`, { recursive: true });
+    fs.writeFileSync(`../src/main/java/net/hydra2s/crop/generated/Modules.java`, `package net.hydra2s.crop.generated;
+    
+public class Modules {
+    public static String[] moduleNames = new String[]{ ${usedModules.map((s)=>`"${s.replaceAll("-","_")}"`).join(",")} };
+}
+    `, 'utf8');
 }
