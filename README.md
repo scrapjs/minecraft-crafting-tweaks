@@ -24,8 +24,8 @@
 - https://github.com/hydra2s/FoodEffectTooltips
 - https://github.com/hydra2s/reasonable-sorting
 - **https://github.com/hydra2s/nbt-crafting** (for future releases)
-- **https://github.com/hydra2s/MC-JSON5** (highly recommended)
 - **https://github.com/hydra2s/polymorph** (highly recommended)
+- **https://github.com/hydra2s/MC-JSON5** (highly recommended)
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
