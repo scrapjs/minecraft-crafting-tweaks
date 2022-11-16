@@ -15,8 +15,6 @@
 - https://shorturl.at/auvH6 (CO - other assets)
 - https://shorturl.at/amqyC (my compiled mods)
 
-## Recommended [Polymorph](https://github.com/hydra2s/polymorph) mod!
-
 ## All our forks in https://github.com/hydra2s
 
 - https://github.com/hydra2s/UniversalOres
