@@ -19,7 +19,6 @@
 
 ## All our forks in https://github.com/hydra2s
 
-- https://github.com/hydra2s/polymorph 
 - https://github.com/hydra2s/UniversalOres
 - https://github.com/hydra2s/minecraft-advancednbttooltip
 - https://github.com/hydra2s/AppleSkin 
@@ -28,6 +27,7 @@
 - https://github.com/hydra2s/reasonable-sorting
 - **https://github.com/hydra2s/nbt-crafting** (for future releases)
 - **https://github.com/hydra2s/MC-JSON5** (highly recommended)
+- **https://github.com/hydra2s/polymorph** (highly recommended)
 
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
