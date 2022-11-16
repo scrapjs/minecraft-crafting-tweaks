@@ -8,6 +8,7 @@
 
 - https://www.planetminecraft.com/data-pack/minecraft-crafting-overhaul/
 - https://www.curseforge.com/minecraft/texture-packs/crafting-recipes-overhaul
+- https://www.curseforge.com/minecraft/mc-mods/crafting-recipes-overhaul-fabric
 
 ## Other resources
 
