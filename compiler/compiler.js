@@ -81,7 +81,6 @@ let fsePromises;
 
 //
 const checkFileExists = async path => !!(await fsPromises.stat(path).catch(e => false));
-const stripComments = (data => data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => g ? "" : m));
 
 //
 function isJsonString(str) {
@@ -188,8 +187,8 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 //console.log("merging JSON " + src + " to " + dest);
                 
                 //
-                let srcJsonRaw = stripComments(await fsPromises.readFile(src, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
-                let dstJsonRaw = stripComments(await fsPromises.readFile(dest, "utf8")).replaceAll("}{}", "}").replaceAll("}{","}").trim();
+                let srcJsonRaw = (await fsPromises.readFile(src, "utf8")).trim();
+                let dstJsonRaw = (await fsPromises.readFile(dest, "utf8")).trim();
                 let srcJson = JSOX.parse(srcJsonRaw);
                 let dstJson = JSOX.parse(dstJsonRaw);
                 
@@ -200,7 +199,7 @@ let copyFolderRecursive = async (src, dest, options = {}) => {
                 
                 //
                 await fsPromises.rm(dest);
-                return await fsPromises.writeFile(dest, stripComments(JSON.stringify(objectMerge(dstJson, srcJson), null, 4).replaceAll("}{}", "}").replaceAll("}{","}"), "utf8").trim());
+                return await fsPromises.writeFile(dest, JSON.stringify(objectMerge(dstJson, srcJson), null, 4).trim());
             } else {
                 return await fsPromises.copyFile(src, dest);
             }
