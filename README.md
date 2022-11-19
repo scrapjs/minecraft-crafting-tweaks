@@ -1,8 +1,8 @@
 # Crafting Recipes Overhaul
 
-## ℹ️ [Info Center](https://github.com/hydra2s-info) ℹ️ 
-## 💬 [Обсуждения/Discussions](https://github.com/hydra2s-info/about/discussions) 💬
-## 🐞 [Баг-Репорты/Bug-Tracker](https://github.com/hydra2s-info/about/issues) 🐞
+### ℹ️ [Info Center](https://github.com/hydra2s-info) ℹ️ 
+### 💬 [Обсуждения/Discussions](https://github.com/hydra2s-info/about/discussions) 💬
+### 🐞 [Баг-Репорты/Bug-Tracker](https://github.com/hydra2s-info/about/issues) 🐞
 
 ## Datapacks or mod info links
 
