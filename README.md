@@ -31,6 +31,4 @@
 
 ### Images
 
-<img src="images/CORE.png" alt="CORE" width="800"/><br/>
-<img src="images/ITEMS.png" alt="ITEMS" width="800"/><br/>
-<img src="images/COPPER.png" alt="COPPER" width="800"/><br/>
+<img src="images/CORE.png" alt="CORE" width="200"/><br/><img src="images/ITEMS.png" alt="ITEMS" width="200"/><br/><img src="images/COPPER.png" alt="COPPER" width="200"/><br/>
