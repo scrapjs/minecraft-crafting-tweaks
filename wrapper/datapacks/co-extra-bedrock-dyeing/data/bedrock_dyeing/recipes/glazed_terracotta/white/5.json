@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/white"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_white"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_white"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_white"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_white"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_white"}
+    ],
+    "result": {
+        "item": "minecraft:white_glazed_terracotta",
+        "count": 5
+    },
+    "group": "white_glazed_terracotta"
+}

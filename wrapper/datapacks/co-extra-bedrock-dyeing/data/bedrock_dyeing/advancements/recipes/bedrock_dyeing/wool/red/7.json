@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_dyeable": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:dye/red"}]}},
+        "has_dye": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:wool/not_red"}]}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:red_wool"}]}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "bedrock_dyeing:wool/red/7"
+            }
+        }
+    },
+    "requirements": [
+        ["has_dyeable","has_dye","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["bedrock_dyeing:wool/red/7"] }
+}

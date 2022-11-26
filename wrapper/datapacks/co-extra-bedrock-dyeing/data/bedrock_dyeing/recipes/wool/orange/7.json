@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"},
+        {"tag": "bedrock_dyeing:wool/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_wool",
+        "count": 7
+    },
+    "group": "orange_wool"
+}

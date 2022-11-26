@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"},
+        {"tag": "bedrock_dyeing:candle/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_candle",
+        "count": 8
+    },
+    "group": "pink_candle"
+}

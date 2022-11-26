@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"},
+        {"tag": "bedrock_dyeing:concrete/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_concrete",
+        "count": 8
+    },
+    "group": "blue_concrete"
+}

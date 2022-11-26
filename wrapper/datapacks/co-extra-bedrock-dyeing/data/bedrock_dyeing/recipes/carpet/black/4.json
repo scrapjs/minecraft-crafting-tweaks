@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/black"},
+        {"tag": "bedrock_dyeing:carpet/not_black"},
+        {"tag": "bedrock_dyeing:carpet/not_black"},
+        {"tag": "bedrock_dyeing:carpet/not_black"},
+        {"tag": "bedrock_dyeing:carpet/not_black"}
+    ],
+    "result": {
+        "item": "minecraft:black_carpet",
+        "count": 4
+    },
+    "group": "black_carpet"
+}

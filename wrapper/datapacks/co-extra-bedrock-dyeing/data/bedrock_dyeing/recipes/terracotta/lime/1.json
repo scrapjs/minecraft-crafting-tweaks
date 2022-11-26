@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:terracotta/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_terracotta",
+        "count": 1
+    },
+    "group": "lime_terracotta"
+}

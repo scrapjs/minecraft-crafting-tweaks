@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"},
+        {"tag": "bedrock_dyeing:candle/not_green"}
+    ],
+    "result": {
+        "item": "minecraft:green_candle",
+        "count": 7
+    },
+    "group": "green_candle"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"},
+        {"tag": "bedrock_dyeing:banner/not_brown"}
+    ],
+    "result": {
+        "item": "minecraft:brown_banner",
+        "count": 8
+    },
+    "group": "brown_banner"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/default"},
+        {"tag": "bedrock_dyeing:candle"},
+        {"tag": "bedrock_dyeing:candle"},
+        {"tag": "bedrock_dyeing:candle"},
+        {"tag": "bedrock_dyeing:candle"},
+        {"tag": "bedrock_dyeing:candle"}
+    ],
+    "result": {
+        "item": "minecraft:candle",
+        "count": 5
+    },
+    "group": "default_candle"
+}

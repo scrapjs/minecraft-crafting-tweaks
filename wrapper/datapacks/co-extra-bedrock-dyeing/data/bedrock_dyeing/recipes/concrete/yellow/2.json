@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/yellow"},
+        {"tag": "bedrock_dyeing:concrete/not_yellow"},
+        {"tag": "bedrock_dyeing:concrete/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_concrete",
+        "count": 2
+    },
+    "group": "yellow_concrete"
+}

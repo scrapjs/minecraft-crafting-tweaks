@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/brown"},
+        {"tag": "bedrock_dyeing:wool/not_brown"},
+        {"tag": "bedrock_dyeing:wool/not_brown"},
+        {"tag": "bedrock_dyeing:wool/not_brown"},
+        {"tag": "bedrock_dyeing:wool/not_brown"}
+    ],
+    "result": {
+        "item": "minecraft:brown_wool",
+        "count": 4
+    },
+    "group": "brown_wool"
+}

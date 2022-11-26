@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_concrete_powder",
+        "count": 7
+    },
+    "group": "gray_concrete_powder"
+}

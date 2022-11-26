@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_brown"}
+    ],
+    "result": {
+        "item": "minecraft:brown_concrete_powder",
+        "count": 8
+    },
+    "group": "brown_concrete_powder"
+}

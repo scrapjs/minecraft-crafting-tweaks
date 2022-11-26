@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/purple"},
+        {"tag": "bedrock_dyeing:glass_pane/not_purple"},
+        {"tag": "bedrock_dyeing:glass_pane/not_purple"},
+        {"tag": "bedrock_dyeing:glass_pane/not_purple"},
+        {"tag": "bedrock_dyeing:glass_pane/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_stained_glass_pane",
+        "count": 4
+    },
+    "group": "purple_glass_pane"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/red"},
+        {"tag": "bedrock_dyeing:concrete/not_red"},
+        {"tag": "bedrock_dyeing:concrete/not_red"},
+        {"tag": "bedrock_dyeing:concrete/not_red"},
+        {"tag": "bedrock_dyeing:concrete/not_red"},
+        {"tag": "bedrock_dyeing:concrete/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_concrete",
+        "count": 5
+    },
+    "group": "red_concrete"
+}

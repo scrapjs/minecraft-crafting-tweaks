@@ -2,7 +2,7 @@ let names = ["banner", "bed", "candle", "concrete", "concrete_powder", "glass", 
 let colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"];
 
 let whatReplace = (name, color, data) => {
-    return data.replaceAll(new RegExp(`\"crafting\:${name}\/(.*?)\"`, "g"),`"better_dyeables:${name}"`);
+    return data.replaceAll(new RegExp(`\"crafting\:${name}\/(.*?)\"`, "g"),`"bedrock_dyeing:${name}"`);
 }
 
 let fs = require('fs');

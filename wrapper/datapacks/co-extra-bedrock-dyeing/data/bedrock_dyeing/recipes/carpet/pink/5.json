@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:carpet/not_pink"},
+        {"tag": "bedrock_dyeing:carpet/not_pink"},
+        {"tag": "bedrock_dyeing:carpet/not_pink"},
+        {"tag": "bedrock_dyeing:carpet/not_pink"},
+        {"tag": "bedrock_dyeing:carpet/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_carpet",
+        "count": 5
+    },
+    "group": "pink_carpet"
+}

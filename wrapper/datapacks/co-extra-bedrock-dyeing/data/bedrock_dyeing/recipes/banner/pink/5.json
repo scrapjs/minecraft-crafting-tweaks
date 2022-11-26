@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:banner/not_pink"},
+        {"tag": "bedrock_dyeing:banner/not_pink"},
+        {"tag": "bedrock_dyeing:banner/not_pink"},
+        {"tag": "bedrock_dyeing:banner/not_pink"},
+        {"tag": "bedrock_dyeing:banner/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_banner",
+        "count": 5
+    },
+    "group": "pink_banner"
+}

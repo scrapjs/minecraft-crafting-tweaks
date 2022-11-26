@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_dyeable": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:dye/light_gray"}]}},
+        "has_dye": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:glass_pane/not_light_gray"}]}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:light_gray_stained_glass_pane"}]}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "bedrock_dyeing:glass_pane/light_gray/5"
+            }
+        }
+    },
+    "requirements": [
+        ["has_dyeable","has_dye","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["bedrock_dyeing:glass_pane/light_gray/5"] }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/green"},
+        {"tag": "bedrock_dyeing:wool/not_green"},
+        {"tag": "bedrock_dyeing:wool/not_green"},
+        {"tag": "bedrock_dyeing:wool/not_green"},
+        {"tag": "bedrock_dyeing:wool/not_green"},
+        {"tag": "bedrock_dyeing:wool/not_green"},
+        {"tag": "bedrock_dyeing:wool/not_green"}
+    ],
+    "result": {
+        "item": "minecraft:green_wool",
+        "count": 6
+    },
+    "group": "green_wool"
+}

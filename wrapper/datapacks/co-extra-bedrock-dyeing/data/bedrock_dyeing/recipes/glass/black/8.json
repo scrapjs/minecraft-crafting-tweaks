@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"},
+        {"tag": "bedrock_dyeing:glass/not_black"}
+    ],
+    "result": {
+        "item": "minecraft:black_stained_glass",
+        "count": 8
+    },
+    "group": "black_glass"
+}

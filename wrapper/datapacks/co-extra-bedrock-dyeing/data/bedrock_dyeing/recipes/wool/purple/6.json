@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"},
+        {"tag": "bedrock_dyeing:wool/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_wool",
+        "count": 6
+    },
+    "group": "purple_wool"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"},
+        {"tag": "bedrock_dyeing:glass/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_stained_glass",
+        "count": 8
+    },
+    "group": "blue_glass"
+}

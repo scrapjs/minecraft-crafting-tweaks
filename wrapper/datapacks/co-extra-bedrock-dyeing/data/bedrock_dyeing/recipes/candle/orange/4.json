@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/orange"},
+        {"tag": "bedrock_dyeing:candle/not_orange"},
+        {"tag": "bedrock_dyeing:candle/not_orange"},
+        {"tag": "bedrock_dyeing:candle/not_orange"},
+        {"tag": "bedrock_dyeing:candle/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_candle",
+        "count": 4
+    },
+    "group": "orange_candle"
+}

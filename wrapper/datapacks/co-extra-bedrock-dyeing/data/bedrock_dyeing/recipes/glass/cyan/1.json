@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:glass/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_stained_glass",
+        "count": 1
+    },
+    "group": "cyan_glass"
+}

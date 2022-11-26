@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:carpet/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_carpet",
+        "count": 1
+    },
+    "group": "gray_carpet"
+}

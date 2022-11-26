@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"},
+        {"tag": "bedrock_dyeing:concrete/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_concrete",
+        "count": 7
+    },
+    "group": "magenta_concrete"
+}

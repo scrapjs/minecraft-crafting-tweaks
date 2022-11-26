@@ -16,7 +16,7 @@ let usedModules = [
     "co-2x2-extra-unpackable",
     "co-2x2-more-bark",
     "co-2x2-extra-polymorph", // conflicts with modified 2x2 crafting recipes, required Polymorph mod for resolve it
-    "co-extra-better-dyeables",
+    "co-extra-bedrock-dyeing",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block", // may require `allowVanillaRecipeConflicts` and Polymorph mod
     "vt-straight-to-shapeless"
@@ -307,7 +307,7 @@ let templateColors = (options)=>{
 
     for (let i=0;i<options.count;i++) {
         tags.push(`
-        {"tag": "better_dyeables:${options.name}${rejectionCode}"}`);
+        {"tag": "bedrock_dyeing:${options.name}${rejectionCode}"}`);
     }
     
     let mcName = 
@@ -319,7 +319,7 @@ let templateColors = (options)=>{
     return crlf(`{
     "type": "crafting_shapeless",
     "ingredients": [
-        {"tag": "better_dyeables:dye/${options.color}"},${tags.join(",")}
+        {"tag": "bedrock_dyeing:dye/${options.color}"},${tags.join(",")}
     ],
     "result": {
         "item": "minecraft:${mcName}",
@@ -437,10 +437,10 @@ const MAIN = async ()=>{
     let blocks = JSOX.parse(await fsPromises.readFile("./blocks.json5", "utf8"));
     
     // TODO: shulker boxes support
-    if (usedModules.indexOf("co-extra-better-dyeables") != -1) {
-        let rootDirAdv = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/advancements/recipes/better_dyeables`;
-        let rootDir = `${srcDir}/co-extra-better-dyeables/data/better_dyeables/recipes`;
-        let rootDirMc = `${srcDir}/co-extra-better-dyeables/data/minecraft/recipes`;
+    if (usedModules.indexOf("co-extra-bedrock-dyeing") != -1) {
+        let rootDirAdv = `${srcDir}/co-extra-bedrock-dyeing/data/bedrock_dyeing/advancements/recipes/bedrock_dyeing`;
+        let rootDir = `${srcDir}/co-extra-bedrock-dyeing/data/bedrock_dyeing/recipes`;
+        let rootDirMc = `${srcDir}/co-extra-bedrock-dyeing/data/minecraft/recipes`;
 
         await fsPromises.rm(`${rootDirAdv}`, { recursive: true, force: true });
         await fsPromises.rm(`${rootDir}`, { recursive: true, force: true });
@@ -479,14 +479,14 @@ const MAIN = async ()=>{
                     let maxCount = name != "bed" ? 8 : 1;
                     await Promise.all(Array.from(Array(maxCount).keys()).map((m)=>(m+1)).map(async(i)=>{
                         let criterias = {};
-                        criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:dye/${color}`} ] } };
-                        criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `better_dyeables:${name}${rejectionCode}`} ] } };
+                        criterias["has_dyeable"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `bedrock_dyeing:dye/${color}`} ] } };
+                        criterias["has_dye"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"tag": `bedrock_dyeing:${name}${rejectionCode}`} ] } };
                         criterias["has_result"] = { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ {"item": `minecraft:${mcName}`} ] } };
 
                         await fsPromises.mkdir(`${rootDirAdv}/${name}/${color}`, { recursive: true });
                         await fsPromises.writeFile(`${rootDirAdv}/${name}/${color}/${i}.json`, advancementTemplate({
                             criterias, 
-                            recipeAddress: `better_dyeables:${name}/${color}/${i}`
+                            recipeAddress: `bedrock_dyeing:${name}/${color}/${i}`
                         }), 'utf8');
 
                         await fsPromises.mkdir(`${rootDir}/${name}/${color}`, { recursive: true });

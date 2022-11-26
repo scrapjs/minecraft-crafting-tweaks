@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/orange"},
+        {"tag": "bedrock_dyeing:banner/not_orange"},
+        {"tag": "bedrock_dyeing:banner/not_orange"},
+        {"tag": "bedrock_dyeing:banner/not_orange"},
+        {"tag": "bedrock_dyeing:banner/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_banner",
+        "count": 4
+    },
+    "group": "orange_banner"
+}

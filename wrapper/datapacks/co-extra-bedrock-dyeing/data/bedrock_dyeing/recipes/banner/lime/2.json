@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:banner/not_lime"},
+        {"tag": "bedrock_dyeing:banner/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_banner",
+        "count": 2
+    },
+    "group": "lime_banner"
+}

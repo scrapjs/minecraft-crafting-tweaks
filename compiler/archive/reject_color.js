@@ -2,7 +2,7 @@ let names = ["banner", "bed", "candle", "concrete", "concrete_powder", "glass", 
 let colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"];
 
 let whatReplace = (name, color, data) => {
-    return data.replaceAll(`"better_dyeables:${name}"`,`"better_dyeables:${name}/not_${color}"`);
+    return data.replaceAll(`"bedrock_dyeing:${name}"`,`"bedrock_dyeing:${name}/not_${color}"`);
 }
 
 let fs = require('fs');

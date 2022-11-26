@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/red"},
+        {"tag": "bedrock_dyeing:carpet/not_red"},
+        {"tag": "bedrock_dyeing:carpet/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_carpet",
+        "count": 2
+    },
+    "group": "red_carpet"
+}

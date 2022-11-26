@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/light_gray"},
+        {"tag": "bedrock_dyeing:wool/not_light_gray"}
+    ],
+    "result": {
+        "item": "minecraft:light_gray_wool",
+        "count": 1
+    },
+    "group": "light_gray_wool"
+}

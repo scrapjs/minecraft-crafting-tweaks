@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_concrete_powder",
+        "count": 8
+    },
+    "group": "red_concrete_powder"
+}

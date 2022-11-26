@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/orange"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_orange"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_orange"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_concrete_powder",
+        "count": 3
+    },
+    "group": "orange_concrete_powder"
+}

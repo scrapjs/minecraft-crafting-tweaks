@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/green"},
+        {"tag": "bedrock_dyeing:glass_pane/not_green"},
+        {"tag": "bedrock_dyeing:glass_pane/not_green"},
+        {"tag": "bedrock_dyeing:glass_pane/not_green"},
+        {"tag": "bedrock_dyeing:glass_pane/not_green"}
+    ],
+    "result": {
+        "item": "minecraft:green_stained_glass_pane",
+        "count": 4
+    },
+    "group": "green_glass_pane"
+}

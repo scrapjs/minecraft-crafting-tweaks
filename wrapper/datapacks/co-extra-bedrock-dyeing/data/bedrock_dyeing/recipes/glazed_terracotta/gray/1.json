@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_glazed_terracotta",
+        "count": 1
+    },
+    "group": "gray_glazed_terracotta"
+}

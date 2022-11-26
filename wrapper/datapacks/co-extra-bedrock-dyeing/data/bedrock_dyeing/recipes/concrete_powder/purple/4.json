@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/purple"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_purple"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_purple"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_purple"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_concrete_powder",
+        "count": 4
+    },
+    "group": "purple_concrete_powder"
+}

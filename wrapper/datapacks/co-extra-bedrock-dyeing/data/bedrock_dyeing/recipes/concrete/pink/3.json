@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:concrete/not_pink"},
+        {"tag": "bedrock_dyeing:concrete/not_pink"},
+        {"tag": "bedrock_dyeing:concrete/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_concrete",
+        "count": 3
+    },
+    "group": "pink_concrete"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"},
+        {"tag": "bedrock_dyeing:concrete/not_green"}
+    ],
+    "result": {
+        "item": "minecraft:green_concrete",
+        "count": 8
+    },
+    "group": "green_concrete"
+}

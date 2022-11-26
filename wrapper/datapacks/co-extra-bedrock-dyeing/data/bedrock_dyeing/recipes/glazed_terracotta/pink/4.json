@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_pink"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_pink"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_pink"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_glazed_terracotta",
+        "count": 4
+    },
+    "group": "pink_glazed_terracotta"
+}

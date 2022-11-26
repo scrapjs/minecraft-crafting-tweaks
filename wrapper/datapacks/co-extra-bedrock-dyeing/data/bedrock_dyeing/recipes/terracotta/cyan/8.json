@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"},
+        {"tag": "bedrock_dyeing:terracotta/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_terracotta",
+        "count": 8
+    },
+    "group": "cyan_terracotta"
+}

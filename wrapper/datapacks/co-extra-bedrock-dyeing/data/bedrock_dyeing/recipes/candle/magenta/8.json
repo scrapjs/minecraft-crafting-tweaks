@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"},
+        {"tag": "bedrock_dyeing:candle/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_candle",
+        "count": 8
+    },
+    "group": "magenta_candle"
+}

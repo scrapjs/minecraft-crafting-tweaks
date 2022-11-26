@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"},
+        {"tag": "bedrock_dyeing:glass/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_stained_glass",
+        "count": 6
+    },
+    "group": "lime_glass"
+}

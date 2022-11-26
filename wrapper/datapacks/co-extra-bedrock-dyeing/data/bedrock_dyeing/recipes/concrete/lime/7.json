@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"},
+        {"tag": "bedrock_dyeing:concrete/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_concrete",
+        "count": 7
+    },
+    "group": "lime_concrete"
+}

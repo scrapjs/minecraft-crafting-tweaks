@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_concrete_powder",
+        "count": 6
+    },
+    "group": "cyan_concrete_powder"
+}

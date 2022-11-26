@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/yellow"},
+        {"tag": "bedrock_dyeing:banner/not_yellow"},
+        {"tag": "bedrock_dyeing:banner/not_yellow"},
+        {"tag": "bedrock_dyeing:banner/not_yellow"},
+        {"tag": "bedrock_dyeing:banner/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_banner",
+        "count": 4
+    },
+    "group": "yellow_banner"
+}

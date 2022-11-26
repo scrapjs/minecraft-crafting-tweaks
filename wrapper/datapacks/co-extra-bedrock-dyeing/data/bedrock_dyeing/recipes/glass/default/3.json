@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/default"},
+        {"tag": "bedrock_dyeing:glass"},
+        {"tag": "bedrock_dyeing:glass"},
+        {"tag": "bedrock_dyeing:glass"}
+    ],
+    "result": {
+        "item": "minecraft:glass",
+        "count": 3
+    },
+    "group": "default_glass"
+}

@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:glass/not_pink"},
+        {"tag": "bedrock_dyeing:glass/not_pink"},
+        {"tag": "bedrock_dyeing:glass/not_pink"},
+        {"tag": "bedrock_dyeing:glass/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_stained_glass",
+        "count": 4
+    },
+    "group": "pink_glass"
+}

@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"},
+        {"tag": "bedrock_dyeing:carpet/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_carpet",
+        "count": 6
+    },
+    "group": "magenta_carpet"
+}

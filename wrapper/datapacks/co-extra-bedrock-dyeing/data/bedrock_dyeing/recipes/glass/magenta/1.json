@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/magenta"},
+        {"tag": "bedrock_dyeing:glass/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_stained_glass",
+        "count": 1
+    },
+    "group": "magenta_glass"
+}

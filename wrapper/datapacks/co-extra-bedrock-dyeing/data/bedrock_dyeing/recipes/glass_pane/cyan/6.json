@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"},
+        {"tag": "bedrock_dyeing:glass_pane/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_stained_glass_pane",
+        "count": 6
+    },
+    "group": "cyan_glass_pane"
+}

@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"},
+        {"tag": "bedrock_dyeing:concrete/not_white"}
+    ],
+    "result": {
+        "item": "minecraft:white_concrete",
+        "count": 6
+    },
+    "group": "white_concrete"
+}

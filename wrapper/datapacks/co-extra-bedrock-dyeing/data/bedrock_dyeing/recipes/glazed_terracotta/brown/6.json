@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_brown"}
+    ],
+    "result": {
+        "item": "minecraft:brown_glazed_terracotta",
+        "count": 6
+    },
+    "group": "brown_glazed_terracotta"
+}

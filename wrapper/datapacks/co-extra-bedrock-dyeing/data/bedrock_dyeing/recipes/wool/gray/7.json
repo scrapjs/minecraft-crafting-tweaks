@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"},
+        {"tag": "bedrock_dyeing:wool/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_wool",
+        "count": 7
+    },
+    "group": "gray_wool"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"},
+        {"tag": "bedrock_dyeing:banner/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_banner",
+        "count": 8
+    },
+    "group": "purple_banner"
+}

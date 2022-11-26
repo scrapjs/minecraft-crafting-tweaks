@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"},
+        {"tag": "bedrock_dyeing:glass_pane/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_stained_glass_pane",
+        "count": 8
+    },
+    "group": "red_glass_pane"
+}

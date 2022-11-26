@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"},
+        {"tag": "bedrock_dyeing:carpet/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_carpet",
+        "count": 8
+    },
+    "group": "lime_carpet"
+}

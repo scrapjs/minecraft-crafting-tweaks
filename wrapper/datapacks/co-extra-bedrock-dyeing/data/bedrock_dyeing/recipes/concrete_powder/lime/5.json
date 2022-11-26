@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_lime"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_lime"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_lime"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_lime"},
+        {"tag": "bedrock_dyeing:concrete_powder/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_concrete_powder",
+        "count": 5
+    },
+    "group": "lime_concrete_powder"
+}

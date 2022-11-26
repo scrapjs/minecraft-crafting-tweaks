@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"},
+        {"tag": "bedrock_dyeing:banner/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_banner",
+        "count": 8
+    },
+    "group": "gray_banner"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/blue"},
+        {"tag": "bedrock_dyeing:wool/not_blue"},
+        {"tag": "bedrock_dyeing:wool/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_wool",
+        "count": 2
+    },
+    "group": "blue_wool"
+}

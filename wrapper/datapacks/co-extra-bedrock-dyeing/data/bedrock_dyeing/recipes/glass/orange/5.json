@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/orange"},
+        {"tag": "bedrock_dyeing:glass/not_orange"},
+        {"tag": "bedrock_dyeing:glass/not_orange"},
+        {"tag": "bedrock_dyeing:glass/not_orange"},
+        {"tag": "bedrock_dyeing:glass/not_orange"},
+        {"tag": "bedrock_dyeing:glass/not_orange"}
+    ],
+    "result": {
+        "item": "minecraft:orange_stained_glass",
+        "count": 5
+    },
+    "group": "orange_glass"
+}

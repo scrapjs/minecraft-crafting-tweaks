@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/yellow"},
+        {"tag": "bedrock_dyeing:candle/not_yellow"},
+        {"tag": "bedrock_dyeing:candle/not_yellow"},
+        {"tag": "bedrock_dyeing:candle/not_yellow"}
+    ],
+    "result": {
+        "item": "minecraft:yellow_candle",
+        "count": 3
+    },
+    "group": "yellow_candle"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/magenta"},
+        {"tag": "bedrock_dyeing:banner/not_magenta"},
+        {"tag": "bedrock_dyeing:banner/not_magenta"},
+        {"tag": "bedrock_dyeing:banner/not_magenta"},
+        {"tag": "bedrock_dyeing:banner/not_magenta"},
+        {"tag": "bedrock_dyeing:banner/not_magenta"}
+    ],
+    "result": {
+        "item": "minecraft:magenta_banner",
+        "count": 5
+    },
+    "group": "magenta_banner"
+}

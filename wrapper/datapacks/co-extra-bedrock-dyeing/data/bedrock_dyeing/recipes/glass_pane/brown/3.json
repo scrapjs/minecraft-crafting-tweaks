@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/brown"},
+        {"tag": "bedrock_dyeing:glass_pane/not_brown"},
+        {"tag": "bedrock_dyeing:glass_pane/not_brown"},
+        {"tag": "bedrock_dyeing:glass_pane/not_brown"}
+    ],
+    "result": {
+        "item": "minecraft:brown_stained_glass_pane",
+        "count": 3
+    },
+    "group": "brown_glass_pane"
+}

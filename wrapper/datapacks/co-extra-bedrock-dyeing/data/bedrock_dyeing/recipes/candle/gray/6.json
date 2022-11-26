@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"},
+        {"tag": "bedrock_dyeing:candle/not_gray"}
+    ],
+    "result": {
+        "item": "minecraft:gray_candle",
+        "count": 6
+    },
+    "group": "gray_candle"
+}

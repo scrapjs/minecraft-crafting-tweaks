@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_dyeable": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:dye/gray"}]}},
+        "has_dye": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:carpet/not_gray"}]}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:gray_carpet"}]}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "bedrock_dyeing:carpet/gray/8"
+            }
+        }
+    },
+    "requirements": [
+        ["has_dyeable","has_dye","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["bedrock_dyeing:carpet/gray/8"] }
+}

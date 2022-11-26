@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"},
+        {"tag": "bedrock_dyeing:banner/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_banner",
+        "count": 8
+    },
+    "group": "cyan_banner"
+}

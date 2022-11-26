@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/lime"},
+        {"tag": "bedrock_dyeing:wool/not_lime"},
+        {"tag": "bedrock_dyeing:wool/not_lime"},
+        {"tag": "bedrock_dyeing:wool/not_lime"},
+        {"tag": "bedrock_dyeing:wool/not_lime"}
+    ],
+    "result": {
+        "item": "minecraft:lime_wool",
+        "count": 4
+    },
+    "group": "lime_wool"
+}

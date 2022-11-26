@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/purple"},
+        {"tag": "bedrock_dyeing:carpet/not_purple"}
+    ],
+    "result": {
+        "item": "minecraft:purple_carpet",
+        "count": 1
+    },
+    "group": "purple_carpet"
+}

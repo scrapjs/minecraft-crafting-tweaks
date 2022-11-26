@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/default"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"},
+        {"tag": "bedrock_dyeing:terracotta"}
+    ],
+    "result": {
+        "item": "minecraft:terracotta",
+        "count": 7
+    },
+    "group": "default_terracotta"
+}

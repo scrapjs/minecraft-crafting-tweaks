@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/pink"},
+        {"tag": "bedrock_dyeing:wool/not_pink"},
+        {"tag": "bedrock_dyeing:wool/not_pink"},
+        {"tag": "bedrock_dyeing:wool/not_pink"}
+    ],
+    "result": {
+        "item": "minecraft:pink_wool",
+        "count": 3
+    },
+    "group": "pink_wool"
+}

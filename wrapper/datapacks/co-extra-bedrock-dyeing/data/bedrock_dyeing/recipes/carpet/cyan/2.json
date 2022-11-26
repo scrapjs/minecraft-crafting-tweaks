@@ -1,0 +1,13 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/cyan"},
+        {"tag": "bedrock_dyeing:carpet/not_cyan"},
+        {"tag": "bedrock_dyeing:carpet/not_cyan"}
+    ],
+    "result": {
+        "item": "minecraft:cyan_carpet",
+        "count": 2
+    },
+    "group": "cyan_carpet"
+}

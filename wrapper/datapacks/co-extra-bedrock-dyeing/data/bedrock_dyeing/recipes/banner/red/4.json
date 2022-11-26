@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/red"},
+        {"tag": "bedrock_dyeing:banner/not_red"},
+        {"tag": "bedrock_dyeing:banner/not_red"},
+        {"tag": "bedrock_dyeing:banner/not_red"},
+        {"tag": "bedrock_dyeing:banner/not_red"}
+    ],
+    "result": {
+        "item": "minecraft:red_banner",
+        "count": 4
+    },
+    "group": "red_banner"
+}

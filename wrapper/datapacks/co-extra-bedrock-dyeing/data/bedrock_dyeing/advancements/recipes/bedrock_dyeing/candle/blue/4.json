@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_dyeable": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:dye/blue"}]}},
+        "has_dye": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"tag":"bedrock_dyeing:candle/not_blue"}]}},
+        "has_result": {"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:blue_candle"}]}},
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "bedrock_dyeing:candle/blue/4"
+            }
+        }
+    },
+    "requirements": [
+        ["has_dyeable","has_dye","has_result","has_the_recipe"]
+    ],
+    "rewards": { "recipes": ["bedrock_dyeing:candle/blue/4"] }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {"tag": "bedrock_dyeing:dye/blue"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_blue"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_blue"},
+        {"tag": "bedrock_dyeing:glazed_terracotta/not_blue"}
+    ],
+    "result": {
+        "item": "minecraft:blue_glazed_terracotta",
+        "count": 3
+    },
+    "group": "blue_glazed_terracotta"
+}
