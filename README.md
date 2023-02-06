@@ -4,12 +4,6 @@
 #### 💬 [Обсуждения/Discussions](https://github.com/hydra2s-info/about/discussions) 💬
 #### 🐞 [Баг-Репорты/Bug-Tracker](https://github.com/hydra2s-info/about/issues) 🐞
 
-## Other resources
-
-- https://shorturl.at/exXY4 (my resource packs)
-- https://shorturl.at/auvH6 (CO - other assets)
-- https://shorturl.at/amqyC (my compiled mods)
-
 ## Minecraft recipes mod or datapack (for 2x2 crafts)
 
 ### Balance changes
