@@ -1,21 +1,21 @@
 
 let usedModules = [
-    "co-2x2-core", 
-    "co-hardcraft",
+    //"co-2x2-core", 
+    //"co-hardcraft",
     //"co-disable-default-slabs", // if you used Polymorph, you can disable it
-    "co-disable-default-stairs", 
+    //"co-disable-default-stairs", 
     //"co-disable-default-pressure-plates", // recommended for balance, if enabled "co-3x1-pressure-plates", required if you not used Polymorph mod
     "co-2x2-extra-cut-copper",
-    "co-2x2-extra-log-crafts", 
-    "co-2x2-items", 
+    //"co-2x2-extra-log-crafts", 
+    //"co-2x2-items", 
     "co-2x1-slabs", 
-    "co-1x1-slabs", // may require `allowVanillaRecipeConflicts` and Polymorph mod
+    //"co-1x1-slabs", // may require `allowVanillaRecipeConflicts` and Polymorph mod
     "co-2x2-stairs",
     "co-3x3-more-stairs",
     //"co-3x1-pressure-plates",
-    "co-2x2-extra-unpackable",
-    "co-2x2-more-bark",
-    "co-2x2-extra-polymorph", // conflicts with modified 2x2 crafting recipes, required Polymorph mod for resolve it
+    //"co-2x2-extra-unpackable",
+    //"co-2x2-more-bark",
+    //"co-2x2-extra-polymorph", // conflicts with modified 2x2 crafting recipes, required Polymorph mod for resolve it
     "co-extra-bedrock-dyeing",
     "vt-powder-to-glass", 
     "vt-slabs-stairs-to-block", // may require `allowVanillaRecipeConflicts` and Polymorph mod
@@ -26,7 +26,7 @@ let usedModules = [
 let experimentalDatapacks = true; // required Fabric mod!
 let mergeVersions = true; // currently, incompatible with most built-in advancements!
 let allowVanillaRecipeConflicts = true; // required Polymorph mod!
-let usedMCVersion = "1_19";
+let usedMCVersion = "1_20";
 
 //
 let srcDir = `../wrapper/datapacks/`;

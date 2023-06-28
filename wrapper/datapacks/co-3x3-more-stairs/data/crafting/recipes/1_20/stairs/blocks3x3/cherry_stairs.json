@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shaped",
+    "pattern": ["#  ", "## ", "###"],
+    "key": {
+        "#": {"item":"minecraft:cherry_planks"}
+    },
+    "result": {
+        "item": "minecraft:cherry_stairs",
+        "count": 8
+    },
+    "group": "stairs"
+}
