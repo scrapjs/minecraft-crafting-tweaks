@@ -1,3 +1,4 @@
-# Crafting Recipes Overhaul
+# Minecraft crafting tweaks
 
-Project temporarily was closed...
+Under reworking...
+
